@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1385">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/jquery.flipcountdown.css">
+    <link  rel="stylesheet" href="../../css/default.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/jquery.flipcountdown.js"></script>
+    <script src="../../js/common.js"></script>
+    
+    <title>learning factory</title>
+</head>
+<body>
+    <!-- Wrap -->    
+    <div id="wrap">
+        <!-- Header --> 
+        <header id="header">
+            <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
+            <div class="hd">
+                <div class="inner">
+                    <!-- Logo -->
+                    <h1 class="logo">
+                        <a href="#none" class="blind">learning factory</a>
+                    </h1>
+                    <!-- // Logo -->
+                    <!-- Gnb -->
+                    <nav id="gnb">
+                        <ul>
+                            <li><a href="#none" class="on">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li><a href="#none">구독</a></li>
+                            <li><a href="#none">학습</a></li>
+                            <li><a href="#none">고객센터</a></li>
+                            <li><a href="#none">포인트몰</a></li>
+                        </ul>
+                    </nav>
+                    <!-- // Gnb -->
+                    <!-- srh -->
+                    <div class="tnb_srh">
+                        <input type="text">
+                        <button type="button" class="blind">검색</button>
+                    </div>
+                    <!-- mypage -->
+                    <div class="my_page">
+                        <a href="#none">마이페이지</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <!-- Container -->
+        <div id="container">
+            <div class="main_visual">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="learning_status_wrap">
+                <div class="inner">
+                    <h2 class="sec_title"><span class="lf_color">박누희</span>님 학습현황</h2>
+                    <div class="learning_status">
+                        <div class="my_status">
+                            <div class="user_info_wrap">
+                                <span class="user_img_wrap">
+                                    <span class="user_img" style="background-image:url('../../images/user_img_dummy.jpg')"></span> <!-- user 등록 이미지, style을 지우면 default img -->
+                                </span>
+                                <span class="user_info">
+                                    <span class="i_name"><b>박누희</b>님</span>
+                                    <span class="i_belong">경영지원팀</span>
+                                    <a href="#none" class="link_my">마이페이지</a>
+                                </span>
+                            </div>
+                            <button type="button" class="btn_modity">회원정보 수정</button>
+                        </div>
+                        <ul class="status_list">
+                            <li class="course_ing">
+                                <a href="#none">
+                                    <span class="title">학습중인 과정</span>
+                                    <span class="i_num">13</span>
+                                </a>
+                            </li>
+                            <li class="course_compl">
+                                <a href="#none">
+                                    <span class="title">학습완료 과정</span>
+                                    <span class="i_num">11</span>
+                                </a>
+                            </li>
+                            <li class="course_apply">
+                                <a href="#none">
+                                    <span class="title">수강신청 과정</span>
+                                    <span class="i_num">5</span>
+                                </a>
+                            </li>
+                            <li class="my_qna">
+                                <a href="#none">
+                                    <span class="title">내 Q&amp;A</span>
+                                    <span class="i_num">13</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_course">
+                <div class="inner">
+                    <h2 class="sec_title"><span class="lf_color">박누희</span>님을 위한 강좌</h2>
+                    <div class="course_slider">
+                        <div class="main_course_container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/course_dummy1.png')">
+                                        <div class="course_opt">
+                                            <i class="i_bar"></i>
+                                            <button type="button" class="btn_view">맛보기</button>
+                                            <button type="button" class="btn_like">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                        </div>
+                                    </div>
+                                    <div class="course_desc">
+                                        <span class="i_cate">비즈니스 영어회화</span>
+                                        <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/course_dummy1.png')">
+                                        <div class="course_opt">
+                                            <i class="i_bar"></i>
+                                            <button type="button" class="btn_view">맛보기</button>
+                                            <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                        </div>
+                                    </div>
+                                    <div class="course_desc">
+                                        <span class="i_cate">비즈니스 영어회화</span>
+                                        <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/course_dummy1.png')">
+                                        <div class="course_opt">
+                                            <i class="i_bar"></i>
+                                            <button type="button" class="btn_view">맛보기</button>
+                                            <button type="button" class="btn_like">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                        </div>
+                                    </div>
+                                    <div class="course_desc">
+                                        <span class="i_cate">비즈니스 영어회화</span>
+                                        <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/course_dummy1.png')">
+                                        <div class="course_opt">
+                                            <i class="i_bar"></i>
+                                            <button type="button" class="btn_view">맛보기</button>
+                                            <button type="button" class="btn_like">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                        </div>
+                                    </div>
+                                    <div class="course_desc">
+                                        <span class="i_cate">비즈니스 영어회화</span>
+                                        <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular_course">
+                <div class="inner">
+                    <h2><span>HOT!</span>반응이 뜨거운 인기강좌</h2>
+                    <ul class="tab_btn">
+                        <li>추천</li>
+                        <li>주간인기</li>
+                        <li>월간인기</li>
+                    </ul>
+                    <!-- 추천 -->
+                    <div class="tab_contents">
+                        <ul class="tab_in_tab tab_in_tab1">
+                            <li>
+                                <span class="i_cate">추천 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">추천 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">추천 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                        </ul>
+                        <div class="tab_course_desc tab_course_desc1">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc1">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc1">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 추천 -->
+                    <!-- 주간인기 -->
+                    <div class="tab_contents">
+                        <ul class="tab_in_tab tab_in_tab2">
+                            <li>
+                                <span class="i_cate">주간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">주간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">주간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                        </ul>
+                        <div class="tab_course_desc tab_course_desc2">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc2">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc2">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 주간인기 -->
+                    <!-- 월간인기 -->
+                    <div class="tab_contents">
+                        <ul class="tab_in_tab tab_in_tab3">
+                            <li>
+                                <span class="i_cate">월간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">월간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                            <li>
+                                <span class="i_cate">월간 비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                            </li>
+                        </ul>
+                        <div class="tab_course_desc tab_course_desc3">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc3">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_course_desc tab_course_desc3">
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_desc">
+                                <span class="i_cate">비즈니스 영어회화</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div>
+                                    <span class="info_tit"></span>
+                                    <div class="info_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 월간인기 -->
+                </div>
+            </div>
+            <div class="main_shortcut">
+                <div class="inner">
+                    <ul>
+                        <li class="short1">
+                            <a href="#none">수료조건<br>및 기준</a>
+                        </li>
+                        <li class="short2">
+                            <a href="#none">고용보험<br>환급안내</a>
+                        </li>
+                        <li class="short3">
+                            <a href="#none">모사답안<br>안내</a>
+                        </li>
+                        <li class="short4">
+                            <a href="#none">훈련생<br>유의사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<style>
+#container .popular_course {margin-top:71px;padding:53px 0 0;height:518px;background-color:#f0f0f0;}
+#container .popular_course h2 {margin-bottom:24px;font-size:26px;font-weight:700;color:#4c4c4c;text-align:center;}
+#container .popular_course h2 span {padding-right:15px;font-style:italic;font-weight:800;color:#fb4522;}
+#container .popular_course .tab_btn {margin-bottom:20px;text-align:center;font-size:0;}
+#container .popular_course .tab_btn li {display:inline-block;margin:0 5px;width:165px;height:45px;line-height:45px;font-size:16px;font-weight:500;color:#666666;vertical-align:top;background-color:#e5e5e5;cursor:pointer;}
+#container .popular_course .tab_btn li.on {color:#ffffff;background-color:#ea563a;}
+#container .popular_course .tab_in_tab {float:left;width:408px;height:261px;}
+#container .popular_course .tab_in_tab li {padding:21px;height:87px;background-color:#f0f0f0;border-bottom:1px solid #c9c9c9;cursor:pointer;}
+#container .popular_course .tab_in_tab li.on {background-color:#ffffff;border-color:#ffffff;}
+#container .popular_course .tab_in_tab li .i_cate {display:block;font-size:13px;font-weight:700;color:#ea703c;}
+#container .popular_course .tab_in_tab li .i_name {display:block;margin-top:2px;font-size:17px;font-weight:500;color:#333333;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#container .popular_course .tab_course_desc {float:left;padding:30px 30px 31px;width:977px;height:261px;background-color:#ffffff;}
+#container .popular_course .tab_course_desc .course_thumb {float:left;width:320px;height:200px;background-repeat:no-repeat;background-repeat:100% auto;}
+#container .popular_course .tab_course_desc .course_desc {float:left;margin-left:46px;padding:4px 0 0;width:551px;}
+#container .popular_course .tab_course_desc .course_desc .i_cate {display:block;font-size:15px;font-weight:700;color:#ea563a;}
+#container .popular_course .tab_course_desc .course_desc .i_name {display:block;margin-top:3px;font-size:21px;font-weight:500;color:#333333;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#container .main_shortcut {padding:44px 0 50px;height:178px;background-color:#1f2c5c;}
+#container .main_shortcut ul {height:84px;overflow:hidden;}
+#container .main_shortcut li {float:left;padding-top:7px;width:25%;height:100%;border-left:1px solid #ffffff;background-repeat:no-repeat;background-position:51px 5px;}
+#container .main_shortcut li:first-child {border-left:0;}
+#container .main_shortcut li.short1 {background-image:url('../../images/main_short1.png');}
+#container .main_shortcut li.short2 {background-image:url('../../images/main_short2.png');}
+#container .main_shortcut li.short3 {background-image:url('../../images/main_short3.png');}
+#container .main_shortcut li.short4 {background-image:url('../../images/main_short4.png');}
+#container .main_shortcut li a {display:block;padding-left:159px;font-size:25px;font-weight:500;color:#f3f3f3;line-height:34px;}
+#container .main_new_course {margin-top:62px;}
+#container .main_new_course .new_course_slider {position:relative;}
+#container .main_new_course .new_course_slider .swiper-button-next, 
+#container .main_new_course .new_course_slider .swiper-button-prev {width:18px;height:35px;outline:0;}
+#container .main_new_course .new_course_slider .swiper-button-next:after, 
+#container .main_new_course .new_course_slider .swiper-button-prev:after {content:none;}
+#container .main_new_course .new_course_slider .swiper-button-next {right:-40px;background-image:url('../../images/slider_next.png');}
+#container .main_new_course .new_course_slider .swiper-button-prev {left:-40px;background-image:url('../../images/slider_prev.png');}
+#container .main_new_course .new_course_slider .new_course_container {width:1385px;overflow:hidden;}
+#container .main_new_course .new_course_slider .new_course_container .swiper-slide {cursor:pointer;}
+#container .main_new_course .new_course_slider .new_course_container .course_img {height:200px;background-repeat:no-repeat;background-position:100% auto;}
+#container .main_new_course .new_course_slider .new_course_container .i_cate {display:block;margin-top:15px;font-size:13px;font-weight:700;color:#ea563a;}
+#container .main_new_course .new_course_slider .new_course_container .i_name {display:block;margin-top:2px;font-size:20px;font-weight:500;color:#333333;}
+#container .main_apply_dday {margin-top:84px;height:294px;background:url('../../images/main_dday_bg.png') no-repeat;}
+#container .main_apply_dday .closing_date {padding-left:413px;padding-top:134px;}
+#container .main_apply_dday .closing_date .title {display:block;font-size:27px;font-weight:700;color:#ffffff;}
+#container .main_apply_dday .closing_date .i_num {display:block;font-size:55px;font-weight:700;color:#facd89;line-height:1;letter-spacing:-1px;}
+#container .tick-flip {}
+</style>
+            <div class="main_new_course">
+                <div class="inner">
+                    <h2 class="sec_title">새로 등록된 강좌</h2>
+                    <div class="new_course_slider">
+                        <div class="new_course_container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/new_course_dummy1.jpg')"></div>
+                                    <span class="i_cate">비즈니스 영어회화</span>
+                                    <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/new_course_dummy2.jpg')"></div>
+                                    <span class="i_cate">비즈니스 영어회화</span>
+                                    <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/new_course_dummy3.jpg')"></div>
+                                    <span class="i_cate">비즈니스 영어회화</span>
+                                    <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/new_course_dummy4.jpg')"></div>
+                                    <span class="i_cate">비즈니스 영어회화</span>
+                                    <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="course_img" style="background-image:url('../../images/new_course_dummy1.jpg')"></div>
+                                    <span class="i_cate">비즈니스 영어회화</span>
+                                    <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_apply_dday">
+                <div class="inner">
+                    <div class="closing_date">
+                        <span class="title">수강신청 마감일</span>
+                        <span class="i_num">2020년 6월 30일</span>
+                    </div>
+                    <div id="retroclockbox1"></div>
+
+<script>
+$(document).ready(function() {
+   jQuery(function($){
+	$('#retroclockbox1').flipcountdown({
+        showHour:false,
+        showMinute:false,
+        showSecond:true
+    });
+})
+});
+</script>
+                </div>
+            </div>
+            <div style="height:500px;"></div>
+        </div>
+        <!-- // Container -->
+        <!-- Footer -->
+		<div class="footer">
+        </div>
+        <!-- // Footer -->
+    </div>
+    <!-- // Wrap -->
+</body>
+</html>

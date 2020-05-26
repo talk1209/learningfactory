@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Thin.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Thin.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Thin.woff") format("woff");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Light.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Light.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Light.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Regular.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Regular.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Medium.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Medium.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Bold.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Bold.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("./fonts/noto_sans_kr/NotoSansKR-Black.otf?#iefix") format("embedded-opentype"), url("./fonts/noto_sans_kr/NotoSansKR-Black.woff2") format("woff2"), url("./fonts/noto_sans_kr/NotoSansKR-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+
+/* reset */
+* {margin:0;padding:0;-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;-webkit-text-size-adjust: none;  -moz-text-size-adjust: none; -o-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust:none;} 
+html, body{height:100%;}
+body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;font-size:18px;font-weight:400;color:#000000;line-height:1.5;word-break:keep-all;word-wrap:break-word;letter-spacing:-0.6px;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;font-size:inherit;font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul, li {list-style:none;}
+a {text-decoration:none; color:inherit;font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;}
+a:hover, a:visited, a:active, a:link {text-decoration:none;outline:0 !important;}
+textarea {display:block;width:100%;font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;font-weight:400;-webkit-appearance:none;border-radius:0;resize:none;}
+button {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;cursor:pointer;border:none;outline:0;}
+label, input, button, select, img {vertical-align: middle;}
+option {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;}
+fieldset {border: 0 none;}
+fieldset legend{display:none;}
+i, em, address {font-style: normal;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+caption, legend, hr {position:absolute;top:-9999px;left:-9999px;width:0;height:0;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px;}
+
+/* input */
+input[type="text"], 
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {width:100%; border:0; -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none;font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic',verdana,sans-serif;font-weight:400;color:#000000;outline:0;}
