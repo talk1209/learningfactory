@@ -32,10 +32,10 @@ $(document).ready(function() {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 33,
-        //autoplay: {
-        //    delay: 1500,
-        //    disableOnInteraction: false,
-        //},
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
         speed: 500,
         navigation: {
             nextEl: '.swiper-button-next',
