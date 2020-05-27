@@ -150,6 +150,7 @@
 #container .bbs_box_wrap .bbs_box.bbs_noti .main_noti_list li {margin-top:5px;overflow:hidden;}
 #container .bbs_box_wrap .bbs_box.bbs_noti .main_noti_list li:first-child {margin-top:0;}
 #container .bbs_box_wrap .bbs_box.bbs_noti .main_noti_list li a {display:block;float:left;max-width:339px;font-size:17px;color:#4c4c4c;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#container .bbs_box_wrap .bbs_box.bbs_noti .main_noti_list li a:hover {text-decoration:underline;}
 #container .bbs_box_wrap .bbs_box.bbs_noti .main_noti_list li .i_date {display:block;float:right;font-size:17px;color:rgba(76,76,76,.5);}
 #container .bbs_box_wrap .bbs_box.bbs_faq {padding:0 37px 0 34px;width:428px;}
 #container .bbs_box_wrap .bbs_box.bbs_faq .more {right:37px;}
