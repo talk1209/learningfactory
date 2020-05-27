@@ -37,6 +37,25 @@
 	font-weight: 900;
 }
 
+@font-face {
+	font-family: 'Gmarket Sans';
+	src: url("./fonts/GmarketSans/GmarketSansLight.woff2") format("woff2"), url("./fonts/GmarketSans/GmarketSansLight.woff") format("woff");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Gmarket Sans';
+	src: url("./fonts/GmarketSans/GmarketSansMedium.woff2") format("woff2"), url("./fonts/GmarketSans/GmarketSansMedium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Gmarket Sans';
+	src: url("./fonts/GmarketSans/GmarketSansBold.woff2") format("woff2"), url("./fonts/GmarketSans/GmarketSansBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
 /* reset */
 * {margin:0;padding:0;-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;-webkit-text-size-adjust: none;  -moz-text-size-adjust: none; -o-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust:none;} 
 html, body{height:100%;}

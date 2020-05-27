@@ -55,7 +55,7 @@
 #container .learning_status .status_list li.course_apply {background-image:url('../images/ico_status_list3.png');background-position:202px 88px;}
 #container .learning_status .status_list li.my_qna {background-image:url('../images/ico_status_list4.png');background-position:179px 88px;}
 #container .learning_status .status_list li .title {display:block;font-size:20px;font-weight:700;color:#666666;}
-#container .learning_status .status_list li .i_num {display:block;margin-top:52px;font-size:30px;font-weight:900;color:#333333;}
+#container .learning_status .status_list li .i_num {display:block;margin-top:57px;font-family:'Gmarket Sans';font-weight:700;font-size:30px;color:#333333;}
 #container .main_course {margin:62px 0 0;}
 #container .main_course .course_slider {position:relative;}
 #container .main_course .course_slider .swiper-button-next, 
@@ -81,8 +81,8 @@
 #container .main_course .course_slider .swiper-slide.on .course_desc .i_cate,
 #container .main_course .course_slider .swiper-slide.on .course_desc .i_name {color:#ffffff;}
 #container .popular_course {margin-top:71px;padding:53px 0 0;height:518px;background-color:#f0f0f0;}
-#container .popular_course h2 {margin-bottom:24px;font-size:26px;font-weight:700;color:#4c4c4c;text-align:center;}
-#container .popular_course h2 span {padding-right:15px;font-style:italic;font-weight:800;color:#fb4522;}
+#container .popular_course h2 {margin-bottom:19px;font-size:26px;font-weight:700;color:#4c4c4c;text-align:center;}
+#container .popular_course h2 span {padding-right:15px;font-style:italic;font-family:'Gmarket Sans';font-weight:700;color:#fb4522;}
 #container .popular_course .tab_btn {margin-bottom:20px;text-align:center;font-size:0;}
 #container .popular_course .tab_btn li {display:inline-block;margin:0 5px;width:165px;height:45px;line-height:45px;font-size:16px;font-weight:500;color:#666666;vertical-align:top;background-color:#e5e5e5;cursor:pointer;}
 #container .popular_course .tab_btn li.on {color:#ffffff;background-color:#ea563a;}
@@ -133,7 +133,7 @@
 #container .cs_center .cs_box_wrap {overflow:hidden;}
 #container .cs_center .cs_box {float:left;padding-left:123px;height:177px;background-repeat:no-repeat;background-position:28px 0;}
 #container .cs_center .cs_tel {width:469px;background-image:url('../images/ico_cs_tel.png');}
-#container .cs_center .cs_tel b {display:block;margin-top:2px;font-size:40px;font-weight:900;color:#ea563a;line-height:1;}
+#container .cs_center .cs_tel b {display:block;margin-top:9px;font-family: 'Gmarket Sans';font-weight:700;font-size:40px;color:#ea563a;line-height:1;}
 #container .cs_center .cs_time {width:468px;background-image:url('../images/ico_cs_time.png');}
 #container .cs_center .cs_time p {margin-top:6px;font-size:17px;color:#595959;line-height:24px;}
 #container .cs_center .cs_email {padding-top:5px;width:448px;background-image:url('../images/ico_cs_email.png');}
