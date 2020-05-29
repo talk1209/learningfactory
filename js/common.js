@@ -1,5 +1,12 @@
 $(document).ready(function() {
-
+    /* Sidebar Mouseover Event */
+    $(".learning_sidebar li").mouseover(function(){
+        $(this).addClass("on");
+    });
+    $(".learning_sidebar li").mouseleave(function(){
+        $(this).removeClass("on");
+    });
+    
     /* Swiper - Main visual */
 	var learningMainVisual = new Swiper('.swiper-container', {
         autoplay: {
