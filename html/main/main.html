@@ -28,6 +28,47 @@
     <title>learning factory</title>
 </head>
 <body>
+<style>
+.learning_sidebar {z-index:99;position:fixed;bottom:300px;right:138px;}
+.learning_sidebar li {margin-top:7px;max-width:71px;text-align:center;cursor:pointer;}
+.learning_sidebar li:first-child {margin-top:0;}
+.learning_sidebar li .ico_side {display:block;margin:0 auto;width:60px;height:60px;border:1px solid #aaaaaa;border-radius:50%;background-repeat:no-repeat;background-position:50% 50%;background-color:#ffffff;}
+.learning_sidebar li .link_name {display:block;margin-top:2px;font-size:13px;font-weight:500;color:#999999;}
+.learning_sidebar li.side_kakao .ico_side {background-image:url('../../images/side_kakao.png');}
+.learning_sidebar li.side_tel .ico_side {background-image:url('../../images/side_tel.png');}
+.learning_sidebar li.side_remote .ico_side {background-image:url('../../images/side_remote.png');}
+.learning_sidebar li.side_info .ico_side {background-image:url('../../images/side_info.png');}
+
+.learning_sidebar li.on .ico_side {border-color:#ea563a;}
+.learning_sidebar li.on .link_name {color:#ea563a;}
+.learning_sidebar li.on.side_kakao .ico_side {background-image:url('../../images/side_kakao_on.png');}
+.learning_sidebar li.on.side_tel .ico_side {background-image:url('../../images/side_tel_on.png');}
+.learning_sidebar li.on.side_remote .ico_side {background-image:url('../../images/side_remote_on.png');}
+.learning_sidebar li.on.side_info .ico_side {background-image:url('../../images/side_info_on.png');}
+</style>   
+    <!-- Side bar -->
+    <div class="learning_sidebar">
+        <ul>
+            <li class="side_kakao">
+                <span class="ico_side"></span>
+                <span class="link_name">카카오톡 상담</span>
+            </li>
+            <li class="side_tel">
+                <span class="ico_side"></span>
+                 <span class="link_name">전화상담</span>
+            </li>
+            <li class="side_remote">
+                <span class="ico_side"></span>
+                 <span class="link_name">원격지원</span>
+            </li>
+            <li class="side_info">
+                <span class="ico_side"></span>
+                 <span class="link_name">학습 안내</span>
+            </li>
+        </ul>
+    </div>
+    <!-- //Side bar -->
+    
     <!-- Wrap -->    
     <div id="wrap">
         <!-- Header --> 
@@ -216,35 +257,86 @@
                             </li>
                         </ul>
                         <div class="tab_course_desc tab_course_desc1">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc1">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc1">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -267,35 +359,86 @@
                             </li>
                         </ul>
                         <div class="tab_course_desc tab_course_desc2">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc2">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc2">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화2</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -318,35 +461,86 @@
                             </li>
                         </ul>
                         <div class="tab_course_desc tab_course_desc3">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화1</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc3">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화2</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc3">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"></div> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                                <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
+                            </div>
                             <div class="course_desc">
-                                <span class="i_cate">비즈니스 영어회화</span>
-                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화3</span>
-                                <div>
-                                    <span class="info_tit"></span>
-                                    <div class="info_desc"></div>
+                                <span class="i_cate">온라인교육</span>
+                                <span class="i_name">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화3</span>
+                                <div class="tag_box">
+                                    <span class="i_tag"># 영어회화</span>
+                                    <span class="i_tag"># 미드</span>
+                                    <span class="i_tag"># 비즈니스</span>
+                                </div>
+                                <div class="course_review">
+                                    <div class="ico_star_view">
+                                        <!-- 
+                                        width:20% 별점 1개
+                                        width:40% 별점 2개 
+                                        width:60% 별점 3개 
+                                        width:80% 별점 4개 
+                                        width:100% 별점 5개 
+                                        -->
+                                        <span class="star_fill" style="width:60%;"></span>
+                                    </div>
+                                    <span class="i_rating">3.0</span>
+                                    <p class="i_comment">최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다. 최근 수강평이 노출됩니다.</p>
                                 </div>
                             </div>
                         </div>
