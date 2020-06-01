@@ -27,7 +27,8 @@
 #header .hd .tnb_srh button {position:absolute;top:2px;right:0;width:42px;height:29px;background:url('../images/ico_srh.png') no-repeat 50% 50%;}
 #header .hd .my_page {position:relative;float:left;margin:21px 5px 0;width:100px;height:74px;text-align:center;}
 #header .hd .my_page > a {display:block;padding-top:34px;height:100%;font-size:15px;font-weight:500;background-image:url('../images/ico_my.png');background-repeat:no-repeat;background-position:50% 0;}
-#header .hd .my_page .my_2dul_wrap {z-index:2;display:none;position:absolute;bottom:-74px;left:0;padding-top:8px;width:100%;}
+#header .hd .my_page .my_2dul_wrap {z-index:2;display:none;position:absolute;bottom:-74px;left:0;width:100%;}
+#header .hd .my_page .my_2dul_wrap i {z-index:1;display:block;position:relative;margin:0 auto;width:12px;height:8px;background:url('../images/ico_arrow_my.png') no-repeat 50% 0;}
 #header .hd .my_page .my_2dul {padding:12px 0 14px;background-color:#ffffff;border-radius:6px;-webkit-box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);
 box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 #header .hd .my_page .my_2dul li a {display:block;padding:3px 0;font-size:14px;font-weight:500;color:#666666;}
