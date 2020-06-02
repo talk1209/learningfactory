@@ -90,6 +90,50 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop:0}, 500);
         return false;
     });
+	
+	// Input line style Action
+	$("div").on("focusin", ".input_box.ip_line input", function () {
+		$(this).parent().addClass("on");
+	});	
+	$("div").on("focusout", ".input_box.ip_line input", function () {		
+		$(this).parent().removeClass("on");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* 여기부터 작성 */
+	
 });
 
 // Popular Course Tab
@@ -174,3 +218,20 @@ $(window).on({
         }
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 여기부터 작성 */
