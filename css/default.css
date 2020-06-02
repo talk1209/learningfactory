@@ -223,7 +223,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .login_wrap .login_box h1 {font-size:30px;font-weight:700;color:#333333;}
 .login_wrap .login_box .input_box.ip_id {margin-top:32px;}
 .login_wrap .login_box .input_box.ip_pw {margin-top:21px;}
-.login_wrap .login_box .input_box input {height:56px;line-height:56px;font-size:17px;color:#666666;border-bottom:1px solid #cccccc;}
+.login_wrap .login_box .input_box input {padding:0;height:56px;line-height:56px;font-size:17px;color:#666666;border:0;border-bottom:1px solid #cccccc;}
 .login_wrap .login_box .find_box_wrap {margin-top:23px;overflow:hidden;}
 .login_wrap .login_box .find_box_wrap .chk_box {float:left;}
 .login_wrap .login_box .find_box_wrap .find_box {float:right;font-size:0;}
@@ -231,7 +231,8 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .login_wrap .login_box .find_box_wrap .find_box > a:first-child {margin-left:0;}
 .login_wrap .login_box .find_box_wrap .find_box > a:hover {text-decoration:underline;}
 .login_wrap .login_box .btn_login_box {margin-top:57px;}
-.login_wrap .login_box .btn_login_box + .err_msg {padding-top:10px;height:144px;}
+
+.login_wrap .login_box .err_msg_wrap {margin-top:10px;height:134px;}
 .login_wrap .login_box .join_info_desc {margin-top:11px;font-size:12px;color:#666666;letter-spacing:0;}
 .login_wrap .login_box .login_cs {margin-top:14px;font-size:0;}
 .login_wrap .login_box .login_cs .cs_tel,
@@ -239,6 +240,25 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .login_wrap .login_box .login_cs .cs_tel {padding-left:19px;background:url('../images/ico_tel.png') no-repeat;}
 .login_wrap .login_box .login_cs .cs_email {margin-left:70px;padding-left:20px;background:url('../images/ico_email.png') no-repeat 0 2px;}
 .login_wrap .login_box .login_cs .cs_email:hover {text-decoration:underline;}
+
+/* Login - Find id */
+.login_wrap .login_box .login_content .label {display:block;font-size:17px;font-weight:500;color:#333333;line-height:1;}
+.login_wrap .login_box .login_content.find_id .input_box {margin-top:51px;}
+.login_wrap .login_box .login_content.find_id .input_box + .input_box {margin-top:48px;}
+.login_wrap .login_box .login_content.find_id .btn_box {margin-top:49px;}
+
+/* Login - Find id result */
+.login_wrap .login_box .login_content.find_id_result .result_desc {margin-top:46px;font-size:17px;font-weight:500;color:#333333;}
+.login_wrap .login_box .login_content.find_id_result .val_cont {margin-top:16px;height:50px;line-height:50px;font-size:17px;font-weight:400;color:#333333;background-color:#f5f5f5;border-radius:4px;text-align:center;}
+.login_wrap .login_box .login_content.find_id_result .btn_box {margin-top:50px;}
+
+/* Login - Find pw */
+.login_wrap .login_box .login_content.find_pw .input_box {margin-top:42px;}
+.login_wrap .login_box .login_content.find_pw .input_box + .input_box {margin-top:48px;}
+.login_wrap .login_box .login_content.find_pw .input_certify {}
+.login_wrap .login_box .login_content.find_pw .input_certify .btn_certify {}
+.login_wrap .login_box .login_content.find_pw .btn_box {margin-top:20px;}
+
 /* Footer */
 .footer {border-top:1px solid #ff0000;}
 .footer .ft_inner {position:relative;padding-top:40px;height:187px;}
@@ -263,10 +283,13 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 
 /* Btn style */
 .btn_box {font-size:0;}
-.btn_box button {display:inline-block;height:50px;line-height:50px;font-size:17px;border-radius:4px;overflow:hidden;}
+.btn_box button {display:inline-block;height:50px;line-height:50px;font-size:17px;border-radius:4px;overflow:hidden;vertical-align:top;}
 
 /* Btn style - Size */
 button.btn_xl {width:100%;}
+button.btn_devide {margin-left:4.761904%;width:47.619047%;}
+button.btn_devide:first-child {margin-left:0;}
+
 /* Btn style - Color */
 button.btn_lf {background-color:#ea563a;color:#ffffff;border:1px solid #ea563a;}
 button.btn_white {background-color:#ffffff;color:#333333;border:1px solid #cccccc;}
