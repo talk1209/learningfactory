@@ -17,10 +17,12 @@
    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/selectric.css">
     <link  rel="stylesheet" href="./css/default.css">
     
     <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/jquery.selectric.min.js"></script>
     <script src="./js/common.js"></script>
     
     <title>learning factory</title>
@@ -32,6 +34,7 @@
 .comm_wrap .update_desc p {padding:4px 0;font-size:16px;color:#333;}
 .comm_box {margin-bottom:40px;}
 .comm_box .title {display:block;margin-bottom:25px;font-size:20px;font-weight:700;}
+.comm_box .desc {margin-bottom:10px;color:#333;}
 </style>
 	<div class="inner">
 		<div class="comm_wrap">
@@ -57,6 +60,22 @@
 				<span class="title">에러메세지</span>
 				<p class="err_msg">에러메세지, 에러메세지, 에러메세지, 에러메세지, 에러메세지, 에러메세지</p>
 			</div>
+			<div class="comm_box">
+				<span class="title">Input (text)</span>
+				<div class="input_box">
+					<input type="text" placeholder="제목">
+				</div>
+			</div>
+			<div class="comm_box">
+				<span class="title">Select Box</span>
+				<p class="desc">selectric.css, jquery.selectric.min.js 필요</p>
+				<select class="select_box">
+					<option value="">분류</option>
+					<option value="">제목</option>
+					<option value="">제목 + 내용</option>
+				</select>
+			</div>
+			<div style="height:500px;"></div>
 		</div>
 	</div>
 </body>

@@ -99,7 +99,12 @@ $(document).ready(function() {
 		$(this).parent().removeClass("on");
 	});
 	
-	
+	/* Select Box (Selectric) */
+    if($('.select_box').length > 0){
+        $('.select_box').selectric({
+            preventWindowScroll: false,
+        });
+    }
 	
 	
 	
