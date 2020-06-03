@@ -18,47 +18,54 @@ $(document).ready(function() {
     });
     
     /* Swiper - Main visual */
-	var learningMainVisual = new Swiper('.swiper-container', {
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-          },
-		pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-	});    
+	if($('.swiper-container').length > 0){
+		var learningMainVisual = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			  },
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+		});
+	};
+	
     /* Swiper - Main Course */
-	var learningMainCourse = new Swiper('.main_course_container', {
-        loop: true,
-        slidesPerView: 4,
-        spaceBetween: 32,
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
-        speed: 500,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-	});
+	if($('.main_course_container').length > 0){
+		var learningMainCourse = new Swiper('.main_course_container', {
+			loop: true,
+			slidesPerView: 4,
+			spaceBetween: 32,
+			autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			},
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
     
     /* Swiper - Main New Course */
-	var mainNewCourse = new Swiper('.new_course_container', {
-        loop: true,
-        slidesPerView: 4,
-        spaceBetween: 32,
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
-        speed: 500,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-	});
+	if($('.new_course_container').length > 0){
+		var mainNewCourse = new Swiper('.new_course_container', {
+			loop: true,
+			slidesPerView: 4,
+			spaceBetween: 32,
+			autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			},
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
     
     /* Main Course Mouseover Event */
     $(".main_course .swiper-slide").mouseover(function(){

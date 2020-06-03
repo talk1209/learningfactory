@@ -16,11 +16,11 @@
 	<meta property="og:image" content="" />
    
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
     <link  rel="stylesheet" href="../../css/default.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
-    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
     <script src="../../js/common.js"></script>
     
     <title>learning factory</title>
@@ -32,11 +32,172 @@
 	        <li class="join_nav1">약관동의<span></span></li>
 	        <li class="join_nav2 on">회원정보입력<span></span></li>
 	        <li class="join_nav3">가입완료<span></span></li>
-	    </ul>	    
+	    </ul>
+	    <div class="form_section">
+	    	<h2>개인 정보</h2>
+	    	<div class="form_box">
+	    		<div class="form_group">
+	    			<div class="title">이름<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="input_box ip_line">
+	    					<input type="text" placeholder="이름을 입력하세요.">
+	    					<span class="ip_bar"></span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="form_group form_cell">
+	    			<div class="title">휴대폰<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="devide_box">
+							<div class="input_box ip_line">
+								<input type="tel" value="010">
+								<span class="ip_bar"></span>
+							</div>
+							<span class="i_hyphen">-</span>
+							<div class="input_box ip_line">
+								<input type="tel">
+								<span class="ip_bar"></span>
+							</div>
+							<span class="i_hyphen">-</span>
+							<div class="input_box ip_line">
+								<input type="tel">
+								<span class="ip_bar"></span>
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="form_group">
+	    			<div class="title">아이디<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="input_box ip_line input_id_box">
+	    					<input type="text" placeholder="아이디를 입력하세요. (영문, 숫자 조합 6~15 자리)">
+	    					<button type="button" class="btn_style1 btn_gray">중복확인</button>
+	    					<span class="ip_bar"></span>
+	    				</div>
+	    				<div class="msg_wrap">
+	    					<p class="right_msg">사용 가능한 아이디 입니다.</p> <!-- p부터 히든 -->
+	    					<!--
+	    					<p class="err_msg">이미 사용중인 아이디입니다.</p>
+	    					<p class="err_msg">아이디 조합기준에 맞지 않습니다.</p>
+	    					-->
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="form_group">
+	    			<div class="title">비밀번호<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="input_box ip_line">
+	    					<input type="password" placeholder="비밀번호를 입력하세요. (영문, 숫자, 특수문자 조합 10~15자리)">
+	    					<span class="ip_bar"></span>
+	    				</div>
+	    				<div class="msg_wrap">
+	    					<p class="right_msg">비밀번호 조합기준을 충족합니다.</p> <!-- p부터 히든 -->
+	    					<!--
+	    					<p class="err_msg">비밀번호 조합기준에 맞지 않습니다.</p>
+	    					-->
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="form_group">
+	    			<div class="title">비밀번호 확인<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="input_box ip_line">
+	    					<input type="password" placeholder="입력한 비밀번호를 한 번 더 입력하세요.">
+	    					<span class="ip_bar"></span>
+	    				</div>
+	    				<div class="msg_wrap">
+	    					<p class="err_msg">비밀번호와 동일하게 입력해주세요.</p> <!-- p부터 히든 -->
+	    					<!--
+	    					<p class="right_msg">일치합니다.</p>	    					
+	    					-->
+	    				</div>
+	    			</div>
+	    		</div>
+<style>
+.join_wrap .form_section h2 {font-size:17px;font-weight:500;color:#333333;line-height:1;}
+.join_wrap .form_box {padding:38px 71px;border:1px solid #cccccc;border-radius:4px;}
+.join_wrap .form_box .form_group {margin-top:36px;}
+.join_wrap .form_box .form_group:first-child {margin-top:0;}
+.join_wrap .form_box .form_group:after {display:block;visibility:hidden;clear:both;content:""}
+.join_wrap .form_box .form_group .title {float:left;width:156px;height:56px;line-height:56px;font-size:17px;font-weight:500;color:#333333;}
+.join_wrap .form_box .form_group .title .ast {display:inline-block;margin-left:7px;font-size:17px;color:#ea563a;vertical-align:-4px;}
+.join_wrap .form_box .form_group .cont {position:relative;float:left;width:600px;}
+.join_wrap .form_box .form_group .devide_box:after {display:block;visibility:hidden;clear:both;content:""}
+.join_wrap .form_box .form_group .i_hyphen {display:block;float:left;height:56px;line-height:56px;font-size:17px;color:#666666;text-align:center;}
+
+.join_wrap .form_box .form_group.form_cell .input_box {float:left;width:160px;}
+.join_wrap .form_box .form_group.form_cell .input_box input {padding:0 4px;}
+.join_wrap .form_box .form_group.form_cell .i_hyphen {width:60px;}
+.join_wrap .form_box .form_group.form_email .input_box {float:left;width:200px;}
+.join_wrap .form_box .form_group.form_email .input_box input {padding:0 4px;}
+.join_wrap .form_box .form_group.form_email .i_at {display:block;float:left;width:39px;height:56px;line-height:56px;font-size:17px;color:#666666;text-align:center;}
+.join_wrap .form_box .form_group.form_email .select_wrap {float:left;margin-left:12px;width:149px;}
+.join_wrap .form_box .form_group.form_resident .input_box {float:left;width:285px;}
+.join_wrap .form_box .form_group.form_resident .i_hyphen {width:30px;}
+
+.join_wrap .form_box .form_group .cont .btn_style1 {position:absolute;top:9px;right:0;}
+.join_wrap .form_box .form_group .cont .msg_wrap {padding-top:5px;height:25px;}
+</style>
+	    		<div class="form_group form_email">
+	    			<div class="title">이메일<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="devide_box">
+							<div class="input_box ip_line">
+								<input type="text">
+								<span class="ip_bar"></span>
+							</div>
+							<span class="i_at">@</span>
+							<div class="input_box ip_line">
+								<input type="text">
+								<span class="ip_bar"></span>
+							</div>
+    						<div class="select_wrap sel_line">
+    							<select class="select_box">
+    								<option value="">직접입력</option>
+    								<option value="">naver.com</option>
+    								<option value="">google.com</option>
+    								<option value="">hanmail.com</option>
+    							</select>    							
+    						</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="form_group form_resident">
+	    			<div class="title">주민등록번호<i class="ast">*</i></div>
+	    			<div class="cont">
+	    				<div class="devide_box">
+							<div class="input_box ip_line">
+								<input type="num" maxlength="6" class="ip_regi_front">
+								<span class="ip_bar"></span>
+							</div>
+							<span class="i_hyphen">-</span>
+							<div class="input_box ip_line">
+								<input type="password" maxlength="7" class="ip_regi_back">
+								<span class="ip_bar"></span>
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div></div>
 	    <div class="btn_box">
 	        <button type="button" class="btn_xs btn_white">이전</button>
 	        <button type="button" class="btn_xs btn_lf">다음</button>
 	    </div>
 	</div>
+<script>
+$(document).ready(function() {
+	/* 주민등록번호 */
+	// Input maxlenth next focus
+	$(".ip_regi_front").keyup (function () {
+		var charLimit = $(this).attr("maxlength");
+		if (this.value.length >= charLimit) {
+			$(this).parent().next().next().children('.ip_regi_back').focus();
+			return false;
+		}
+	});
+});
+</script>	
 </body>
 </html>

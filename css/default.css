@@ -332,10 +332,12 @@ button.btn_xs:first-child {margin-left:0;}
 button.btn_xl {width:100%;}
 button.btn_devide {margin-left:4.761904%;width:47.619047%;}
 button.btn_devide:first-child {margin-left:0;}
+button.btn_style1 {padding:0 23px;height:35px;line-height:35px;font-size:14px;color:#666666;border-radius:4px;}
 
 /* Btn style - Color */
 button.btn_lf {background-color:#ea563a;color:#ffffff;border:1px solid #ea563a;}
 button.btn_white {background-color:#ffffff;color:#333333;border:1px solid #cccccc;}
+button.btn_gray {background-color:#e7e7e7;color:#666666;border:1px solid #e7e7e7;}
 
 /* Select Box style */
 .selectric-select_box .selectric {height:50px;cursor:pointer;}
@@ -354,6 +356,8 @@ select option {font-size:15px;}
 .selectric-select_box.selectric-disabled .selectric .button {background:url('../images/ico_select_down_disabled.png') no-repeat center center;}
 .selectric-select_box.selectric-disabled .selectric .label {color:#999;}
 
+.sel_line .selectric-select_box .selectric {height:56px;border-top:0;border-left:0;border-right:0;}
+.sel_line .selectric-select_box .selectric .label {margin:0 41px 0 0;height:56px;line-height:54px;font-size:17px;color:#666666;}
 
 /* Input Style */
 input::-ms-clear {display:none;} 
@@ -365,7 +369,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Int
 input[readonly]:focus {cursor:default;}
 [readonly='readonly'] {pointer-events:none;cursor:default;}
 
-.input_box input {padding:0 21px;height:50px;line-height:50px;font-size:15px;color:#333333;border:1px solid #cccccc;}
+.input_box input {padding:0 21px;width:100%;height:50px;line-height:50px;font-size:15px;color:#333333;border:1px solid #cccccc;outline:0;}
 
 input[type="checkbox"] {display:none;}
 input[type="checkbox"] + label {display:inline-block;position:relative;padding-left:25px;height:17px;line-height:17px;font-size:14px;cursor:pointer;vertical-align:top;}
@@ -374,6 +378,7 @@ input[type="checkbox"]:checked + label span.ico_fake {background:url('../images/
 
 /* Input box Line style */
 .input_box.ip_line {position:relative;}
+.input_box.ip_line input {padding:0;height:56px;line-height:56px;font-size:17px;color:#666666;border-top:0;border-left:0;border-right:0;}
 .input_box.ip_line .ip_bar {position:absolute;bottom:0;left:0;width:0;height:1px;background-color:#ea563a;-webkit-transition:width .4s ease;transition:width .4s ease;}
 .input_box.ip_line.on .ip_bar {width:100%;}
 
