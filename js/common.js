@@ -113,39 +113,6 @@ $(document).ready(function() {
         });
     }
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/* 여기부터 작성 */
-	
 });
 
 // Popular Course Tab
@@ -231,19 +198,13 @@ $(window).on({
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 여기부터 작성 */
+// 숫자만
+function onlyNum() {
+    $( '.onlyNum' ).on("keyup blur", function() {
+        var rgEx = /^[0-9]*$/g;
+        var chkEx = rgEx.exec($(this).val());
+        if(!chkEx){
+            $(this).val( $(this).val().replace( /[^0-9]/gi, '' ));
+        } 
+    });
+}
