@@ -29,6 +29,7 @@
 .table_faq_list td dd {display:none;padding:25px 50px;background-color:#f5f5f5;}
 .table_faq_list td.bo_nodata {height:185px;text-align:center;vertical-align:middle;}
 
+/* QnA */
 .qa_write p{margin-top:17px;height:85px;padding-top:45px;font-size:15px;color:#333;border-top:3px solid #333;}
 .qa_write_inner {padding:30px 30px;background-color:#f5f5f5;}
 .table_qa_write {}
@@ -46,9 +47,29 @@
 .btn_group_qa {margin-top:20px;}
 .btn_group_qa button {width:100px;height:40px;line-height:40px;}
 
+/* 원격지원안내 */
+.sub_service .sub_service_inner {margin-top:20px;border:1px solid #ccc;background-color:#f5f5f5;}
+.sub_service .sub_service_inner .title {padding:30px;text-align:center;border-bottom:1px solid #ccc;background-color:#fff;}
+.sub_service .sub_service_inner .title h3 {font-size:25px;color:#333;}
+.sub_service .sub_service_inner.sub_service_sec1 .title h3 {display:inline-block;padding-left:33px;background:url('../images/ico_service_tit1.png') no-repeat 0 5px;}
+.sub_service .sub_service_inner .title p {margin-top:6px;font-size:15px;color:#333;line-height:25px;}
+.sub_service .sub_service_inner .des {margin:0 auto;padding:50px 0;width:800px;}
+.sub_service .sub_service_inner .des .customer_center {overflow:hidden;}
+.sub_service .sub_service_inner .des .customer_center .sec_left {float:left;padding-left:160px;width:400px;height:105px;background:url('../images/ico_service_sec1_call.png') no-repeat 65px 0;}
+.sub_service .sub_service_inner .des .customer_center .sec_left h4 {font-size:18px;color:#666;}
+.sub_service .sub_service_inner .des .customer_center .sec_left .call_num {font-size:30px;color:#333;font-weight:900;line-height:35px;}
+.sub_service .sub_service_inner .des .customer_center .sec_right {float:left;padding:10px;width:400px;height:105px;font-size:15px;color:#333;}
+.sub_service .sub_service_inner .des ul {overflow:hidden;}
+.sub_service .sub_service_inner .des ul li {float:left;padding-top:90px;width:25%;height:150px;font-size:15px;text-align:center;line-height:18px;border-top:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#fff;background-position:50% 40px;background-repeat:no-repeat;}
+.sub_service .sub_service_inner .des ul li:first-child {border-left:1px solid #ccc;}
+.sub_service .sub_service_inner .des ul li.on {color:#f5f5f5;background-color:#ea563a;border-top:1px solid #ea563a;border-right:1px solid #ea563a;border-bottom:1px solid #ea563a;}
+.sub_service .sub_service_inner .des ul li.li1 {background-image:url('../images/ico_service_sec1_li1.png');}
+.sub_service .sub_service_inner .des ul li.li2 {background-image:url('../images/ico_service_sec1_li2.png');}
+.sub_service .sub_service_inner .des ul li.li3 {background-image:url('../images/ico_service_sec1_li3.png');}
+.sub_service .sub_service_inner .des ul li.li4 {background-image:url('../images/ico_service_sec1_li4.png');}
+
 /* Table Style */
 .table {width:100%;}
-
 .table_board_list {margin-top:50px;border-top:3px solid #333;}
 .table_board_list thead th {padding:12px 0;height:50px;font-size:15px;color:#333;font-weight:500;border-bottom:1px solid #333;}
 .table_board_list tbody td {padding:18px 0;height:60px;font-size:15px;color:#333;text-align:center;border-bottom:1px solid #ccc;}
@@ -82,6 +103,7 @@
 .btn_basic {display:inline-block;width:120px;height:40px;line-height:38px;text-align:center;}
 .btn_round {border-radius:4px;}
 .btn_gray_white {color:#fff;background-color:#aaa}
+.btn_gray2_white {color:#fff;background-color:#666666;}
 .btn_gray_black {color:#666;background-color:#ddd}
 
 /* Textarea box Line style */
