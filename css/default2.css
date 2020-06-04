@@ -29,7 +29,7 @@
 .table_faq_list td dd {display:none;padding:25px 50px;background-color:#f5f5f5;}
 .table_faq_list td.bo_nodata {height:185px;text-align:center;vertical-align:middle;}
 
-/* QnA */
+/* Q&A */
 .qa_write p{margin-top:17px;height:85px;padding-top:45px;font-size:15px;color:#333;border-top:3px solid #333;}
 .qa_write_inner {padding:30px 30px;background-color:#f5f5f5;}
 .table_qa_write {}
@@ -37,6 +37,7 @@
 .table_qa_write tbody {}
 .table_qa_write tbody th {padding-bottom:20px;font-size:17px;color:#333;font-weight:500;text-align:left;}
 .table_qa_write tbody td {padding-bottom:20px;font-size:15px;color:#333;}
+.table_qa_write tbody td .selectric {width:270px;}
 .table_qa_write tbody .table_qa_write_file th,
 .table_qa_write tbody .table_qa_write_file td {padding-top:30px;padding-bottom:0;border-top:1px solid #ccc;}
 .table_qa_write tbody .table_qa_write_file td .file_list li {margin-top:10px;padding:7px 12px 7px 10px;height:35px;font-size:13px;color:#333;border:1px solid #ccc;background-color:#fff;}
