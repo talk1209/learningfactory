@@ -16,12 +16,10 @@
 	<meta property="og:image" content="" />
    
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/swiper.min.css">
 	<link  rel="stylesheet" href="../../css/default.css">
     <link  rel="stylesheet" href="../../css/default2.css">  <!-- 추가 CSS -->
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
-    <script src="../../js/swiper.min.js"></script>
 	<script src="../../js/common.js"></script>
     <script src="../../js/common2.js"></script> <!-- 추가 JS -->
     
@@ -84,8 +82,8 @@
 						</form>
 					</div>
 				</div>
-				<ul id="snb">
-					<li><a href="#none" class="on">전체</a></li>
+				<ul id="snb" class="snb4">
+					<li><a href="#none" class="on">전체</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
 					<li><a href="#none">학습</a></li>
 					<li><a href="#none">시스템</a></li>
 					<li><a href="#none">기타</a></li>
@@ -114,7 +112,7 @@
 							<td class="bo_num"><img src="../../images/ico_notice.png" alt="공지" /></td>
 							<td class="bo_cate">시스템</td>
 							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"><img src="../../images/ico_board_file.png" alt="첨부파일" /></td>
+							<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
 							<td class="bo_view">123</td>
 							<td class="bo_date">2020.10.11</td>
 						</tr>
@@ -122,7 +120,7 @@
 							<td class="bo_num"><img src="../../images/ico_notice.png" alt="공지" /></td>
 							<td class="bo_cate">시스템</td>
 							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"><img src="../../images/ico_board_file.png" alt="첨부파일" /></td>
+							<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
 							<td class="bo_view">123</td>
 							<td class="bo_date">2020.10.11</td>
 						</tr>
@@ -135,39 +133,7 @@
 							<td class="bo_date">2020.10.11</td>
 						</tr>
 						<tr>
-							<td class="bo_num">1</td>
-							<td class="bo_cate">시스템</td>
-							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"></td>
-							<td class="bo_view">123</td>
-							<td class="bo_date">2020.10.11</td>
-						</tr>
-						<tr>
-							<td class="bo_num">2</td>
-							<td class="bo_cate">시스템</td>
-							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"></td>
-							<td class="bo_view">123</td>
-							<td class="bo_date">2020.10.11</td>
-						</tr>
-						<tr>
-							<td class="bo_num">3</td>
-							<td class="bo_cate">시스템</td>
-							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"></td>
-							<td class="bo_view">123</td>
-							<td class="bo_date">2020.10.11</td>
-						</tr>
-						<tr>
-							<td class="bo_num">4</td>
-							<td class="bo_cate">시스템</td>
-							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
-							<td class="bo_file"></td>
-							<td class="bo_view">123</td>
-							<td class="bo_date">2020.10.11</td>
-						</tr>
-						<tr>
-							<td class="bo_num">5</td>
+							<td class="bo_num">7</td>
 							<td class="bo_cate">시스템</td>
 							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
 							<td class="bo_file"></td>
@@ -183,20 +149,57 @@
 							<td class="bo_date">2020.10.11</td>
 						</tr>
 						<tr>
-							<td class="bo_num">7</td>
+							<td class="bo_num">5</td>
 							<td class="bo_cate">시스템</td>
 							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
 							<td class="bo_file"></td>
 							<td class="bo_view">123</td>
 							<td class="bo_date">2020.10.11</td>
 						</tr>
+						<tr>
+							<td class="bo_num">4</td>
+							<td class="bo_cate">시스템</td>
+							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
+							<td class="bo_file"></td>
+							<td class="bo_view">123</td>
+							<td class="bo_date">2020.10.11</td>
+						</tr>
+						<tr>
+							<td class="bo_num">3</td>
+							<td class="bo_cate">시스템</td>
+							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
+							<td class="bo_file"></td>
+							<td class="bo_view">123</td>
+							<td class="bo_date">2020.10.11</td>
+						</tr>
+						<tr>
+							<td class="bo_num">2</td>
+							<td class="bo_cate">시스템</td>
+							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
+							<td class="bo_file"></td>
+							<td class="bo_view">123</td>
+							<td class="bo_date">2020.10.11</td>
+						</tr>
+						<tr>
+							<td class="bo_num">1</td>
+							<td class="bo_cate">시스템</td>
+							<td class="bo_title"><a href="#none">제목이 모두 노출됩니다. 제목이 모두 노출됩니다.</a></td>
+							<td class="bo_file"></td>
+							<td class="bo_view">123</td>
+							<td class="bo_date">2020.10.11</td>
+						</tr>
+						<!-- 해당 목록이 없을경우 -->
+						<tr>
+							<td colspan="6" class="bo_nodata">해당 목록이 없습니다.</td>
+						</tr>
+						<!-- // 해당 목록이 없을경우 -->
 					</tbody>
 				</table>
 
 				<ul class="page_nav">
 					<li><a href="#none"><img src="../../images/btn_page_first.png" alt="처음" /></a></li>
 					<li><a href="#none"><img src="../../images/btn_page_prev.png" alt="이전" /></a></li>
-					<li><a href="#none" class="on">1</a></li>
+					<li><a href="#none" class="on">1</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
 					<li><a href="#none">2</a></li>
 					<li><a href="#none">3</a></li>
 					<li><a href="#none">4</a></li>

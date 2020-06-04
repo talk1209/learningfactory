@@ -16,12 +16,12 @@
 	<meta property="og:image" content="" />
    
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
 	<link  rel="stylesheet" href="../../css/default.css">
     <link  rel="stylesheet" href="../../css/default2.css">  <!-- 추가 CSS -->
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
-    <script src="../../js/swiper.min.js"></script>
+	<script src="../../js/jquery.selectric.min.js"></script>
 	<script src="../../js/common.js"></script>
     <script src="../../js/common2.js"></script> <!-- 추가 JS -->
     
@@ -75,41 +75,66 @@
         <div id="container">
             <div class="sub_inner inner">
 				<div class="sub_title">
-					<h2>공지사항</h2>
-					<div class="lead">000의 다양한 소식을 만나보세요.</div>
+					<h2>Q&A</h2>
+					<div class="lead">문제가 해결되지 않으시나요? 문의 글을 남겨 주시면 신속하게 해결해 드릴게요.</div>
 				</div>
-				<table class="table table_board_view">
-					<tbody>
-						<tr>
-							<td class="bo_view_hd">
-								<h3>제목이 모두 노출됩니다.</h3>
-								<div class="bo_view_info">
-									<div class="bo_view_info_left"><span>시스템</span></div>
-									<div class="bo_view_info_right">
-										<span>등록일&nbsp;&nbsp;&nbsp;2020.10.11</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<span>조회수&nbsp;&nbsp;&nbsp;123</span>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="bo_view_content">
-								입력된 내용이 노출됩니다.
-							</td>
-						</tr>
-						<tr>
-							<td class="bo_view_file">
-								<ul>
-									<li><a href="#none"><img src="../../images/ico_board_view_file.png" alt="첨부파일" />&nbsp;&nbsp;파일명.확장자 (12.3MB)</a></li>
-									<li><a href="#none"><img src="../../images/ico_board_view_file.png" alt="첨부파일" />&nbsp;&nbsp;파일명.확장자 (12.3MB)</a></li>
-								</ul>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="qa_write">
+					<p>수강중인 과정에 대한 문의는 해당 과정 게시판에 문의해주세요.</p>
+					<div class="qa_write_inner">
+						<table class="table table_qa_write">
+							<colgroup>
+								<col width="180">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>분류</th>
+									<td>
+										<select class="select_box">
+											<option value="">분류선택</option>
+											<option value="">분류1</option>
+											<option value="">분류2</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>제목</th>
+									<td>
+										<div class="input_box">
+											<input type="text" placeholder="제목">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>내용</th>
+									<td>
+										<div class="textarea_box">
+											<textarea placeholder="내용을 입력하세요."></textarea>
+										</div>
+									</td>
+								</tr>
+								<tr class="table_qa_write_file">
+									<th>첨부파일</th>
+									<td>
+										<div class="file_select_group">
+											<span>파일을 드래그하여 추가할 수 있습니다.</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#none" class="btn_board_file">파일 선택</a>
+										</div>
+										<ul class="file_list">
+											<li>파일명.확장자 (12.3MB)<a href="#none"><img src="../../images/ico_file_del.png" alt="파일삭제" /></a></li>
+											<li>파일명.확장자 (12.3MB)<a href="#none"><img src="../../images/ico_file_del.png" alt="파일삭제" /></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 
-				<div class="btn_group_board_view">
-					<a href="#none" class="btn_board_view btn_board_view_gray">목록으로</a>
+				<div class="btn_group btn_qa_write">
+					<div class="btn_box">
+						<button type="button" class="btn_xs btn_white">취소</button>
+						<button type="button" class="btn_xs btn_lf">등록</button>
+					</div>
 				</div>
 			</div>
         </div>
