@@ -95,6 +95,9 @@ $(document).ready(function() {
     /* Login Find Tab */
     loginFindTab();
     
+    /* Sub Section Tab */
+    subSecTab();
+    
     // To the top
     $(document).on("click", ".go_top", function(){
         $("html, body").animate({scrollTop:0}, 500);
@@ -115,6 +118,13 @@ $(document).ready(function() {
             preventWindowScroll: false,
         });
     }
+    
+    $(".course_list li").mouseover(function(){
+        $(this).addClass("on");
+    });
+    $(".course_list li").mouseleave(function(){
+        $(this).removeClass("on");
+    });
 	
 });
 
@@ -203,6 +213,29 @@ $(window).on({
 // Login Tab
 function loginFindTab() {
     var $tbtn = $(".tab_find li");
+    var $tbtn_leng = $tbtn.length;
+    //$tbtn.width(100/$tbtn_leng+"%");
+    var $tab_contentsOb = $(".tab_contents");
+
+    $tab_contentsOb.hide();
+    $tab_contentsOb.eq(0).show();
+    $tbtn.eq(0).addClass("on");
+
+    $tbtn.click(function(e){
+    
+        e.preventDefault();
+
+        idx = $(this).index();
+
+        $tbtn.removeClass();
+        $tbtn.eq(idx).addClass("on");
+        $tab_contentsOb.hide();
+        $tab_contentsOb.eq(idx).show();       
+    });
+}
+// Sub Section Tab
+function subSecTab() {
+    var $tbtn = $(".tab_sub_sec li");
     var $tbtn_leng = $tbtn.length;
     //$tbtn.width(100/$tbtn_leng+"%");
     var $tab_contentsOb = $(".tab_contents");

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+    <!-- Wrap -->    
+    <div id="wrap">
+        <!-- Header --> 
+        <header id="header">
+            <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
+            <div class="hd">
+                <div class="inner">
+                    <!-- Logo -->
+                    <h1 class="logo sub_logo">
+                        <a href="#none" class="blind">learning factory</a>
+                    </h1>
+                    <!-- // Logo -->
+                    <!-- Gnb -->
+                    <nav id="gnb">
+                        <ul>
+                            <li><a href="#none" class="on">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li><a href="#none">구독</a></li>
+                            <li><a href="#none">학습</a></li>
+                            <li><a href="#none">고객센터</a></li>
+                            <li><a href="#none">포인트몰</a></li>
+                        </ul>
+                    </nav>
+                    <!-- // Gnb -->
+                    <!-- srh -->
+                    <div class="tnb_srh">
+                        <input type="text">
+                        <button type="button" class="blind">검색</button>
+                    </div>
+                    <!-- mypage -->
+                    <div class="my_page">
+                        <a href="#none">마이페이지</a>
+                        <div class="my_2dul_wrap">
+                        	<i></i>
+                            <ul class="my_2dul">
+                                <li><a href="#none">마이페이지</a></li>
+                                <li><a href="#none">로그아웃</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+<style>
+#container .ex_list_wrap {}
+#container .ex_list_wrap .input_wrap {margin-top:31px;overflow:hidden;}
+#container .ex_list_wrap .input_wrap .input_box {float:left;width:1231px;}
+#container .ex_list_wrap .input_wrap .chk_box {float:left;margin:11px 0 0 20px;width:133px;}
+#container .ex_list_wrap .input_wrap .chk_box input[type="checkbox"] + label {font-size:13px;}
+#container .ex_list_wrap .sel_depth {margin-top:20px;border:1px solid #cccccc;overflow:hidden;}
+#container .ex_list_wrap .sel_depth .depth_box {position:relative;float:left;width:25%;height:248px;border-left:1px solid #cccccc;overflow-x:hidden;overflow-y:auto;background-color:#ffffff;}
+#container .ex_list_wrap .sel_depth .depth_box:first-child {border-left:0;}
+#container .ex_list_wrap .sel_depth .depth_box .select_desc {padding:0 20px;font-size:15px;font-weight:400;color:#333333;line-height:50px;}
+#container .ex_list_wrap .sel_depth .depth_box li {}
+#container .ex_list_wrap .sel_depth .depth_box li input[type="radio"] + label {display:block;padding:0 20px;height:50px;line-height:50px;font-size:15px;font-weight:400;color:#333333;background-color:#ffffff;cursor:pointer;}
+#container .ex_list_wrap .sel_depth .depth_box li input[type="radio"]:checked + label {font-weight:500;background-color:#f8f8f8;}
+#container .ex_list_wrap .ex_srh_result {margin-top:29px;padding:0 29px;height:60px;line-height:58px;font-size:17px;color:#333333;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:4px;}
+#container .ex_list_wrap .ex_srh_result b {font-size:22px;font-weight:700;color:#333333;}
+
+/* Sub Section tab style */
+.tab_sub_sec {margin-top:29px;overflow:hidden;border:1px solid #dddddd;}
+.tab_sub_sec.tab4 li {width:25% !important;}
+.tab_sub_sec li {float:left;height:50px;line-height:48px;font-size:17px;font-weight:400;color:#999999;text-align:center;border-left:1px solid #dddddd;background-color:#ffffff;cursor:pointer;}
+.tab_sub_sec li:first-child {border-left:0;}
+.tab_sub_sec li.on {font-weight:700;color:#ffffff;background-color:#ea563a}
+.tab_sub_sec li.on span {font-weight:400;}
+
+.selectric-sel_cate {position:absolute;top:0;right:0;width:121px;}
+.selectric-sel_cate .selectric {height:32px;border:0;background:url('../../images/ico_sel_cate.png') no-repeat 0 8px;}
+.selectric-sel_cate .selectric .label {margin:0 28px 0 19px;height:30px;line-height:30px;font-size:13px;}
+.selectric-sel_cate .selectric .button {right:9px;width:11px;height:6px;background:url('../../images/ico_arrow_cate.png') no-repeat 50% 50%;background-size:auto;}
+.selectric-sel_cate.selectric-open .selectric .button {background:url('../../images/ico_arrow_cate_up.png') no-repeat 50% 50%}
+.selectric-sel_cate .selectric-items {border-top:1px solid #cccccc;border-color:#cccccc;}
+.selectric-sel_cate .selectric-items li {padding:4px 11px 5px;font-size:13px;color:#666666;border:0;}
+
+#container .course_multi_tab {position:relative;margin:14px 0 6px;min-height:30px;}
+#container .course_list {clear:both;}
+#container .course_list ul {margin:0 -16px;}
+#container .course_list li {margin:40px 16px 0;float:left;width:322px;height:398px;border:1px solid #cccccc;border-radius:8px;overflow:hidden;cursor:pointer;}
+#container .course_list li:nth-child(1),
+#container .course_list li:nth-child(2),
+#container .course_list li:nth-child(3),
+#container .course_list li:nth-child(4) {margin-top:0;}
+#container .course_list li .thumb_box {position:relative;height:200px;background-repeat:no-repeat;background-size:100% auto;}
+#container .course_list li .thumb_box .course_opt {display:none;position:absolute;bottom:0;left:0;width:320px;height:35px;background-color:rgba(255,255,255,.95);}
+#container .course_list li .thumb_box .course_opt .i_bar {display:block;position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-1px;width:1px;height:10px;background-color:#bfbfbf;}
+#container .course_list li .thumb_box .course_opt > button {display:block;float:left;padding-left:71px;width:50%;height:100%;font-size:14px;color:#666666;font-weight:500;background-color:#ffffff;text-align:left;}
+#container .course_list li .thumb_box .course_opt > button.btn_view {background:url('../../images/ico_srh_xs.png') no-repeat 56px 13px;}
+#container .course_list li .thumb_box .course_opt > button.btn_like {background-image:url('../../images/ico_favorite.png');background-repeat:no-repeat;background-position:56px 13px;}
+#container .course_list li .thumb_box .course_opt > button.btn_like.on {background-image:url('../../images/ico_favorite_on.png');}
+#container .course_list li .thumb_box .favorite_box {position:absolute;bottom:0;left:0;width:100%;height:35px;background-color:rgba(255,255,255,.95);text-align:center;}
+#container .course_list li .thumb_box .favor_num {display:inline-block;padding-left:19px;font-size:14px;color:#666666;background-repeat:no-repeat;background-position:0 50%;background-image:url('../../images/ico_favorite_trans.png');line-height:35px;}
+#container .course_list li .thumb_box .favor_num.on {background-image:url('../../images/ico_favorite_trans_on.png');}
+#container .course_list li .course_desc {position:relative;padding:14px 19px 0;height:196px;background-color:#ffffff;}
+#container .course_list li .course_desc .i_cate {display:block;font-size:14px;color:#ea563a;}
+#container .course_list li .course_desc .i_subject {display:block;margin-top:2px;font-size:20px;font-weight:700;color:#333333;line-height:27px;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+#container .course_list li .course_desc .i_date {position:absolute;bottom:20px;left:19px;font-size:13px;color:#666666;}
+#container .course_list li .course_desc .i_cc {position:absolute;bottom:20px;right:19px;font-size:0;}
+#container .course_list li .course_desc .i_cc > span {display:inline-block;padding-left:18px;font-size:13px;color:#666666;background-repeat:no-repeat;background-position:0 50%;}
+#container .course_list li .course_desc .i_cc > span.i_view {margin-left:19px;background-image:url('../../images/ico_view.png');}
+#container .course_list li .course_desc .i_cc > span.i_reply {margin-left:19px;background-image:url('../../images/ico_reply.png');}
+
+#container .course_list li:hover .thumb_box .course_opt {display:block;}
+#container .course_list li:hover .thumb_box .favorite_box {display:none;}
+/* 학습피스 */
+#container .course_list li.learn_piece:hover .thumb_box .favorite_box {display:block;}
+#container .course_list li.learn_piece.sme .course_desc {height:138px;}
+#container .course_list li.learn_piece.sme .sme_name {margin:0 19px;padding-top:10px;padding-left:46px;height:45px;line-height:35px;font-size:17px;font-weight:500;color:#333333;border-top:1px solid #cccccc;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;background-repeat:no-repeat;background-position:0 10px;}
+
+/* SME 채널 */
+#container .course_list li.sme_channel .thumb_box {margin:49px auto 1px;width:150px;height:150px;border-radius:50%;overflow:hidden;}
+#container .course_list li.sme_channel .course_desc {padding:35px 19px 0}
+#container .course_list li.sme_channel .course_desc .channel_name {display:block;font-size:20px;font-weight:500;color:#333333;}
+#container .course_list li.sme_channel .course_desc .tag_wrap {display:block;margin-top:9px;font-size:0;}
+#container .course_list li.sme_channel .course_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;color:#ea563a;}
+#container .course_list li.sme_channel .course_desc .tag_wrap .i_tag:first-child {margin-left:0;}
+#container .course_list li.sme_channel .course_desc .subs_num {display:block;margin-top:11px;font-size:13px;color:#666666;}
+#container .course_list li.sme_channel .course_desc .subs_num b {margin-right:5px;font-size:13px;font-weight:700;color:#666666;}
+#container .course_list li.sme_channel .btn_subs {margin-top:16px;background-color:#ea563a;border-radius:4px;overflow:hidden;text-align:center;}
+#container .course_list li.sme_channel .btn_subs input[type="checkbox"] + label {padding-left:0;width:100%;height:38px;line-height:38px;}
+#container .course_list li.sme_channel .btn_subs input[type="checkbox"] + label .i_text {display:inline-block;padding-left:25px;font-size:17px;font-weight:700;color:#f5f5f5;background:url('../../images/ico_subs_plus.png') no-repeat 0 50%;}
+#container .course_list li.sme_channel .btn_subs input[type="checkbox"]:checked + label .i_text {background:url('../../images/ico_subs_on.png') no-repeat 0 50%;}
+
+#container .course_multi_tab .multi_course_type {margin:29px 0 19px;font-size:0;}
+#container .course_multi_tab .multi_course_type li {display:inline-block;margin-left:10px;vertical-align:top;text-align:center;}
+#container .course_multi_tab .multi_course_type li:first-child {margin-left:0;}
+#container .course_multi_tab .multi_course_type li input[type="checkbox"] + label {padding:0 30px;min-width:120px;height:35px;line-height:33px;font-size:15px;color:#999999;border-radius:4px;background-color:#f5f5f5;border:1px solid #dddddd;}
+#container .course_multi_tab .multi_course_type li input[type="checkbox"]:checked + label {color:#ea563a;border-color:#ea563a;background-color:#ffffff;}
+</style>
+        <!-- Container -->
+        <div id="container">
+            <div class="sub_inner inner">
+				<div class="sub_title">
+					<h2 style="line-height:1;">탐색</h2>
+				</div>
+				<div class="ex_list_wrap">
+				    <div class="input_wrap">
+				        <div class="input_box style1">
+				            <input type="text" placeholder="과정명, 학습피스명, SME 채널명, 키워드로 검색">
+				        </div>
+				        <div class="chk_box">
+				            <input type="checkbox" id="applyingCourse" name="applyingCourse">
+							<label for="applyingCourse"><span class="ico_fake"></span>수강신청중인 과정만</label>
+				        </div>
+				    </div>
+				    <div class="sel_depth">
+                        <div class="depth_box">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="dummyRadio" name="dummyGroup">
+                                    <label for="dummyRadio">전체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio1" name="dummyGroup" checked>
+                                    <label for="dummyRadio1">리더쉽</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio2" name="dummyGroup">
+                                    <label for="dummyRadio2">경영</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio3" name="dummyGroup">
+                                    <label for="dummyRadio3">마케팅</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="depth_box">
+                            <!--<p class="select_desc">상위분류를 선택해주세요.</p>-->
+                            <ul> <!-- ul부터 히든 -->
+                                <li>
+                                    <input type="radio" id="dummyRadio4" name="dummyGroup1" checked>
+                                    <label for="dummyRadio4">전체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio5" name="dummyGroup1">
+                                    <label for="dummyRadio5">리더쉽</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio6" name="dummyGroup1">
+                                    <label for="dummyRadio6">경영</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio7" name="dummyGroup1">
+                                    <label for="dummyRadio7">마케팅</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="dummyRadio8" name="dummyGroup1">
+                                    <label for="dummyRadio8">자격증</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="depth_box">
+                            <p class="select_desc">상위분류를 선택해주세요.</p>
+                            <ul style="display:none;"> <!-- ul부터 히든 -->
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">전체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">리더쉽</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">경영</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">마케팅</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="depth_box">
+                            <p class="select_desc">하위분류가 없습니다.</p>
+                            <ul style="display:none;"> <!-- ul부터 히든 -->
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">전체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">리더쉽</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">경영</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="" name="">
+                                    <label for="">마케팅</label>
+                                </li>
+                            </ul>
+                        </div>
+				    </div>
+				    <!-- 00개의 검색결과가 있습니다. -->
+				    <p class="ex_srh_result"><b>550</b> 개의 검색결과가 있습니다.​</p>
+				    <!-- // 00개의 검색결과가 있습니다. -->
+                    <div class="srh_result_course">
+                        <ul class="tab_sub_sec tab4">
+                            <li>전체<span>(200)</span></li>
+                            <li>과정<span>(100)</span></li>
+                            <li>학습피스<span>(100)</span></li>
+                            <li>SME채널<span>(0)</span></li>
+                        </ul>
+                        <!-- 전체 -->
+                        <div class="tab_contents">
+                            <div class="course_multi_tab">                                
+                                <select class="select_box sel_cate">
+                                    <option value="">최신 순</option>
+                                    <option value="">좋아요 순</option>
+                                    <option value="">학습자 많은 순</option>
+                                </select>
+                            </div>                            
+                            <div class="course_list">
+                                <ul>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- 학습피스 관리자 등록(default) -->
+                                    <li class="learn_piece"> <!-- 학습피스 일 때 learn_piece 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // 학습피스 관리자 등록(default) -->
+                                    <!-- 학습피스 SME 등록 -->
+                                    <li class="learn_piece sme"> <!-- 학습피스 SME 등록 일 때 learn_piece, sme 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                        <div class="sme_name" style="background-image:url('../../images/sme_thumb.png')">SME 채널명</div>
+                                    </li>
+                                    <!-- // 학습피스 SME 등록 -->
+                                    <!-- SME 채널 -->
+                                    <li class="sme_channel"> <!-- SME 채널 일 때 sme_channel 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/sme_big_thumb.png')"></div>
+                                        <div class="course_desc">
+                                            <span class="channel_name">SME 채널명(한줄, 말줄임)</span>
+                                            <span class="tag_wrap">
+                                                <span class="i_tag">#경제동향</span>
+                                                <span class="i_tag">#경제</span>
+                                                <span class="i_tag">#경제지식</span>
+                                            </span>
+                                            <span class="subs_num"><b>구독자</b>1,301</span>
+                                            <div class="btn_subs">
+                                                <input type="checkbox" id="btnSubs" name="btnSubs">
+                                                <label for="btnSubs"><span class="i_text">구독</span></label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // SME 채널 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // 전체 -->
+                        <!-- 과정 -->
+                        <div class="tab_contents">
+                            <div class="course_multi_tab">
+                                <!-- 과정 유형 선택 -->
+                                <ul class="multi_course_type">
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType1" name="multiCourseType">
+                                        <label for="multiCourseType1">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType2" name="multiCourseType" checked>
+                                        <label for="multiCourseType2">집합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType3" name="multiCourseType">
+                                        <label for="multiCourseType3">플립러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType4" name="multiCourseType">
+                                        <label for="multiCourseType4">온라인</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType5" name="multiCourseType">
+                                        <label for="multiCourseType5">북러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType6" name="multiCourseType">
+                                        <label for="multiCourseType6">조합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType7" name="multiCourseType">
+                                        <label for="multiCourseType7">외부교육</label>
+                                    </li>
+                                </ul>
+                                <!-- // 과정 유형 선택 -->
+                                <select class="select_box sel_cate">
+                                    <option value="">최신 순</option>
+                                    <option value="">좋아요 순</option>
+                                    <option value="">학습자 많은 순</option>
+                                </select>
+                            </div>
+                            <div class="course_list">
+                                <ul>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                            <!-- 맛보기 / 좋아요 -->
+                                            <div class="course_opt">
+                                                <i class="i_bar"></i>
+                                                <button type="button" class="btn_view">맛보기</button>
+                                                <button type="button" class="btn_like on">좋아요</button> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 맛보기 / 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">집합교육&middot;과정분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // 과정 -->
+                        <!-- 학습피스 -->
+                        <div class="tab_contents">
+                            <div class="course_multi_tab">
+                                <!-- 과정 유형 선택 -->
+                                <ul class="multi_course_type">
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType1" name="multiCourseType">
+                                        <label for="multiCourseType1">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType2" name="multiCourseType" checked>
+                                        <label for="multiCourseType2">집합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType3" name="multiCourseType">
+                                        <label for="multiCourseType3">플립러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType4" name="multiCourseType">
+                                        <label for="multiCourseType4">온라인</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType5" name="multiCourseType">
+                                        <label for="multiCourseType5">북러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType6" name="multiCourseType">
+                                        <label for="multiCourseType6">조합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType7" name="multiCourseType">
+                                        <label for="multiCourseType7">외부교육</label>
+                                    </li>
+                                </ul>
+                                <!-- // 과정 유형 선택 -->
+                                <select class="select_box sel_cate">
+                                    <option value="">최신 순</option>
+                                    <option value="">좋아요 순</option>
+                                    <option value="">학습자 많은 순</option>
+                                </select>
+                            </div>
+                            <div class="course_list">
+                                <ul>
+                                    <!-- 학습피스 관리자 등록(default) -->
+                                    <li class="learn_piece"> <!-- 학습피스 일 때 learn_piece 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // 학습피스 관리자 등록(default) -->
+                                    <!-- 학습피스 SME 등록 -->
+                                    <li class="learn_piece sme"> <!-- 학습피스 SME 등록 일 때 learn_piece, sme 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                        <div class="sme_name" style="background-image:url('../../images/sme_thumb.png')">SME 채널명</div>
+                                    </li>
+                                    <!-- // 학습피스 SME 등록 -->
+                                    <!-- 학습피스 관리자 등록(default) -->
+                                    <li class="learn_piece"> <!-- 학습피스 일 때 learn_piece 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // 학습피스 관리자 등록(default) -->
+                                    <!-- 학습피스 SME 등록 -->
+                                    <li class="learn_piece sme"> <!-- 학습피스 SME 등록 일 때 learn_piece, sme 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
+                                            <!-- 좋아요 -->
+                                            <div class="favorite_box">
+                                                <span class="favor_num on">7</span> <!-- on 클래스 추가로 제어 -->
+                                            </div>
+                                            <!-- // 좋아요 -->
+                                        </div>
+                                        <div class="course_desc">
+                                            <span class="i_cate">동영상&middot;콘텐츠분류 1 depth</span>
+                                            <span class="i_subject">하루 한 문장! 미드로 배우는 영어회화</span>
+                                            <span class="i_date">2020.04.30</span>
+                                            <div class="i_cc">
+                                                <span class="i_view">30</span>
+                                                <span class="i_reply">10</span>
+                                            </div>
+                                        </div>
+                                        <div class="sme_name" style="background-image:url('../../images/sme_thumb.png')">SME 채널명</div>
+                                    </li>
+                                    <!-- // 학습피스 SME 등록 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // 학습피스 -->
+                        <!-- SME채널 -->
+                        <div class="tab_contents">
+                            <div class="course_multi_tab">
+                                <!-- 과정 유형 선택 -->
+                                <ul class="multi_course_type">
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType1" name="multiCourseType">
+                                        <label for="multiCourseType1">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType2" name="multiCourseType" checked>
+                                        <label for="multiCourseType2">집합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType3" name="multiCourseType">
+                                        <label for="multiCourseType3">플립러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType4" name="multiCourseType">
+                                        <label for="multiCourseType4">온라인</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType5" name="multiCourseType">
+                                        <label for="multiCourseType5">북러닝</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType6" name="multiCourseType">
+                                        <label for="multiCourseType6">조합교육</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="multiCourseType7" name="multiCourseType">
+                                        <label for="multiCourseType7">외부교육</label>
+                                    </li>
+                                </ul>
+                                <!-- // 과정 유형 선택 -->
+                                <select class="select_box sel_cate">
+                                    <option value="">최신 순</option>
+                                    <option value="">좋아요 순</option>
+                                    <option value="">학습자 많은 순</option>
+                                </select>
+                            </div>
+                            <div class="course_list">
+                                <ul>
+                                    <!-- SME 채널 -->
+                                    <li class="sme_channel"> <!-- SME 채널 일 때 sme_channel 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/sme_big_thumb.png')"></div>
+                                        <div class="course_desc">
+                                            <span class="channel_name">SME 채널명(한줄, 말줄임)</span>
+                                            <span class="tag_wrap">
+                                                <span class="i_tag">#경제동향</span>
+                                                <span class="i_tag">#경제</span>
+                                                <span class="i_tag">#경제지식</span>
+                                            </span>
+                                            <span class="subs_num"><b>구독자</b>1,301</span>
+                                            <div class="btn_subs">
+                                                <input type="checkbox" id="btnSubs" name="btnSubs">
+                                                <label for="btnSubs"><span class="i_text">구독</span></label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // SME 채널 -->
+                                    <!-- SME 채널 -->
+                                    <li class="sme_channel"> <!-- SME 채널 일 때 sme_channel 클래스 추가 -->
+                                        <div class="thumb_box" style="background-image:url('../../images/sme_big_thumb.png')"></div>
+                                        <div class="course_desc">
+                                            <span class="channel_name">SME 채널명(한줄, 말줄임)</span>
+                                            <span class="tag_wrap">
+                                                <span class="i_tag">#경제동향</span>
+                                                <span class="i_tag">#경제</span>
+                                                <span class="i_tag">#경제지식</span>
+                                            </span>
+                                            <span class="subs_num"><b>구독자</b>1,301</span>
+                                            <div class="btn_subs">
+                                                <input type="checkbox" id="btnSubs" name="btnSubs">
+                                                <label for="btnSubs"><span class="i_text">구독</span></label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- // SME 채널 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- // SME채널 -->
+                    </div>
+				</div>
+			</div>
+        </div>
+        <!-- // Container -->
+        <!-- Footer -->
+		<div class="footer">
+            <div class="inner">
+                <div class="ft_inner">
+                    <ul class="fnb">
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보취급방침</a></li>
+                        <li><a href="#none">이용안내</a></li>
+                        <li><a href="#none">사이트맵</a></li>
+                    </ul>
+                    <span class="ft_logo blind">learning factory</span>
+                    <p class="i_address"><span>(06655) 서울시 서초구 반포대로 121</span><span>대표전화 : (02) 3495-1000~4</span></p>
+                    <p class="copy">©1997. SaRang Church. All Rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // Footer -->
+        <!-- ToTop -->
+        <button type="button" class="go_top">TOP</button>
+		<!-- // ToTop -->
+    </div>
+    <!-- // Wrap -->
+<script>
+$(document).ready(function() {
+    /* SME 채널 구독 버튼 텍스트 */
+    $("#btnSubs").click(function(){
+        if($("#btnSubs").prop("checked")) {
+            $(this).next().children(".i_text").text("구독중")
+        } else {
+            $(this).next().children(".i_text").text("구독")
+        }
+    });
+});
+</script>
+</body>
+</html>
