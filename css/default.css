@@ -243,9 +243,13 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 
 /* Login - Find id */
 .login_wrap .login_box .login_content .label {display:block;font-size:17px;font-weight:500;color:#333333;line-height:1;}
-.login_wrap .login_box .login_content.find_id .input_box {margin-top:51px;}
+.login_wrap .login_box .login_content.find_id .input_box {margin-top:48px;}
 .login_wrap .login_box .login_content.find_id .input_box + .input_box {margin-top:48px;}
 .login_wrap .login_box .login_content.find_id .btn_box {margin-top:49px;}
+.login_wrap .tab_find {margin-top:53px;overflow:hidden;}
+.login_wrap .tab_find li {float:left;width:190px;height:50px;line-height:48px;font-size:17px;color:#666666;cursor:pointer;text-align:center;border-radius:4px;border:1px solid #cccccc;background-color:#ffffff;}
+.login_wrap .tab_find li:first-child {margin-right:20px;}
+.login_wrap .tab_find li.on {background-color:#ea563a;border-color:#ea563a;color:#ffffff;}
 
 /* Login - Find id result */
 .login_wrap .login_box .login_content.find_id_result .result_desc {margin-top:46px;font-size:17px;font-weight:500;color:#333333;}
