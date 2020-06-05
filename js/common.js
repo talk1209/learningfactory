@@ -1,4 +1,59 @@
 $(document).ready(function() {
+    //PC GNB
+    var snb_bg = $('#snb_bg')
+    var timeout = 0;
+    var hovering = false;
+    snb_bg.hide();
+    
+    $('#gnb')
+        .on("mouseenter", function () {
+        hovering = true;
+        // Open the snb_bg
+        $('#snb_bg')
+            .stop(true, true)
+            .slideDown('fast');
+ 
+        if (timeout > 0) {
+            clearTimeout(timeout);
+        }
+    })
+        .on("mouseleave", function () {
+        resetHover();
+    });
+ 
+    $("#snb_bg")
+        .on("mouseenter", function () {
+        // reset flag
+        hovering = true;
+        // reset timeout
+        startTimeout();
+    })
+        .on("mouseleave", function () {
+        // The timeout is needed incase you go back to the main menu
+        resetHover();
+    });
+ 
+    function startTimeout() {
+        // This method gives you 1 second to get your mouse to the sub-menu
+        timeout = setTimeout(function () {
+            closeMenu();
+        }, 'fast');
+    };
+ 
+    function closeMenu() {
+        // Only close if not hovering
+        if (!hovering) {
+            $('#snb_bg').stop(true, true).slideUp('fast');
+        }
+    };
+ 
+    function resetHover() {
+        // Allow the menu to close if the flag isn't set by another event
+        hovering = false;
+        // Set the timeout
+        startTimeout();
+    };
+    
     /* Sidebar Mouseover Event */
     $(".learning_sidebar li").mouseover(function(){
         $(this).addClass("on");
