@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">수강신청</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+           
+            <!-- 수강신청 공통 STEP -->
+            <div class="apply_step">
+                <ol>
+                    <li> <!-- STEP별 on클래스 추가 -->
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 1</b>
+                        <span class="desc">개인정보 수집/활용 동의</span>
+                    </li>
+                    <li class="on">
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 2</b>
+                        <span class="desc">추가정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 3</b>
+                        <span class="desc">결재자 지정</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 4</b>
+                        <span class="desc">수강신청 완료</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- // 수강신청 공통 STEP -->
+            
+            <!-- STEP2 추가정보 입력 -->
+            <div class="pop_apply_step2">
+                <!-- form -->
+                <div class="form_box tbl_style">
+                    <div class="form_group">
+                        <div class="title">교재 배송지</div>
+                        <div class="cont">
+                            <div class="srh_address">
+                                <button type="button" class="btn_style2 btn_gray">우편번호 검색</button>
+                                <p class="addr_cont">서울시 서초구 사임당로 64, 4층(서초동, 교대벤처타워) ㈜러닝팩토리</p>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="이름을 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_resident">
+                        <div class="title">주민등록번호</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" maxlength="6" class="onlyNum ip_regi_front" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="password" maxlength="7" class="onlyNum ip_regi_back" onkeyup="onlyNum()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_cell">
+                        <div class="title">휴대폰</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" maxlength="3" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_email">
+                        <div class="title">이메일</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <select class="select_box">
+                                    <option value="">직접입력</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">hanmail.net</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- form -->
+                <!-- 설문영역 -->
+                <div class="survey_box">
+                    <div class="title_wrap">
+                        <p class="title">1. 문항이 노출됩니다.</p>
+                    </div>
+                    <ol>
+                        <li>
+                            <input type="radio" id="surveyCont1" name="surveyCont">
+                            <label for="surveyCont1">
+                                <span class="i_num">1</span>
+                                <p class="i_cont">보기내용이 노출됩니다.</p>
+                                <span class="ico_fake"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="surveyCont2" name="surveyCont">
+                            <label for="surveyCont2">
+                                <span class="i_num">2</span>
+                                <p class="i_cont">보기내용이 노출됩니다.</p>
+                                <span class="ico_fake"></span>
+                            </label>
+                        </li>
+                    </ol>
+                </div>
+                <!-- // 설문영역 -->
+                <!-- 설문영역 -->
+                <div class="survey_box">
+                    <div class="title_wrap">
+                        <p class="title">2. 문항이 노출됩니다.</p>
+                    </div>
+                    <div class="textarea_wrap">
+                        <textarea class="textarea" placeholder="내용 입력"></textarea>
+                    </div>
+                </div>
+                <!-- // 설문영역 -->
+            </div>            
+            <!-- // STEP2 추가정보 입력 -->
+            
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_gray2">이전</button>
+                <button type="button" class="btn_xs btn_lf">다음</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+	/* 주민등록번호 - Input maxlength next focus */
+	$(".ip_regi_front").keyup (function () {
+		var charLimit = $(this).attr("maxlength");
+		if (this.value.length >= charLimit) {
+			$(this).parent().next().next().children('.ip_regi_back').focus();
+			return false;
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">수강신청</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+           
+            <!-- 수강신청 공통 STEP -->
+            <div class="apply_step">
+                <ol>
+                    <li class="on"> <!-- STEP별 on클래스 추가 -->
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 1</b>
+                        <span class="desc">개인정보 수집/활용 동의</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 2</b>
+                        <span class="desc">추가정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 3</b>
+                        <span class="desc">결재자 지정</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 4</b>
+                        <span class="desc">수강신청 완료</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- // 수강신청 공통 STEP -->
+            
+            <!-- STEP1 개인정보 수집/활용 동의 -->
+            <div class="pop_apply_step1">
+                <div class="agree_cont">
+                    <p class="chk_desc"><span class="dot"></span>동의 내용을 확인하신 후 ‘동의합니다’의 체크 여부를 선택해 주시기 바랍니다.</p>
+                    <div class="agree_box_wrap">
+                        <div class="agree_box">
+                            <span class="title">개인정보 수집·이용·제공 동의</span>
+                            <div class="terms_box pre_line">회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+                                - 수집항목 : 이름, 생년월일, 성별, 로그인ID, 비밀번호, 자택 전화번호, 자택 주소, 휴대전화번호, 이메일, 회사명, 사업자등록번호, 회사전화번호, 회사주소, 우편물수신주소, 서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보, 학습이력정보,
+                                - 개인정보 수집방법 : 홈페이지(회원가입,수강신청,이벤트,게시판 등), 전화/팩스를 통한 회원가입, 상담게시판 회사는 환급과정(사업주지원과정, 근로자직무능력향상) 신청시 회원가입 정보 이외에 추가적인 개인정보를 수집하고 있습니다.
+                            </div>
+                            <div class="chk_box">
+                                <input type="checkbox" id="termsAgree1" name="termsAgree1">
+                                <label for="termsAgree1"><span class="ico_fake"></span>동의합니다</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <!-- // STEP1 개인정보 수집/활용 동의 -->
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_white">취소</button>
+                <button type="button" class="btn_xs btn_lf">다음</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+</body>
+</html>

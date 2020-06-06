@@ -321,3 +321,18 @@ function onlyNum() {
         } 
     });
 }
+
+// autocomplete
+function lf_org_ac() {
+    var name = ["김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]"];
+
+    $(".lf_org_ac").autocomplete({
+        source: name,
+        select: function(event, ui) {
+            console.log(ui.item);
+        },
+        focus: function(event, ui) {
+            return false;
+        }
+    });
+}
