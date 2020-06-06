@@ -509,6 +509,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .form_box.tbl_style .form_group .cont .srh_address .addr_cont {padding-top:4px;font-size:15px;color:#333333;}
 .form_box.tbl_style .form_group.form_resident .input_box {float:left;width:120px;}
 .form_box.tbl_style .form_group.form_cell .input_box {float:left;width:80px;}
+.form_box.tbl_style .form_group.form_cell .input_box input {text-align:center;}
 .form_box.tbl_style .form_group.form_email .input_box {float:left;width:190px;}
 .form_box.tbl_style .form_group.form_email .selectric-select_box {float:left;margin-left:10px;width:190px;}
 .form_box.tbl_style .form_group.form_approval .selectric-select_box {float:left;width:288px;}
@@ -516,6 +517,10 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .form_box.tbl_style .form_group.form_learner_apply .btn_wrap {font-size:0;overflow:hidden;}
 .form_box.tbl_style .form_group.form_learner_apply .btn_wrap .learner_upload {margin-left:10px;padding-left:34px;text-align:left;background:url('../images/ico_upload.png') no-repeat 14px 50%;border:1px solid #cccccc;color:#666666;}
 .form_box.tbl_style .form_group.form_learner_apply .info_opt {margin-top:6px;font-size:14px;color:#666666;}
+.form_box.tbl_style .form_group.form_calendar .ip_calendar {float:left;margin-right:9px;width:154px;}
+.form_box.tbl_style .form_group.form_calendar .ip_time {float:left;padding:0 !important;width:35px;text-align:center;}
+.form_box.tbl_style .form_group.form_calendar .i_colon {display:block;float:left;width:12px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
+.form_box.tbl_style .form_group.form_calendar .i_dash {display:block;float:left;width:30px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
 
 /* 설문조사 */
 .layer_popup .survey_box {margin-top:40px;}
@@ -531,12 +536,12 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .layer_popup .survey_box .textarea_wrap {padding:5px 10px;border-top:1px solid #cccccc;}
 .layer_popup .survey_box .textarea_wrap textarea {height:100px;}
 
-/* STEP3 */
+/* 수강신청 - STEP3 */
 .layer_popup .pop_apply_step3 {min-height:402px;}
 .layer_popup .approval_desc {position:relative;margin-top:6px;padding-left:22px;font-size:14px;color:#333333;}
 .layer_popup .approval_desc .ast {position:absolute;top:0;left:9px;font-size:17px;color:#ea563a;}
 
-/* STEP4 */
+/* 수강신청 - STEP4 */
 .layer_popup .pop_apply_step4 {min-height:452px;}
 .layer_popup .pop_apply_step4 .confirm_box {padding-top:43px;text-align:center;}
 .layer_popup .pop_apply_step4 .confirm_box .confirm_course {font-size:20px;font-weight:400;color:#333333;line-height:29px;}
@@ -547,6 +552,12 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .layer_popup .pop_apply_step4 .standby_box p b {font-weight:500;color:#ea563a;}
 .layer_popup .confirm_desc {position:relative;margin-top:16px;padding-left:21px;font-size:13px;color:#666666;line-height:20px;}
 .layer_popup .confirm_desc span {display:block;position:absolute;top:3px;left:3px;width:13px;height:13px;background:url('../images/ico_info_gray.png') no-repeat;}
+
+/* 신규차수 신청 - STEP3 */
+.layer_popup .pop_new_apply_step3 {min-height:402px;}
+
+/* 신규차수 신청 - STEP4 */
+.layer_popup .pop_new_apply_step4 {min-height:402px;}
 
 /* ui-datepicker Reset */
 input.comm_calendar {cursor:pointer;background:url('../images/ico_calendar.png') no-repeat 127px 50%;}

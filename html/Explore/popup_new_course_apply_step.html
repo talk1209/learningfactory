@@ -33,7 +33,7 @@
 <div class="layer_popup visible"> <!-- visible class add or remove -->
     <div class="popcontainer" style="width:900px;">
         <div class="pop_title">
-            <span class="title">수강신청</span>
+            <span class="title">신규차수 신청</span>
             <button type="button" class="pop_close blind">닫기</button>
         </div>
         <div class="pop_inner">
@@ -65,7 +65,7 @@
             </div>
             <!-- // 수강신청 공통 STEP -->
             
-            <!-- STEP1 개인정보 수집/활용 동의 
+            <!-- STEP1 개인정보 수집/활용 동의 -->
             <div class="pop_new_apply_step1">
                 <div class="agree_cont">
                     <p class="chk_desc"><span class="dot"></span>동의 내용을 확인하신 후 ‘동의합니다’의 체크 여부를 선택해 주시기 바랍니다.</p>
@@ -86,9 +86,9 @@
                     </div>
                 </div>
             </div>
-             // STEP1 개인정보 수집/활용 동의 -->
+            <!-- // STEP1 개인정보 수집/활용 동의 -->
              
-            <!-- STEP2 개인정보 수집/활용 동의 -->
+            <!-- STEP2 차수정보 입력
             <div class="pop_new_apply_step2">
                 <div class="form_box tbl_style">
                     <div class="form_group">
@@ -103,12 +103,6 @@
                             <p class="val_cont">02차수</p>
                         </div>
                     </div>
-<style>
-.form_box.tbl_style .form_group.form_calendar .ip_calendar {float:left;margin-right:9px;width:154px;}
-.form_box.tbl_style .form_group.form_calendar .ip_time {float:left;padding:0 !important;width:35px;text-align:center;}
-.form_box.tbl_style .form_group.form_calendar .i_colon {display:block;float:left;width:12px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
-.form_box.tbl_style .form_group.form_calendar .i_dash {display:block;float:left;width:30px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
-</style>
                     <div class="form_group form_calendar">
                         <div class="title">학습기간<i class="ast">*</i></div>
                         <div class="cont">
@@ -155,9 +149,95 @@
                     </div>
                 </div>
             </div>
-            <!-- // STEP2 개인정보 수집/활용 동의 -->
+             // STEP2 차수정보 입력 -->
+             
+            <!-- STEP3 추가정보 입력 
+            <div class="pop_new_apply_step3">
+                <div class="form_box tbl_style">
+                    <div class="form_group form_cell">
+                        <div class="title">휴대폰</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" maxlength="3" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_email">
+                        <div class="title">이메일</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <span class="i_at">@</span>
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <select class="select_box">
+                                    <option value="">직접입력</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">hanmail.net</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+             // STEP3 추가정보 입력 -->
+            
+            <!-- STEP4 결재자 지정
+            <div class="pop_new_apply_step4">
+                <div class="form_box tbl_style">
+                    <div class="form_group form_approval">
+                        <div class="title">1차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="firstApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="firstDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_approval">
+                        <div class="title">2차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="secondApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="secondDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="approval_desc"><i class="ast">*</i>결재라인 : 결재라인 안내문구가 노출됩니다.</p>
+            </div>            
+             // STEP4 결재자 지정 -->
             <div class="btn_box">
+                <!-- 취소 
                 <button type="button" class="btn_xs btn_white">취소</button>
+                // 취소 -->
+                <button type="button" class="btn_xs btn_gray2">이전</button>
                 <button type="button" class="btn_xs btn_lf">다음</button>
             </div>
             
@@ -165,6 +245,34 @@
     </div>
 </div>
 <script>
+$(document).ready(function() {
+    /* 1차결재 직접입력 */
+    $("#firstApproval").on("change", function(){
+        var state = $('#firstApproval option:selected').val();
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state == 'directInput' ) {
+            $('#firstDirectInput').prop("disabled", false);
+            $('#firstDirectInput').val('');
+        } else {
+            $('#firstDirectInput').prop("disabled", true);
+            $('#firstDirectInput').val('');
+        }
+    });
+    /* 2차결재 직접입력 */
+    $("#secondApproval").on("change", function(){
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state2 == 'directInput' ) {
+            $('#secondDirectInput').prop("disabled", false);
+            $('#secondDirectInput').val('');
+        } else {
+            $('#secondDirectInput').prop("disabled", true);
+            $('#secondDirectInput').val('');
+        }
+    });
+});
+/* 결재 이름 자동완성 */
+lf_org_ac();
+
 /* datepicker Calendar */
 startDate(); // datepicker start date
 endDate(); // datepicker end date

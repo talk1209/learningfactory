@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">신규차수 신청</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+           
+            <!-- 수강신청 공통 STEP -->
+            <div class="apply_step">
+                <ol>
+                    <li> <!-- STEP별 on클래스 추가 -->
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 1</b>
+                        <span class="desc">개인정보 수집/활용 동의</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 2</b>
+                        <span class="desc">차수정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 3</b>
+                        <span class="desc">추가정보 입력</span>
+                    </li>
+                    <li class="on">
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 4</b>
+                        <span class="desc">결재자 지정</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- // 수강신청 공통 STEP -->
+            
+            <!-- STEP4 결재자 지정 -->
+            <div class="pop_new_apply_step4">
+                <div class="form_box tbl_style">
+                    <div class="form_group form_approval">
+                        <div class="title">1차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="firstApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="firstDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_approval">
+                        <div class="title">2차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="secondApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="secondDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="approval_desc"><i class="ast">*</i>결재라인 : 결재라인 안내문구가 노출됩니다.</p>
+            </div>            
+            <!-- // STEP4 결재자 지정 -->
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_gray2">이전</button>
+                <button type="button" class="btn_xs btn_lf">신청 완료</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    /* 1차결재 직접입력 */
+    $("#firstApproval").on("change", function(){
+        var state = $('#firstApproval option:selected').val();
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state == 'directInput' ) {
+            $('#firstDirectInput').prop("disabled", false);
+            $('#firstDirectInput').val('');
+        } else {
+            $('#firstDirectInput').prop("disabled", true);
+            $('#firstDirectInput').val('');
+        }
+    });
+    /* 2차결재 직접입력 */
+    $("#secondApproval").on("change", function(){
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state2 == 'directInput' ) {
+            $('#secondDirectInput').prop("disabled", false);
+            $('#secondDirectInput').val('');
+        } else {
+            $('#secondDirectInput').prop("disabled", true);
+            $('#secondDirectInput').val('');
+        }
+    });
+});
+/* 결재 이름 자동완성 */
+lf_org_ac();
+</script>
+</body>
+</html>

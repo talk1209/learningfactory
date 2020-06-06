@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">신규차수 신청</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+           
+            <!-- 수강신청 공통 STEP -->
+            <div class="apply_step">
+                <ol>
+                    <li class="on"> <!-- STEP별 on클래스 추가 -->
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 1</b>
+                        <span class="desc">개인정보 수집/활용 동의</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 2</b>
+                        <span class="desc">차수정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 3</b>
+                        <span class="desc">추가정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 4</b>
+                        <span class="desc">결재자 지정</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- // 수강신청 공통 STEP -->
+            
+            <!-- STEP1 개인정보 수집/활용 동의 -->
+            <div class="pop_new_apply_step1">
+                <div class="agree_cont">
+                    <p class="chk_desc"><span class="dot"></span>동의 내용을 확인하신 후 ‘동의합니다’의 체크 여부를 선택해 주시기 바랍니다.</p>
+                    <div class="agree_box_wrap">
+                        <div class="agree_box">
+                            <span class="title">개인정보 수집·이용·제공 동의</span>
+                            <div class="terms_box pre_line">수집하는 개인정보의 항목 : 회사는 아래 이용목적에 따라 기본적인 회원정보 외에 개인정보를 추가 수집하고자 합닌다.
+                            - 추가 수집항목 : 휴대폰 번호, 이메일 주소
+
+                            개인정보의 수집 및 이용목적 : 회사는 수집한 개인정보를 다음의 목적을 위해 활용합ㄴ니다.
+                            - 휴대폰 번호, 이메일 주소 : 신청하신 교육에 대한 일정 안내용
+                            </div>
+                            <div class="chk_box">
+                                <input type="checkbox" id="termsAgree1" name="termsAgree1">
+                                <label for="termsAgree1"><span class="ico_fake"></span>동의합니다</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // STEP1 개인정보 수집/활용 동의 -->
+            
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_white">취소</button>
+                <button type="button" class="btn_xs btn_lf">다음</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+</body>
+</html>
