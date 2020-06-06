@@ -488,11 +488,14 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"]:checked + label {background-color:#ea563a;color:#ffffff;}
 .layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"]:checked + label span.ico_fake {background:url('../images/chk_on2.png') no-repeat;}
 
+/* form tbl style */
 .form_box.tbl_style {margin-top:50px;}
 .form_box.tbl_style .form_group {display:table;width:100%;border-bottom:1px solid #cccccc;}
 .form_box.tbl_style .form_group:first-child {border-top:1px solid #cccccc;}
 .form_box.tbl_style .form_group .title {display:table-cell;padding:0 20px;width:170px;font-size:15px;font-weight:500;color:#333333;background-color:#f5f5f5;vertical-align:middle;}
+.form_box.tbl_style .form_group .title .ast {margin-left:6px;font-size:15px;font-weight:500;color:#ff0000;}
 .form_box.tbl_style .form_group .cont {display:table-cell;padding:10px;width:650px;}
+.form_box.tbl_style .form_group .cont .val_cont {font-size:15px;color:#333333;}
 .form_box.tbl_style .form_group .cont .input_box input {position:relative;padding:0 10px;height:35px;line-height:35px;font-size:14px;color:#999999;}
 .form_box.tbl_style .form_group .cont .selectric-select_box .selectric {height:35px;}
 .form_box.tbl_style .form_group .cont .selectric-select_box .selectric .label {margin:0 32px 0 10px;height:35px;line-height:33px;font-size:14px;color:#999999;}
@@ -510,6 +513,9 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .form_box.tbl_style .form_group.form_email .selectric-select_box {float:left;margin-left:10px;width:190px;}
 .form_box.tbl_style .form_group.form_approval .selectric-select_box {float:left;width:288px;}
 .form_box.tbl_style .form_group.form_approval .input_box {float:left;margin-left:13px;width:288px;}
+.form_box.tbl_style .form_group.form_learner_apply .btn_wrap {font-size:0;overflow:hidden;}
+.form_box.tbl_style .form_group.form_learner_apply .btn_wrap .learner_upload {margin-left:10px;padding-left:34px;text-align:left;background:url('../images/ico_upload.png') no-repeat 14px 50%;border:1px solid #cccccc;color:#666666;}
+.form_box.tbl_style .form_group.form_learner_apply .info_opt {margin-top:6px;font-size:14px;color:#666666;}
 
 /* 설문조사 */
 .layer_popup .survey_box {margin-top:40px;}
@@ -541,6 +547,66 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .layer_popup .pop_apply_step4 .standby_box p b {font-weight:500;color:#ea563a;}
 .layer_popup .confirm_desc {position:relative;margin-top:16px;padding-left:21px;font-size:13px;color:#666666;line-height:20px;}
 .layer_popup .confirm_desc span {display:block;position:absolute;top:3px;left:3px;width:13px;height:13px;background:url('../images/ico_info_gray.png') no-repeat;}
+
+/* ui-datepicker Reset */
+input.comm_calendar {cursor:pointer;background:url('../images/ico_calendar.png') no-repeat 127px 50%;}
+.comm_calendar {position:relative;}
+.comm_calendar.ui-datepicker {display:table;padding:0 12px 0;width:238px;background:#fff;-webkit-box-shadow: 5px 5px 6px 1px rgba(0,0,0,.1);
+box-shadow: 5px 5px 6px 1px rgba(0,0,0,.1);}
+.comm_calendar .ui-datepicker,.comm_calendar .ui-datepicker table,.comm_calendar .ui-datepicker tr,.comm_calendar .ui-datepicker td,.comm_calendar .ui-datepicker th {margin:0;padding:0;border:none;border-spacing:0;}
+
+/* Calendar Wrapper */
+.comm_calendar .ui-datepicker {display:table-cell !important;padding:0;width:100%;vertical-align:middle;cursor:default;text-transform:uppercase;font-size:12px;background:transparent !important;}
+
+/* Calendar Header */
+.comm_calendar .ui-datepicker-header {margin-bottom:14px;padding-top:16px;}
+.comm_calendar .ui-datepicker-title { padding-left:38px;text-align:left; }
+
+/* Month */
+.comm_calendar .ui-datepicker-month {font-size:16px;font-weight:700;color:#111111;border:0;line-height:1;}
+
+/* Year */
+.comm_calendar .ui-datepicker-year {font-size:16px;font-weight:700;color:#111111;border:0;line-height:1;}
+
+/* Prev Next Month */
+.comm_calendar .ui-datepicker-prev,.comm_calendar .ui-datepicker-next {position:absolute;padding:5px;cursor:pointer;}
+.comm_calendar .ui-datepicker-prev {top:16px;left:17px;}
+.comm_calendar .ui-datepicker-next {top:16px;left:119px;}
+.comm_calendar .ui-datepicker-prev span,.comm_calendar .ui-datepicker-next span {display:block;width:9px;height:15px;text-indent:-9999px;background-size:cover !important;}
+.comm_calendar .ui-datepicker-prev span {background:url('../images/ico_calendar_prev.png') no-repeat center top;}
+.comm_calendar .ui-datepicker-next span {background:url('../images/ico_calendar_next.png') no-repeat center top;}
+
+/* Calendar "Days" */
+.comm_calendar .ui-datepicker-calendar {margin:0 0 15px;width:100%;}
+.comm_calendar .ui-datepicker-calendar th {padding-bottom:3px;font-size:14px;font-weight:400;color:#666666;text-align:center;}
+.comm_calendar .ui-datepicker-calendar th:first-child span {color:#c60c0c;}
+.comm_calendar .ui-datepicker-calendar th:last-child span {color:#1672cd;}
+.comm_calendar .ui-datepicker-calendar th span {font-size:14px;font-weight:400;color:#666666;}
+.comm_calendar .ui-datepicker-calendar td {padding:1px 0;width:auto;font-size:12px;font-weight:400;text-align:center;}
+.comm_calendar .ui-datepicker-calendar .ui-state-default {display:block;margin:0 auto;width:25px;height:25px;line-height:25px;font-size:12px;font-weight:400;color:#1f1f1f;border-radius:50%;outline:none;text-decoration:none;background:#fff;}
+.comm_calendar .ui-datepicker-calendar .ui-state-default.ui-state-highlight.ui-state-active {color:#1f1f1f;background:none;border-radius:50%;}
+
+/* ui-datepicker-week-end */
+.comm_calendar .ui-datepicker-calendar .ui-datepicker-week-end:first-child a {color:#ef5959;}
+.comm_calendar .ui-datepicker-calendar .ui-datepicker-week-end:last-child a {color:#3b6af1;}
+    
+/* Day Active State*/
+.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {width:25px;height:25px;line-height:25px;color:#ffffff !important;background-color:#ea563a !important;}
+
+
+/* Other Months Days*/
+.comm_calendar .ui-datepicker-other-month .ui-state-default {color:#999999 !important;}
+.comm_calendar .ui-datepicker-year:after {content:'.';}
+
+.comm_calendar .ui-state-disabled .ui-state-default {color:#999999 !important;background:none;}
+.comm_calendar .ui-state-disabled.ui-datepicker-week-end:first-child .ui-state-default {color:#c60c0c;}
+.comm_calendar .ui-state-disabled.ui-datepicker-week-end:last-child .ui-state-default {color:#3b6af1}
+
+/* Move Today Button */
+.ui-datepicker-current {display:none;}
+
+/* Datepicker Close */
+.comm_calendar .ui-datepicker-close {display:block;position:absolute;top:20px;right:19px;width:17px;height:17px;background:url('../images/ico_calendar_close.png') no-repeat 0 0;font-size:0;text-indent:-999em;}
 
 /* Footer */
 .footer {border-top:1px solid #ff0000;}
@@ -592,7 +658,7 @@ button.btn_xl {width:100%;}
 button.btn_devide {margin-left:4.761904%;width:47.619047%;}
 button.btn_devide:first-child {margin-left:0;}
 button.btn_style1 {padding:0 23px;height:35px;line-height:33px;font-size:14px;color:#666666;border-radius:4px;}
-button.btn_style2 {padding:0 15px;height:30px;line-height:28px;font-size:13px;font-weight:500;color:#666666;border-radius:4px;}
+button.btn_style2 {padding:0 15px;height:30px;line-height:28px;font-size:13px;font-weight:500;border-radius:4px;}
 
 
 /* Btn style - Color */
