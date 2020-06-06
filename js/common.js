@@ -311,7 +311,7 @@ function subSecTab() {
         $tab_contentsOb.eq(idx).show();       
     });
 }
-// 숫자만
+// 정규식 - 숫자만
 function onlyNum() {
     $( '.onlyNum' ).on("keyup blur", function() {
         var rgEx = /^[0-9]*$/g;
@@ -334,5 +334,73 @@ function lf_org_ac() {
         focus: function(event, ui) {
             return false;
         }
+    });
+}
+
+/* Calendar Start & End  */
+function startDate(){
+    //var today = new Date();
+    //var tomorrow = new Date(Date.parse(today) + (1000 * 60 * 60 * 24));
+    //datepicker    
+    $('.start_date').datepicker({
+        inline: true,
+        firstDay: 0,
+        showOtherMonths: true,
+        showMonthAfterYear: true,
+        dateFormat: "yy.mm.dd",
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        monthNames:  [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+        monthNamesShort: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+        //changeYear: true, //콤보박스에서 년 선택 가능
+        //changeMonth: true, //콤보박스에서 월 선택 가능
+        beforeShow: function(input, inst) {            
+            $('#ui-datepicker-div').addClass('comm_calendar');
+        },
+        closeText:'닫기',
+        showButtonPanel: true,
+        //minDate: today,
+        onClose: function( selectedDate ) {
+            //$('#ui-datepicker-div').removeClass('month_calendar');
+            // 시작일 datepicker가 닫힐때
+            // 종료일의 선택할수있는 최소 날짜(minDate)를 선택한 시작일로 지정
+            $('.end_date').datepicker( "option", "minDate", selectedDate );
+                
+        }, //onClose
+        onSelect: function (dateText, inst) { //date select
+            //$('#ui-datepicker-div').removeClass('month_calendar');
+            $('.comm_calendar').addClass('checked');            
+        } //onSelect
+    });    
+}
+function endDate(){
+    //datepicker    
+    $('.end_date').datepicker({
+        inline: true,
+        firstDay: 0,
+        showOtherMonths: true,
+        showMonthAfterYear: true,
+        dateFormat: "yy.mm.dd",
+        yearSuffix: "년",
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        monthNames:  [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
+        monthNamesShort: [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
+        //changeYear: true, //콤보박스에서 년 선택 가능
+        //changeMonth: true, //콤보박스에서 월 선택 가능
+        beforeShow: function(input, inst) {            
+            $('#ui-datepicker-div').addClass('comm_calendar');
+        },
+        closeText:'닫기',
+        showButtonPanel: true,
+        //minDate: today,
+        onClose: function( selectedDate ) {
+            // 시작일 datepicker가 닫힐때
+            // 종료일의 선택할수있는 최소 날짜(minDate)를 선택한 시작일로 지정
+            $('.start_date').datepicker( "option", "maxDate", selectedDate );   
+            //$('#ui-datepicker-div').removeClass('month_calendar');
+        }, //onClose
+        onSelect: function (dateText, inst) { //date select
+            $('.comm_calendar').addClass('checked');
+            //$('#ui-datepicker-div').removeClass('month_calendar');
+        } //onSelect
     });
 }
