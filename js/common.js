@@ -380,10 +380,9 @@ function endDate(){
         showOtherMonths: true,
         showMonthAfterYear: true,
         dateFormat: "yy.mm.dd",
-        yearSuffix: "년",
         dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-        monthNames:  [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
-        monthNamesShort: [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
+        monthNames:  [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+        monthNamesShort: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
         //changeYear: true, //콤보박스에서 년 선택 가능
         //changeMonth: true, //콤보박스에서 월 선택 가능
         beforeShow: function(input, inst) {            
