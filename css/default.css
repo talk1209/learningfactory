@@ -551,10 +551,14 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .form_box.tbl_style .form_group.form_approval .selectric-select_box {float:left;width:288px;}
 .form_box.tbl_style .form_group.form_approval .input_box {float:left;margin-left:13px;width:288px;}
 .form_box.tbl_style .form_group.form_learner_apply .btn_wrap {font-size:0;overflow:hidden;}
-.form_box.tbl_style .form_group.form_learner_apply .btn_wrap .learner_upload {margin-left:10px;padding-left:34px;text-align:left;background:url('../images/ico_upload.png') no-repeat 14px 50%;border:1px solid #cccccc;color:#666666;}
+.form_box.tbl_style .form_group.form_learner_apply .btn_wrap .btn_learner_upload {margin-left:10px;padding-left:34px;text-align:left;background:url('../images/ico_upload.png') no-repeat 14px 50%;border:1px solid #cccccc;color:#666666;}
 .form_box.tbl_style .form_group.form_learner_apply .info_opt {margin-top:6px;font-size:14px;color:#666666;}
 .form_box.tbl_style .form_group.form_calendar .ip_calendar {float:left;margin-right:9px;width:154px;}
-.form_box.tbl_style .form_group.form_calendar .ip_time {float:left;padding:0 !important;width:35px;text-align:center;}
+.form_box.tbl_style .form_group.form_calendar .selectric-ip_time {float:left;padding:0 !important;width:50px;text-align:left;}
+.form_box.tbl_style .form_group.form_calendar .selectric-ip_time .selectric .label {margin:0 5px 0 7px;}
+.form_box.tbl_style .form_group.form_calendar .selectric-ip_time .selectric .button {right:5px;background-size:auto 5px !important;}
+.form_box.tbl_style .form_group.form_calendar .selectric-ip_time .selectric-items .selectric-scroll {max-height:174px;}
+.form_box.tbl_style .form_group.form_calendar .selectric-ip_time .selectric-items li {padding:7px;}
 .form_box.tbl_style .form_group.form_calendar .i_colon {display:block;float:left;width:12px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
 .form_box.tbl_style .form_group.form_calendar .i_dash {display:block;float:left;width:30px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
 .form_box.tbl_style .form_group.form_edu_field .selectric-select_box {float:left;margin-left:1.333333%;width:24%;}
