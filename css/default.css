@@ -451,6 +451,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 
 /* Explore - SME channel */
 #container .sme_visual {height:350px;background-repeat:no-repeat;}
+#container .sme_visual + .sub_inner {padding-top:27px;}
 #container .sme_visual .sme_info_box {padding-top:220px}
 #container .sme_visual .sme_info_box .sme_name_wrap {float:left;width:645px;}
 #container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_wrap {position:relative;float:left;margin-top:5px;width:100px;height:100px;border-radius:50%;overflow:hidden;-webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
