@@ -52,6 +52,68 @@
                         </ul>
                     </nav>
                     <!-- // Gnb -->
+					<!-- 탐색 2Depth -->
+                    <div id="snb_bg">
+                        <div class="snb_link">
+                            <ul>
+                                <li><a href="#none">탐색 전체 보기</a></li>
+                                <li><a href="#none">외부교육 개별 신청</a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_2d">
+                            <ul class="gnb_1dul gnb_1dul_0">
+                                <li>
+                                    <a href="#none">비즈니스 기본스킬</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">가치마인드</a></li>
+                                        <li><a href="#none">커뮤니케이션</a></li>
+                                        <li><a href="#none">업무스킬</a></li>
+                                        <li><a href="#none">디지털활용력</a></li>
+                                        <li><a href="#none">컬쳐인사이드</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_1">
+                                <li>
+                                    <a href="#none">비즈니스 전문역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">사업이해</a></li>
+                                        <li><a href="#none">TREND/비지니스기획</a></li>
+                                        <li><a href="#none">공통직무</a></li>
+                                        <li><a href="#none">직무전문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_2">
+                                <li>
+                                    <a href="#none">리더십 역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">계층별 리더십</a></li>
+                                        <li><a href="#none">역할별 리더십</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_3">
+                                <li>
+                                    <a href="#none">경영역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">매니지먼트 지식 MBA</a></li>
+                                        <li><a href="#none">비지니스 경영 스킬</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_4">
+                                <li>
+                                    <a href="#none">기타</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">인문사회</a></li>
+                                        <li><a href="#none">자기계</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // 탐색 2Depth -->
                     <!-- srh -->
                     <div class="tnb_srh">
                         <input type="text">
@@ -92,6 +154,7 @@
 										<span class="label_basic label_t_g">영어</span>
 									</div>
 									<dl>
+										<!-- 신청기간인 경우 class="em" 추가하여 강조 -->
 										<dt class="em">신청기간</dt>
 										<dd class="em">2020.04.15 10:00 ~ 2020.04.30 23:00</dd>
 										<dt>학습기간</dt>
@@ -110,28 +173,38 @@
 										<option value="">과정차수명2</option>
 									</select>
 									<div class="btn_box">
+										<!-- 좋아요 클릭 전 -->
 										<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
+										<!-- // 좋아요 클릭 전 -->
+										<!-- 좋아요 클릭 후
+										<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+										-->
 										<button type="button" class="btn_xl btn_lf">수강신청</button>
 										<!-- 상태에 따라 변경
 										<button type="button" class="btn_xl btn_lf">수강신청</button>
 										<button type="button" class="btn_xl btn_gray2">수강신청 기간이 아닙니다</button>
 										<button type="button" class="btn_xl btn_gray2">신청이 마감되었습니다</button>
-										<button type="button" class="btn_xl btn_blue_white">신청이 마감되었습니다</button>
+										<button type="button" class="btn_xl btn_blue_white">대기자 신청</button>
 										-->
 									</div>
 								</div>
 							</div>
 						</div>
-						<ul class="ex_detail_info_li">
+						<ul class="ex_detail_info_li ex_detail_info_li9"> <!-- 목록 갯수에 따라 7~10 // ex_detail_info_li7, ex_detail_info_li8, ex_detail_info_li9, ex_detail_info_li10 추가 -->
 							<li style="background-image:url('../../images/ico_ex_detail_info_date.png');">2일</li>
 							<li style="background-image:url('../../images/ico_ex_detail_info_time.png');">5시간</li>
 							<li style="background-image:url('../../images/ico_ex_detail_info_person.png');">정원 10명 <span>/ 30명</span></li>
 							<li style="background-image:url('../../images/ico_ex_detail_info_price.png');">80,000원</li>
 							<li style="background-image:url('../../images/ico_ex_detail_info_grades.png');">3학점</li>
 							<li style="background-image:url('../../images/ico_ex_detail_info_score.png');">3.0</li>
+							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_book_on.png');">교재제공</li>
+							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_refunds_on.png');">환급과정</li>
+							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_point_on.png');">포인트적립</li>
+							<!-- 비활성
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_book.png');">교재제공</li>
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_refunds.png');">환급과정</li>
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_point.png');">포인트적립</li>
+							 // 비활성 -->
 						</ul>
 					</div>
 
@@ -147,7 +220,8 @@
 											<option value="">과정차수명2</option>
 										</select>
 										<h3>하루 한 문장! 미드로 배우는 영어회화</h3>
-										<dl>
+										<dl>	
+											<!-- 신청기간인 경우 class="em" 추가하여 강조 -->
 											<dt class="em">신청기간</dt>
 											<dd class="em">2020.04.15 10:00 ~ 2020.04.30 23:00</dd>
 											<dt>학습기간</dt>
@@ -159,18 +233,25 @@
 										</dl>
 										<div class="aside_price">
 											80,000원 <span>(예상 환급금 : 20,000원)</span>
-											<span class="tool_tip">
-												<img src="../../images/ico_em.png" alt="수강료에 교재비가 포함되어 있습니다." />
-											</span>
+											<div class="tool_tip_wrap">
+												<span class="tool_tip">
+													<img src="../../images/ico_em.png" alt="수강료에 교재비가 포함되어 있습니다." />
+												</span>
+											</div>
 										</div>
 										<div class="btn_box">
+											<!-- 좋아요 클릭 전 -->
 											<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
+											<!-- // 좋아요 클릭 전 -->
+											<!-- 좋아요 클릭 후
+											<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+											-->
 											<button type="button" class="btn_xl btn_lf">수강신청</button>
 											<!-- 상태에 따라 변경
 											<button type="button" class="btn_xl btn_lf">수강신청</button>
 											<button type="button" class="btn_xl btn_gray2">수강신청 기간이 아닙니다</button>
 											<button type="button" class="btn_xl btn_gray2">신청이 마감되었습니다</button>
-											<button type="button" class="btn_xl btn_blue_white">신청이 마감되었습니다</button>
+											<button type="button" class="btn_xl btn_blue_white">대기자 신청</button>
 											-->
 										</div>
 									</div>
@@ -179,7 +260,7 @@
 						</div>
 						<div class="ex_detail_con_inner">
 							<nav class="ex_detail_con_nav">
-								<ul class="nav_menu">
+								<ul class="nav_menu nav_menu6"><!-- 메뉴 갯수에 따라 2~6 / nav_menu2,nav_menu3,nav_menu4,nav_menu5,nav_menu6 클래스 추가 -->
 									<li><a class="nav_menu_item on" href="#section1">과정소개</a></li>
 									<li><a class="nav_menu_item" href="#section2">커리큘럼</a></li>
 									<li><a class="nav_menu_item" href="#section3">선후수과정</a></li>
