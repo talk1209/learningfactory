@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:590px;">
+        <div class="pop_title">
+            <span class="title">학습자 선택</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+            <div class="learner_select">
+                <div class="input_box">
+                    <input type="text" class="lf_org_ac" placeholder="성명, 아이디를 입력해주세요.">
+                </div>
+                <div class="pp_select_list">
+                    <span class="num_pp">선택한 인원 ( <b class="i_num">4</b> )</span>
+                    <ul class="pp_list">
+                        <li>
+                            <button type="button" class="btn_close blind">삭제</button>
+                            <span class="i_position">러닝팩토리 교육사업팀</span>
+                            <span class="i_name">김사랑 (learning123)</span>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_close blind">삭제</button>
+                            <span class="i_position">러닝팩토리 교육사업팀</span>
+                            <span class="i_name">김사랑 (learning123)</span>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_close blind">삭제</button>
+                            <span class="i_position">러닝팩토리 교육사업팀</span>
+                            <span class="i_name">김사랑 (learning123)</span>
+                        </li>
+                        <li>
+                            <button type="button" class="btn_close blind">삭제</button>
+                            <span class="i_position">러닝팩토리 교육사업팀</span>
+                            <span class="i_name">김사랑 (learning123)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_white">취소</button>
+                <button type="button" class="btn_xs btn_lf">저장</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+<script>
+/* 자동완성 */
+lf_org_ac();
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">학습자 선택</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+            <div class="learner_upload">
+                <div class="ip_xlsx_wrap">
+                    <div class="input_box ip_xlsx_box">
+                        <i class="ast">*</i>
+                        <input type="text" placeholder="xlsx 파일을 선택하세요." readonly>
+                    </div>
+                    <div class="btn_wrap filebox">
+                        <input type="file" id="uploadbtn" class="uploadbtn">
+                        <label for="uploadbtn" class="btn_file btn_gray">파일 선택</label>
+                        <button type="button" class="btn_style2 btn_whitegray">샘플 다운로드</button>
+                    </div>
+                </div>
+                <div class="upload_slide_box sample_box">
+                    <div class="box_title">샘플안내<span class="i_arrow"></span></div>
+                    <div class="box_cont">
+                        <ul class="box_desc">
+                            <li class="desc"><span class="dot"></span>두번째 행부터 데이터를 입력하세요.</li>
+                            <li class="desc"><span class="dot"></span><i class="ast">*</i> 표시가 붙은 컬럼은 필수로 입력해야 합니다.</li>
+                        </ul>
+                        <div>
+                            <table class="tbl_ex_xlsx">
+                                <caption>샘플안내</caption>
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td class="ast_bg">아이디 <i class="ast">*</i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>abcd</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>abcd</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload_slide_box preview_box">
+                    <div class="box_title">결과 미리보기<span class="i_arrow"></span></div>
+                    <div class="box_cont">
+                        <ul class="msg_wrap">
+                            <p class="err_msg">오류데이터 수정 후 다시 등록해주세요.</p>
+                            <!--<p class="right_msg">데이터가 모두 정상입니다. 등록 버튼을 눌러주세요.</p>-->
+                        </ul>
+                        <div>
+                            <table class="tbl_style1">
+                                <caption>결과 미리보기</caption>
+                                <colgroup>
+                                    <col style="width:50%">
+                                    <col style="width:50%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>아이디</th>
+                                        <th>결과</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>아이디1</td>
+                                        <td>정상</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아이디2</td>
+                                        <td class="err_data">오류</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아이디3</td>
+                                        <td class="err_data">오류</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아이디4</td>
+                                        <td>정상</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <button type="button" class="btn_xs btn_white">취소</button>
+                <button type="button" class="btn_xs btn_lf">결과 미리보기</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+<script>
+divAccodion();
+$(document).ready(function() {
+    $('.sample_box .box_cont').hide(); // 샘플안내
+    $('.preview_box .box_cont').show(); // 결과 미리보기
+});
+</script>
+</body>
+</html>

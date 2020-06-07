@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:900px;">
+        <div class="pop_title">
+            <span class="title">외부교육 개별 신청</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+           
+            <!-- 수강신청 공통 STEP -->
+            <div class="apply_step">
+                <ol>
+                    <li class="on"> <!-- STEP별 on클래스 추가 -->
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 1</b>
+                        <span class="desc">개인정보 수집/활용 동의</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 2</b>
+                        <span class="desc">교육정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 3</b>
+                        <span class="desc">추가정보 입력</span>
+                    </li>
+                    <li>
+                        <span class="circle"></span>
+                        <b class="step_num">STEP 4</b>
+                        <span class="desc">결재자 지정</span>
+                    </li>
+                </ol>
+            </div>
+            <!-- // 수강신청 공통 STEP -->
+            
+            <!-- STEP1 개인정보 수집/활용 동의 -->
+            <div class="pop_new_apply_step1">
+                <div class="agree_cont">
+                    <p class="chk_desc"><span class="dot"></span>동의 내용을 확인하신 후 ‘동의합니다’의 체크 여부를 선택해 주시기 바랍니다.</p>
+                    <div class="agree_box_wrap">
+                        <div class="agree_box">
+                            <span class="title">개인정보 수집·이용·제공 동의</span>
+                            <div class="terms_box pre_line">수집하는 개인정보의 항목 : 회사는 아래 이용목적에 따라 기본적인 회원정보 외에 개인정보를 추가 수집하고자 합닌다.
+                            - 추가 수집항목 : 휴대폰 번호, 이메일 주소
+
+                            개인정보의 수집 및 이용목적 : 회사는 수집한 개인정보를 다음의 목적을 위해 활용합ㄴ니다.
+                            - 휴대폰 번호, 이메일 주소 : 신청하신 교육에 대한 일정 안내용
+                            </div>
+                            <div class="chk_box">
+                                <input type="checkbox" id="termsAgree1" name="termsAgree1">
+                                <label for="termsAgree1"><span class="ico_fake"></span>동의합니다</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // STEP1 개인정보 수집/활용 동의 -->
+             
+            <!-- STEP2 차수정보 입력 
+            <div class="pop_new_apply_step2">
+                <div class="form_box tbl_style">
+                    <div class="form_group">
+                        <div class="title">과정명<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="input_box">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_edu_field">
+                        <div class="title">교육분야<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <select class="select_box">
+                                    <option value="">전체</option>
+                                    <option value="">옵션명</option>
+                                    <option value="">옵션명</option>
+                                </select>
+                                <select class="select_box">
+                                    <option value="">전체</option>
+                                    <option value="">옵션명</option>
+                                    <option value="">옵션명</option>
+                                </select>
+                                <select class="select_box">
+                                    <option value="">전체</option>
+                                    <option value="">옵션명</option>
+                                    <option value="">옵션명</option>
+                                </select>
+                                <select class="select_box">
+                                    <option value="">전체</option>
+                                    <option value="">옵션명</option>
+                                    <option value="">옵션명</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_calendar">
+                        <div class="title">학습기간<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="input_box">
+                                <input type="text" class="start_date ip_calendar comm_calendar" placeholder="YYYY.MM.DD" readonly>
+                                <input type="tel" class="ip_time" placeholder="00">
+                                <span class="i_colon">:</span>
+                                <input type="tel" class="ip_time" placeholder="00">                                
+                                <span class="i_dash">~</span>
+                                <input type="text" class="end_date ip_calendar comm_calendar" placeholder="YYYY.MM.DD" readonly>
+                                <input type="tel" class="ip_time" placeholder="00">
+                                <span class="i_colon">:</span>
+                                <input type="tel" class="ip_time" placeholder="00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_total_day">
+                        <div class="title">총 학습일 / 학습시간<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_text">일</span>
+                                <div class="input_box">
+                                    <input type="tel" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_text">시간</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">교육기관<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="input_box">
+                                <input type="text" placeholder="교육기관명">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">교육장소<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="srh_address">
+                                <button type="button" class="btn_style2 btn_gray">우편번호 검색</button>
+                                <p class="addr_cont">서울시 서초구 사임당로 64, 4층(서초동, 교대벤처타워) ㈜러닝팩토리</p>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="상세주소">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_expense">
+                        <div class="title">인당 교육비<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_text">원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">환급과정 여부<i class="ast">*</i></div>
+                        <div class="cont">
+                            <div class="chk_box">
+                                <input type="radio" id="refundY" name="refundCouse" checked>
+                                <label for="refundY"><span class="ico_fake"></span>Y</label>
+                                <input type="radio" id="refundN" name="refundCouse">
+                                <label for="refundN"><span class="ico_fake"></span>N</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_learner_apply">
+                        <div class="title">학습자 일괄 신청</div>
+                        <div class="cont">
+                            <div class="btn_wrap">
+                                <button type="button" class="btn_style2 btn_gray">학습자 선택</button>
+                                <button type="button" class="btn_style2 learner_upload">학습자 업로드</button>
+                            </div>
+                            <p class="info_opt">총 10명의 학습자가 선택되었습니다.</p>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">학습목표 / 내용<i class="ast">*</i></div>
+                        <div class="cont">
+                            <textarea class="textarea" placeholder="학습목표/내용을 입력하세요."></textarea>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">기대효과<i class="ast">*</i></div>
+                        <div class="cont">
+                            <textarea class="textarea" placeholder="기대효과를 입력하세요."></textarea>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">교육자료</div>
+                        <div class="cont">
+                            <div class="filebox">
+                                <label for="uploadbtn" class="btn_file btn_gray">파일 선택</label>
+                                <input type="file" id="uploadbtn" class="uploadbtn">
+                                <ul class="file_list">
+                                    <li>
+                                        <a href="#none">파일명.확장자 (12.3MB)</a>
+                                        <button type="button" class="btn_file_del blind">삭제</button>
+                                    </li>
+                                    <li>
+                                        <a href="#none">파일명.확장자 (12.3MB)</a>
+                                        <button type="button" class="btn_file_del blind">삭제</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="title">관련 URL</div>
+                        <div class="cont">
+                            <div class="input_box">
+                                <input type="text" placeholder="url">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             // STEP2 차수정보 입력 -->
+            <!-- STEP3 추가정보 입력 
+            <div class="pop_new_apply_step3">
+                <div class="form_box tbl_style">
+                    <div class="form_group form_cell">
+                        <div class="title">휴대폰</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="tel" maxlength="3" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                                <span class="i_hyphen">-</span>
+                                <div class="input_box">
+                                    <input type="tel" maxlength="4" class="onlyNum" onkeyup="onlyNum()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_email">
+                        <div class="title">이메일</div>
+                        <div class="cont">
+                            <div class="devide_box">
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <span class="i_at">@</span>
+                                <div class="input_box">
+                                    <input type="text">
+                                </div>
+                                <select class="select_box">
+                                    <option value="">직접입력</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">hanmail.net</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+             // STEP3 추가정보 입력 -->
+            
+            <!-- STEP4 결재자 지정 
+            <div class="pop_new_apply_step4">
+                <div class="form_box tbl_style">
+                    <div class="form_group form_approval">
+                        <div class="title">1차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="firstApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="firstDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group form_approval">
+                        <div class="title">2차 결제</div>
+                        <div class="cont">
+                            <div class="devide_box">                            
+                                <select id="secondApproval" class="select_box">
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="">김사랑 [계열사명/아이디]</option>
+                                    <option value="directInput">직접입력</option>
+                                </select>
+                                <div class="input_box">
+                                    <input type="text" id="secondDirectInput" class="lf_org_ac" placeholder="이름으로 검색" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="approval_desc"><i class="ast">*</i>결재라인 : 결재라인 안내문구가 노출됩니다.</p>
+            </div>            
+             // STEP4 결재자 지정 -->
+            <div class="btn_box">
+                <!-- 취소 
+                <button type="button" class="btn_xs btn_white">취소</button>
+                // 취소 -->
+                <button type="button" class="btn_xs btn_gray2">이전</button>
+                <button type="button" class="btn_xs btn_lf">다음</button>
+            </div>
+            
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    /* 1차결재 직접입력 */
+    $("#firstApproval").on("change", function(){
+        var state = $('#firstApproval option:selected').val();
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state == 'directInput' ) {
+            $('#firstDirectInput').prop("disabled", false);
+            $('#firstDirectInput').val('');
+        } else {
+            $('#firstDirectInput').prop("disabled", true);
+            $('#firstDirectInput').val('');
+        }
+    });
+    /* 2차결재 직접입력 */
+    $("#secondApproval").on("change", function(){
+        var state2 = $('#secondApproval option:selected').val();
+        if ( state2 == 'directInput' ) {
+            $('#secondDirectInput').prop("disabled", false);
+            $('#secondDirectInput').val('');
+        } else {
+            $('#secondDirectInput').prop("disabled", true);
+            $('#secondDirectInput').val('');
+        }
+    });
+});
+/* 결재 이름 자동완성 */
+lf_org_ac();
+
+/* datepicker Calendar */
+startDate(); // datepicker start date
+endDate(); // datepicker end date
+</script>
+</body>
+</html>

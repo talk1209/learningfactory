@@ -403,3 +403,12 @@ function endDate(){
         } //onSelect
     });
 }
+//div Accordion
+function divAccodion() {
+    $(".box_title").on('click', function() {   
+        $(this).parent().toggleClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(this).next('.box_cont').slideToggle(300);
+        $(this).next('.box_cont').parent().siblings().children('.box_cont').slideUp(300);//siblings('.faq_a').hide();
+    });
+}

@@ -443,7 +443,7 @@
                                             <span class="subs_num"><b>구독자</b>1,301</span>
                                             <div class="btn_subs">
                                                 <input type="checkbox" id="btnSubs" name="btnSubs">
-                                                <label for="btnSubs"><span class="i_text">구독</span></label>
+                                                <label for="btnSubs"><span class="i_text"></span></label>
                                             </div>
                                         </div>
                                     </li>
@@ -889,6 +889,13 @@
 <script>
 $(document).ready(function() {
     /* SME 채널 구독 버튼 텍스트 */
+    $("#btnSubs").is(function(){
+        if($("#btnSubs").prop("checked")) {
+            $(this).next().children(".i_text").text("구독중")
+        } else {
+            $(this).next().children(".i_text").text("구독")
+        }
+    });
     $("#btnSubs").click(function(){
         if($("#btnSubs").prop("checked")) {
             $(this).next().children(".i_text").text("구독중")
