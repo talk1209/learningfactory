@@ -40,4 +40,22 @@ $(document).ready(function() {
 		var $score = Number($(this).val());
 		$(this).closest('.review_star').find('.i_rating').html($score.toFixed(1));
 	})
+
+	// 링크 복사
+	function copyToClipboard(val) {
+	  var t = document.createElement("textarea");
+	  document.body.appendChild(t);
+	  t.value = val;
+	  t.select();
+	  document.execCommand('copy');
+	  document.body.removeChild(t);
+	}
+
+	$('.btn_copy').on('click', function() {
+		$str = $(this).parent().find('a').text();
+		copyToClipboard($str);
+		alert('복사되었습니다.');
+	});
 });
+
+
