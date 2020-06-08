@@ -30,7 +30,7 @@
 	    <h1>회원가입</h1>
 	    <ul class="join_nav">
 	        <li class="join_nav1">약관동의<span></span></li>
-	        <li class="join_nav2 on">회원정보입력<span></span></li>
+	        <li class="join_nav2  on theme_color">회원정보입력<span class="theme_bg"></span></li>
 	        <li class="join_nav3">가입완료<span></span></li>
 	    </ul>
 	    <!-- 개인 정보 -->
@@ -43,7 +43,7 @@
 	    			<div class="cont">
 	    				<div class="input_box ip_line">
 	    					<input type="text" placeholder="이름을 입력하세요.">
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -53,17 +53,17 @@
 	    				<div class="devide_box">
 							<div class="input_box ip_line">
 								<input type="tel" value="010">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 							<span class="i_hyphen">-</span>
 							<div class="input_box ip_line">
 								<input type="tel">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 							<span class="i_hyphen">-</span>
 							<div class="input_box ip_line">
 								<input type="tel">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 	    				</div>
 	    			</div>
@@ -74,7 +74,7 @@
 	    				<div class="input_box ip_line input_id_box">
 	    					<input type="text" placeholder="아이디를 입력하세요. (영문, 숫자 조합 6~15 자리)">
 	    					<button type="button" class="btn_style1 btn_gray">중복확인</button>
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    				<div class="msg_wrap">
 	    					<p class="right_msg">사용 가능한 아이디 입니다.</p> <!-- p부터 히든 -->
@@ -90,7 +90,7 @@
 	    			<div class="cont">
 	    				<div class="input_box ip_line">
 	    					<input type="password" placeholder="비밀번호를 입력하세요. (영문, 숫자, 특수문자 조합 10~15자리)">
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    				<div class="msg_wrap">
 	    					<p class="right_msg">비밀번호 조합기준을 충족합니다.</p> <!-- p부터 히든 -->
@@ -105,7 +105,7 @@
 	    			<div class="cont">
 	    				<div class="input_box ip_line">
 	    					<input type="password" placeholder="입력한 비밀번호를 한 번 더 입력하세요.">
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    				<div class="msg_wrap">
 	    					<p class="err_msg">비밀번호와 동일하게 입력해주세요.</p> <!-- p부터 히든 -->
@@ -121,12 +121,12 @@
 	    				<div class="devide_box">
 							<div class="input_box ip_line">
 								<input type="text">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 							<span class="i_at">@</span>
 							<div class="input_box ip_line">
 								<input type="text">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
     						<div class="select_wrap sel_line">
     							<select class="select_box">
@@ -145,12 +145,12 @@
 	    				<div class="devide_box">
 							<div class="input_box ip_line">
 								<input type="tel" maxlength="6" class="onlyNum ip_regi_front" onkeyup="onlyNum()">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 							<span class="i_hyphen">-</span>
 							<div class="input_box ip_line">
 								<input type="password" maxlength="7" class="onlyNum ip_regi_back" onkeyup="onlyNum()">
-								<span class="ip_bar"></span>
+								<span class="ip_bar theme_bg"></span>
 							</div>
 	    				</div>
 	    			</div>
@@ -161,15 +161,15 @@
 	    			    <div class="input_box ip_line half_size">
 	    					<input type="tel" placeholder="우편번호" readonly>
 	    					<button type="button" class="btn_style1 btn_gray">우편번호 검색</button>
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    				<div class="input_box ip_line">
 	    					<input type="text" placeholder="주소" readonly>
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    				<div class="input_box ip_line">
 	    					<input type="text" placeholder="상세주소">
-	    					<span class="ip_bar"></span>
+	    					<span class="ip_bar theme_bg"></span>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -208,7 +208,7 @@
                             </div>
                             <div class="input_box ip_line">
                                 <input type="text" id="ip_position" placeholder="직급 (직책)을 입력해주세요.">
-                                <span class="ip_bar"></span>
+                                <span class="ip_bar theme_bg"></span>
                             </div>
                         </div>
 	    			</div>
@@ -231,7 +231,7 @@
         <!-- // 회사 정보 -->
 	    <div class="btn_box">
 	        <button type="button" class="btn_xs btn_white">이전</button>
-	        <button type="button" class="btn_xs btn_lf">다음</button>
+	        <button type="button" class="btn_xs btn_lf btn_theme">다음</button>
 	    </div>
 	</div>
 <script>
