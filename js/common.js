@@ -179,7 +179,7 @@ $(document).ready(function() {
     });
     $(".course_list li").mouseleave(function(){
         $(this).removeClass("on");
-    });	
+    });
 });
 
 // Popular Course Tab
