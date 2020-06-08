@@ -41,8 +41,8 @@ $(document).ready(function() {
 			}
 			if (scroll_id !== id) {
 				id = scroll_id;
-				$menu_a.removeClass("on");
-				$("a[href='#" + id + "']", $menu).addClass("on");
+				$menu_a.removeClass('on theme_color theme_bd');
+				$("a[href='#" + id + "']", $menu).addClass('on theme_color theme_bd');
 			}
 		}else{
 			$('.ex_detail_con').removeClass('fixed_top');
