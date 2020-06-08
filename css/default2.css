@@ -216,7 +216,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con_sec.sec7 li {float:left;margin:10px;width:320px;}
 .ex_detail_con_sec.sec7 li .thumb_box {position: relative;height: 200px;background-repeat: no-repeat;background-size: 100% auto;}
 .ex_detail_con_sec.sec7 li .course_desc {padding:10px 0;height:66px;}
-.ex_detail_con_sec.sec7 li .course_desc .i_cate {font-size:14px;color:#ea563a;}
+.ex_detail_con_sec.sec7 li .course_desc .i_cate {font-size:14px;}
 .ex_detail_con_sec.sec7 li .course_desc .i_subject {font-size:20px;color:#333;font-weight:500;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 
 .ex_detail_con_sec.sec8 ul {margin-top:15px;overflow:hidden;}
