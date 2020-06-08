@@ -192,7 +192,7 @@ function popularTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg");
 
     $tbtn.click(function(e){
     
@@ -201,7 +201,7 @@ function popularTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg");;
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });
@@ -297,7 +297,7 @@ function subSecTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg");
 
     $tbtn.click(function(e){
     
@@ -306,7 +306,7 @@ function subSecTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg");
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });
