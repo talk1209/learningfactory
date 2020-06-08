@@ -27,24 +27,41 @@
 	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
+
+	<style>
+	/* theme Color */
+	.theme_color {color:#ea563a !important;}
+	.theme_bg {background-color:#ea563a !important;}
+	.theme_bd {border-color:#ea563a !important;}
+	input.theme_color_chk[type="checkbox"]:checked + label {color:#ea563a !important;}
+	input.theme_bg_chk[type="checkbox"]:checked + label {background-color:#ea563a !important;}
+	input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !important;}
+	.theme_color_hover:hover {color:#ea563a !important;}
+	.theme_bg_hover:hover {background-color:#ea563a !important;}
+	.theme_bd_hover:hover {border-color:#ea563a !important;}
+	.theme_bg_hover_after:hover:after {background-color:#ea563a !important;}
+	button.btn_theme {border-color:#ea563a !important;background-color:#ea563a !important;}
+	/* Calendar - Day Active State*/
+	.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {background-color:#ea563a !important;}
+	</style>
 </head>
 <body>
     <!-- Wrap -->    
     <div id="wrap">
-        <!-- Header --> 
+       <!-- Header --> 
         <header id="header">
             <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
-            <div class="hd">
+            <div class="hd theme_bd">
                 <div class="inner">
                     <!-- Logo -->
-                    <h1 class="logo sub_logo">
+                    <h1 class="logo">
                         <a href="#none" class="blind">learning factory</a>
                     </h1>
                     <!-- // Logo -->
                     <!-- Gnb -->
                     <nav id="gnb">
                         <ul>
-                            <li><a href="#none" class="on">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li><a href="#none" class="on theme_color">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
                             <li><a href="#none">구독</a></li>
                             <li><a href="#none">학습</a></li>
                             <li><a href="#none">고객센터</a></li>
@@ -52,7 +69,7 @@
                         </ul>
                     </nav>
                     <!-- // Gnb -->
-					<!-- 탐색 2Depth -->
+                    <!-- 탐색 2Depth -->
                     <div id="snb_bg">
                         <div class="snb_link">
                             <ul>
@@ -116,12 +133,12 @@
                     <!-- // 탐색 2Depth -->
                     <!-- srh -->
                     <div class="tnb_srh">
-                        <input type="text">
+                        <input type="text" class="theme_bd">
                         <button type="button" class="blind">검색</button>
                     </div>
                     <!-- mypage -->
                     <div class="my_page">
-                        <a href="#none">마이페이지</a>
+                        <a href="#none" class="theme_color_hover">마이페이지</a>
                         <div class="my_2dul_wrap">
                         	<i></i>
                             <ul class="my_2dul">
