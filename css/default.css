@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-/* Point Color */
+/* theme Color */
+.theme_color {color:#ea563a !important;}
+.theme_bgcolor {background-color:#ea563a !important;}
+.theme_bdcolor {border-color:#ea563a !important;}
 
 /* Shortcut to body */
 #skip_navi a {display:block;overflow:hidden;position:absolute;top:0;left:0;margin-top:-1px;width:1px;height:1px;background:#000;color:#fff;text-align:center;}
