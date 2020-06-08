@@ -24,24 +24,40 @@
     <script src="../../js/common.js"></script>
     
     <title>learning factory</title>
+<style>
+/* theme Color */
+.theme_color {color:#ea563a !important;}
+.theme_bg {background-color:#ea563a !important;}
+.theme_bd {border-color:#ea563a !important;}
+input.theme_color_chk[type="checkbox"]:checked + label {color:#ea563a !important;}
+input.theme_bg_chk[type="checkbox"]:checked + label {background-color:#ea563a !important;}
+input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !important;}
+.theme_color_hover:hover {color:#ea563a !important;}
+.theme_bg_hover:hover {background-color:#ea563a !important;}
+.theme_bd_hover:hover {border-color:#ea563a !important;}
+.theme_bg_hover_after:hover:after {background-color:#ea563a !important;}
+button.btn_theme {border-color:#ea563a !important;background-color:#ea563a !important;}
+/* Calendar - Day Active State*/
+.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {background-color:#ea563a !important;}
+</style>
 </head>
 <body>
 <!-- Side bar -->
 <div class="learning_sidebar main">
     <ul>
-        <li class="side_kakao">
+        <li class="side_kakao theme_bd theme_color">
             <span class="ico_side"></span>
             <span class="link_name">카카오톡 상담</span>
         </li>
-        <li class="side_tel">
+        <li class="side_tel theme_bd theme_color">
             <span class="ico_side"></span>
              <span class="link_name">전화상담</span>
         </li>
-        <li class="side_remote">
+        <li class="side_remote theme_bd theme_color">
             <span class="ico_side"></span>
              <span class="link_name">원격지원</span>
         </li>
-        <li class="side_info">
+        <li class="side_info theme_bd theme_color">
             <span class="ico_side"></span>
              <span class="link_name">학습 안내</span>
         </li>

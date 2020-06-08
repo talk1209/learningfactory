@@ -26,6 +26,22 @@
 	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
+<style>
+/* theme Color */
+.theme_color {color:#ea563a !important;}
+.theme_bg {background-color:#ea563a !important;}
+.theme_bd {border-color:#ea563a !important;}
+input.theme_color_chk[type="checkbox"]:checked + label {color:#ea563a !important;}
+input.theme_bg_chk[type="checkbox"]:checked + label {background-color:#ea563a !important;}
+input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !important;}
+.theme_color_hover:hover {color:#ea563a !important;}
+.theme_bg_hover:hover {background-color:#ea563a !important;}
+.theme_bd_hover:hover {border-color:#ea563a !important;}
+.theme_bg_hover_after:hover:after {background-color:#ea563a !important;}
+button.btn_theme {border-color:#ea563a !important;background-color:#ea563a !important;}
+/* Calendar - Day Active State*/
+.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {background-color:#ea563a !important;}
+</style>
 </head>
 <body>
     <!-- Wrap -->    
@@ -178,7 +194,7 @@
                             </div>
                             <div class="btn_subs">
                                 <input type="checkbox" id="btnSubs" name="btnSubs" checked>
-                                <label for="btnSubs"><span class="i_text"></span></label>
+                                <label for="btnSubs" class="theme_bg"><span class="i_text"></span></label>
                             </div>
                         </div>
                     </div>
