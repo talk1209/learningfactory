@@ -32,16 +32,16 @@
 <!-- Layer pop -->
 <div class="layer_popup visible"> <!-- visible class add or remove -->
     <div class="popcontainer" style="width:900px;">
-        <div class="pop_title">
+        <div class="pop_title theme_bg">
             <span class="title">수강신청</span>
             <button type="button" class="pop_close blind">닫기</button>
         </div>
         <div class="pop_inner">
            
             <!-- 수강신청 공통 STEP -->
-            <div class="apply_step">
+            <div class="apply_step theme_bd">
                 <ol>
-                    <li class="on"> <!-- STEP별 on클래스 추가 -->
+                    <li class="theme_color theme_bd"> <!-- STEP별 theme_color theme_bd 클래스 추가 -->
                         <span class="circle"></span>
                         <b class="step_num">STEP 1</b>
                         <span class="desc">개인정보 수집/활용 동의</span>
@@ -77,7 +77,7 @@
                                 - 개인정보 수집방법 : 홈페이지(회원가입,수강신청,이벤트,게시판 등), 전화/팩스를 통한 회원가입, 상담게시판 회사는 환급과정(사업주지원과정, 근로자직무능력향상) 신청시 회원가입 정보 이외에 추가적인 개인정보를 수집하고 있습니다.
                             </div>
                             <div class="chk_box">
-                                <input type="checkbox" id="termsAgree1" name="termsAgree1">
+                                <input type="checkbox" id="termsAgree1" class="theme_bg_chk" name="termsAgree1">
                                 <label for="termsAgree1"><span class="ico_fake"></span>동의합니다</label>
                             </div>
                         </div>
@@ -236,15 +236,15 @@
             <div class="pop_apply_step4" style="display:none;">
                 <div class="confirm_box">
                     <p class="confirm_course">
-                        <span>‘조승연 작가의 정말 바쁜 직장인을 위한 넓고 얕은 지식, 기업경영편’</span> 과정을 신청하시겠습니까?
+                        <span class="theme_color">‘조승연 작가의 정말 바쁜 직장인을 위한 넓고 얕은 지식, 기업경영편’</span> 과정을 신청하시겠습니까?
                     </p>
                     <p class="course_period">
-                        (온라인교육  |  학습기간 <span class="lf_color">2020.06.01 - 2020.08.01</span> 중 학습 시작일로부터 <span class="lf_color">0일</span>)
+                        (온라인교육  |  학습기간 <span class="theme_color">2020.06.01 - 2020.08.01</span> 중 학습 시작일로부터 <span class="theme_color">0일</span>)
                     </p>
                 </div>
                 <div class="standby_box">
                     <p>
-                        <b>김사랑</b> 회원님의 대기자 순번은 <b>2</b>번 입니다.<br>
+                        <b class="theme_color">김사랑</b> 회원님의 대기자 순번은 <b class="theme_color">2</b>번 입니다.<br>
                         정원이 모두 마감되어 대기자 신청으로 진행되며, 입과 확정 시 메일/문자로 안내됩니다.
                     </p>                    
                 </div>
@@ -260,7 +260,7 @@
                 <button type="button" class="btn_xs btn_white">취소</button>
                 // 취소 -->
                 <button type="button" class="btn_xs btn_gray2">이전</button>
-                <button type="button" class="btn_xs btn_lf">수강신청 완료</button>
+                <button type="button" class="btn_xs btn_lf btn_theme">수강신청 완료</button>
             </div>
             
         </div> <!-- // .pop_inner -->

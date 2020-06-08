@@ -11,6 +11,9 @@ input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !impor
 .theme_bg_hover:hover {background-color:#ea563a !important;}
 .theme_bd_hover:hover {border-color:#ea563a !important;}
 .theme_bg_hover_after:hover:after {background-color:#ea563a !important;}
+button.btn_theme {border-color:#ea563a !important;background-color:#ea563a !important;}
+/* Calendar - Day Active State*/
+.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {background-color:#ea563a !important;}
 
 /* Shortcut to body */
 #skip_navi a {display:block;overflow:hidden;position:absolute;top:0;left:0;margin-top:-1px;width:1px;height:1px;background:#000;color:#fff;text-align:center;}
@@ -261,7 +264,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 .login_wrap .tab_find {margin-top:53px;overflow:hidden;}
 .login_wrap .tab_find li {float:left;width:190px;height:50px;line-height:48px;font-size:17px;color:#666666;cursor:pointer;text-align:center;border-radius:4px;border:1px solid #cccccc;background-color:#ffffff;}
 .login_wrap .tab_find li:first-child {margin-right:20px;}
-.login_wrap .tab_find li.on {background-color:#ea563a;border-color:#ea563a;color:#ffffff;}
+.login_wrap .tab_find li.on {color:#ffffff;}
 
 /* Login - Find id result */
 .login_wrap .login_box .login_content.find_id_result .result_desc {margin-top:46px;font-size:17px;font-weight:500;color:#333333;}
@@ -473,7 +476,7 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 #container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .field_wrap .i_field {display:inline-block;padding:0 18px;height:22px;line-height:20px;font-size:15px;color:#0396a6;border:1px solid #0396a6;vertical-align:top;border-radius:11px;}
 #container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .i_name {display:block;margin-top:8px;padding-left:5px;font-size:30px;font-weight:700;color:#ffffff;line-height:1;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 #container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .tag_wrap {margin-top:14px;padding-left:5px;font-size:0;}
-#container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;color:#ea563a;vertical-align:top;}
+#container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;vertical-align:top;}
 #container .sme_visual .sme_info_box .sme_name_wrap .sme_thumb_desc .tag_wrap .i_tag:first-child {margin-left:0;}
 
 #container .sme_visual .sme_info_box .sme_num_wrap {position:relative;float:left;padding-top:43px;width:739px;font-size:0;}
@@ -493,14 +496,14 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .layer_popup.visible {opacity:1;visibility:visible;-webkit-transition:opacity 0.3s 0s, visibility 0s 0s;-moz-transition:opacity 0.3s 0s, visibility 0s 0s;transition:opacity 0.3s 0s, visibility 0s 0s;}
 .layer_popup .popcontainer {position:fixed;top:50%;left:50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%); -o-transform:translate(-50%, -50%);transform: translate(-50%, -50%);min-width:288px;width:100%;max-height:91.666666%;overflow-y:auto;background:#fff;}
 .layer_popup .popcontainer .pop_inner {position:relative;padding:49px 40px 51px;}
-.layer_popup .pop_title {position:relative;height:49px;background-color:#ea563a;}
+.layer_popup .pop_title {position:relative;height:49px;}
 .layer_popup .pop_title .title {padding:0 40px;font-size:20px;font-weight:500;color:#f5f5f5;line-height:49px;}
 .layer_popup .pop_title .pop_close {display:block;position:absolute;top:14px;right:35px;width:24px;height:23px;background:url('../images/ico_pop_close.png') no-repeat 50% 50%;}
 .layer_popup .btn_box {margin-top:20px;text-align:right;}
 .layer_popup .input_box input {padding:0 10px;height:35px;line-height:35px;font-size:14px;color:#999999;}
 
 /* STEP */
-.layer_popup .apply_step {border:2px solid #ea563a;border-radius:4px;}
+.layer_popup .apply_step {border-width:2px;border-style:solid;border-radius:4px;}
 .layer_popup .apply_step ol {padding:29px 29px 34px 29px;overflow:hidden;}
 .layer_popup .apply_step ol li {position:relative;float:left;padding-left:23px;background:url('../images/ico_arrow_step.png') no-repeat 169px 50%;}
 .layer_popup .apply_step ol li:first-child {background-position:166px 50% !important;}
@@ -512,9 +515,9 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .layer_popup .apply_step ol li .circle {display:block;position:absolute;top:2px;left:0;width:17px;height:17px;background-color:#ffffff;border-radius:50%;border:5px solid #cccccc;}
 .layer_popup .apply_step ol li .step_num {display:block;font-size:17px;font-weight:700;color:#cccccc;line-height:1;}
 .layer_popup .apply_step ol li .desc {display:block;margin-top:5px;font-size:12px;font-weight:500;color:#cccccc;line-height:1;}
-.layer_popup .apply_step ol li.on .circle {border-color:#ea563a;}
-.layer_popup .apply_step ol li.on .step_num {color:#ea563a;}
-.layer_popup .apply_step ol li.on .desc {color:#ea563a;}
+.layer_popup .apply_step ol li.theme_bd .circle {border-color:inherit;}
+.layer_popup .apply_step ol li.theme_color .step_num {color:inherit;}
+.layer_popup .apply_step ol li.theme_color .desc {color:inherit;}
 /* 약관 동의 */
 .layer_popup .agree_cont .chk_desc {position:relative;margin-top:10px;padding-left:13px;font-size:13px;color:#333333;}
 .layer_popup .agree_cont .chk_desc .dot {display:block;position:absolute;top:9px;left:0;width:4px;height:4px;background-color:#0a0204;border-radius:50%;}
@@ -526,7 +529,7 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .layer_popup .agree_cont .agree_box .chk_box {margin-top:20px;text-align:center;}
 .layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"] + label {padding-left:62px;width:171px;height:40px;font-size:15px;font-weight:500;color:#999999;line-height:40px;background-color:#dedede;border-radius:4px;text-align:left;}
 .layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"] + label span.ico_fake {top:13px;left:43px;width:14px;height:14px;background:url('../images/chk_off2.png') no-repeat;}
-.layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"]:checked + label {background-color:#ea563a;color:#ffffff;}
+.layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"]:checked + label {color:#ffffff;}
 .layer_popup .agree_cont .agree_box .chk_box input[type="checkbox"]:checked + label span.ico_fake {background:url('../images/chk_on2.png') no-repeat;}
 
 /* form tbl style */
@@ -608,11 +611,11 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .layer_popup .pop_apply_step4 {min-height:452px;}
 .layer_popup .pop_apply_step4 .confirm_box {padding-top:43px;text-align:center;}
 .layer_popup .pop_apply_step4 .confirm_box .confirm_course {font-size:20px;font-weight:400;color:#333333;line-height:29px;}
-.layer_popup .pop_apply_step4 .confirm_box .confirm_course span {display:block;font-weight:500;color:#ea563a;}
+.layer_popup .pop_apply_step4 .confirm_box .confirm_course span {display:block;font-weight:500;}
 .layer_popup .pop_apply_step4 .confirm_box .course_period {margin-top:13px;font-size:13px;color:#333333;}
 .layer_popup .pop_apply_step4 .standby_box {margin-top:39px;padding:32px 0 36px;background-color:#f5f5f5;border:1px solid #cccccc;border-radius:6px;text-align:center;}
 .layer_popup .pop_apply_step4 .standby_box p {font-size:15px;font-weight:400;color:#333333;line-height:25px;}
-.layer_popup .pop_apply_step4 .standby_box p b {font-weight:500;color:#ea563a;}
+.layer_popup .pop_apply_step4 .standby_box p b {font-weight:500;}
 .layer_popup .confirm_desc {position:relative;margin-top:16px;padding-left:21px;font-size:13px;color:#666666;line-height:20px;}
 .layer_popup .confirm_desc span {display:block;position:absolute;top:3px;left:3px;width:13px;height:13px;background:url('../images/ico_info_gray.png') no-repeat;}
 
@@ -715,7 +718,7 @@ box-shadow: 5px 5px 6px 1px rgba(0,0,0,.1);}
 .comm_calendar .ui-datepicker-calendar .ui-datepicker-week-end:last-child a {color:#3b6af1;}
     
 /* Day Active State*/
-.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {width:25px;height:25px;line-height:25px;color:#ffffff !important;background-color:#ea563a !important;}
+.comm_calendar.checked .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-active {width:25px;height:25px;line-height:25px;color:#ffffff !important;}
 
 
 /* Other Months Days*/
@@ -789,7 +792,7 @@ button.btn_style2 {padding:0 15px;height:30px;line-height:28px;font-size:13px;fo
 
 
 /* Btn style - Color */
-button.btn_lf {background-color:#ea563a;color:#ffffff;border:1px solid #ea563a;}
+button.btn_lf {color:#ffffff;border-width:1px;border-style:solid;}
 button.btn_white {background-color:#ffffff;color:#333333;border:1px solid #cccccc;}
 button.btn_whitegray {background-color:#ffffff;color:#666666;border:1px solid #cccccc;}
 button.btn_gray {background-color:#e7e7e7;color:#666666;border:1px solid #e7e7e7;}
@@ -846,7 +849,7 @@ input[type="file"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px
 /* Input box Line style */
 .input_box.ip_line {position:relative;}
 .input_box.ip_line input {padding:0;height:56px;line-height:56px;font-size:17px;color:#666666;border-top:0;border-left:0;border-right:0;}
-.input_box.ip_line .ip_bar {position:absolute;bottom:0;left:0;width:0;height:1px;background-color:#ea563a;-webkit-transition:width .4s ease;transition:width .4s ease;}
+.input_box.ip_line .ip_bar {position:absolute;bottom:0;left:0;width:0;height:1px;-webkit-transition:width .4s ease;transition:width .4s ease;}
 .input_box.ip_line.on .ip_bar {width:100%;}
 
 .input_box.ip_line input[readonly]:focus::-webkit-input-placeholder {color:#666666 !important;}

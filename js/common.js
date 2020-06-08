@@ -274,7 +274,7 @@ function loginFindTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg").addClass("theme_bd");
 
     $tbtn.click(function(e){
     
@@ -283,7 +283,7 @@ function loginFindTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg").addClass("theme_bd");
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });
