@@ -10,6 +10,7 @@ input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !impor
 .theme_color_hover:hover {color:#ea563a !important;}
 .theme_bg_hover:hover {background-color:#ea563a !important;}
 .theme_bd_hover:hover {border-color:#ea563a !important;}
+.theme_bg_hover_after:hover:after {background-color:#ea563a !important;}
 
 /* Shortcut to body */
 #skip_navi a {display:block;overflow:hidden;position:absolute;top:0;left:0;margin-top:-1px;width:1px;height:1px;background:#000;color:#fff;text-align:center;}
@@ -29,7 +30,7 @@ input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !impor
 /* Header */
 #header {position:relative;}
 #header .hd {height:95px;border-bottom-width:5px;border-style:solid;background-color:#ffffff;}
-#header .hd .logo {float:left;margin-top:23px;margin-left:21px;width:160px;height:41px;background:url('../images/logo.png') no-repeat;background-size:100% auto;}
+#header .hd .logo {float:left;margin-top:23px;width:181px;height:41px;background:url('../images/logo.png') no-repeat;background-size:auto 100%;}
 #header .hd .logo > a {display:block;width:100%;height:100%;}
 #header .hd #gnb {float:left;margin-left:41px;width:660px;height:90px;}
 #header .hd #gnb ul li {float:left;}
@@ -45,7 +46,7 @@ input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !impor
 #header .hd .my_page .my_2dul {padding:12px 0 14px;background-color:#ffffff;border-radius:6px;-webkit-box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);
 box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 #header .hd .my_page .my_2dul li a {display:block;padding:3px 0;font-size:14px;font-weight:500;color:#666666;}
-#header .hd .my_page:hover > a {color:#ea563a;background-image:url('../images/ico_my_on.png');}
+#header .hd .my_page:hover > a {background-image:url('../images/ico_my_on.png');}
 #header .hd .my_page:hover .my_2dul_wrap {display:block;}
 
 /* Side Bar */
@@ -438,7 +439,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 #container .course_list li.sme_channel .course_desc {padding:35px 19px 0}
 #container .course_list li.sme_channel .course_desc .channel_name {display:block;font-size:20px;font-weight:500;color:#333333;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 #container .course_list li.sme_channel .course_desc .tag_wrap {display:block;margin-top:9px;font-size:0;}
-#container .course_list li.sme_channel .course_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;color:#ea563a;}
+#container .course_list li.sme_channel .course_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;}
 #container .course_list li.sme_channel .course_desc .tag_wrap .i_tag:first-child {margin-left:0;}
 #container .course_list li.sme_channel .course_desc .subs_num {display:block;margin-top:11px;font-size:13px;color:#666666;}
 #container .course_list li.sme_channel .course_desc .subs_num b {margin-right:5px;font-size:13px;font-weight:700;color:#666666;}
