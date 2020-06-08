@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	$menu_a.click(function(event) {
 		event.preventDefault();
-		$("html, body").animate({
+		$("html, body").stop().animate({
 			scrollTop: $($(this).attr("href")).offset().top - $(".ex_detail_con_nav").height()
 		},{
 			duration: 700,
