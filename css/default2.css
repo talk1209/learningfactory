@@ -172,7 +172,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con_sec.sec3 li a {display:block;padding-left:20px;height:55px;font-size:17px;color:#999;line-height:54px;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;}
 .ex_detail_con_sec.sec3 li span {display:inline-block;margin-right:15px;}
 .ex_detail_con_sec.sec3 li a:hover {font-weight:500;}
-.ex_detail_con_sec.sec3 li a:hover:after {z-index:1;content:"";position:absolute;bottom:-1px;left:0;width:100%;height:1px;background-color:#ea563a;}
+.ex_detail_con_sec.sec3 li a:hover:after {z-index:1;content:"";position:absolute;bottom:-1px;left:0;width:100%;height:1px;}
 
 .ex_detail_con_sec.sec4 .sec4_tool_tip {position:absolute;right:0;top:75px;font-size:14px;color:#999;}
 .ex_detail_con_sec.sec4 .sec4_tool_tip img {margin-right:2px;vertical-align:-2px;}
