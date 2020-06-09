@@ -5,7 +5,7 @@ $(document).ready(function() {
     var hovering = false;
     snb_bg.hide();
     
-    $('#gnb')
+    $('.gnb_ex')
         .on("mouseenter", function () {
         hovering = true;
         // Open the snb_bg
