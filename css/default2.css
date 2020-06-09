@@ -118,7 +118,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 
 .ex_detail_con .aside_wrap {float:right;width:346px;}
 .ex_detail_con .aside {position:relative;}
-.ex_detail_con .aside .aside_inner {position:static;width:346px;border:1px solid #ccc;background-color:#fff;z-index:9999;}
+.ex_detail_con .aside .aside_inner {position:static;width:346px;border:1px solid #ccc;background-color:#fff;z-index:999;}
 .ex_detail_con .aside .aside_inner .aside_con {padding:20px 20px 30px;}
 .ex_detail_con .aside .aside_inner .aside_con h3 {margin-top:16px;font-size:25px;color:#333;font-weight:500;line-height:32px;}
 .ex_detail_con .aside .aside_inner .aside_con .aside_price {position:relative;margin-top:12px;font-size:25px;font-weight:700;}
@@ -129,7 +129,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con .aside .aside_inner .aside_con .btn_box button {margin-top:10px;}
 
 .ex_detail_con .ex_detail_con_inner {float:left;width:1008px;}
-.ex_detail_con_nav {width:1008px;z-index:9999;}
+.ex_detail_con_nav {width:1008px;z-index:999;}
 .ex_detail_con_nav .nav_menu {overflow:hidden;}
 .ex_detail_con_nav .nav_menu.nav_menu2 li {width:50%;}
 .ex_detail_con_nav .nav_menu.nav_menu3 li {width:33.33%;}

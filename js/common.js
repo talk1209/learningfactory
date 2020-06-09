@@ -54,6 +54,13 @@ $(document).ready(function() {
         startTimeout();
     };
     
+     /* Layer Popup Body Lock*/
+    if ($(".layer_popup").hasClass("visible")) {
+        $('body').addClass("lock"); // body scroll 잠금
+    } else {
+        $('body').removeClass("lock");
+    }
+    
     /* Sidebar Mouseover Event */
     $(".learning_sidebar li").mouseover(function(){
         $(this).addClass("on");

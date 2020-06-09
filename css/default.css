@@ -10,6 +10,7 @@
 .inner:after {display:block;visibility:hidden;clear:both;content:""}
 
 /* Common */
+body.lock {overflow:hidden;}
 .blind {font-size:0;line-height:0;direction:ltr;text-indent:-999em;}
 .lf_color {color:#ea563a !important;}
 #container h2.sec_title {margin-bottom:23px;font-size:26px;font-weight:700;color:#4c4c4c;}
