@@ -211,18 +211,12 @@ $(document).ready(function() {
 		}
 	});
 
-	// Tool tip
+	// Tool tip  - 20200609 수정
 	$('.tool_tip').find('img').on({
-		
 		mouseenter: function(){
-			var $str;
-			$str = '<div class="tool_top_box">';
-			$str += '<div class="tool_top_box_inner">'+$(this).attr('alt')+'</div>';
-			$str += '<div class="tool_top_box_arrow"></div>';
-			$str += '</div>';
-			$(this).parent().append($str);
+			$(this).next().css('display','block');
 		},mouseleave: function(){
-			$('.tool_top_box').remove();
+			$(this).next().css('display','none');
 		}
 	});
 

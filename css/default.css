@@ -1224,6 +1224,6 @@ table.table_ex_detail.aside td {font-size:14px;}
 /* Tool tip */
 .tool_tip {}
 .tool_tip img {cursor:pointer;}
-.tool_tip .tool_top_box {position:relative;}
-.tool_tip .tool_top_box_inner {position:absolute;width:215px;left:-180px;bottom:30px;padding:10px 13px;font-size:12px;color:#fff;background-color:#333;border-radius:5px;}
-.tool_tip .tool_top_box_arrow {position:absolute;bottom:12px;width:14px;height:18px;border-top:9px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;}
+.tool_tip .tool_top_box {position:relative;display:none;}
+.tool_tip .tool_top_box_inner {position:absolute;width:215px;left:-180px;bottom:30px;padding:10px 13px;font-size:12px;color:#fff;background-color:#333;border-radius:5px;z-index:10;}
+.tool_tip .tool_top_box_arrow {position:absolute;bottom:12px;width:14px;height:18px;border-top:9px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;z-index:10;}

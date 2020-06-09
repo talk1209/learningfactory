@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.learning_list_wrap .hp_box1 {margin-top:50px;}
+.learning_list_wrap .hp_box2 {margin-top:30px;}
+.learning_list_wrap .hp_box2 p {}
+.learning_list_wrap .hp_box2 ul {margin-top:6px;}
+.learning_list_wrap .hp_box2 li {position:relative;padding-left:13px;font-size:22px;color:#333;font-weight:500;}
+.learning_list_wrap .hp_box2 li:before {position:absolute;left:0;top:14px;width:7px;height:7px;background-color:#ea563a;border-radius:4px;content:'';}
+.learning_list_wrap .hp_box2 li span {font-size:17px;font-weight:400;}
+.learning_list_wrap .list_style1 {margin-top:13px;}
+
+
+.hp_box1 {padding:14px 35px;font-size:17px;color:#333;background-color:#ffefef;border-width:1px;border-style:solid;border-radius:10px;}
+.hp_box1 b {font-size:22px;vertical-align:-2px;}
+
+.hp_box2 {padding:25px 35px;font-size:17px;color:#3d7ca4;background-color:#e7f6ff;border:1px solid #aed5ef;border-radius:10px;}
+
+.list_style1:after {display:block;visibility:hidden;clear:both;content:""}
+.list_style1 > ul {margin:0 -17px;}
+.list_style1 > ul > li {float:left;margin:17px;width:320px;height:300px;}
+.list_style1 li .thumb_box {position: relative;height: 200px;background-repeat: no-repeat;background-size: 100% auto;}
+.list_style1 li .thumb_box .thumb_alert {position:absolute;bottom:13px;left:17px;width:285px;height:35px;color:#fff;text-align:center;line-height:34px;border-radius:18px;opacity: 0.9;}
+.list_style1 li .course_desc {position:relative;}
+.list_style1 li .course_desc .i_cate {margin-top:17px;font-size:13px;}
+.list_style1 li .course_desc .i_subject {margin-top:2px;font-size:20px;font-weight:700;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 1; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+.list_style1 li .course_desc .i_date {margin-top:7px;font-size:14px;color:#666;font-weight:500;}
+.list_style1 li .course_desc .i_date span {font-weight:300;}
+.list_style1 li .course_desc .tool_tip {position:absolute;bottom:0;right:0;}
+.list_style1 li .course_desc .tool_tip .tool_top_box_inner {width:230px;height:auto;left:-180px;bottom:-89px;border-radius:5px;}
+.list_style1 li .course_desc .tool_tip .tool_top_box_inner li {padding:0.5px 0;}
+.list_style1 li .course_desc .tool_tip .tool_top_box_inner li span {display:inline-block;width:82px;}
+.list_style1 li .course_desc .tool_tip .tool_top_box_arrow {bottom:-15px;width:14px;height:18px;border-bottom:9px solid #333;border-top:9px solid transparent;}
