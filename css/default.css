@@ -1185,6 +1185,18 @@ table.table_ex_detail.aside td {font-size:14px;}
 .table_style2 tbody th {background-color:#eee;font-weight:500;}
 .table_style2 tbody td {}
 
+.table_style3 {border-top:3px solid #333;}
+.table_style3 th,
+.table_style3 tbody td {padding:12px 5px;text-align:center;vertical-align:middle;}
+.table_style3 thead th {font-size:14px;font-weight:500;border-left:1px solid #333;border-bottom:1px solid #333;}
+.table_style3 thead th:first-child {border-left:0;}
+.table_style3 thead th span {font-size:12px;}
+.table_style3 tbody td {font-size:15px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.table_style3 tbody td:first-child {border-left:0;}
+.table_style3 thead td {font-weight:500;}
+.table_style3 tbody th {background-color:#eee;font-weight:500;}
+.table_style3 tbody td {}
+
 /* Page Nav */
 .page_nav {margin-top:30px;text-align:center;}
 .page_nav li {display:inline-block;margin:0 1px;}
@@ -1201,6 +1213,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .btn_gray2_white {color:#fff;background-color:#666666;}
 .btn_gray_black {color:#666;background-color:#ddd}
 .btn_blue_white {color:#fff;background-color:#3d7ca4}
+.btn_gray1 {color:#666;background-color:#f5f5f5;}
 .btn_gray2 {color:#999;background-color:#ddd;}
 .btn_gray3 {color:#fff;background-color:#555;}
 .btn_ex_favorite {height:40px !important;color:#262626;line-height:20px !important;border:1px solid #b5b5b5;}

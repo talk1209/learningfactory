@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-.ex_detail_info_li li.em {background-color:#dcdcdc;}
-
 /* Learning list */
 .learning_list_wrap .hp_box1 {margin-top:50px;}
 .learning_list_wrap .hp_box2 {margin-top:30px;}
@@ -13,7 +11,7 @@
 .learning_list_wrap .list_style1 {margin-top:13px;}
 
 /* Learning detail */
-.learning_detail {padding:0 0 130px !important;width:100%;max-width:100%;}
+.learning_detail {padding:0 0 130px !important;width:100%;max-width:100%;background-color:#f5f5f5;}
 .learning_detail_hd {}
 .learning_detail_hd_inner {position:relative;margin: 0 auto;padding:55px 20px 50px;max-width: 1424px;}
 .learning_detail_hd_inner:after {display:block;visibility:hidden;clear:both;content:""}
@@ -23,15 +21,15 @@
 .learning_detail_hd_inner .detail_cate span:first-child {margin-left:0;}
 .learning_detail_hd_inner .detail h3 {margin-top:10px;font-size:25px;color:#fff;line-height:32px;}
 .learning_detail_hd_inner .detail .go_detail {margin-top:8px;}
-.learning_detail_hd_inner .detail .go_detail a {display:inline-block;padding-right:16px;font-size:15px;color:#fff;background:url('../images/ico_right_arrow_w_s.png') no-repeat right 6px;}
+.learning_detail_hd_inner .detail .go_detail a {display:inline-block;padding-right:16px;font-size:15px;color:#fff;font-weight:300;background:url('../images/ico_right_arrow_w_s.png') no-repeat right 6px;}
 .learning_detail_hd_inner .detail .detail_ft {margin-top:60px;}
 
-.learning_detail_con {position:relative;margin:40px auto;padding:0 20px 0;max-width: 1424px;}
+.learning_detail_con {position:relative;margin:40px auto;padding:0 20px 0;max-width:1424px;}
 .learning_detail_con:after {display:block;visibility:hidden;clear:both;content:""}
 .learning_detail_con.fixed_top .aside_inner {position:fixed !important;top:0;}
 .learning_detail_con .aside_wrap {float:left;width:280px;}
 .learning_detail_con .aside_wrap .aside {position:relative;}
-.learning_detail_con .aside_wrap .aside .aside_inner {position:static;width:280px;}
+.learning_detail_con .aside_wrap .aside .aside_inner {position:static;width:280px;background-color:#fff;}
 .learning_detail_con .aside_wrap .aside li {}
 .learning_detail_con .aside_wrap .aside li a {display:block;padding:0 40px 0 30px;height:50px;font-size:18px;line-height:50px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;border-left:1px solid #ddd;background-color:#fff;background:url('../images/ico_aside_nav.png') no-repeat right 20px top 18px;}
 .learning_detail_con .aside_wrap .aside li:first-child a {border-top:1px solid #ddd;}
@@ -40,22 +38,75 @@
 .learning_detail_con .learning_detail_con_inner {float:right;width:1074px;}
 .learning_detail_con .learning_detail_con_inner .sec {margin-top:20px;overflow:hidden;}
 .learning_detail_con .learning_detail_con_inner .sec:first-child {margin-top:0;}
-.learning_detail_con .learning_detail_con_inner .learning_art {border:1px solid #dcdcdc;border-radius:4px;}
+.learning_detail_con .learning_detail_con_inner .learning_art {border:1px solid #dcdcdc;border-radius:4px;background-color:#fff;}
 .learning_detail_con .learning_detail_con_inner .learning_art h3 {font-size:20px;}
+
 .learning_detail_con .learning_detail_con_inner .learning_status {float:left;padding:20px 30px !important;width:900px;height:150px !important;overflow:hidden;}
+.learning_detail_con .learning_detail_con_inner .learning_status.learning_status_combination {width:716px;}
 .learning_detail_con .learning_detail_con_inner .learning_status ul {margin-top:10px;}
 .learning_detail_con .learning_detail_con_inner .learning_status li {float:left;width:20%;text-align:center;border-left:1px solid #ccc;}
+.learning_detail_con .learning_detail_con_inner .learning_status.learning_status_online li {width:16.66% !important;}
+.learning_detail_con .learning_detail_con_inner .learning_status.learning_status_combination li {width:25%;}
 .learning_detail_con .learning_detail_con_inner .learning_status li:first-child {border-left:0;}
 .learning_detail_con .learning_detail_con_inner .learning_status li .learning_status_info {font-size:25px;color:#999;}
 .learning_detail_con .learning_detail_con_inner .learning_status li .learning_status_info strong {color:#333;}
 .learning_detail_con .learning_detail_con_inner .learning_status li .learning_status_info span.slash {font-size:20px;vertical-align:2px;}
 .learning_detail_con .learning_detail_con_inner .learning_status li .learning_status_tit {margin-top:2px;font-size:17px;}
-.learning_detail_con .learning_detail_con_inner .learning_schedule {float:right;}
-.learning_detail_con .learning_detail_con_inner .learning_schedule a {display:block;padding-top:38px;width:150px;height:150px;text-align:center;}
-.learning_detail_con .learning_detail_con_inner .learning_schedule a .learning_schedule_tit {margin-top:10px;font-size:17px;font-weight:500;}
-.learning_detail_con .learning_detail_con_inner .learning_refunds {float:left;padding:20px 30px !important;width:527px;}
-.learning_detail_con .learning_detail_con_inner .learning_board {float:right;padding:20px 30px !important;width:527px;}
-.learning_detail_con .learning_detail_con_inner .learning_completion {padding:20px 30px !important;}
+
+.learning_detail_con .learning_detail_con_inner .learning_start {float:right;}
+.learning_detail_con .learning_detail_con_inner .learning_start a {display:block;padding-top:38px;width:150px;height:150px;text-align:center;}
+.learning_detail_con .learning_detail_con_inner .learning_start a .learning_start_tit {margin-top:10px;font-size:17px;font-weight:500;}
+
+.learning_detail_con .learning_detail_con_inner .learning_start_combinatio {float:right;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a {display:block;width:338px;height:150px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .text {float:left;padding:25px 30px;width:188px;height:150px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .text h4 {display:inline-block;padding-right:13px;font-size:17px;color:#333;font-weight:500;background:url('../images/ico_right_arrow_s.png') no-repeat right 0 top 8px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .img {float:left;width:150px;height:150px;background-size:cover;}
+
+.learning_detail_con .learning_detail_con_inner .learning_refunds {float:left;padding:20px 30px !important;width:527px;height:230px;}
+.learning_detail_con .learning_detail_con_inner .learning_refunds ul {margin-top:8px;}
+
+.learning_detail_con .learning_detail_con_inner .learning_seminar {float:left;padding:20px 30px !important;width:527px;height:230px;}
+.learning_detail_con .learning_detail_con_inner .learning_seminar p {margin-top:8px;font-size:15px;line-height:24px;}
+
+.learning_detail_con .learning_detail_con_inner .learning_board {position:relative;float:right;padding:20px 30px !important;width:527px;height:230px;}
+.learning_detail_con .learning_detail_con_inner .learning_board .more {position:absolute;right:30px;top:20px;color:#999;}
+.learning_detail_con .learning_detail_con_inner .learning_board .more img {vertical-align:1px;}
+.learning_detail_con .learning_detail_con_inner .learning_board ul {margin-top:8px;}
+
+.learning_detail_con .learning_detail_con_inner .learning_completion {padding:20px 30px 30px !important;}
+.learning_detail_con .learning_detail_con_inner .learning_completion table {margin-top:20px;}
+
+.learning_detail_con .learning_detail_con_inner .learning_info {position:relative;padding:20px 30px !important;}
+.learning_detail_con .learning_detail_con_inner .learning_info ul.learning_info_step {overflow:hidden;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li {position:relative;float:left;padding-left:24px;width:33.33%;font-size:20px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li .circle {position:absolute;width:17px;height:17px;left:0;top:6px;border-color:#999;border-width:5px;border-style:solid;border-radius:50%;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li:after {position:absolute;top:14px;right:0;width:240px;height:1px;background-color:#999;content:"";}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li:first-child:after {width:165px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li:last-child:after {width:225px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li strong {font-weight:500;color:#333;background-color:#fff;}
+.learning_detail_con .learning_detail_con_inner .learning_info .learning_info_step li .date {display:block;font-size:15px;font-weight:300;}
+.learning_detail_con .learning_detail_con_inner .learning_info .line_gray {margin-top:25px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .sec_inner {margin-top:30px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .art {margin-top:15px;overflow:hidden;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score {float:left;width:540px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score ul {overflow:hidden;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score li {float:left;padding:0 30px;width:50%;height:80px;font-size:17px;line-height:80px;border-top:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score li:first-child {border-left:1px solid #ccc;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score li .num {float:right;font-size:25px;color:#999;font-weight:300;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score li .num strong {color:#333;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_score li span.slash {font-size:20px;vertical-align:2px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning {float:right;width:456px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a {overflow:hidden;display:block;height:80px;line-height:80px;border:1px solid #ccc;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .text {float:left;width:324px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .text h4 {display:inline-block;padding:0 15px 0 30px;font-size:17px;color:#333;font-weight:500;background:url('../images/ico_right_arrow_s.png') no-repeat right 0 top 35px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .img {float:left;width:130px;height:80px;background-size:cover;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_place {float:left;margin-left:16px;padding:16px 15px 0 30px;width:338px;height:80px;border:1px solid #ccc;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_place h4 {font-size:17px;font-weight:500;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_place p {font-size:15px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_schedule {float:left;margin-left:16px;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_schedule a {display:block;padding-top:12px;width:102px;height:80px;font-size:15px;border:1px solid #ccc;text-align:center;}
+.learning_detail_con .learning_detail_con_inner .learning_info .info_schedule a .info_schedule_tit {margin-top:2px;font-size:15px;font-weight:400;}
 
 table.table_learning_detail {margin-top:20px;font-size:15px;color:#fff;}
 table.table_learning_detail th {text-align:left;font-weight:400;}
@@ -72,6 +123,34 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_detail_hd_inner .aside .aside_bt .btn_box button {margin-top:10px;}
 .learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite {width:120px !important;height:40px !important;line-height:40px !important;}
 .learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite img {margin-right:7px;vertical-align:-1;}
+
+/* popup_certification */
+.popup_certification {margin:0 -10px;overflow:hidden;}
+.popup_certification li {float:left;padding:0 10px;width:33.33%;text-align:center;}
+.popup_certification li .li_inner {padding:40px 20px;border:1px solid #ccc;}
+.popup_certification li .li_inner h2 {font-size:17px;font-weight:500;}
+.popup_certification li .li_inner .img {margin-top:30px;}
+.popup_certification li .li_inner p {margin-top:30px;font-size:15px;color:#666;}
+.popup_certification li .btn_box {text-align:center;}
+.popup_certification li .btn_box button {padding:0 10px;width:100%;}
+
+/* 팝업 시간표 */
+.popup_schedule .popup_schedule_hd {position:relative;}
+.popup_schedule .popup_schedule_hd h2 {font-size:30px;}
+.popup_schedule .popup_schedule_hd .des {margin-top:5px;}
+.popup_schedule .popup_schedule_hd .des p {font-size:20px;font-weight:700;}
+.popup_schedule .popup_schedule_hd .des .date {font-size:15px;color:#666;}
+.popup_schedule .popup_schedule_hd .des .name {float:right;font-size:15px;color:#333;}
+.popup_schedule .popup_schedule_hd .print {position:absolute;right:0;top:15px;}
+.table_schedule {margin-top:20px;padding:10px;height:515px;border:1px solid #ddd;overflow-y:scroll;}
+.table_schedule th,
+.table_schedule tbody td {padding:7px 10px;}
+.table_schedule thead th {font-size:15px;color:#fff;font-weight:400;background-color:#666;border-left:1px solid #fff;}
+.table_schedule thead th:first-child {border-left:0;}
+.table_schedule tbody td {font-size:14px;vertical-align:middle;}
+.table_schedule tbody td strong {color:#333;font-weight:500;}
+.table_schedule tbody .blank {background-color:#f5f5f5;}
+.table_schedule tbody .time {color:#999;text-align:center;}
 
 
 .hp_box1 {padding:14px 35px;font-size:17px;color:#333;border-width:1px;border-style:solid;border-radius:10px;}
@@ -95,6 +174,12 @@ table.table_learning_detail.aside td {font-size:14px;}
 .list_style1 li .course_desc .tool_tip .tool_top_box_inner li span {display:inline-block;width:82px;}
 .list_style1 li .course_desc .tool_tip .tool_top_box_arrow {bottom:-15px;width:14px;height:18px;border-bottom:9px solid #333;border-top:9px solid transparent;}
 
+/* Latest style */
+.latest_style1 li {position:relative;}
+.latest_style1 li a {display:block;padding:4px 0px 4px 10px;font-size:15px;}
+.latest_style1 li:before {position:absolute;left:0;top:3px;content:"·";}
+.latest_style1 li a span {float:right;color:#999;}
+
 /* Ellipse style */
 .label_w {background-color:#fff;}
 .label_t_w {color:#fff;}
@@ -106,3 +191,12 @@ table.table_learning_detail.aside td {font-size:14px;}
 .review_star_w_128 .ico_star_view {width:128px;height:20px;background:url('../images/review_star_w_128_blank.png') no-repeat;}
 .review_star_w_128 .ico_star_view .star_fill {height:20px;background:url('../images/review_star_w_128_full.png') no-repeat;}
 .review_star_w_128 .i_rating {margin-left:15px;font-size:20px;color:#fff;font-weight:400;line-height:20px;}
+
+/* Backgound */
+.bg_gray {background-color:#f8f8f8;}
+
+/* Line */
+.line_gray {width:100%;height:1px;background-color:#f5f5f5;}
+
+/* Font color */
+.color_b {color:#0367a6 !important;}

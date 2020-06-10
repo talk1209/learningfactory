@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/selectric.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
+    <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/common.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:800px;">
+        <div class="pop_title theme_bg">
+            <span class="title">시간표 보기</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+			<div class="popup_schedule">
+				<div class="popup_schedule_hd">
+					<h2>시간표</h2>
+					<div class="des">
+						<p>하루 한 문장! 미드로 배우는 영어회화</p>
+						<span class="date">2020.04.15 ~ 2020.04.03</span>
+						<span class="name">김사랑</span>
+					</div>
+					<a href="#none" class="print"><img src="../../images/ico_print.png" alt="프린트" /></a>
+				</div>
+				<div class="table_schedule">
+					<table class="table">
+						<colgroup>
+							<col width="20%">
+							<col width="20%">
+							<col width="20%">
+							<col width="20%">
+							<col width="20%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>시간</th>
+								<th>1일차</th>
+								<th>2일차</th>
+								<th>3일차</th>
+								<th>4일차</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="time">08:30 ~ 09:00</td>
+								<td rowspan="2" class="blank"></td>
+								<td rowspan="2">
+									<strong>마켓센싱과 시장조사 방법론</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>사례연구(2) 발표</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="3">
+									<strong>유통 및 촉진 전략</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">09:00 ~ 10:00</td>
+							</tr>
+							<tr>
+								<td class="time">10:00 ~ 11:00</td>
+								<td>
+									<strong>Orientation</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>사례연구(1) 발표</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>B2B 브랜드 전략</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">11:00 ~ 12:00</td>
+								<td>
+									<strong>마케팅 개요</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>사례연구(4)</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">12:00 ~ 13:00</td>
+								<td>
+									종식
+								</td>
+								<td>
+									종식
+								</td>
+								<td>
+									종식
+								</td>
+								<td>
+									종식
+								</td>
+							</tr>
+							<tr>
+								<td class="time">13:00 ~ 14:00</td>
+								<td>
+									<strong>시장환경의 변화</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>B2B 고객에 대한 이해(구매센터 이해)</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>포지셔닝 전략</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>사례연구 최종 발표/Review</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">14:00 ~ 15:00</td>
+								<td rowspan="2">
+									<strong>시장환경 분석방법</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="2">
+									<strong>사례연구(3)</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">15:00 ~ 16:00</td>
+								<td>
+									<strong>시장 세분화</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">16:00 ~ 17:00</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td rowspan="5" class="blank">
+								</td>
+							</tr>
+							<tr>
+								<td class="time">17:00 ~ 18:00</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+
+							</tr>
+							<tr>
+								<td class="time">18:00 ~ 19:00</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">19:00 ~ 20:00</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+							<tr>
+								<td class="time">20:00 ~ 21:00</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+								<td>
+									<strong>Wrap-up 및 종합시험</strong><br/>
+									(강사명)
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+</body>
+</html>
