@@ -2,6 +2,7 @@
 .theme_color {color:#ea563a !important;}
 .theme_bg {background-color:#ea563a !important;}
 .theme_bd {border-color:#ea563a !important;}
+.theme_bg_o10 {background-color:rgba(234,86,58,0.1);}
 input.theme_color_chk[type="checkbox"]:checked + label {color:#ea563a !important;}
 input.theme_bg_chk[type="checkbox"]:checked + label {background-color:#ea563a !important;}
 input.theme_bd_chk[type="checkbox"]:checked + label {border-color:#ea563a !important;}
