@@ -5,7 +5,7 @@
 .learning_list_wrap .hp_box2 p {}
 .learning_list_wrap .hp_box2 ul {margin-top:6px;}
 .learning_list_wrap .hp_box2 li {position:relative;padding-left:13px;font-size:22px;color:#333;font-weight:500;}
-.learning_list_wrap .hp_box2 li:before {position:absolute;left:0;top:14px;width:7px;height:7px;background-color:#ea563a;border-radius:4px;content:'';}
+.learning_list_wrap .hp_box2 li .hp_dot {position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:4px;}
 .learning_list_wrap .hp_box2 li span {font-size:17px;font-weight:400;}
 .learning_list_wrap .list_style1 {margin-top:13px;}
 
