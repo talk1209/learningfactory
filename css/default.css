@@ -974,7 +974,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_info_li {overflow:hidden;}
 .ex_detail_info_li li {float:left;padding-top:60px;width:11.11%;height:104px;font-size:17px;font-weight:500;text-align:center;border-width:1px;border-style:solid;border-left:0;background-repeat:no-repeat;background-position:50% 15px;}
 .ex_detail_info_li li span {color:#999;}
-.ex_detail_info_li li.em {color:#666666;background-color:#fff;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-top:1px solid #ccc;}
+.ex_detail_info_li li.em {color:#666666;background-color:#dcdcdc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-top:1px solid #ccc;}
 .ex_detail_info_li li.em.on {color:#fff;border-top:0;border-right:1px solid #fff;border-bottom:0;}
 .ex_detail_info_li li:first-child {border-left-width:1px;border-left-style:solid;}
 
