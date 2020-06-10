@@ -1,16 +1,59 @@
 @charset "utf-8";
 
+/* Learning list */
 .learning_list_wrap .hp_box1 {margin-top:50px;}
 .learning_list_wrap .hp_box2 {margin-top:30px;}
 .learning_list_wrap .hp_box2 p {}
 .learning_list_wrap .hp_box2 ul {margin-top:6px;}
 .learning_list_wrap .hp_box2 li {position:relative;padding-left:13px;font-size:22px;color:#333;font-weight:500;}
-.learning_list_wrap .hp_box2 li:before {position:absolute;left:0;top:14px;width:7px;height:7px;background-color:#ea563a;border-radius:4px;content:'';}
+.learning_list_wrap .hp_box2 li .hp_dot {position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:4px;}
 .learning_list_wrap .hp_box2 li span {font-size:17px;font-weight:400;}
 .learning_list_wrap .list_style1 {margin-top:13px;}
 
+/* Learning detail */
+.learning_detail {padding:0 0 130px !important;width:100%;max-width:100%;}
+.learning_detail_hd {}
+.learning_detail_hd_inner {position:relative;margin: 0 auto;padding:55px 20px 50px;max-width: 1424px;}
+.learning_detail_hd_inner:after {display:block;visibility:hidden;clear:both;content:""}
+.learning_detail_hd_inner .img {float:left;margin-right:30px;height:248px;}
+.learning_detail_hd_inner .detail {float:left;position:relative;width:550px;}
+.learning_detail_hd_inner .detail_cate span {margin-left:7px}
+.learning_detail_hd_inner .detail_cate span:first-child {margin-left:0;}
+.learning_detail_hd_inner .detail h3 {margin-top:10px;font-size:25px;color:#fff;line-height:32px;}
+.learning_detail_hd_inner .detail .go_detail {margin-top:8px;}
+.learning_detail_hd_inner .detail .go_detail a {display:inline-block;padding-right:16px;font-size:15px;color:#fff;background:url('../images/ico_right_arrow_w_s.png') no-repeat right 6px;}
+.learning_detail_hd_inner .detail .detail_ft {margin-top:60px;}
 
-.hp_box1 {padding:14px 35px;font-size:17px;color:#333;background-color:#ffefef;border-width:1px;border-style:solid;border-radius:10px;}
+.learning_detail_con {position:relative;margin:40px auto;padding:0 20px 0;max-width: 1424px;}
+.learning_detail_con.fixed_top .aside_inner {position:fixed !important;top:0;}
+.learning_detail_con .aside_wrap {float:left;width:280px;}
+.learning_detail_con .aside_wrap .aside {position:relative;}
+.learning_detail_con .aside_wrap .aside .aside_inner {position:static;width:280px;}
+.learning_detail_con .aside_wrap .aside li {}
+.learning_detail_con .aside_wrap .aside li a {display:block;padding:0 40px 0 30px;height:50px;font-size:18px;line-height:50px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;border-left:1px solid #ddd;background-color:#fff;background:url('../images/ico_aside_nav.png') no-repeat right 20px top 18px;}
+.learning_detail_con .aside_wrap .aside li:first-child a {border-top:1px solid #ddd;}
+.learning_detail_con .aside_wrap .aside li a.on {border:0;color:#fff;background-image:url('../images/ico_aside_nav_on.png');}
+.learning_detail_con .aside_wrap .aside li:first-child a.on {border-top:0;}
+.learning_detail_con .learning_detail_con_inner {float:right;width:1074px;}
+
+table.table_learning_detail {margin-top:20px;font-size:15px;color:#fff;}
+table.table_learning_detail th {text-align:left;font-weight:400;}
+table.table_learning_detail th
+table.table_learning_detail th,
+table.table_learning_detail td {padding:1px 0;font-weight:300;}
+table.table_learning_detail td {padding-left:10px;}
+table.table_learning_detail.aside th,
+table.table_learning_detail.aside td {font-size:14px;}
+
+.learning_detail_hd_inner .aside {float:right;padding-right:40px;width:250px;text-align:right;}
+.learning_detail_hd_inner .aside .aside_bt {position:absolute;width:250px;right:60px;;bottom:60px;}
+.learning_detail_hd_inner .aside .aside_bt .btn_box {float:right;}
+.learning_detail_hd_inner .aside .aside_bt .btn_box button {margin-top:10px;}
+.learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite {width:120px !important;height:40px !important;line-height:40px !important;}
+.learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite img {margin-right:7px;vertical-align:-1;}
+
+
+.hp_box1 {padding:14px 35px;font-size:17px;color:#333;border-width:1px;border-style:solid;border-radius:10px;}
 .hp_box1 b {font-size:22px;vertical-align:-2px;}
 
 .hp_box2 {padding:25px 35px;font-size:17px;color:#3d7ca4;background-color:#e7f6ff;border:1px solid #aed5ef;border-radius:10px;}
@@ -30,3 +73,15 @@
 .list_style1 li .course_desc .tool_tip .tool_top_box_inner li {padding:0.5px 0;}
 .list_style1 li .course_desc .tool_tip .tool_top_box_inner li span {display:inline-block;width:82px;}
 .list_style1 li .course_desc .tool_tip .tool_top_box_arrow {bottom:-15px;width:14px;height:18px;border-bottom:9px solid #333;border-top:9px solid transparent;}
+
+/* Ellipse style */
+.label_w {background-color:#fff;}
+.label_t_w {color:#fff;}
+
+/* Button */
+.btn_t_w_w {color:#fff;background-color:transparent;border:1px solid #fff;border-radius:4px;}
+
+/* 별점 */
+.review_star_w_128 .ico_star_view {width:128px;height:20px;background:url('../images/review_star_w_128_blank.png') no-repeat;}
+.review_star_w_128 .ico_star_view .star_fill {height:20px;background:url('../images/review_star_w_128_full.png') no-repeat;}
+.review_star_w_128 .i_rating {margin-left:15px;font-size:20px;color:#fff;font-weight:400;line-height:20px;}

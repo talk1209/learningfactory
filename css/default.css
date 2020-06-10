@@ -1174,13 +1174,13 @@ table.table_ex_detail.aside td {font-size:14px;}
 .table_style1 th,
 .table_style1 td {height:35px;font-size:15px;color:#333;text-align:center;vertical-align:middle;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
 .table_style1 thead th {background-color:#eee;font-weight:500;}
-.table_style1 tfoot td {background-color:#fef6f5;font-weight:500;}
+.table_style1 tfoot td {font-weight:500;}
 
 .table_style2 {border-top:1px solid #666;}
 .table_style2 th,
 .table_style2 td {padding:0 15px;height:35px;font-size:15px;color:#333;vertical-align:middle;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
 .table_style2 th {border-left:0;}
-.table_style2 thead th {background-color:#fef6f5;font-weight:500;}
+.table_style2 thead th {font-weight:500;}
 .table_style2 thead td {font-weight:500;}
 .table_style2 tbody th {background-color:#eee;font-weight:500;}
 .table_style2 tbody td {}
