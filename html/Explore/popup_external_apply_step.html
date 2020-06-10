@@ -17,14 +17,13 @@
    
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/selectric.css">
+    <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
-	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
     <script src="../../js/jquery-ui-1.12.1.min.js"></script>    
     <script src="../../js/jquery.selectric.min.js"></script>
 	<script src="../../js/common.js"></script>
-	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
 </head>
@@ -32,16 +31,16 @@
 <!-- Layer pop -->
 <div class="layer_popup visible"> <!-- visible class add or remove -->
     <div class="popcontainer" style="width:900px;">
-        <div class="pop_title">
+        <div class="pop_title theme_bg">
             <span class="title">외부교육 개별 신청</span>
             <button type="button" class="pop_close blind">닫기</button>
         </div>
         <div class="pop_inner">
            
             <!-- 수강신청 공통 STEP -->
-            <div class="apply_step">
+            <div class="apply_step theme_bd">
                 <ol>
-                    <li class="on"> <!-- STEP별 on클래스 추가 -->
+                    <li class="theme_color theme_bd"> <!-- STEP별 theme_color theme_bd 클래스 추가 -->
                         <span class="circle"></span>
                         <b class="step_num">STEP 1</b>
                         <span class="desc">개인정보 수집/활용 동의</span>
@@ -79,7 +78,7 @@
                             - 휴대폰 번호, 이메일 주소 : 신청하신 교육에 대한 일정 안내용
                             </div>
                             <div class="chk_box">
-                                <input type="checkbox" id="termsAgree1" name="termsAgree1">
+                                <input type="checkbox" id="termsAgree1" class="theme_bg_chk" name="termsAgree1">
                                 <label for="termsAgree1"><span class="ico_fake"></span>동의합니다</label>
                             </div>
                         </div>
@@ -131,14 +130,40 @@
                         <div class="cont">
                             <div class="input_box">
                                 <input type="text" class="start_date ip_calendar comm_calendar" placeholder="YYYY.MM.DD" readonly>
-                                <input type="tel" class="ip_time" placeholder="00">
+                                <select class="select_box ip_time">
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                </select>
                                 <span class="i_colon">:</span>
-                                <input type="tel" class="ip_time" placeholder="00">                                
+                                <select class="select_box ip_time">
+                                    <option value="">00</option>
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                    <option value="">50</option>
+                                </select>
                                 <span class="i_dash">~</span>
                                 <input type="text" class="end_date ip_calendar comm_calendar" placeholder="YYYY.MM.DD" readonly>
-                                <input type="tel" class="ip_time" placeholder="00">
+                                <select class="select_box ip_time">
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">14</option>
+                                </select>
                                 <span class="i_colon">:</span>
-                                <input type="tel" class="ip_time" placeholder="00">
+                                <select class="select_box ip_time">
+                                    <option value="">00</option>
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                    <option value="">50</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -204,7 +229,7 @@
                         <div class="cont">
                             <div class="btn_wrap">
                                 <button type="button" class="btn_style2 btn_gray">학습자 선택</button>
-                                <button type="button" class="btn_style2 learner_upload">학습자 업로드</button>
+                                <button type="button" class="btn_style2 btn_learner_upload">학습자 업로드</button>
                             </div>
                             <p class="info_opt">총 10명의 학습자가 선택되었습니다.</p>
                         </div>
@@ -338,7 +363,7 @@
                 <button type="button" class="btn_xs btn_white">취소</button>
                 // 취소 -->
                 <button type="button" class="btn_xs btn_gray2">이전</button>
-                <button type="button" class="btn_xs btn_lf">다음</button>
+                <button type="button" class="btn_xs btn_lf btn_theme">다음</button>
             </div>
             
         </div> <!-- // .pop_inner -->

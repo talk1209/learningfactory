@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	$menu_a.click(function(event) {
 		event.preventDefault();
-		$("html, body").animate({
+		$("html, body").stop().animate({
 			scrollTop: $($(this).attr("href")).offset().top - $(".ex_detail_con_nav").height()
 		},{
 			duration: 700,
@@ -41,8 +41,8 @@ $(document).ready(function() {
 			}
 			if (scroll_id !== id) {
 				id = scroll_id;
-				$menu_a.removeClass("on");
-				$("a[href='#" + id + "']", $menu).addClass("on");
+				$menu_a.removeClass('on theme_color theme_bd');
+				$("a[href='#" + id + "']", $menu).addClass('on theme_color theme_bd');
 			}
 		}else{
 			$('.ex_detail_con').removeClass('fixed_top');

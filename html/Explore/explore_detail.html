@@ -17,14 +17,13 @@
    
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/selectric.css">
+    <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
-	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
 	<script src="../../js/ex_detail.js"></script>
 	<script src="../../js/common.js"></script>
-	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
 </head>
@@ -34,17 +33,17 @@
         <!-- Header --> 
         <header id="header">
             <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
-            <div class="hd">
+            <div class="hd theme_bd">
                 <div class="inner">
                     <!-- Logo -->
-                    <h1 class="logo sub_logo">
+                    <h1 class="logo">
                         <a href="#none" class="blind">learning factory</a>
                     </h1>
                     <!-- // Logo -->
                     <!-- Gnb -->
                     <nav id="gnb">
                         <ul>
-                            <li><a href="#none" class="on">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li class="gnb_ex"><a href="#none" class="on theme_color">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
                             <li><a href="#none">구독</a></li>
                             <li><a href="#none">학습</a></li>
                             <li><a href="#none">고객센터</a></li>
@@ -52,7 +51,7 @@
                         </ul>
                     </nav>
                     <!-- // Gnb -->
-					<!-- 탐색 2Depth -->
+                    <!-- 탐색 2Depth -->
                     <div id="snb_bg">
                         <div class="snb_link">
                             <ul>
@@ -116,12 +115,12 @@
                     <!-- // 탐색 2Depth -->
                     <!-- srh -->
                     <div class="tnb_srh">
-                        <input type="text">
+                        <input type="text" class="theme_bd">
                         <button type="button" class="blind">검색</button>
                     </div>
                     <!-- mypage -->
                     <div class="my_page">
-                        <a href="#none">마이페이지</a>
+                        <a href="#none" class="theme_color_hover">마이페이지</a>
                         <div class="my_2dul_wrap">
                         	<i></i>
                             <ul class="my_2dul">
@@ -143,10 +142,10 @@
 							<div class="img"><img src="../../images/ex_detail_hd.jpg" alt="" /></div>
 							<div class="detail">
 								<div class="detail_cate">
-									<span class="label_basic label_o">집합교육</span>
+									<span class="label_basic label_o theme_bg">집합교육</span>
 									<span class="label_basic label_g">1뎁스 > 2뎁스 > 3뎁스 > 4뎁스</span>
 								</div>
-								<h3>하루 한 문장! 미드로 배우는</br/>영어회화</h3>
+								<h3>하루 한 문장! 미드로 배우는<br/>영어회화</h3>
 								<div class="detail_ft">
 									<div class="detail_tag">
 										<span class="label_basic label_t_gb">인문교양</span>
@@ -155,17 +154,17 @@
 									</div>
 									<table class="table_ex_detail">
 										<tbody>
-											<!-- span 태그로 강조 -->
+											<!-- <span class="theme_color"></span> 태그로 강조 -->
 											<tr>
-												<th><span>신청기간</span></th>
-												<td><span>2020.04.15 10:00 ~ 2020.04.30 23:00</span></td>
+												<th><span class="theme_color">신청기간</span></th>
+												<td><span class="theme_color">2020.04.15 10:00 ~ 2020.04.30 23:00</span></td>
 											</tr>
 											<tr>
-												<th><span>사전</span> 학습기간</th>
+												<th><span class="theme_color">사전</span> 학습기간</th>
 												<td>2020.04.15 10:00 ~ 2020.04.16 15:00</td>
 											</tr>
 											<tr>
-												<th><span>본</span> 학습기간</th>
+												<th><span class="theme_color">본</span> 학습기간</th>
 												<td>2020.04.15 10:00 ~ 2020.04.16 15:00</td>
 											</tr>
 											<tr>
@@ -190,7 +189,7 @@
 									</select>
 									<div class="btn_box">
 										<!-- 좋아요 클릭 후 -->
-										<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+										<button type="button" class="btn_xl btn_white btn_ex_favorite theme_color theme_bd"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
 										<!-- // 좋아요 클릭 후 -->
 										<!-- 좋아요 클릭 전
 										<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
@@ -199,7 +198,7 @@
 										<div class="btn_half_wrap">
 											<div class="btn_half_box">
 												<!-- 좋아요 클릭 후 -->
-												<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+												<button type="button" class="btn_xl btn_white btn_ex_favorite theme_color theme_bd"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
 												<!-- // 좋아요 클릭 후 -->
 												<!-- 좋아요 클릭 전
 												<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
@@ -210,9 +209,9 @@
 											</div>
 										</div>
 
-										<button type="button" class="btn_xl btn_lf">수강신청</button>
+										<button type="button" class="btn_xl btn_lf theme_bg theme_bd">수강신청</button>
 										<!-- 상태에 따라 변경
-										<button type="button" class="btn_xl btn_lf">수강신청</button>
+										<button type="button" class="btn_xl btn_lf theme_bd">수강신청</button>
 										<button type="button" class="btn_xl btn_gray2">수강신청 기간이 아닙니다</button>
 										<button type="button" class="btn_xl btn_gray2">신청이 마감되었습니다</button>
 										<button type="button" class="btn_xl btn_blue_white">대기자 신청</button>
@@ -223,25 +222,24 @@
 							</div>
 						</div>
 						<ul class="ex_detail_info_li ex_detail_info_li9"> <!-- 목록 갯수에 따라 7~10 // ex_detail_info_li7, ex_detail_info_li8, ex_detail_info_li9, ex_detail_info_li10 추가 -->
-							<li style="background-image:url('../../images/ico_ex_detail_info_configuration.png');">10개 구성</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_watch.png');">2일</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_date.png');">2일</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_time.png');">5시간</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_person.png');">정원 10명 <span>/ 30명</span></li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_price.png');">80,000원</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_grades.png');">3학점</li>
-							<li style="background-image:url('../../images/ico_ex_detail_info_score.png');">3.0</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_configuration.png');">10개 구성</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_watch.png');">2일</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_date.png');">2일</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_time.png');">5시간</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_person.png');">정원 10명 <span>/ 30명</span></li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_price.png');">80,000원</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_grades.png');">3학점</li>
+							<li class="theme_color theme_bd" style="background-image:url('../../images/ico_ex_detail_info_score.png');">3.0</li>
 
 							<!-- 활성 -->
-							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_book_on.png');">교재제공</li>
-							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_refunds_on.png');">환급과정</li>
-							<li class="em on" style="background-image:url('../../images/ico_ex_detail_info_point_on.png');">포인트적립</li>
+							<li class="em on theme_bg" style="background-image:url('../../images/ico_ex_detail_info_book_on.png');">교재제공</li>
+							<li class="em on theme_bg" style="background-image:url('../../images/ico_ex_detail_info_refunds_on.png');">환급과정</li>
+							<li class="em on theme_bg" style="background-image:url('../../images/ico_ex_detail_info_point_on.png');">포인트적립</li>
 	
 							<!-- 비활성 -->
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_book.png');">교재제공</li>
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_refunds.png');">환급과정</li>
 							<li class="em" style="background-image:url('../../images/ico_ex_detail_info_point.png');">포인트적립</li>
-
 						</ul>
 					</div>
 
@@ -259,21 +257,21 @@
 										<h3>하루 한 문장! 미드로 배우는 영어회화</h3>
 										<table class="table_ex_detail aside">
 											<tbody>
-												<!-- span 태그로 강조 -->
+												<!-- <span class="theme_color"></span> 태그로 강조 -->
 												<tr>
-													<th><span>신청기간</span></th>
-													<td><span>2020.04.15 10:00 ~ 2020.04.30 23:00</span></td>
+													<th><span class="theme_color">신청기간</span></th>
+													<td><span class="theme_color">2020.04.15 10:00 ~ 2020.04.30 23:00</span></td>
 												</tr>
 												<tr>
-													<th><span>사전</span> 학습기간</th>
+													<th><span class="theme_color">사전</span> 학습기간</th>
 													<td>2020.04.15 10:00 ~ 2020.04.16 15:00</td>
 												</tr>
 												<tr>
-													<th><span>본</span> 학습기간</th>
+													<th><span class="theme_color">본</span> 학습기간</th>
 													<td>2020.04.15 10:00 ~ 2020.04.16 15:00</td>
 												</tr>
 												<tr>
-													<th><span>사후</span> 학습기간</th>
+													<th><span class="theme_color">사후</span> 학습기간</th>
 													<td>2020.04.15 10:00 ~ 2020.04.16 15:00</td>
 												</tr>
 												<tr>
@@ -282,17 +280,23 @@
 												</tr>
 											</tbody>
 										</table>
-										<div class="aside_price">
+										<div class="aside_price theme_color">
 											80,000원 <span>(예상 환급금 : 20,000원)</span>
 											<div class="tool_tip_wrap">
 												<span class="tool_tip">
-													<img src="../../images/ico_em.png" alt="수강료에 교재비가 포함되어 있습니다." />
+													<img src="../../images/ico_em.png" alt="" />
+													<div class="tool_top_box">
+														<div class="tool_top_box_inner">
+															수강료에 교재비가 포함되어 있습니다.
+														</div>
+														<div class="tool_top_box_arrow"></div>
+													</div>
 												</span>
 											</div>
 										</div>
 										<div class="btn_box">
 											<!-- 좋아요 클릭 후 -->
-											<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+											<button type="button" class="btn_xl btn_white btn_ex_favorite theme_color theme_bd"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
 											<!-- // 좋아요 클릭 후 -->
 											<!-- 좋아요 클릭 전
 											<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
@@ -300,7 +304,7 @@
 											<div class="btn_half_wrap">
 												<div class="btn_half_box">
 													<!-- 좋아요 클릭 후 -->
-													<button type="button" class="btn_xl btn_white btn_ex_favorite on"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
+													<button type="button" class="btn_xl btn_white btn_ex_favorite theme_color theme_bd"><img src="../../images/ico_favorite_m_on.png" alt="" />210</button>
 													<!-- // 좋아요 클릭 후 -->
 													<!-- 좋아요 클릭 전
 													<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_favorite_m.png" alt="" />210</button>
@@ -310,9 +314,9 @@
 													<button type="button" class="btn_xl btn_white btn_ex_favorite"><img src="../../images/ico_watch_m.png" alt="" />맛보기</button>
 												</div>
 											</div>
-											<button type="button" class="btn_xl btn_lf">수강신청</button>
+											<button type="button" class="btn_xl btn_lf theme_bg theme_bd">수강신청</button>
 											<!-- 상태에 따라 변경
-											<button type="button" class="btn_xl btn_lf">수강신청</button>
+											<button type="button" class="btn_xl btn_lf theme_bd">수강신청</button>
 											<button type="button" class="btn_xl btn_gray2">수강신청 기간이 아닙니다</button>
 											<button type="button" class="btn_xl btn_gray2">신청이 마감되었습니다</button>
 											<button type="button" class="btn_xl btn_blue_white">대기자 신청</button>
@@ -326,7 +330,7 @@
 						<div class="ex_detail_con_inner">
 							<nav class="ex_detail_con_nav">
 								<ul class="nav_menu nav_menu6"><!-- 메뉴 갯수에 따라 2~6 / nav_menu2,nav_menu3,nav_menu4,nav_menu5,nav_menu6 클래스 추가 -->
-									<li><a class="nav_menu_item on" href="#section1">과정소개</a></li>
+									<li><a class="nav_menu_item on theme_color theme_bd" href="#section1">과정소개</a></li>
 									<li><a class="nav_menu_item" href="#section7">구성된 학습피스</a></li>
 									<li><a class="nav_menu_item" href="#section8">외부교육 신청 프로세스</a></li>
 									<li><a class="nav_menu_item" href="#section2">커리큘럼</a></li>
@@ -334,11 +338,10 @@
 									<li><a class="nav_menu_item" href="#section4">교재정보</a></li>
 									<li><a class="nav_menu_item" href="#section5">수료기준</a></li>
 									<li><a class="nav_menu_item" href="#section6">수강후기</a></li>
-									
 								</ul>
 							</nav>
 							<div id="section1" class="ex_detail_con_sec sec1">
-								<h3>과정소개</h3>
+								<h3 class="theme_color">과정소개</h3>
 								<ul>
 									<li>
 										<h4>어떤 과정인가요?</h4>
@@ -387,47 +390,61 @@
 							</div>
 
 							<div id="section7"  class="ex_detail_con_sec sec7">
-								<h3>구성된 학습피스 <span>6</span></h3>
+								<h3 class="theme_color">구성된 학습피스 <span>8</span></h3>
 								<ul>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
 									<li>
 										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
 										<div class="course_desc">
-											<div class="i_cate">집합교육·과정분류&nbsp;1 depth</div>
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
+											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
+										</div>
+									</li>
+									<li>
+										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
+										<div class="course_desc">
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
+											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
+										</div>
+									</li>
+									<li>
+										<div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')"></div>
+										<div class="course_desc">
+											<div class="i_cate theme_color">집합교육·과정분류&nbsp;1 depth</div>
 											<h4 class="i_subject">하루 한 문장! 미드로 배우는 영어회화 하루 한 문장! 미드로 배우는 영어회화</h4>
 										</div>
 									</li>
@@ -435,7 +452,7 @@
 							</div>
 
 							<div id="section8"  class="ex_detail_con_sec sec8">
-								<h3>외부교육 신청 프로세스</h3>
+								<h3 class="theme_color">외부교육 신청 프로세스</h3>
 								<ul>
 									<li class="li1">
 										<h4>교육시작 전</h4>
@@ -453,7 +470,7 @@
 							</div>
 
 							<div id="section2"  class="ex_detail_con_sec sec2">
-								<h3>커리큘럼</h3>
+								<h3 class="theme_color">커리큘럼</h3>
 								<ul class="tab_sub_sec">
 									<li class="on"><a href="#">1일차</a></li>
 									<li><a href="#">2일차</a></li>
@@ -497,16 +514,16 @@
 							</div>
 
 							<div id="section3"  class="ex_detail_con_sec sec3">
-								<h3>선후수과정</h3>
+								<h3 class="theme_color">선후수과정</h3>
 								<ol>
-									<li><a href="#none"><span>01</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
-									<li><a href="#none"><span>02</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
-									<li><a href="#none"><span>03</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
+									<li><a href="#none" class="theme_color_hover theme_bd_hover theme_bg_hover_after"><span>01</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
+									<li><a href="#none" class="theme_color_hover theme_bd_hover theme_bg_hover_after"><span>02</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
+									<li><a href="#none" class="theme_color_hover theme_bd_hover theme_bg_hover_after"><span>03</span>과정명이 노출됩니다. 클릭 시 해당 과정 상세로 이동</a></li>
 								</ol>
 							</div>
 
 							<div id="section4"  class="ex_detail_con_sec sec4">
-								<h3>교재정보</h3>
+								<h3 class="theme_color">교재정보</h3>
 								<p class="sec4_tool_tip"><img src="../../images/ico_em.png" /> 과정 수강 시 교재가 제공되며, 수강료에 교재비가 포함되어 있습니다.</p>
 								<ul>
 									<li>
@@ -533,7 +550,7 @@
 							</div>
 
 							<div id="section5"  class="ex_detail_con_sec sec5">
-								<h3>수료기준</h3>
+								<h3 class="theme_color">수료기준</h3>
 								<table class="table table_style1">	
 									<colgroup>
 										<col width="30%">
@@ -571,9 +588,9 @@
 									</tbody>
 									<tfoot>
 										<tr>
-											<td>총점(100점 만점)</td>
-											<td>60점 이상</td>
-											<td>-</td>
+											<td class="theme_color">총점(100점 만점)</td>
+											<td class="theme_color">60점 이상</td>
+											<td class="theme_color">-</td>
 										</tr>
 									</tfoot>
 								</table>
@@ -585,8 +602,8 @@
 									</colgroup>
 									<thead>
 										<tr>
-											<th>전체 완료개수</th>
-											<td>7개 이상 필수 진행</td>
+											<th class="theme_color">전체 완료개수</th>
+											<td class="theme_color">7개 이상 필수 진행</td>
 										</tr>
 									</thead>
 									<tbody>
@@ -611,7 +628,7 @@
 							</div>
 
 							<div id="section6"  class="ex_detail_con_sec sec6">
-								<h3>수강후기 <span>7</span></h3>
+								<h3 class="theme_color">수강후기 <span>7</span></h3>
 								<div class="average_score">
 									<div class="review_star review_star_182">
 										<span class="i_tit">평균점수</span>

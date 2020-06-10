@@ -5,7 +5,7 @@ $(document).ready(function() {
     var hovering = false;
     snb_bg.hide();
     
-    $('#gnb')
+    $('.gnb_ex')
         .on("mouseenter", function () {
         hovering = true;
         // Open the snb_bg
@@ -53,6 +53,13 @@ $(document).ready(function() {
         // Set the timeout
         startTimeout();
     };
+    
+     /* Layer Popup Body Lock*/
+    if ($(".layer_popup").hasClass("visible")) {
+        $('body').addClass("lock"); // body scroll 잠금
+    } else {
+        $('body').removeClass("lock");
+    }
     
     /* Sidebar Mouseover Event */
     $(".learning_sidebar li").mouseover(function(){
@@ -180,7 +187,71 @@ $(document).ready(function() {
     $(".course_list li").mouseleave(function(){
         $(this).removeClass("on");
     });
-	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Faq slide
+   	$('.table_faq_list').find('dt a').on('click', function(){
+		var $td = $(this).parent().parent();
+		if($td.hasClass('on')){
+			$td.removeClass('on');
+		}else{
+			$td.addClass('on');
+		}
+	});
+
+	// Tool tip  - 20200609 수정
+	$('.tool_tip').find('img').on({
+		mouseenter: function(){
+			$(this).next().css('display','block');
+		},mouseleave: function(){
+			$(this).next().css('display','none');
+		}
+	});
+
+	// Review edit
+	$('.btn_review_option').on('click', function(){
+		$(this).parent().find('.more_box').toggle();
+	});
+
+	$('.more_edit').on('click', function(){
+		$(this).closest('.review_option').find('.more_box').toggle();
+		$(this).closest('.list_con').find('.review_con_text').css('display','none');
+		$(this).closest('.list_con').find('.review_date').css('display','none');
+		$(this).closest('.list_con').find('.review_form').css('display','block');
+	});
+
+	$('.star_input').find('input').on('click', function(){
+		var $score = Number($(this).val());
+		$(this).closest('.review_star').find('.i_rating').html($score.toFixed(1));
+	})
+
+	// 링크 복사
+	function copyToClipboard(val) {
+	  var t = document.createElement("textarea");
+	  document.body.appendChild(t);
+	  t.value = val;
+	  t.select();
+	  document.execCommand('copy');
+	  document.body.removeChild(t);
+	}
+
+	$('.btn_copy').on('click', function() {
+		$str = $(this).parent().find('a').text();
+		copyToClipboard($str);
+		alert('복사되었습니다.');
+	});
 });
 
 // Popular Course Tab
@@ -192,7 +263,7 @@ function popularTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg");
 
     $tbtn.click(function(e){
     
@@ -201,7 +272,7 @@ function popularTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg");;
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });
@@ -274,7 +345,7 @@ function loginFindTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg").addClass("theme_bd");
 
     $tbtn.click(function(e){
     
@@ -283,7 +354,7 @@ function loginFindTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg").addClass("theme_bd");
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });
@@ -297,7 +368,7 @@ function subSecTab() {
 
     $tab_contentsOb.hide();
     $tab_contentsOb.eq(0).show();
-    $tbtn.eq(0).addClass("on");
+    $tbtn.eq(0).addClass("on").addClass("theme_bg");
 
     $tbtn.click(function(e){
     
@@ -306,7 +377,7 @@ function subSecTab() {
         idx = $(this).index();
 
         $tbtn.removeClass();
-        $tbtn.eq(idx).addClass("on");
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg");
         $tab_contentsOb.hide();
         $tab_contentsOb.eq(idx).show();       
     });

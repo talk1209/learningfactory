@@ -17,13 +17,12 @@
    
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/selectric.css">
+    <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
-	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
 	<script src="../../js/common.js"></script>
-	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
 </head>
@@ -33,17 +32,17 @@
         <!-- Header --> 
         <header id="header">
             <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
-            <div class="hd">
+            <div class="hd theme_bd">
                 <div class="inner">
                     <!-- Logo -->
-                    <h1 class="logo sub_logo">
+                    <h1 class="logo">
                         <a href="#none" class="blind">learning factory</a>
                     </h1>
                     <!-- // Logo -->
                     <!-- Gnb -->
                     <nav id="gnb">
                         <ul>
-                            <li><a href="#none" class="on">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li class="gnb_ex"><a href="#none" class="on theme_color">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
                             <li><a href="#none">구독</a></li>
                             <li><a href="#none">학습</a></li>
                             <li><a href="#none">고객센터</a></li>
@@ -115,12 +114,12 @@
                     <!-- // 탐색 2Depth -->
                     <!-- srh -->
                     <div class="tnb_srh">
-                        <input type="text">
+                        <input type="text" class="theme_bd">
                         <button type="button" class="blind">검색</button>
                     </div>
                     <!-- mypage -->
                     <div class="my_page">
-                        <a href="#none">마이페이지</a>
+                        <a href="#none" class="theme_color_hover">마이페이지</a>
                         <div class="my_2dul_wrap">
                         	<i></i>
                             <ul class="my_2dul">
@@ -149,9 +148,9 @@
                                 </div>
                                 <span class="i_name">SME 채널명</span>
                                 <div class="tag_wrap">
-                                    <span class="i_tag">#경제동향</span>
-                                    <span class="i_tag">#경제</span>
-                                    <span class="i_tag">#경제지식</span>
+                                    <span class="i_tag theme_color">#경제동향</span>
+                                    <span class="i_tag theme_color">#경제</span>
+                                    <span class="i_tag theme_color">#경제지식</span>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +177,7 @@
                             </div>
                             <div class="btn_subs">
                                 <input type="checkbox" id="btnSubs" name="btnSubs" checked>
-                                <label for="btnSubs"><span class="i_text"></span></label>
+                                <label for="btnSubs" class="theme_bg"><span class="i_text"></span></label>
                             </div>
                         </div>
                     </div>
@@ -198,7 +197,7 @@
                     </div>
                     <div class="course_list">
                         <ul>
-                            <li>
+                            <li class="theme_bd_hover">
                                 <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
                                     <!-- 좋아요 -->
                                     <div class="favorite_box">
@@ -223,7 +222,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="theme_bd_hover">
                                 <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
                                     <!-- 좋아요 -->
                                     <div class="favorite_box">
@@ -248,7 +247,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="theme_bd_hover">
                                 <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
                                     <!-- 좋아요 -->
                                     <div class="favorite_box">
@@ -273,7 +272,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="theme_bd_hover">
                                 <div class="thumb_box" style="background-image:url('../../images/course_dummy1.png')">
                                     <!-- 좋아요 -->
                                     <div class="favorite_box">
@@ -301,11 +300,14 @@
                         </ul>
                     </div>
 				</div>
+				<!-- Loading -->
+                <div class="i_loading blind">로딩 중</div>
+                <!-- // Loading -->
 			</div>
         </div>
         <!-- // Container -->
         <!-- Footer -->
-		<div class="footer">
+		<div class="footer theme_bd">
             <div class="inner">
                 <div class="ft_inner">
                     <ul class="fnb">

@@ -16,12 +16,11 @@
 	<meta property="og:image" content="" />
    
     <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
-    <link  rel="stylesheet" href="../../css/default2.css">  <!-- 추가 CSS -->
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
 	<script src="../../js/common.js"></script>
-    <script src="../../js/common2.js"></script> <!-- 추가 JS -->
     
     <title>learning factory</title>
 </head>
@@ -31,7 +30,7 @@
         <!-- Header --> 
         <header id="header">
             <div id="skip_navi"><a href="#container">본문 바로가기</a></div>
-            <div class="hd">
+            <div class="hd theme_bd">
                 <div class="inner">
                     <!-- Logo -->
                     <h1 class="logo sub_logo">
@@ -41,22 +40,84 @@
                     <!-- Gnb -->
                     <nav id="gnb">
                         <ul>
-                            <li><a href="#none">탐색</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                            <li class="gnb_ex"><a href="#none">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
                             <li><a href="#none">구독</a></li>
                             <li><a href="#none">학습</a></li>
-                            <li><a href="#none" class="on">고객센터</a></li>
+                            <li><a href="#none" class="on theme_color">고객센터</a></li>
                             <li><a href="#none">포인트몰</a></li>
                         </ul>
                     </nav>
                     <!-- // Gnb -->
+                    <!-- 탐색 2Depth -->
+                    <div id="snb_bg">
+                        <div class="snb_link">
+                            <ul>
+                                <li><a href="#none">탐색 전체 보기</a></li>
+                                <li><a href="#none">외부교육 개별 신청</a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_2d">
+                            <ul class="gnb_1dul gnb_1dul_0">
+                                <li>
+                                    <a href="#none">비즈니스 기본스킬</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">가치마인드</a></li>
+                                        <li><a href="#none">커뮤니케이션</a></li>
+                                        <li><a href="#none">업무스킬</a></li>
+                                        <li><a href="#none">디지털활용력</a></li>
+                                        <li><a href="#none">컬쳐인사이드</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_1">
+                                <li>
+                                    <a href="#none">비즈니스 전문역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">사업이해</a></li>
+                                        <li><a href="#none">TREND/비지니스기획</a></li>
+                                        <li><a href="#none">공통직무</a></li>
+                                        <li><a href="#none">직무전문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_2">
+                                <li>
+                                    <a href="#none">리더십 역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">계층별 리더십</a></li>
+                                        <li><a href="#none">역할별 리더십</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_3">
+                                <li>
+                                    <a href="#none">경영역량</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">매니지먼트 지식 MBA</a></li>
+                                        <li><a href="#none">비지니스 경영 스킬</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gnb_1dul gnb_1dul_4">
+                                <li>
+                                    <a href="#none">기타</a>
+                                    <ul class="gnb_2dul">
+                                        <li><a href="#none">인문사회</a></li>
+                                        <li><a href="#none">자기계발</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // 탐색 2Depth -->
                     <!-- srh -->
                     <div class="tnb_srh">
-                        <input type="text">
+                        <input type="text" class="theme_bd">
                         <button type="button" class="blind">검색</button>
                     </div>
                     <!-- mypage -->
                     <div class="my_page">
-                        <a href="#none">마이페이지</a>
+                        <a href="#none" class="theme_color_hover">마이페이지</a>
                         <div class="my_2dul_wrap">
                         	<i></i>
                             <ul class="my_2dul">
