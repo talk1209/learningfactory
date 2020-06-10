@@ -803,6 +803,13 @@ select option {font-size:15px;}
 .sel_line .selectric-select_box .selectric {height:56px;border-top:0;border-left:0;border-right:0;}
 .sel_line .selectric-select_box .selectric .label {margin:0 41px 0 0;height:56px;line-height:54px;font-size:17px;color:#666666;}
 
+/* only num select box */
+.selectric-select_box.selectric-sel_num .selectric {height:21px;border:0;}
+.selectric-select_box.selectric-sel_num .selectric .label {margin:0 22px 0 0;font-weight:500;height:21px;border:0;line-height:21px;}
+.selectric-select_box.selectric-sel_num .selectric .button {width:12px;height:7px;right:0;background-size:auto 100%;}
+.selectric-select_box.selectric-sel_num .selectric-items {border-top:1px solid #ccd5dc;}
+.selectric-select_box.selectric-sel_num .selectric-items li {padding:5px 2px;font-size:13px;}
+
 /* Input Style */
 input::-ms-clear {display:none;} 
 input::-ms-reveal {display:none;}
