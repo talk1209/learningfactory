@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* Learning list */
+/* 학습 목록 */
 .learning_list_wrap .hp_box1 {margin-top:50px;}
 .learning_list_wrap .hp_box2 {margin-top:30px;}
 .learning_list_wrap .hp_box2 p {}
@@ -10,7 +10,7 @@
 .learning_list_wrap .hp_box2 li span {font-size:17px;font-weight:400;}
 .learning_list_wrap .list_style1 {margin-top:13px;}
 
-/* Learning detail */
+/* 학습 - 학습홈 */
 .learning_detail {padding:0 0 130px !important;width:100%;max-width:100%;background-color:#f5f5f5;}
 .learning_detail_hd {}
 .learning_detail_hd_inner {position:relative;margin: 0 auto;padding:55px 20px 50px;max-width: 1424px;}
@@ -57,11 +57,11 @@
 .learning_detail_con .learning_detail_con_inner .learning_start a {display:block;padding-top:38px;width:150px;height:150px;text-align:center;}
 .learning_detail_con .learning_detail_con_inner .learning_start a .learning_start_tit {margin-top:10px;font-size:17px;font-weight:500;}
 
-.learning_detail_con .learning_detail_con_inner .learning_start_combinatio {float:right;}
-.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a {display:block;width:338px;height:150px;}
-.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .text {float:left;padding:25px 30px;width:188px;height:150px;}
-.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .text h4 {display:inline-block;padding-right:13px;font-size:17px;color:#333;font-weight:500;background:url('../images/ico_right_arrow_s.png') no-repeat right 0 top 8px;}
-.learning_detail_con .learning_detail_con_inner .learning_start_combinatio a .img {float:left;width:150px;height:150px;background-size:cover;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combination {float:right;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combination a {display:block;width:338px;height:150px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combination a .text {float:left;padding:25px 30px;width:188px;height:150px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combination a .text h4 {display:inline-block;padding-right:13px;font-size:17px;color:#333;font-weight:500;background:url('../images/ico_right_arrow_s.png') no-repeat right 0 top 8px;}
+.learning_detail_con .learning_detail_con_inner .learning_start_combination a .img {float:left;width:150px;height:150px;background-size:cover;background-repeat:no-repeat;background-position:50% 0;}
 
 .learning_detail_con .learning_detail_con_inner .learning_refunds {float:left;padding:20px 30px !important;width:527px;height:230px;}
 .learning_detail_con .learning_detail_con_inner .learning_refunds ul {margin-top:8px;}
@@ -100,7 +100,7 @@
 .learning_detail_con .learning_detail_con_inner .learning_info .go_learning a {overflow:hidden;display:block;height:80px;line-height:80px;border:1px solid #ccc;}
 .learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .text {float:left;width:324px;}
 .learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .text h4 {display:inline-block;padding:0 15px 0 30px;font-size:17px;color:#333;font-weight:500;background:url('../images/ico_right_arrow_s.png') no-repeat right 0 top 35px;}
-.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .img {float:left;width:130px;height:80px;background-size:cover;}
+.learning_detail_con .learning_detail_con_inner .learning_info .go_learning a .img {float:left;width:130px;height:80px;background-size:cover;background-repeat:no-repeat;background-position:50% 0;}
 .learning_detail_con .learning_detail_con_inner .learning_info .info_place {float:left;margin-left:16px;padding:16px 15px 0 30px;width:338px;height:80px;border:1px solid #ccc;}
 .learning_detail_con .learning_detail_con_inner .learning_info .info_place h4 {font-size:17px;font-weight:500;}
 .learning_detail_con .learning_detail_con_inner .learning_info .info_place p {font-size:15px;}
@@ -123,6 +123,86 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_detail_hd_inner .aside .aside_bt .btn_box button {margin-top:10px;}
 .learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite {width:120px !important;height:40px !important;line-height:40px !important;}
 .learning_detail_hd_inner .aside .aside_bt .btn_leaning_favorite img {margin-right:7px;vertical-align:-1;}
+
+/* 학습 - 학습콘텐츠 - 플립 */
+.learning_con_flip .sec {margin-top:40px !important;}
+.learning_con_flip .sec:first-child {margin-top:0 !important;}
+.learning_con_flip .sec h2 {font-size:20px;}
+.learning_con_flip .learning_con_flip_list {margin-top:20px;}
+.learning_con_flip .learning_con_flip_list li {margin-top:10px;padding:10px;height:124px;background-color:#fff;}
+.learning_con_flip .learning_con_flip_list li .li_img {float:left;width:180px;height:104px;background-size:cover;background-repeat:no-repeat;background-position:50% 0;}
+.learning_con_flip .learning_con_flip_list li .li_con {float:left;margin-left:20px;width:669px;}
+.learning_con_flip .learning_con_flip_list li .li_con span {margin-top:8px;}
+.learning_con_flip .learning_con_flip_list li .li_con h3 {margin-top:10px;font-size:20px;}
+.learning_con_flip .learning_con_flip_list li .li_status {float:right;margin-top:20px;width:140px;text-align:center;}
+.learning_con_flip .learning_con_flip_list li .li_status .status {display:inline-block;padding:18px 0;width:110px;height:60px;font-size:17px;color:#666;font-weight:500;text-align:center;background-color:#f5f5f5;border:1px solid #ccc;border-radius:30px;}
+.learning_con_flip .learning_con_flip_list li .li_status .status.on {padding:12px 0;color:#0367a6;line-height:17px;border-color:#0367a6;background-color:#fff;}
+.learning_con_flip .learning_con_flip_list li .li_status .status.on span {font-size:13px;}
+
+/* 학습 - 학습콘텐츠 - 조합 */
+.learning_con_combination .sec {margin-top:40px !important;}
+.learning_con_combination .sec:first-child {margin-top:0 !important;}
+.learning_con_combination .sec h2 {font-size:20px;}
+.learning_con_combination .learning_con_combination_list {margin-top:20px;}
+.learning_con_combination .learning_con_combination_list li {margin-top:10px;padding:10px 10px 10px 0;height:124px;background-color:#fff;}
+.learning_con_combination .learning_con_combination_list li .li_num {float:left;width:70px;height:104px;font-size:20px;color:#aaa;font-weight:700;text-align:center;line-height:104px;}
+.learning_con_combination .learning_con_combination_list li .li_img {float:left;width:180px;height:104px;background-size:cover;background-repeat:no-repeat;background-position:50% 0;}
+.learning_con_combination .learning_con_combination_list li .li_con {float:left;margin-left:20px;width:609px;}
+.learning_con_combination .learning_con_combination_list li .li_con span {margin-top:8px;}
+.learning_con_combination .learning_con_combination_list li .li_con h3 {margin-top:10px;font-size:20px;}
+.learning_con_combination .learning_con_combination_list li .li_status {float:right;margin-top:20px;width:140px;text-align:center;}
+.learning_con_combination .learning_con_combination_list li .li_status .status {display:inline-block;padding:18px 0;width:110px;height:60px;font-size:17px;color:#666;font-weight:500;text-align:center;background-color:#f5f5f5;border:1px solid #ccc;border-radius:30px;}
+.learning_con_combination .learning_con_combination_list li .li_status .status.on {padding:12px 0;color:#0367a6;line-height:17px;border-color:#0367a6;background-color:#fff;}
+.learning_con_combination .learning_con_combination_list li .li_status .status.on span {font-size:13px;}
+
+/* 학습 - 학습콘텐츠 - 온라인 - 동영상*/
+.learning_con_online .sec {margin-top:40px !important;}
+.learning_con_online .sec:first-child {margin-top:0 !important;}
+.learning_con_online .sec h2 {font-size:20px;}
+.learning_con_online .learning_con_online_list {margin-top:20px;}
+.learning_con_online .learning_con_online_list li {margin-top:10px;height:124px;background-color:#fff;overflow:hidden;}
+.learning_con_online .learning_con_online_list li .li_con {float:left;padding:0 30px;width:760px;height:124px;}
+.learning_con_online .learning_con_online_list li .li_con .table_cell {height:124px;}
+.learning_con_online .learning_con_online_list li .li_con span {font-size:15px;font-weight:700;}
+.learning_con_online .learning_con_online_list li .li_con h3 {font-size:20px;}
+.learning_con_online .learning_con_online_list li .li_con .date_box {margin-top:5px;}
+.learning_con_online .learning_con_online_list li .li_con .date_box span {display:inline-block;width:160px;font-size:13px;color:#666;font-weight:400;}
+.learning_con_online .learning_con_online_list li .li_status {float:left;width:314px;height:124px;border-left:1px solid #e5e5e5;}
+.learning_con_online .learning_con_online_list li .li_status .table_cell {padding:0 30px;width:314px;height:124px;}
+.learning_con_online .learning_con_online_list li .li_status .li_status_tit {font-size:15px;color:#666;font-weight:700;}
+.learning_con_online .learning_con_online_list li .li_status .progress_box {position:relative;margin-top:7px;width:200px;}
+.learning_con_online .learning_con_online_list li .li_status .progress_bar {width:200px;height:15px;background-color:#f5f5f5;border:1px solid #ccc;border-radius:7px;}
+.learning_con_online .learning_con_online_list li .li_status .progress_bar.on {position:absolute;top:0;left:0;border:0;}
+.learning_con_online .learning_con_online_list li .li_status .progress_box span {position:absolute;right:-42px;top:-6px;font-weight:500;}
+.learning_con_online .learning_con_online_list li.li_g .li_con {background-color:#f5f5f5;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;border-left:1px solid #e0e0e0;}
+.learning_con_online .learning_con_online_list li.li_g .li_status {text-align:center;background-color:#f5f5f5;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;border-right:1px solid #e0e0e0;}
+.learning_con_online .learning_con_online_list li.theme_bg_o5 .li_status {text-align:center;}
+
+/* 학습 - 학습콘텐츠 - 온라인 - html */
+.learning_con_online .learning_con_online_html_list li {margin-top:10px;padding:30px 25px;background-color:#fff;overflow:hidden;}
+.learning_con_online .learning_con_online_html_list li .box_title {position:relative;font-size:15px;font-weight:700;cursor:pointer;}
+.learning_con_online .learning_con_online_html_list li .box_title .tit_progress {display:inline;color:#666;font-weight:400;}
+.learning_con_online .learning_con_online_html_list li.active .box_title .tit_progress {display:none;}
+.learning_con_online .learning_con_online_html_list li .box_title .i_arrow {display:block;position:absolute;top:8px;right:10px;width:15px;height:9px;background:url('../images/select_arrow_down.png') no-repeat;-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+.learning_con_online .learning_con_online_html_list li.active .i_arrow {-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+.learning_con_online .learning_con_online_html_list li .box_cont {display:none;}
+.learning_con_online .learning_con_online_html_list li .li_con_box {margin-top:20px;padding:15px 0 18px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;overflow:hidden;}
+.learning_con_online .learning_con_online_html_list li .li_con {float:left;width:766px;}
+.learning_con_online .learning_con_online_html_list li .li_con h3 {font-size:20px;}
+.learning_con_online .learning_con_online_html_list li .li_con .date_box {margin-top:5px;}
+.learning_con_online .learning_con_online_html_list li .li_con .date_box span {display:inline-block;width:160px;font-size:13px;color:#666;font-weight:400;}
+.learning_con_online .learning_con_online_html_list li .li_status {float:left;padding:5px 0;width:258px;}
+.learning_con_online .learning_con_online_html_list li .li_status .li_status_tit {font-size:15px;color:#666;font-weight:700;}
+.learning_con_online .learning_con_online_html_list li .li_status .progress_box {position:relative;margin-top:7px;width:200px;}
+.learning_con_online .learning_con_online_html_list li .li_status .progress_bar {width:200px;height:15px;background-color:#f5f5f5;border:1px solid #ccc;border-radius:7px;}
+.learning_con_online .learning_con_online_html_list li .li_status .progress_bar.on {position:absolute;top:0;left:0;border:0;}
+.learning_con_online .learning_con_online_html_list li .li_status .progress_box span {position:absolute;right:-46px;top:-6px;font-weight:500;}
+.learning_con_online .learning_con_online_html_list li .li_page li {padding:0;}
+.learning_con_online .learning_con_online_html_list li.theme_bg_o5 {padding:0;height:124px;background-color:none;}
+.learning_con_online .learning_con_online_html_list li.theme_bg_o5 .li_con {float:left;padding:0 30px;width:760px;height:124px;}
+.learning_con_online .learning_con_online_html_list li.theme_bg_o5 .li_status {float:left;width:314px;height:124px;text-align:center;border-left:1px solid #e5e5e5;}
+.learning_con_online .learning_con_online_html_list li .li_con .table_cell {height:124px;}
+.learning_con_online .learning_con_online_html_list li .li_status .table_cell {padding:0 30px;width:314px;height:124px;}
 
 /* popup_certification */
 .popup_certification {margin:0 -10px;overflow:hidden;}
@@ -200,3 +280,6 @@ table.table_learning_detail.aside td {font-size:14px;}
 
 /* Font color */
 .color_b {color:#0367a6 !important;}
+
+/* 중앙정렬 */
+.table_cell {display:table-cell;width:100%;height:100%;vertical-align:middle;}
