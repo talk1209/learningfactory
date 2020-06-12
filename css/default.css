@@ -862,7 +862,7 @@ b.pt_blue {font-weight:700;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Layer popup - 시험 응시 유의사항 안내 */
 .layer_popup .test_info_wrap .must_read_box {margin-bottom:34px;}
-.layer_popup .test_info_wrap .must_read_box .title {display:block;font-size:17px;font-weight:500;}
+.layer_popup .test_info_wrap .must_read_box .title {display:block;font-size:17px;font-weight:500;color:#ea563a;}
 .layer_popup .test_info_wrap .must_read_box .must_read_inner {margin-top:7px;padding:24px 29px;border:1px solid #cccccc;background-color:#f9f9f9;}
 .layer_popup .test_info_wrap .must_read_box ol li {margin-top:8px;font-size:15px;font-weight:500;color:#333333;}
 .layer_popup .test_info_wrap .must_read_box ol li:first-child {margin-top:0;}
@@ -943,7 +943,7 @@ b.pt_blue {font-weight:700;}
 .layer_popup .test_cont_wrap .test_cont .cont_inner .tbl_test_result td:last-child {border-right:0;}
 .layer_popup .test_cont_wrap .test_cont .entered_box {margin-top:26px;}
 .layer_popup .test_cont_wrap .test_cont .entered_box .multi_list li input[type="radio"] + label.chk_correct {padding-right:49px;background:url('../images/chk_correct.png') no-repeat 97% 50%;}
-.layer_popup .test_cont_wrap .test_cont .entered_box .ox_wrap .ox_box.chk_correct {background:url('../images/chk_correct.png') no-repeat 95% 5%;}
+.layer_popup .test_cont_wrap .test_cont .entered_box .ox_wrap .ox_box.chk_correct {background:url('../images/chk_correct.png') no-repeat 170px 10px;}
 .layer_popup .test_cont_wrap .test_cont .entered_desc {padding:16px 19px;width:100%;font-size:13px;color:#333333;line-height:22px;background-color:#f5f5f5;}
 .layer_popup .answer_box_wrap .answer_box ol li .answer_status .i_incorrect {color:#ea563a;}
 .layer_popup .test_cont_wrap .test_cont .commentary_box {margin-top:41px;padding:14px 20px 19px;border:1px solid #999999;}
