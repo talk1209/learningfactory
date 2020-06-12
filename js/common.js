@@ -188,6 +188,20 @@ $(document).ready(function() {
         $(this).removeClass("on");
     });
     
+	/* task ast - focus event */
+	$('div').on('focusin', '.input_box .ip_task_subj', function () {
+		$(this).next().hide();
+    });
+	$('div').on('focusout', '.input_box .ip_task_subj', function () {
+        $(this).next().show();
+    });
+	$('div').on('focusout', '.input_box .ip_task_subj', function () {
+        if ($(this).val().length > 0) { // check if value changed        
+            $(this).next().hide();
+        } else {
+           $(this).next().show();
+        }
+    });
     
     
     
