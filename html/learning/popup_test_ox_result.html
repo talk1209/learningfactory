@@ -39,6 +39,33 @@
                     <p class="test_name">[사전] 시험명이 노출됩니다.</p>
                     <div class="test_cont">
                         <div class="cont_inner">
+							<!-- 시험결과 (공통) -->
+							<table class="tbl_test_result">
+								<caption>시험결과</caption>
+								<colgroup>
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>문제수</th>
+										<th>정답수</th>
+										<th>득점</th>
+										<th>전체평균</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>13</td>
+										<td>10</td>
+										<td>70점</td>
+										<td>70.0점</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- // 시험결과 (공통) -->
                             <div class="q_order">
                                 <span class="i_num">3번 문제</span>
                                 <span class="i_type">OX</span>
@@ -50,20 +77,45 @@
                             <p class="i_question">
                                 문제내용이 노출됩니다.
                             </p>
-                            <!-- OX -->
-                            <div class="type_box">
-                                <div class="ox_wrap">
-                                    <div class="ox_box o_box">
-                                        <input type="radio" id="selectO" name="oxSelect" checked>
-                                        <label for="selectO" class="blind">O</label>
-                                    </div>
-                                    <div class="ox_box x_box">
-                                        <input type="radio" id="selectX" name="oxSelect">
-                                        <label for="selectX" class="blind">X</label>
-                                    </div>
-                                </div>
+                            <!-- 입력한 답안 -->
+                            <div class="entered_box">
+								<!-- OX -->
+								<div class="ox_wrap">
+									<div class="ox_box o_box">
+										<input type="radio" id="selectO" name="oxSelect" checked disabled>
+										<label for="selectO" class="blind">O</label>
+									</div>
+									<div class="ox_box x_box chk_correct">  <!-- 정답일 경우 ox_box에 클래스 추가 -->
+										<input type="radio" id="selectX" name="oxSelect" disabled>
+										<label for="selectX" class="blind">X</label>
+									</div>
+								</div>
+								<!-- // OX -->
+                            </div>                            
+                            <!-- // 입력한 답안 -->
+                            <!-- 해설 -->
+                            <div class="commentary_box">
+                            	<div class="title_wrap">
+                            		<!--<p class="info_correct">정답입니다.</p>-->
+                            		<p class="info_incorrect">틀렸습니다.</p>
+									<!--<span class="i_score">득점 <b class="acq_score">5점</b> / 배점 <b class="total_score">5점</b></span>-->
+									<span class="i_score">득점 <b class="zero_score">0점</b> / 배점 <b class="total_score">5점</b></span>
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">정답</span>
+                            		<p class="desc">
+                            			X
+                            		</p>
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">문제해설</span>
+                            		<p class="desc">
+                            			문제해설이 노출됩니다. 문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            			문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            		</p>
+                            	</div>
                             </div>
-                            <!-- // OX -->
+                            <!-- // 해설 -->
                         </div>
                     </div>
                     <div class="btn_box">
@@ -77,76 +129,71 @@
                 <!-- // 좌측 영역 -->
                 <!-- 답안 영역 -->
                 <div class="answer_box_wrap">
-                    <div class="remain_time">
-                        <span class="title">남은 시간</span>
-                        <span class="i_time theme_color">59:10</span>
+                    <div class="test_date">
+                        <span class="title">응시일시</span>
+                        <span class="i_time">2019.10.01 10:12</span>
                     </div>
                     <div class="answer_box">
                         <div class="box_inner">
                             <div class="title_wrap">
-                                <span class="title">문제풀이 현황</span>
-                                <span class="remain_question">남은문제 <span class="remain_num">12</span></span>
+                                <span class="title">채점 현황</span>
                             </div>
                             <ol>
                                 <li>
                                     <span class="answer_num">1</span>
-                                    <span class="answer_status">답안 작성완료</span>
+                                    <span class="answer_status">15점</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">2</span>
-                                    <span class="answer_status">①</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li class="on">
-                                    <span class="answer_num">3</span>  <!-- 조회중인 문제 번호 class 추가 -->
-                                    <span class="answer_status">
-                                        <span class="answer_o blind">O</span> <!-- OX 답변일 때 -->
-                                    </span>
+                                    <span class="answer_num">3</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
-                                <li class="on">
+                                <li>
                                     <span class="answer_num">4</span>
-                                    <span class="answer_status">
-                                        <span class="answer_x blind">X</span> <!-- OX 답변일 때 -->
-                                    </span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">5</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">6</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">7</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">8</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">9</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">10</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">11</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">12</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">13</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">14</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                             </ol>
                         </div>

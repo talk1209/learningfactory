@@ -39,48 +39,81 @@
                     <p class="test_name">[사전] 시험명이 노출됩니다.</p>
                     <div class="test_cont">
                         <div class="cont_inner">
+							<!-- 시험결과 (공통) -->
+							<table class="tbl_test_result">
+								<caption>시험결과</caption>
+								<colgroup>
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>문제수</th>
+										<th>정답수</th>
+										<th>득점</th>
+										<th>전체평균</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>13</td>
+										<td>10</td>
+										<td>70점</td>
+										<td>70.0점</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- // 시험결과 (공통) -->
                             <div class="q_order">
-                                <span class="i_num">2번 문제</span>
-                                <span class="i_type">객관식</span>
-                                <!--
+                                <span class="i_num">1번 문제</span>
                                 <span class="i_type">서술형</span>
+                                <!--
+                                <span class="i_type">객관식</span>
                                 <span class="i_type">OX</span>
                                 -->
                             </div>
                             <p class="i_question">
                                 문제내용이 노출됩니다.
                             </p>
-                            <!-- 객관식 -->
-                            <div class="type_box">
-                                <ol class="multi_list">
-                                    <!-- 보기 문항에 이미지 포함 -->
-                                    <li>
-                                        <input type="radio" id="multiList1" name="multiListDummy">
-                                        <label for="multiList1">
-                                            ① 보기내용이 노출됩니다.
-                                            <img src="../../images/test_img_dummy.jpg" alt="">
-                                        </label>
-                                    </li>
-                                    <!-- // 보기 문항에 이미지 포함 -->
-                                    <li>
-                                        <input type="radio" id="multiList2" name="multiListDummy">
-                                        <label for="multiList2">② 보기내용이 노출됩니다.</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="multiList3" name="multiListDummy">
-                                        <label for="multiList3">③ 보기내용이 노출됩니다.</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="multiList4" name="multiListDummy">
-                                        <label for="multiList4">④ 보기내용이 노출됩니다.</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="multiList5" name="multiListDummy">
-                                        <label for="multiList5">⑤ 보기내용이 노출됩니다.</label>
-                                    </li>
-                                </ol>
+                            <!-- 입력한 답안 -->
+                            <div class="entered_box">
+								<!-- 서술형 -->
+                                <div class="entered_desc pre_line">입력한 답안이 노출됩니다.
+                                입력한 답안이 노출됩니다.
+                                입력한 답안이 노출됩니다.
+                                </div>
+                                <!-- // 서술형 -->
                             </div>
-                            <!-- // 객관식 -->
+                            <!-- // 입력한 답안 -->
+                            <!-- 해설 -->
+                            <div class="commentary_box">
+                            	<div class="title_wrap">
+                            		<p class="info_correct">정답입니다.</p>
+                            		<!--<p class="info_incorrect">틀렸습니다.</p>-->
+									<span class="i_score">득점 <b class="acq_score">15점</b> / 배점 <b class="total_score">20점</b></span>
+									<!-- 0점일 때
+									<span class="i_score">득점 <b class="zero_score">0점</b> / 배점 <b class="total_score">20점</b></span>
+									-->
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">첨삭의견</span>
+                            		<p class="desc">
+                            			첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.
+                            			첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.
+                            		</p>
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">문제해설</span>
+                            		<p class="desc">
+                            			문제해설이 노출됩니다. 문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            			문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            		</p>
+                            		<img src="../../images/test_img_dummy.jpg" alt="">
+                            	</div>
+                            </div>
+                            <!-- // 해설 -->
                         </div>
                     </div>
                     <div class="btn_box">
@@ -101,65 +134,64 @@
                     <div class="answer_box">
                         <div class="box_inner">
                             <div class="title_wrap">
-                                <span class="title">문제풀이 현황</span>
-                                <span class="remain_question">남은문제 <span class="remain_num">12</span></span>
+                                <span class="title">채점 현황</span>
                             </div>
                             <ol>
-                                <li>
+                                <li class="on">
                                     <span class="answer_num">1</span>
-                                    <span class="answer_status">답안 작성완료</span>
+                                    <span class="answer_status">15점</span>
                                 </li>
-                                <li class="on"> <!-- 조회중인 문제 번호 class 추가 -->
+                                <li>
                                     <span class="answer_num">2</span>
-                                    <span class="answer_status">①</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">3</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">4</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">5</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">6</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">7</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">8</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">9</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
                                 </li>
                                 <li>
                                     <span class="answer_num">10</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">11</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">12</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">13</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                                 <li>
                                     <span class="answer_num">14</span>
-                                    <span class="answer_status">-</span>
+                                    <span class="answer_status">정답</span>
                                 </li>
                             </ol>
                         </div>
