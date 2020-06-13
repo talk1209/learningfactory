@@ -217,7 +217,7 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_box {position:relative;margin-top:7px;width:300px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_bar {width:300px;height:10px;background-color:#f5f5f5;border:1px solid #ccc;border-radius:7px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_bar.on {position:absolute;top:0;left:0;border:0;background-image:url('../images/progress_bar_bg.png');}
-.learning_piece .learning_piece_con .learning_piece_con_inner {padding-top:108px;}
+.learning_piece .learning_piece_con .learning_piece_con_inner {padding-top:108px;overflow:hidden;}
 .learning_piece .learning_piece_con .learning_piece_con_inner iframe {display:block;width:100%;min-height:700px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_link {margin:55px auto;max-width:1200px;min-height:700px;-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,1)}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_seminar {margin:55px auto;padding:40px;max-width:1100px;min-height:700px;background-color:#fff;border-radius:4px;-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,1)}
@@ -228,7 +228,7 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text {padding:70px 50px;background-color:#fff;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text h3 {font-size:25px;font-weight:700;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text p {margin-top:15px;}
-.learning_piece .learning_piece_aside {position:relative;float:right;width:520px;min-height:100%;background-color:#fff;-webkit-box-shadow: -6px 0 8px -2px rgba(0,0,0,0.5);}
+.learning_piece .learning_piece_aside {position:relative;float:right;width:520px;min-height:100%;background-color:#fff;-webkit-box-shadow: -6px 0 8px -2px rgba(0,0,0,0.5);z-index:10;}
 .learning_piece.full_size .learning_piece_aside {margin-right:-520px;}
 .learning_piece .learning_piece_aside_close {position:absolute;display:block;left:-30px;top:400px;width:30px;height:120px;background:url('../images/ico_aside_close.png') no-repeat 12px 45px #fff;border-radius:5px 0 0 5px;-webkit-box-shadow: -6px 0 8px -2px rgba(0,0,0,0.5);}
 .learning_piece.full_size .learning_piece_aside_close {background-image:url('../images/ico_aside_open.png');}
@@ -309,18 +309,31 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .input .btn_gray2_white {float:right;margin-top:10px;width:80px;height:35px;border-radius:4px;}
 
 /* 학습 - 학습중인과정 - 게시판 - 리스트 */
-.learning_board_search {height:80px;background-color:#f5f5f5}
-.learning_board_search .cate {float:left;width:235px;overflow:hidden;}
-.learning_board_search .cate > label {float:left;display:block;}
-.learning_board_search .cate select {float:left;width:150px;height:35px;}
-.learning_board_search .search {float:left;width:520px;overflow:hidden;}
-.learning_board_search .search > label {float:left;}
+.learning_board_search {margin-bottom:35px;padding:25px;height:80px;background-color:#f5f5f5}
+.learning_board_search .cate {float:left;width:230px;}
+.learning_board_search .cate > label {float:left;display:block;padding-left:30px;padding-right:10px;font-size:15px;line-height:35px;}
+.learning_board_search .cate .selectric-wrapper {float:left;}
+.learning_board_search .cate .selectric-select_box .selectric {width:150px;height:35px;}
+.learning_board_search .cate .selectric-select_box .selectric .label {margin:0 40px 0 10px;line-height:35px;}
+.learning_board_search .cate .selectric-select_box .selectric .button {right:10px;}
+.learning_board_search .cate .selectric-select_box .selectric-items li {padding:8px 10px 7px;}
+.learning_board_search .search {float:left;width:535px;overflow:hidden;}
+.learning_board_search .search > label {float:left;display:block;padding-left:25px;padding-right:10px;font-size:15px;line-height:35px;}
 .learning_board_search .search .input_box {float:left;}
-.learning_board_search .my_question {float:left;width:140px;overflow:hidden;}
+.learning_board_search .search .input_box input {padding-left:10px;width:425px;height:35px;}
+.learning_board_search .my_question {float:left;padding:8px 8px 8px 15px;width:150px;overflow:hidden;}
+.learning_board_search .my_question input[type="checkbox"] + label {font-size:15px !important;}
 .learning_board_search .btn_search {float:left;}
+.learning_board_search .btn_search button {width:75px;height:30px;border-radius:4px;}
 
-.learning_piece .learning_piece_aside {z-index:10;}
-.learning_piece .learning_piece_con .learning_piece_con_inner {overflow:hidden;.}
+/* 학습 - 학습중인과정 - 게시판 - 글쓰기 */
+.table_qa_write .ast {display: inline-block;margin-left: 7px;font-size: 17px;color: #ea563a;vertical-align: -4px;}
+
+/* 학습 - 학습중인과정 - 게시판 - 글읽기 */
+.bo_view_hd {position:relative;}
+.bo_view_hd .bo_view_info .division {display:inline-block;margin:0 15px;font-size:12px !important;color:#ccc !important;vertical-align:1px;}
+.bo_view_hd .more_option {position:absolute;right:20px;bottom:20px;}
+.table_board_view_ripple {margin-top:0;}
 
 /* more option */
 .more_option .btn_option {cursor:pointer;}
