@@ -781,6 +781,7 @@ button.btn_lf {color:#ffffff;border-width:1px;border-style:solid;}
 button.btn_white {background-color:#ffffff;color:#333333;border:1px solid #cccccc;}
 button.btn_whitegray {background-color:#ffffff;color:#666666;border:1px solid #cccccc;}
 button.btn_whitegray2 {background-color:#ffffff;color:#999999;border:1px solid #cccccc;}
+button.btn_whitegray3 {background-color:#ffffff;color:#666666;border:1px solid #999999;}
 button.btn_gray {background-color:#e7e7e7;color:#666666;border:1px solid #e7e7e7;}
 button.btn_graywhite {background-color:#aaaaaa;color:#ffffff;border:1px solid #aaaaaa;}
 button.btn_gray2 {background-color:#999999;color:#ffffff;border:1px solid #e7e7e7;}
@@ -937,6 +938,17 @@ b.pt_blue {font-weight:700;}
 .layer_popup .answer_box_wrap .answer_box ol li .answer_status .answer_x {display:inline-block;margin:8px 0 0;width:18px;height:18px;background:url('../images/ico_x_xs.png') no-repeat;vertical-align:top;}
 .layer_popup .answer_box_wrap .answer_box ol li.on .answer_num {background-color:#666666;}
 .layer_popup .answer_box_wrap .answer_box ol li.on .answer_status {font-weight:500;border-color:#999999;}
+
+/* 시험 목록 */
+.table_board_list.vertical_cen td {vertical-align:middle;}
+#container .test_list_wrap .table_board_list tbody td.bo_title {text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#container .test_list_wrap .table_board_list {margin-top:0;table-layout:fixed;}
+#container .test_list_wrap .table_board_list .btn_box > button {margin-left:9px;height:35px;line-height:33px;font-size:14px;}
+#container .test_list_wrap .table_board_list .btn_box > button:first-child {margin-left:0;}
+#container .test_list_wrap .table_board_list .btn_box .btn_result {width:78px;}
+#container .test_list_wrap .table_board_list .btn_box .btn_retake {width:67px;border-width:1px;border-style:solid;background-color:#ffffff;}
+#container .test_list_wrap .table_board_list .btn_box .btn_go {width:78px;color:#ffffff;}
+#container .test_list_wrap .table_board_list .i_remain {color:#999999;}
 
 /* 시험 결과 */
 .layer_popup .test_cont_wrap .test_cont .cont_inner .tbl_test_result {margin-bottom:41px;width:100%;}
