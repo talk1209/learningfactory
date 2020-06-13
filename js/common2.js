@@ -51,7 +51,6 @@ $(document).ready(function() {
 		copyToClipboard($str);
 		alert('복사되었습니다.');
 	});
-
 });
 
 // aside Tab
