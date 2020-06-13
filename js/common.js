@@ -133,6 +133,7 @@ $(document).ready(function() {
         var cardLearning = new Swiper('.card_learning_slider', {
             //loop: true,
 			slidesPerView: 1,
+            grabCursor: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
