@@ -308,6 +308,9 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .input textarea {height:100px;color:#333;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .input .btn_gray2_white {float:right;margin-top:10px;width:80px;height:35px;border-radius:4px;}
 
+//* 학습 - 학습중인과정 - 게시판 - 리스트 */
+.learning_board_search {}
+
 /* more option */
 .more_option .btn_option {cursor:pointer;}
 .more_option .more_box {position:absolute;display:none;top:30px;right:0;z-index:999;border-top:1px solid #ccc;z-index:1;}
