@@ -137,14 +137,24 @@ $(document).ready(function() {
         $(this).removeClass("on");
     });
         
-    $(".swiper-slide").hover(
+    $(".swiper-container .swiper-slide").hover(
         function() {
             learningMainVisual.autoplay.stop();
-            learningMainCourse.autoplay.stop();
-            mainNewCourse.autoplay.stop();
         }, function() {
             learningMainVisual.autoplay.start();
+        }
+    );
+    $(".main_course_container .swiper-slide").hover(
+        function() {
+            learningMainCourse.autoplay.stop();
+        }, function() {
             learningMainCourse.autoplay.start();
+        }
+    );
+    $(".new_course_container .swiper-slide").hover(
+        function() {
+            mainNewCourse.autoplay.stop();
+        }, function() {
             mainNewCourse.autoplay.start();
         }
     );
