@@ -45,19 +45,52 @@
                         </div>
                     </div>
                 </div>
-<script>
-
-/* Swiper - Main visual */
-if($('.card_learning').length > 0){
-    var cardLearning = new Swiper('.card_learning');
-};
-
-</script>
+<style>
+.center_block {margin-left:auto;margin-right:auto;}
+.img_responsive {display:block;max-width:100%;height:auto;}
+.card_learning {position:relative;margin-top:42px;}
+.card_learning_slider {position:relative;padding-bottom:26px;}
+.card_learning .swiper-button-next, 
+.card_learning .swiper-button-prev {width:71px;height:137px;outline:0;margin-top:-69px;}
+.card_learning .swiper-button-next:after, 
+.card_learning .swiper-button-prev:after {content:none;}
+.card_learning .swiper-button-next {right:60px !important;background-image:url('../../images/card_slide_next_on.png');}
+.card_learning .swiper-button-next.swiper-button-disabled {background-image:url('../../images/card_slide_next.png');}
+.card_learning .swiper-button-prev {left:60px !important;background-image:url('../../images/card_slide_prev_on.png');}
+.card_learning .swiper-button-prev.swiper-button-disabled {background-image:url('../../images/card_slide_prev.png');}
+.card_learning .swiper-scrollbar {max-width:1000px;bottom:5px;left:50%;margin-left:-500px;background-color:#555555;}
+.card_learning .swiper-scrollbar-drag {position:relative;background-color:#ea563a;}
+/*
+.card_learning .swiper-scrollbar-drag:after {z-index:1;content:'';position:absolute;top:-7px;right:0;display:block;width:17px;height:17px;border-radius:50%;background-color:#ffffff;}
+*/
+.card_learning .card_slider_paging {font-size:0;text-align:center;}
+.card_learning .card_slider_paging * {display:inline-block;vertical-align:top;}
+.card_learning .card_slider_paging input {width:40px;height:30px;font-size:15px;color:#262626;text-align:center;border-radius:4px;background-color:#ffffff;border:1px solid #b5b5b5;}
+.card_learning .card_slider_paging span {margin:0 10px;font-size:15px;color:#999999;line-height:28px;}
+.card_learning .card_slider_paging button {width:70px;height:30px;font-size:15px;color:#ffffff;border-radius:4px;background-color:#333333;border:1px solid #b5b5b5;}
+</style>
 				<div class="learning_piece_con_inner">
-					<div class="card_learning">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+				    <div class="card_learning">
+                        <div class="card_learning_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                                <div class="swiper-slide"><img src="../../images/card_dummy.png" class="img_responsive center_block" alt=""></div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            
+                            <!-- Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <div class="card_slider_paging">
+                            <input type="text" value="10">
+                            <span>/ 50</span>
+                            <button type="button">이동</button>
                         </div>
                     </div>
 				</div>

@@ -129,6 +129,22 @@ $(document).ready(function() {
 		});
 	};
     
+    if($('.card_learning_slider').length > 0){
+        var cardLearning = new Swiper('.card_learning_slider', {
+            //loop: true,
+			slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar : {
+                el : '.swiper-scrollbar',
+                snapOnRelease:true,
+                draggable : true
+            },
+        });
+    };
+
     /* Main Course Mouseover Event */
     $(".main_course .swiper-slide").mouseover(function(){
         $(this).addClass("on");

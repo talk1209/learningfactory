@@ -28,11 +28,15 @@ $(document).ready(function() {
 	/* 학습피스상세 사이드 접기 */
 	$('.learning_piece_aside_close').on('click', function(){
 		$wrap = $('.learning_piece');
+        // swiper update
+        var cardLearning = document.querySelector('.card_learning_slider').swiper
 		if($wrap.hasClass('full_size')){
 			$wrap.removeClass('full_size');
+            cardLearning.update();
 		}else{
 			$wrap.addClass('full_size');
 			$('.learning_piece').attr('height:auto;');
+            cardLearning.update();
 		}
 		
 	});
