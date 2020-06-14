@@ -1099,7 +1099,7 @@ b.pt_blue {font-weight:700;}
 .layer_popup .simple_textarea textarea {height:247px;font-size:15px;color:#333333;}
 .layer_popup .simple_textarea + .btn_box {margin-top:30px;}
 
-/* Sub Ccommon Layout*/
+/* Sub Ccommon Layout */
 #container .sub_content_wrap.bg_gray {background-color:#f5f5f5;}
 #container .sub_content_wrap:after {display:block;visibility:hidden;clear:both;content:""}
 #container .sub_content_wrap .aside_wrap {float:left;margin-bottom:81px;width:280px;background-color:#333333;}
@@ -1130,6 +1130,7 @@ b.pt_blue {font-weight:700;}
 #container .mypage_hd .profile_box .btn_wrap button {margin-left:10px;width:75px;height:22px;line-height:20px;font-size:12px;color:#ffffff;border:1px solid rgba(255,255,255,.7);text-align:center;background-color:transparent;}
 #container .mypage_hd .profile_box .btn_wrap button:first-child {margin-left:0;}
 
+/* My page - main */
 .my_main {margin-top:-248px;}
 .my_main h2 {font-size:20px;font-weight:700;color:#ffffff;line-height:1;}
 .my_main .my_learning_status {position:relative;margin-top:9px;padding:0 71px 0 155px;height:153px;background-color:#ffffff;border-radius:4px;}
@@ -1213,7 +1214,15 @@ b.pt_blue {font-weight:700;}
 .chart_wrap #chart .c3-target-data1 text {/*fill:#ececec;*/display:none;}
 .chart_wrap #chart .c3-target-data2 text {/*fill:#ea563a;*/-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-moz-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);}
 
-
+/* My page - confirm pw */
+.float_content .confirm_pw {margin:0 auto;padding:220px 0;width:505px;}
+.float_content .confirm_pw .confirm_pw_inner {padding:42px 30px 46px;border-top:1px solid #333333;border-bottom:1px solid #333333;}
+.float_content .confirm_pw .user_name {display:block;font-size:26px;font-weight:400;color:#333333;}
+.float_content .confirm_pw .user_name b {font-weight:700;}
+.float_content .confirm_pw p {margin-top:18px;font-size:15px;font-weight:500;color:#999999;}
+.float_content .confirm_pw .input_box {margin-top:6px;overflow:hidden;}
+.float_content .confirm_pw .input_box input {float:left;padding:0 12px;width:360px;height:38px;line-height:36px;font-size:13px;color:#666666;}
+.float_content .confirm_pw .input_box button {float:left;margin-left:5px;width:80px;height:38px;line-height:36px;font-size:17px;color:#ffffff;background-color:#333333;text-align:center;}
 
 
 
