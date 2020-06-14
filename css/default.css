@@ -1088,7 +1088,8 @@ b.pt_blue {font-weight:700;}
 .card_learning .card_slider_paging span {margin:0 10px;font-size:15px;color:#999999;line-height:28px;}
 .card_learning .card_slider_paging button {width:70px;height:30px;font-size:15px;color:#ffffff;border-radius:4px;background-color:#333333;border:1px solid #b5b5b5;}
 
-
+/* Layer popup - 결재자 지정 */
+.layer_popup .pop_approver .form_box.tbl_style {margin-top:0;}
 
 
 
