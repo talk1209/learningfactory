@@ -230,10 +230,28 @@ $(document).ready(function() {
         }
     });
     
-    
-    
-    
-    
+    /* Change Pw */
+    $( '#btn_chg' ).on("click", function() {
+		$(this).hide();
+        $('.change_pw_box').show();
+	});
+    $('input.ip_active').on('keyup', function() {
+        $(this).addClass("theme_bd")
+    });
+    $('input.ip_active').on('focusout', function() {
+        $(this).removeClass("theme_bd")
+    });
+
+    /* select_box option 직접입력 */
+    $('.sel_direct_ip').on('change', function(){
+       var state = $(this).find('option:selected').val();
+       if ( state == 'directInput' ) {
+            $(this).parents(".selectric-select_box").next(".direct_ip_box").show();
+        } else {
+           $(this).parents(".selectric-select_box").next(".direct_ip_box").hide();
+           $(this).parents(".selectric-select_box").next(".direct_ip_box").children().val('');
+        }
+    });
     
     
     

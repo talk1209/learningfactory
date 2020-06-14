@@ -18,6 +18,7 @@ body.lock {overflow:hidden;}
 .pre_line {white-space:pre-line;}
 .center_block {margin-left:auto;margin-right:auto;}
 .img_responsive {display:block;max-width:100%;height:auto;}
+.text_right {text-align:right;}
 
 /* Header */
 #header {position:relative;}
@@ -784,6 +785,7 @@ button.btn_devide {margin-left:4.761904%;width:47.619047%;}
 button.btn_devide:first-child {margin-left:0;}
 button.btn_style1 {padding:0 23px;height:35px;line-height:33px;font-size:14px;color:#666666;border-radius:4px;}
 button.btn_style2 {padding:0 15px;height:30px;line-height:28px;font-size:13px;font-weight:500;border-radius:4px;}
+button.btn_style3 {width:120px;;height:40px;line-height:38px;font-size:17px;font-weight:500;border-radius:4px;text-align:center;}
 
 
 /* Btn style - Color */
@@ -1118,7 +1120,7 @@ b.pt_blue {font-weight:700;}
 #container .sub_content_wrap .aside_wrap ul li.aside_my_qna a {background-image:url('../images/ico_my_qna.png');}
 #container .sub_content_wrap .aside_wrap ul li.aside_my_set a {background-image:url('../images/ico_my_set.png');}
 #container .sub_content_wrap .sub_content {float:left;margin-left:30px;padding-bottom:130px;width:1074px;}
-#container .sub_content_wrap .sub_content .float_content {margin-top:-221px;background-color:#ffffff;border-radius:4px;}
+#container .sub_content_wrap .sub_content .float_content {margin-top:-221px;min-height:760px;background-color:#ffffff;border-radius:4px;}
 #container .mypage_hd {min-height:300px;}
 #container .mypage_hd .profile_box {padding-top:58px;width:280px;text-align:center;}
 #container .mypage_hd .profile_box .profile_img_wrap {position:relative;margin:0 auto;width:102px;height:102px;}
@@ -1215,7 +1217,8 @@ b.pt_blue {font-weight:700;}
 .chart_wrap #chart .c3-target-data2 text {/*fill:#ea563a;*/-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-moz-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);}
 
 /* My page - confirm pw */
-.float_content .confirm_pw {margin:0 auto;padding:220px 0;width:505px;}
+.float_content {padding:0 40px 51px;}
+.float_content .confirm_pw {margin:0 auto;padding:220px 0 169px;width:505px;}
 .float_content .confirm_pw .confirm_pw_inner {padding:42px 30px 46px;border-top:1px solid #333333;border-bottom:1px solid #333333;}
 .float_content .confirm_pw .user_name {display:block;font-size:26px;font-weight:400;color:#333333;}
 .float_content .confirm_pw .user_name b {font-weight:700;}
@@ -1223,10 +1226,49 @@ b.pt_blue {font-weight:700;}
 .float_content .confirm_pw .input_box {margin-top:6px;overflow:hidden;}
 .float_content .confirm_pw .input_box input {float:left;padding:0 12px;width:360px;height:38px;line-height:36px;font-size:13px;color:#666666;}
 .float_content .confirm_pw .input_box button {float:left;margin-left:5px;width:80px;height:38px;line-height:36px;font-size:17px;color:#ffffff;background-color:#333333;text-align:center;}
+.float_content h2 {padding-top:39px;margin-bottom:9px;font-size:20px;font-weight:700;color:#333333;line-height:1;}
+.float_content .form_box.tbl_style {margin-top:0;}
+.float_content .form_box.tbl_style .form_group .cont {padding:15px 19px 14px;width:824px;vertical-align:middle;}
+.float_content .form_box.tbl_style .devide_box .title + .cont {width:318px;}
+.float_content .form_box.tbl_style .devide_box .title + .cont + .title + .cont {width:336px;}
+.float_content .form_box.tbl_style .form_group.form_change_pw .change_pw_box {display:none;}
+.float_content .form_box.tbl_style .form_group.form_change_pw .input_box + .input_box {margin-top:14px;}
+.float_content .form_box.tbl_style .form_group.form_change_pw .input_box input {width:280px;}
+.float_content .form_box.tbl_style .form_group.form_change_pw .input_box input.active {}
+.float_content .form_box.tbl_style .form_group.form_change_pw .input_box .err_msg {margin-top:6px;}
+.float_content .btn_box {margin-top:20px;}
+.float_content .btn_box button {margin-left:10px;}
+.float_content .btn_box button:first-child {margin-left:0;}
+.float_content .form_box.tbl_style .form_group .df_size {width:220px;}
+.float_content .form_box.tbl_style .form_group .cont .direct_ip_box {display:none;margin-top:10px;}
 
-
-
-
+/* My page - Point */
+.my_point .total_point_wrap {margin-bottom:50px;height:119px;}
+.my_point .total_point_wrap .point_box {float:left;padding:18px 17px 0 20px;width:25%;height:100%;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;border-left:1px solid #cccccc;}
+.my_point .total_point_wrap .point_box:last-child {border-right:1px solid #cccccc;}
+.my_point .total_point_wrap .point_box .title {display:block;font-size:17px;font-weight:500;color:#333333;line-height:20px;}
+.my_point .total_point_wrap .point_box .i_point {display:block;margin-top:10px;font-size:30px;font-weight:700;color:#333333;line-height:1;text-align:right;}
+.my_point .i_blue {color:#3d7ca4 !important;}
+.my_point .i_red {color:#ff0000 !important;}
+.my_point .total_point_wrap .point_box p {margin-top:4px;font-size:13px;font-weight:900;color:#cccccc;text-align:right;}
+.my_point .total_point_wrap .point_box.total_box .title {background:url('../images/ico_point.png') no-repeat 83px 50%;}
+.my_point .calendar_box input {float:left;padding:0 10px;width:154px;height:35px;line-height:35px;font-size:14px;color:#999999;background:url('../images/ico_calendar.png') no-repeat 127px 50%;cursor:pointer;}
+.my_point .calendar_box .i_dash {display:block;float:left;width:30px;height:35px;line-height:33px;font-size:20px;color:#999999;text-align:center;}
+.my_point .point_srh_opt {margin-top:20px;}
+.my_point .point_srh_opt:after {display:block;visibility:hidden;clear:both;content:""}
+.my_point .point_srh_opt .calendar_box {float:left;}
+.my_point .point_srh_opt .chk_wrap {float:right;margin-top:3px;border-radius:4px;overflow:hidden;font-size:0;}
+.my_point .point_srh_opt .chk_wrap input[type="checkbox"] + label {padding:0;width:70px;height:30px;line-height:30px;font-size:15px;font-weight:500;color:#999999;background-color:#dddddd;text-align:center;}
+.my_point .point_srh_opt .chk_wrap input[type="checkbox"] + label.chk_right {margin-left:1px;}
+.my_point .point_srh_opt .chk_wrap input[type="checkbox"]:checked + label {color:#ffffff;background-color:#666666;}
+.my_point .point_list_wrap {margin-top:20px;border-bottom:1px solid #cccccc;}
+.my_point .point_list_wrap li {position:relative;padding:15px 19px 15px;border-top:1px solid #cccccc;}
+.my_point .point_list_wrap li .i_cate {display:block;font-size:14px;font-weight:500;}
+.my_point .point_list_wrap li .i_title {display:block;padding-right:272px;font-size:17px;font-weight:700;color:#333333;}
+.my_point .point_list_wrap li .i_date {display:block;margin-top:15px;font-size:12px;font-weight:400;color:#666666;}
+.my_point .point_list_wrap li .point_wrap {position:absolute;top:38px;right:20px;font-size:0;}
+.my_point .point_list_wrap li .point_wrap .num_point {display:inline-block;font-size:20px;font-weight:700;vertical-align:top;}
+.my_point .point_list_wrap li .point_wrap .text_point {display:inline-block;margin-left:7px;padding-top:8px;font-size:13px;font-weight:900;color:#cccccc;vertical-align:top;}
 
 
 
@@ -1252,6 +1294,7 @@ b.pt_blue {font-weight:700;}
 #snb li a {display:block;height:50px;font-size:17px;color:#999;line-height:2.8;border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
 #snb li:first-child a {border-left:1px solid #ddd;}
 #snb li a.on {color:#fff;font-weight:700;border:0;}
+#snb.snb2 li {width:50%;}
 #snb.snb4 li {width:25%;}
 #snb.snb6 li {width:16.66%;}
 
