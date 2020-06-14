@@ -55,6 +55,15 @@ $(document).ready(function() {
 		copyToClipboard($str);
 		alert('복사되었습니다.');
 	});
+
+	// Tool tip2
+	$('.btn_tool_tip').on({
+		mouseenter: function(){
+			$(this).next().css('display','block');
+		},mouseleave: function(){
+			$(this).next().css('display','none');
+		}
+	});
 });
 
 // aside Tab

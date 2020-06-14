@@ -25,6 +25,7 @@
     <script src="../../js/jquery.selectric.min.js"></script>
 	<script src="../../js/learning_detail.js"></script>
 	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
 </head>
@@ -143,7 +144,7 @@
 							<div class="img"><img src="../../images/ex_detail_hd.jpg" alt="" /></div>
 							<div class="detail">
 								<div class="detail_cate">
-									<span class="label_basic label_w theme_color">조합</span>
+									<span class="label_basic label_w theme_color">외부</span>
 									<span class="label_basic label_t_w">환급과정</span>
 								</div>
 								<h3>하루 한 문장! 미드로 배우는<br/>영어회화</h3>
@@ -196,166 +197,212 @@
 							<div class="aside">
 								<div class="aside_inner">
 									<ul>
-										<li><a href="#none">학습홈</a></li>
-										<li><a href="#none">학습콘텐츠</a></li>
-										<li><a href="#none">시험</a></li>
-										<li><a href="#none">과제</a></li>
-										<li><a href="#none">설문</a></li>
-										<li><a href="#none" class="on theme_bg">게시판</a></li>
+										<li><a href="#none">신청정보</a></li>
+										<li><a href="#none" class="on theme_bg">수료보고</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="learning_detail_con_inner">
-							<div class="learning_board_search">
-								<div class="select_s">
-									<label for="search_cate">구분</label>
-									<select id="search_cate" class="select_box">
-										<option value="">분류</option>
-										<option value="">제목</option>
-										<option value="">제목 + 내용</option>
-									</select>
-								</div>
-								<div class="search">
-									<label for="search_text">제목/내용</label>
-									<div class="input_box">
-										<input id="search_text" type="text">
-									</div>
-								</div>
-								<div class="my_question">
-									<input type="checkbox" id="saveID" name="saveID">
-									<label for="saveID"><span class="ico_fake"></span>내 질문만 보기</label>
-								</div>
-								<div class="btn_search">
-									<button type="button" class="btn_gray2_white">검색</button>
-								</div>
-							</div>
-						    <div class="learning_tbl_wrap">
-						        <table class="table table_board_list">
-									<colgroup>
-										<col width="6%">
-										<col width="8%">
-										<col width="*">
-										<col width="10%">
-										<col width="10%">
-										<col width="12%">
-									</colgroup>
-									<thead>
-										<tr>
-											<th>NO</th>
-											<th>구분</th>
-											<th>제목</th>
-											<th>첨부파일</th>
-											<th>등록자</th>
-											<th>등록일</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="bo_num">10</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none">공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">9</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_complete">답변완료</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">8</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_waiting theme_color theme_bd">미답변</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">7</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none">공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">6</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_complete">답변완료</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">5</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_waiting theme_color theme_bd">미답변</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">4</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none">공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">3</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_complete">답변완료</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">2</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none"><span class="btn_bo_waiting theme_color theme_bd">미답변</span>공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<tr>
-											<td class="bo_num">1</td>
-											<td class="bo_cate">공지</td>
-											<td class="bo_title"><a href="#none">공지 제목이 노출됩니다.</a></td>
-											<td class="bo_file"><a href="#none"><img src="../../images/ico_board_file.png" alt="첨부파일" /></a></td>
-											<td class="bo_view">남주혁</td>
-											<td class="bo_date">2019.09.23</td>
-										</tr>
-										<!-- 해당 목록이 없을경우 -->
-										<tr>
-											<td colspan="6" class="bo_nodata">해당 목록이 없습니다.</td>
-										</tr>
-										<!-- // 해당 목록이 없을경우 -->
-									</tbody>
-								</table>
+							<table class="compl_report table table_style5">
+								<colgroup>
+									<col width="150">
+									<col width="*">
+								<tbody>
+									<tr>
+										<th>
+											교육자료
+											<button type="button" class="btn_style3 btn_gray_black">파일추가</button>
+										</th>
+										<td>파일을 등록하세요.</td>
+									</tr>
+									<tr>
+										<th>
+											수료증<i class="ast theme_color">*</i>
+											<button type="button" class="btn_style3 btn_gray_black">파일추가</button>
+										</th>
+										<td>파일을 등록하세요.</td>
+									</tr>
+									<tr>
+										<th>
+											비용 증빙서류
+											<button type="button" class="btn_style3 btn_gray_black">파일추가</button>
+										</th>
+										<td>
+											파일을 등록하세요.
+											<div class="document_info">
+												<h4>증빙서류 등록 시 유의사항</h4>
+												<ol>
+													<li>
+														1. 법인카드 결제 시
+														<ul>
+															<li>- 법인카드 앞면 스캔본 (카드번호 가운데 8자리 숨기기)</li>
+															<li>- 영수증 이미지(법인카드 앞면에 표시된 번호와 동일한 영수증)</li>
+														</ul>
+													</li>
+													<li>
+														2. 세금계산서 결제 시
+														<ul>
+															<li>- 세금계산서 사본</li>
+															<li>- 금융기관 발급 입금확인증(교육기관 요청)</li>
+														</ul>
+													</li>
+												</ol>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											기타
+											<button type="button" class="btn_style3 btn_gray_black">파일추가</button>
+										</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>
+											학습만족도
+										</th>
+										<td>
+											<table class="table table_question">
+												<colgroup>
+													<col width="*">
+													<col width="80">
+													<col width="80">
+													<col width="80">
+													<col width="80">
+													<col width="80">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>문항</th>
+														<th>전혀<br>그렇지않다</th>
+														<th>그렇지<br>않다</th>
+														<th>보통이다</th>
+														<th>그렇다</th>
+														<th>매우<br>그렇다</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th><div class="question_box">본 과정은 직무역량 향상에 도움이 되었다.</div></th>
+														<td>
+															<input type="radio" id="question1_1" name="question1" checked="">
+															<label for="question1_1"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question1_2" name="question1">
+															<label for="question1_2"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question1_3" name="question1">
+															<label for="question1_3"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question1_4" name="question1">
+															<label for="question1_4"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question1_5" name="question1">
+															<label for="question1_5"><span class="ico_fake2"></span></label>
+														</td>
+													</tr>
+													<tr>
+														<th><div class="question_box">본 과정을 통해 학습한 내용을 현업에 적용할 수 있다.</div></th>
+														<td>
+															<input type="radio" id="question2_1" name="question2" checked="">
+															<label for="question2_1"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question2_2" name="question2">
+															<label for="question2_2"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question2_3" name="question2">
+															<label for="question2_3"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question2_4" name="question2">
+															<label for="question2_4"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question2_5" name="question2">
+															<label for="question2_5"><span class="ico_fake2"></span></label>
+														</td>
+													</tr>
+													<tr>
+														<th><div class="question_box">본 과정을 다른 동료/후배에게도 추천하겠다.</div></th>
+														<td>
+															<input type="radio" id="question3_1" name="question3" checked="">
+															<label for="question3_1"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question3_2" name="question3">
+															<label for="question3_2"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question3_3" name="question3">
+															<label for="question3_3"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question3_4" name="question3">
+															<label for="question3_4"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question3_5" name="question3">
+															<label for="question3_5"><span class="ico_fake2"></span></label>
+														</td>
+													</tr>
+													<tr>
+														<th><div class="question_box">본 교육기관의 강의운영, 내용에 대해 전반적으로 만족한다.</div></th>
+														<td>
+															<input type="radio" id="question4_1" name="question4" checked="">
+															<label for="question4_1"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question4_2" name="question4">
+															<label for="question4_2"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question4_3" name="question4">
+															<label for="question4_3"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question4_4" name="question4">
+															<label for="question4_4"><span class="ico_fake2"></span></label>
+														</td>
+														<td>
+															<input type="radio" id="question4_5" name="question4">
+															<label for="question4_5"><span class="ico_fake2"></span></label>
+														</td>
+													</tr>
+													<tr>
+														<th colspan="6" class="question_box_group">
+															<div class="question_box">
+																교육내용의 향후 업무 활용계획이 어떻게 됩니까?
+																<textarea name="" placeholder="내용을 입력하세요."></textarea>
+															</div>
 
-								<ul class="page_nav">
-									<li><a href="#none"><img src="../../images/btn_page_first.png" alt="처음" /></a></li>
-									<li><a href="#none"><img src="../../images/btn_page_prev.png" alt="이전" /></a></li>
-									<li><a href="#none" class="on">1</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
-									<li><a href="#none">2</a></li>
-									<li><a href="#none">3</a></li>
-									<li><a href="#none">4</a></li>
-									<li><a href="#none">5</a></li>
-									<li><a href="#none">6</a></li>
-									<li><a href="#none">7</a></li>
-									<li><a href="#none">8</a></li>
-									<li><a href="#none">9</a></li>
-									<li><a href="#none">10</a></li>
-									<li><a href="#none"><img src="../../images/btn_page_next.png" alt="다음" /></a></li>
-									<li><a href="#none"><img src="../../images/btn_page_last.png" alt="마지막" /></a></li>
-								</ul>
-						    </div>
+															<div class="question_box">
+																해당 과정에서 가장 도움이 되었던 점은 무엇입니까?
+																<textarea name="" placeholder="내용을 입력하세요."></textarea>
+															</div>
+
+															<div class="question_box">
+																해당 과정을 다른 동료에게 추천하거나 추천하지 않는 이유는 무엇입니까?
+																<textarea name="" placeholder="내용을 입력하세요."></textarea>
+															</div>
+														</th>
+													</tr>
+												</tbody>
+											</table>		
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="btn_group btn_board_view">
+								<a href="#none" class="btn_basic btn_gray_white btn_round">목록</a>
+							</div>
 						</div>
 					</div>
 				</div>
