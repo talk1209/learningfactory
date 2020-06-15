@@ -1095,6 +1095,9 @@ b.pt_blue {font-weight:700;}
 .layer_popup .pop_approver .form_box.tbl_style {margin-top:0;}
 
 /* Layer popup - 반려사유, 취소사유 보기 */
+.layer_popup .in_charge {margin-bottom:13px;padding-bottom:15px;border-bottom:1px solid #cccccc;overflow:hidden;}
+.layer_popup .in_charge .title {display:block;float:left;width:50px;font-size:15px;font-weight:700;color:#333333;vertical-align:top;}
+.layer_popup .in_charge .i_name {display:block;float:left;width:470px;font-size:15px;font-weight:400;color:#333333;vertical-align:top;}
 .layer_popup .pop_content {font-size:15px;color:#333333;line-height:27px;}
 
 /* Layer popup - 취소사유 입력 */
