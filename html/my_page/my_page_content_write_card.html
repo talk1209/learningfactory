@@ -18,16 +18,14 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/selectric.css">
     <link rel="stylesheet" href="../../css/theme.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="../../css/jquery.fancybox.min.css">
 	<link  rel="stylesheet" href="../../css/default.css">
 	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
     <script src="../../js/jquery-ui-1.12.1.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <script src="../../js/jquery.fancybox.min.js"></script>
 	<script src="../../js/common.js"></script>
 
     <title>learning factory</title>
@@ -278,87 +276,39 @@
 .float_content .cont_write_form .right_form .regi_card .upload_list li input[type="checkbox"]:checked + label .i_dim {z-index:1;display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5) url('../../images/ico_card_chk.png') no-repeat 50% 50%;}
 .float_content .cont_write_form .right_form .regi_card .upload_list li .btn_zoom {z-index:2;display:block;position:absolute;bottom:0;right:7px;width:25px;height:28px;background:url('../../images/ico_zoom.png') no-repeat 50% 50%;}
 </style>
+<script>
+$(document).ready(function() {
+
+	/* Apply fancybox to multiple items */
+	
+	$("a[rel=group].btn_zoom").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
 										<ul class="upload_list">
 											<li>
 												<input type="checkbox" id="uploadCard1" name="uploadCard1">
-												<label for="uploadCard1" data-title="열심히 한 작업!!" data-lightbox="example-set">
+												<label for="uploadCard1">
 													<span class="i_dim"></span> <!-- dim -->
 													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
 												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
+												<a data-fancybox="cardLearning" href="../../images/contents_card_dummy.png" class="btn_zoom blind">이미지 확대</a> <!-- button zoom -->
 											</li>
 											<li>
 												<input type="checkbox" id="uploadCard2" name="uploadCard2">
-												<label for="uploadCard2" data-title="열심히 한 작업!!" data-lightbox="example-set">
+												<label for="uploadCard2">
 													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
+													<img src="../../images/contents_card_dummy2.png" class="img_responsive" alt=""> <!-- upload img -->
 												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
+												<a data-fancybox="cardLearning" href="../../images/contents_card_dummy2.png" class="btn_zoom blind">이미지 확대</a> <!-- button zoom -->
 											</li>
-											<li>
-												<input type="checkbox" id="uploadCard3" name="uploadCard3">
-												<label for="uploadCard3" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard4" name="uploadCard4">
-												<label for="uploadCard4" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard5" name="uploadCard5">
-												<label for="uploadCard5" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard6" name="uploadCard6">
-												<label for="uploadCard6" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard7" name="uploadCard7">
-												<label for="uploadCard7" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard8" name="uploadCard81">
-												<label for="uploadCard8" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard9" name="uploadCard9">
-												<label for="uploadCard9" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
-											<li>
-												<input type="checkbox" id="uploadCard10" name="uploadCard10">
-												<label for="uploadCard10" data-title="열심히 한 작업!!" data-lightbox="example-set">
-													<span class="i_dim"></span> <!-- dim -->
-													<img src="../../images/contents_card_dummy.png" class="img_responsive" alt=""> <!-- upload img -->
-												</label>
-												<button type="button" class="btn_zoom blind">이미지 확대</button> <!-- button zoom -->
-											</li>
+											
 										</ul>
 										<div class="img_area">
 											<div class="img_box">
