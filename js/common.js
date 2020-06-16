@@ -268,12 +268,14 @@ $(document).ready(function() {
         }
     });
     
-    
-    
-    
-    
-    
-    
+     /* Join_terms - Checkbox All Chk */   
+    $("#cardAllChk").click(function(){
+        if($("#cardAllChk").prop("checked")) {
+            $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",true);         
+        } else {
+            $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",false);       
+        } 
+    });    
     
     // Faq slide
    	$('.table_faq_list').find('dt a').on('click', function(){
