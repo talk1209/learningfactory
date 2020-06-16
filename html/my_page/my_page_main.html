@@ -227,11 +227,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="my_survey_link">
-                                <a href="#none">
-                                    <p>김하나님, ‘[2019] CJ임직원 안전교육 마인드셋 1차수’ 관련 설문조사에 참여해주세요. (~2019.12.31 까지)</p>
-                                    <span class="more">더보기</span>
-                                </a>
+                            <div class="survey_blank">
+                                <div class="my_survey_link"> <!-- 해당 영역 노출 안할 시 my_survey_link 부터 hidden -->
+                                    <a href="#none">
+                                        <p>김하나님, ‘[2019] CJ임직원 안전교육 마인드셋 1차수’ 관련 설문조사에 참여해주세요. (~2019.12.31 까지)</p>
+                                        <span class="more">더보기</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="my_main_box favorite_box">
                                 <span class="title theme_color">좋아요</span>
@@ -530,7 +532,7 @@ $(document).ready(function() {
 		d3.select('.c3-target-data2 text').attr("transform", "translate(0, 0)"); // 모션 후 위치
 	}, 500);
 	$(window).resize( function() {
-		d3.select('.c3-target-data2 text').attr("transform", "translate(0, 0)"); 
+		d3.select('.c3-target-data2 text').attr("transform", "translate(0, 0)"); // resize 위치
 	});	 
 });
 </script>
