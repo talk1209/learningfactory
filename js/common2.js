@@ -64,6 +64,53 @@ $(document).ready(function() {
 			$(this).next().css('display','none');
 		}
 	});
+
+
+	$("#checkall").next('label').click(function(){
+		
+        //클릭되었으면
+        if($("#checkall").prop("checked")){
+            //input태그의 name이 chk인 태그들을 찾아서 checked옵션을 true로 정의
+            $(".chk_id").prop("checked",false);
+            //클릭이 안되있으면
+        }else{
+            //input태그의 name이 chk인 태그들을 찾아서 checked옵션을 false로 정의
+            $(".chk_id").prop("checked",true);
+        }
+    })
+
+
+
+
+	$('.view_btn').on('click', function(){
+		if($(this).hasClass('view_down')){
+			$(this).parent().next('ul').slideDown(300);
+		}
+
+		if($(this).hasClass('view_up')){
+			$(this).parent().next('ul').slideUp(300);
+		}
+	});
+
+
+	// 좋아요
+	$('.btn_favorite').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on theme_color theme_bd theme_color theme_bd');
+		}else{
+			$(this).addClass('on theme_color theme_bd theme_color theme_bd');
+		}
+	});
+
+	$('.qa_slide').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).next('.tr_detail').css('display','none');
+			$(this).removeClass('on');
+		}else{
+			$(this).next('.tr_detail').css('display','table-row');
+			$(this).addClass('on');
+		}
+	});
 });
 
 // aside Tab
@@ -92,9 +139,16 @@ function asideTab(){
 
 
 function divAccodion3() {
-    $(".box_title").on('click', function() {   
-        $(this).parent().toggleClass('active');
-        $(this).next('.box_cont').slideToggle(300);
+	$('.box_cont').css('display','none');
+	$('.active .box_cont').css('display','block');
+    $(".box_title").on('click', function() {
+		if($(this).parent().hasClass('active')){
+			$(this).parent().removeClass('active');
+			$(this).next('.box_cont').slideUp(300);
+		}else{
+			$(this).parent().addClass('active');
+			$(this).next('.box_cont').slideDown(300);
+		}
     });
 }
 

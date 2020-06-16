@@ -22,8 +22,8 @@
 	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
-	<script src="../../js/learning_detail.js"></script>
 	<script src="../../js/common.js"></script>
 	<script src="../../js/common2.js"></script>
 
@@ -137,133 +137,110 @@
         <!-- // Header -->
         <!-- Container -->
         <div id="container">
-            <div class="sub_inner inner learning_detail bg_w">
-				<div class="learning_detail_wrap">
-					<div class="learning_detail_hd theme_bg">
-						<div class="learning_detail_hd_inner">
-							<div class="img"><img src="../../images/ex_detail_hd.jpg" alt="" /></div>
-							<div class="detail">
-								<div class="detail_cate">
-									<span class="label_basic label_w theme_color">외부</span>
-									<span class="label_basic label_t_w">환급과정</span>
-								</div>
-								<h3>하루 한 문장! 미드로 배우는<br/>영어회화</h3>
-								<div class="go_detail"><a href="#none">과정상세정보</a></div>
-								<div class="detail_ft">
-									<table class="table_learning_detail">
-										<tbody>
-											<tr>
-												<th>교육차수명</th>
-												<td>2020.04.15 10:00 ~ 2020.04.03 23:00 (3일, 20시간)</td>
-											</tr>
-											<tr>
-												<th>교육장소</th>
-												<td>서울 서초구 방배동</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+            <!-- sub header design -->
+            <div class="sub_hd mypage_hd theme_bg">
+                <div class="inner">
+                    <!-- profile -->
+                    <div class="profile_box">
+                        <div class="profile_img_wrap">
+                            <div class="profile_img" style="background-image:url('../../images/my_profile_default.png');"></div>
+                            <button type="button" class="i_edit blind">사진변경</button>
+                        </div>
+                        <span class="my_name">김하나</span>
+                        <span class="my_position">CJ / 경영지원팀</span>
+                        <div class="btn_wrap">
+                            <button type="button">프로필 수정</button>
+                            <button type="button">로그아웃</button>
+                        </div>
+                    </div>
+                    <!-- // profile -->
+                </div>
+            </div>
+            <div class="sub_content_wrap bg_gray">
+                <div class="inner">
+                    <div class="aside_wrap">
+                        <ul>
+                            <li class="aside_my_main"><a href="#none">마이페이지 메인</a></li>
+                            <li class="aside_my_modify"><a href="#none">내 정보 수정</a></li>
+                            <li class="aside_my_point"><a href="#none">내 포인트</a></li>
+                            <li class="aside_my_sme"><a href="#none">나의 SME 채널</a></li>
+                            <li class="aside_my_pay"><a href="#none">결재함</a></li>
+                            <li class="aside_my_like"><a href="#none">좋아요/댓글</a></li>
+                            <li class="aside_my_subs on"><a href="#none">구독중인 채널</a></li>
+                            <li class="aside_my_qna"><a href="#none">내 Q&amp;A</a></li>
+                            <li class="aside_my_set"><a href="#none">관심설정</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub_content">
+                        <div class="float_content my_channel">
+                            <h2>구독중인 채널 <span class="theme_color">8</span></h2>
+							<div class="course_list">
+								<ul>
+									<!-- SME 채널 -->
+									<li class="theme_bd_hover sme_channel"> <!-- SME 채널 일 때 sme_channel 클래스 추가 -->
+										<a href="#none"><div class="thumb_box" style="background-image:url('../../images/sme_big_thumb.png')"></div></a>
+										<div class="course_desc">
+											<a href="#none">
+											<span class="channel_name">SME 채널명(한줄, 말줄임)</span>
+											<span class="tag_wrap">
+												<span class="i_tag theme_color">#경제동향</span>
+												<span class="i_tag theme_color">#경제</span>
+												<span class="i_tag theme_color">#경제지식</span>
+											</span>
+											<span class="subs_num"><b>구독자</b>1,301</span>
+											</a>
+											<div class="btn_subs">
+												<input type="checkbox" id="btnSubs2" class="btnSubs" name="btnSubs2">
+												<label for="btnSubs2" class="theme_bg"><span class="i_text"></span></label>
+											</div>
+										</div>
+									</li>
+									<!-- // SME 채널 -->
+									<!-- SME 채널 -->
+									<li class="theme_bd_hover sme_channel"> <!-- SME 채널 일 때 sme_channel 클래스 추가 -->
+										<a href="#none"><div class="thumb_box" style="background-image:url('../../images/sme_big_thumb.png')"></div></a>
+										<div class="course_desc">
+											<a href="#none">
+											<span class="channel_name">SME 채널명(한줄, 말줄임)</span>
+											<span class="tag_wrap">
+												<span class="i_tag theme_color">#경제동향</span>
+												<span class="i_tag theme_color">#경제</span>
+												<span class="i_tag theme_color">#경제지식</span>
+											</span>
+											<span class="subs_num"><b>구독자</b>1,301</span>
+											</a>
+											<div class="btn_subs">
+												<input type="checkbox" id="btnSubs3" class="btnSubs" name="btnSubs3">
+												<label for="btnSubs3" class="theme_bg"><span class="i_text"></span></label>
+											</div>
+										</div>
+									</li>
+									<!-- // SME 채널 -->
+								</ul>
 							</div>
-							<div class="aside">
-								<div class="review_star review_star_w_128">
-									<div class="ico_star_view">
-										<!-- 
-										width:20% 별점 1개
-										width:40% 별점 2개 
-										width:60% 별점 3개 
-										width:80% 별점 4개 
-										width:100% 별점 5개 
-										-->
-										<span class="star_fill" style="width:80%;"></span>
-									</div>
-									<span class="i_rating">4.0</span>
-								</div>
-								<div class="aside_bt">
-									<div class="btn_box">
-										<!-- 좋아요 클릭 후 -->
-										<button type="button" class="btn_t_w_w btn_leaning_favorite"><img src="../../images/ico_favorite_w_m_on.png" alt="" />210</button>
-										<!-- // 좋아요 클릭 후 -->
-										<!-- 좋아요 클릭 전
-										<button type="button" class="btn_t_w_w btn_leaning_favorite"><img src="../../images/ico_favorite_w_m.png" alt="" />210</button>
-										// 좋아요 클릭 전-->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="learning_detail_con">
-						<div class="aside_wrap">
-							<div class="aside">
-								<div class="aside_inner">
-									<ul>
-										<li><a href="#none" class="on theme_bg">신청정보</a></li>
-										<li><a href="#none">수료보고</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="learning_detail_con_inner">
-							<table class="table table_style7">
-								<colgroup>
-									<col width="150">
-									<col width="420">
-									<col width="150">
-									<col width="420">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>교육기관</th>
-										<td>사회교육기관</td>
-										<th>교육장소</th>
-										<td>퍼브</td>
-									</tr>
-									<tr>
-										<th>인당교육비</th>
-										<td>300,000원</td>
-										<th>학습기간</th>
-										<td>2018.11.13 ~ 2018.11.14</td>
-									</tr>
-									<tr>
-										<th>환급과정여부</th>
-										<td colspan="3">N</td>
-									</tr>
-									<tr>
-										<th>교육일수시간</th>
-										<td colspan="3">1일/ 5시간</td>
-									</tr>
-									<tr>
-										<th>교육분야</th>
-										<td colspan="3">1depth > 2depth > 3depth > 4depth</td>
-									</tr>
-									<tr>
-										<th>학습자료</th>
-										<td colspan="3">첨부파일이 없습니다.</td>
-									</tr>
-									<tr>
-										<th>관련URL</th>
-										<td colspan="3"><a href="https://www.naver.com">www.naver.com</a></td>
-									</tr>
-									<tr>
-										<th>학습목표/내용</th>
-										<td colspan="3">
-											01.강박 : 상황을 통제하기  02.분노 : 마음을다스리기  03.관심 : 마음 속 거울 깨기<br/>
-											01.강박 : 상황을 통제하기  02.분노 : 마음을다스리기  03.관심 : 마음 속 거울 깨기
-										</td>
-									</tr>
-									<tr>
-										<th>기대효과</th>
-										<td colspan="3">
-											강박, 분노, 관심, 회피, 중독 등 현대인들이 겪고있는 심리적 압박에 대해 심리학적으로 이해한다.<br/>
-											복잡하고 어두운 심리적 감옥에서 탈출하는 솔루션을 얻을 수 있다.
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
+							<!-- paging -->
+                            <ul class="page_nav">
+                                <li><a href="#none"><img src="../../images/btn_page_first.png" alt="처음"></a></li>
+                                <li><a href="#none"><img src="../../images/btn_page_prev.png" alt="이전"></a></li>
+                                <li><a href="#none" class="on">1</a></li> <!-- 해당 카테고리에서 클래스 on 추가 -->
+                                <li><a href="#none">2</a></li>
+                                <li><a href="#none">3</a></li>
+                                <li><a href="#none">4</a></li>
+                                <li><a href="#none">5</a></li>
+                                <li><a href="#none">6</a></li>
+                                <li><a href="#none">7</a></li>
+                                <li><a href="#none">8</a></li>
+                                <li><a href="#none">9</a></li>
+                                <li><a href="#none">10</a></li>
+                                <li><a href="#none"><img src="../../images/btn_page_next.png" alt="다음"></a></li>
+                                <li><a href="#none"><img src="../../images/btn_page_last.png" alt="마지막"></a></li>
+                            </ul>
+                            <!-- // paging -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- // Container -->
         <!-- Footer -->
@@ -288,5 +265,27 @@
 		<!-- // ToTop -->
     </div>
     <!-- // Wrap -->
+<script>
+$(document).ready(function() {
+    /* SME 채널 구독 버튼 텍스트 */
+    $(".btnSubs").is(function(){
+        if($(this).prop("checked")) {
+            $(this).next().children(".i_text").text("구독중")
+        } else {
+            $(this).next().children(".i_text").text("구독")
+        }
+    });
+    $(".btnSubs").click(function(){
+	console.log("click")
+        if($(this).prop("checked")) {
+		console.log("1")
+            $(this).next().children(".i_text").text("구독중")
+        } else {
+		console.log("2")
+            $(this).next().children(".i_text").text("구독")
+        }
+    });
+});
+</script>
 </body>
 </html>
