@@ -17,15 +17,13 @@
    
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/selectric.css">
-    <link rel="stylesheet" href="../../css/c3.min.css">
     <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
 	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
-    <script src="../../js/d3.v3.min.js"></script>
-    <script src="../../js/c3.min.js"></script>
 	<script src="../../js/common.js"></script>
 
     <title>learning factory</title>
@@ -162,9 +160,9 @@
                     <div class="aside_wrap">
                         <ul>
                             <li class="aside_my_main"><a href="#none">마이페이지 메인</a></li>
-                            <li class="aside_my_modify on"><a href="#none">내 정보 수정</a></li>
+                            <li class="aside_my_modify"><a href="#none">내 정보 수정</a></li>
                             <li class="aside_my_point"><a href="#none">내 포인트</a></li>
-                            <li class="aside_my_sme"><a href="#none">나의 SME 채널</a></li>
+                            <li class="aside_my_sme on"><a href="#none">나의 SME 채널</a></li>
                             <li class="aside_my_pay"><a href="#none">결재함</a></li>
                             <li class="aside_my_like"><a href="#none">좋아요/댓글</a></li>
                             <li class="aside_my_subs"><a href="#none">구독중인 채널</a></li>
@@ -174,40 +172,9 @@
                     </div>
                     <div class="sub_content">
                         <div class="float_content">
-<style>
-.float_content .nav_contents {padding-top:30px;overflow:hidden;}
-.float_content .nav_contents li {float:left;width:14.285714%;}
-.float_content .nav_contents li:first-child {border-left:0;}
-.float_content .nav_contents li a {display:block;height:55px;line-height:55px;font-size:17px;font-weight:700;color:#aaaaaa;text-align:left;border-left:1px solid #ffffff;}
-.float_content .nav_contents li a.on {color:#ffffff;}
-.float_content .nav_contents li.write_video a {padding-left:65px;background:#dddddd url('../../images/ico_video.png') no-repeat 32px 50%;}
-.float_content .nav_contents li.write_video a.on {padding-left:65px;background:url('../../images/ico_video_on.png') no-repeat 32px 50%;}
-.float_content .nav_contents li.write_audio a {padding-left:65px;background:#dddddd url('../../images/ico_audio.png') no-repeat 34px 50%;}
-.float_content .nav_contents li.write_audio a.on {padding-left:65px;background:url('../../images/ico_audio_on.png') no-repeat 34px 50%;}
-.float_content .nav_contents li.write_youtube a {padding-left:65px;background:#dddddd url('../../images/ico_youtube.png') no-repeat 34px 50%;}
-.float_content .nav_contents li.write_youtube a.on {padding-left:65px;background:url('../../images/ico_youtube_on.png') no-repeat 34px 50%;}
-.float_content .nav_contents li.write_card a {padding-left:58px;background:#dddddd url('../../images/ico_cardlearning.png') no-repeat 27px 50%;}
-.float_content .nav_contents li.write_card a.on {padding-left:58px;background:url('../../images/ico_cardlearning_on.png') no-repeat 27px 50%;}
-.float_content .nav_contents li.write_link a {padding-left:72px;background:#dddddd url('../../images/ico_link.png') no-repeat 42px 50%;}
-.float_content .nav_contents li.write_link a.on {padding-left:72px;background:url('../../images/ico_link_on.png') no-repeat 42px 50%;}
-.float_content .nav_contents li.write_pdf a {padding-left:69px;background:#dddddd url('../../images/ico_pdf.png') no-repeat 43px 50%;}
-.float_content .nav_contents li.write_pdf a.on {padding-left:69px;background:url('../../images/ico_pdf_on.png') no-repeat 43px 50%;}
-.float_content .nav_contents li.write_text a {padding-left:65px;background:#dddddd url('../../images/ico_text.png') no-repeat 34px 50%;}
-.float_content .nav_contents li.write_text a.on {padding-left:65px;background:url('../../images/ico_text_on.png') no-repeat 34px 50%;}
-.float_content .cont_write_form {margin-top:50px;}
-.float_content .cont_write_form:after {display:block;visibility:hidden;clear:both;content:""}
-.float_content .cont_write_form .left_form {float:left;width:279px;}
-.float_content .cont_write_form .left_form .content_cate_wrap {margin-bottom:20px;}
-.float_content .cont_write_form .left_form .content_cate_wrap .selectric-content_cate {}
-.float_content .cont_write_form .left_form .content_cate_wrap .selectric-content_cate .selectric {border-bottom:0;}
-.float_content .cont_write_form .left_form .content_cate_wrap .selectric-content_cate .selectric-items {border-top:1px solid #ccd5dc;}
-.float_content .cont_write_form .left_form .content_cate_wrap .selectric-content_cate:last-child .selectric-items {border-top:0;}
-.float_content .cont_write_form .left_form .content_cate_wrap .selectric-content_cate:last-child .selectric {border-bottom:1px solid #cccccc;}
-.float_content .cont_write_form .right_form {float:left;margin-left:20px;width:695px;}
-</style>
                             <ul class="nav_contents">
-                                <li class="write_video"><a href="#none" class="on theme_bg">동영상</a></li>
-                                <li class="write_audio"><a href="#none">오디오</a></li>
+                                <li class="write_video"><a href="#none">동영상</a></li>
+                                <li class="write_audio"><a href="#none" class="on theme_bg">오디오</a></li>
                                 <li class="write_youtube"><a href="#none">유튜브</a></li>
                                 <li class="write_card"><a href="#none">카드러닝</a></li>
                                 <li class="write_link"><a href="#none">링크</a></li>
@@ -238,7 +205,7 @@
                                         <option value="" selected>노출</option>
                                         <option value="">비노출</option>
                                     </select>
-                                    <div class="write_thumbnail">
+                                    <div class="write_thumb">
                                         <span class="title">썸네일</span>
                                         <span class="size_desc">썸네일 권장사이즈 000px X 000px</span>
                                         <button type="button" class="i_edit blind">사진등록</button>
@@ -250,9 +217,47 @@
                                             <button type="button" class="btn_del blind">삭제</button>
                                         </div>
                                     </div>
+                                    <div class="sec_keyword">
+										<span class="title">키워드</span>
+										<div class="keyword_list">
+											<ul>
+												<li>
+													<span class="i_keyword" style="border-color:#0396a6;color:#0396a6;">인문교양</span>
+													<button type="button" class="btn_close" style="border-color:#0396a6;color:#0396a6;">X</button>
+												</li>
+												<li>
+													<span class="i_keyword" style="border-color:#2c3759;color:#2c3759;">커뮤니케이션</span>
+													<button type="button" class="btn_close" style="border-color:#2c3759;color:#2c3759;">X</button>
+												</li>
+											</ul>
+											<input type="text" class="ip_keyword lf_org_ac" placeholder="키워드를 입력해 주세요.">
+										</div>
+									</div>
                                 </div>
                                 <div class="right_form">
-                                    2
+                                    <div class="input_box ip_line">
+                                    	<input type="text" class="contents_subj ip_ast" placeholder="제목">
+                                    	<span class="ast">*</span>
+                                    	<span class="ip_bar theme_bg"></span>
+                                    </div>
+                                    <div class="register_contents regi_audio">
+                                    	<div class="title_wrap">
+                                    		<span class="title">오디오 파일</span>
+                                    		<span class="ast">*</span>
+                                    		<p>mp3, wma 유형만 등록할 수 있습니다.</p>
+                                    		<input type="file" id="uploadbtn" class="uploadbtn">
+                                    		<label for="uploadbtn" class="btn_file btn_gray">파일 선택</label>
+                                    	</div>
+                                    	<ul class="file_list">
+											<li>
+												<a href="#none">파일명.확장자 (12.3MB)</a>
+												<button type="button" class="btn_file_del blind">삭제</button>
+											</li>
+										</ul>
+                                    </div>
+                                    <div class="contents_editor">
+										<img src="../../images/editor_dummy.png" alt="">
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -283,5 +288,9 @@
 		<!-- // ToTop -->
     </div>
     <!-- // Wrap -->
+<script>
+/* 자동완성 */
+lf_org_ac();
+</script>  
 </body>
 </html>

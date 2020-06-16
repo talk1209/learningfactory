@@ -230,6 +230,21 @@ $(document).ready(function() {
         }
     });
     
+	/* task ast - focus event */
+	$('div').on('focusin', '.input_box .ip_ast', function () {
+		$(this).next().hide();
+    });
+	$('div').on('focusout', '.input_box .ip_ast', function () {
+        $(this).next().show();
+    });
+	$('div').on('focusout', '.input_box .ip_ast', function () {
+        if ($(this).val().length > 0) { // check if value changed        
+            $(this).next().hide();
+        } else {
+           $(this).next().show();
+        }
+    });
+	
     /* Change Pw */
     $( '#btn_chg' ).on("click", function() {
 		$(this).hide();
