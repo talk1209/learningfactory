@@ -229,7 +229,7 @@ $(document).ready(function() {
            $(this).next().show();
         }
     });
-    
+
 	/* task ast - focus event */
 	$('div').on('focusin', '.input_box .ip_ast', function () {
 		$(this).next().hide();
@@ -244,7 +244,7 @@ $(document).ready(function() {
            $(this).next().show();
         }
     });
-	
+    
     /* Change Pw */
     $( '#btn_chg' ).on("click", function() {
 		$(this).hide();
@@ -268,7 +268,7 @@ $(document).ready(function() {
         }
     });
     
-     /* Join_terms - Checkbox All Chk */   
+	/* Join_terms - Checkbox All Chk */   
     $("#cardAllChk").click(function(){
         if($("#cardAllChk").prop("checked")) {
             $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",true);         
@@ -276,6 +276,12 @@ $(document).ready(function() {
             $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",false);       
         } 
     });    
+    
+    
+    
+    
+    
+    
     
     // Faq slide
    	$('.table_faq_list').find('dt a').on('click', function(){
@@ -286,6 +292,8 @@ $(document).ready(function() {
 			$td.addClass('on');
 		}
 	});
+
+
 
 	// Tool tip  - 20200609 수정
 	$('.tool_tip').find('img').on({
@@ -329,8 +337,18 @@ $(document).ready(function() {
 		alert('복사되었습니다.');
 	});
 
+	$('.btn_copy2').on('click', function() {
+		$str = $(this).val();
+		copyToClipboard($str);
+		alert('복사되었습니다.');
+	});
 
 
+
+
+
+
+	// 20200615 추가
 	/* aside Tab */
 	asideTab();
 
@@ -360,17 +378,22 @@ $(document).ready(function() {
 	/* 학습피스상세 사이드 접기 */
 	$('.learning_piece_aside_close').on('click', function(){
 		$wrap = $('.learning_piece');
-        // swiper update
-        var cardLearning = document.querySelector('.card_learning_slider').swiper
 		if($wrap.hasClass('full_size')){
 			$wrap.removeClass('full_size');
-            cardLearning.update();
 		}else{
 			$wrap.addClass('full_size');
 			$('.learning_piece').attr('height:auto;');
-            cardLearning.update();
 		}
-		
+
+        // swiper update
+		if($('.card_learning_slider').length > 0){
+			var cardLearning = document.querySelector('.card_learning_slider').swiper
+			if($wrap.hasClass('full_size')){
+				cardLearning.update();
+			}else{
+				cardLearning.update();
+			}
+		}
 	});
 
 	// aside Review edit
@@ -381,12 +404,7 @@ $(document).ready(function() {
 		$(this).closest('.list_con').find('.review_form').css('display','block');
 	});
 	
-	// 링크 복사
-	$('.btn_copy2').on('click', function() {
-		$str = $(this).val();
-		copyToClipboard($str);
-		alert('복사되었습니다.');
-	});
+	
 
 	// Tool tip2
 	$('.btn_tool_tip').on({
@@ -397,6 +415,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.more_reply_edit').on('click', function(){
+		$(this).closest('.more_box').toggle();
+		$(this).closest('.reply_list_li').find('.i_content').css('display','none');
+		$(this).closest('.reply_list_li').find('.i_date').css('display','none');
+		$(this).closest('.reply_list_li').find('.hidden_input').css('display','block');
+	});
 
 	$("#checkall").next('label').click(function(){
 		
@@ -695,7 +719,7 @@ function divAccodion2() {
 
 
 
-
+// 20200615 추가
 // aside Tab
 function asideTab(){
     var $tbtn = $(".tab_aside li");
@@ -722,7 +746,7 @@ function asideTab(){
 
 
 function divAccodion3() {
-	$('.box_cont').css('display','none');
+    $('.box_cont').css('display','none');
 	$('.active .box_cont').css('display','block');
     $(".box_title").on('click', function() {
 		if($(this).parent().hasClass('active')){

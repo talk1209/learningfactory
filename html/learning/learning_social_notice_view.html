@@ -19,11 +19,13 @@
     <link rel="stylesheet" href="../../css/selectric.css">
     <link rel="stylesheet" href="../../css/theme.css">
 	<link  rel="stylesheet" href="../../css/default.css">
+	<link  rel="stylesheet" href="../../css/default2.css">
     
     <script src="../../js/jquery-2.2.4.min.js"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js"></script>
     <script src="../../js/jquery.selectric.min.js"></script>
+	<script src="../../js/learning_detail.js"></script>
 	<script src="../../js/common.js"></script>
+	<script src="../../js/common2.js"></script>
 
     <title>learning factory</title>
 </head>
@@ -135,119 +137,156 @@
         <!-- // Header -->
         <!-- Container -->
         <div id="container">
-            <!-- sub header design -->
-            <div class="sub_hd mypage_hd theme_bg">
-                <div class="inner">
-                    <!-- profile -->
-                    <div class="profile_box">
-                        <div class="profile_img_wrap">
-                            <div class="profile_img" style="background-image:url('../../images/my_profile_default.png');"></div>
-                            <button type="button" class="i_edit blind">사진변경</button>
-                        </div>
-                        <span class="my_name">김하나</span>
-                        <span class="my_position">CJ / 경영지원팀</span>
-                        <div class="btn_wrap">
-                            <button type="button">프로필 수정</button>
-                            <button type="button">로그아웃</button>
-                        </div>
-                    </div>
-                    <!-- // profile -->
-                </div>
-            </div>
-            <div class="sub_content_wrap bg_gray">
-                <div class="inner">
-                    <div class="aside_wrap">
-                        <ul>
-                            <li class="aside_my_main"><a href="#none">마이페이지 메인</a></li>
-                            <li class="aside_my_modify"><a href="#none">내 정보 수정</a></li>
-                            <li class="aside_my_point"><a href="#none">내 포인트</a></li>
-                            <li class="aside_my_sme on"><a href="#none">나의 SME 채널</a></li>
-                            <li class="aside_my_pay"><a href="#none">결재함</a></li>
-                            <li class="aside_my_like"><a href="#none">좋아요/댓글</a></li>
-                            <li class="aside_my_subs"><a href="#none">구독중인 채널</a></li>
-                            <li class="aside_my_qna"><a href="#none">내 Q&amp;A</a></li>
-                            <li class="aside_my_set"><a href="#none">관심설정</a></li>
-                        </ul>
-                    </div>
-                    <div class="sub_content">
-                        <div class="float_content">
-                            <ul class="nav_contents">
-                                <li class="write_video"><a href="#none">동영상</a></li>
-                                <li class="write_audio"><a href="#none">오디오</a></li>
-                                <li class="write_youtube"><a href="#none">유튜브</a></li>
-                                <li class="write_card"><a href="#none">카드러닝</a></li>
-                                <li class="write_link"><a href="#none">링크</a></li>
-                                <li class="write_pdf"><a href="#none">PDF</a></li>
-                                <li class="write_text"><a href="#none" class="on theme_bg">텍스트</a></li>
-                            </ul>
-                            <div class="cont_write_form">
-                                <div class="left_form">
-                                    <div class="content_cate_wrap">
-                                        <select class="select_box content_cate">
-                                            <option value="">콘텐츠 대분류 선택</option>
-                                            <option value="">옵션명</option>
-                                            <option value="">옵션명</option>
-                                        </select>
-                                        <select class="select_box content_cate">
-                                            <option value="">콘텐츠 중분류 선택</option>
-                                            <option value="">옵션명</option>
-                                            <option value="">옵션명</option>
-                                        </select>
-                                        <select class="select_box content_cate">
-                                            <option value="">콘텐츠 소분류 선택</option>
-                                            <option value="">옵션명</option>
-                                            <option value="">옵션명</option>
-                                        </select>
-                                    </div>
-                                    <select class="select_box">
-                                        <option value="">노출여부 선택</option>
-                                        <option value="" selected>노출</option>
-                                        <option value="">비노출</option>
-                                    </select>
-                                    <div class="write_thumb">
-                                        <span class="title">썸네일</span>
-                                        <span class="size_desc">썸네일 권장사이즈 000px X 000px</span>
-                                        <button type="button" class="i_edit blind">사진등록</button>
-                                        <div class="drag_box">
-                                            <p>
-                                                등록된 썸네일이 없습니다.<br>
-                                                사진 파일을 드래그하여 추가하세요.
-                                            </p>
-                                            <button type="button" class="btn_del blind">삭제</button>
-                                        </div>
-                                    </div>
-                                    <div class="sec_keyword">
-										<span class="title">키워드</span>
-										<div class="keyword_list">
+            <div class="sub_inner inner learning_detail learning_social bg_w">
+				<div class="learning_detail_wrap">
+					<div class="learning_detail_hd">
+						<div class="learning_detail_hd_inner">
+							<div class="course_desc">
+								<div class="i_cate">멘토링</div>
+								<div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.</a></div>
+								<ul class="i_date">
+									<li>멘토 <span>2</span>명&nbsp;&nbsp;|&nbsp;&nbsp;멘티 <span>16</span>명</li>
+									<li>활동기간&nbsp;&nbsp;&nbsp;<span>2020.04.30 ~ 2020.05.04</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="learning_detail_con">
+						<div class="aside_wrap">
+							<div class="aside">
+								<div class="aside_inner">
+									<ul>
+										<!-- 활성시 on theme_bg class 추가
+										<li><a href="#none" class="on theme_bg">메뉴명</a></li>
+										// 활성시 on theme_bg class 추가 -->
+										<li><a href="#none" class="on theme_bg">공지사항</a></li>
+										<li><a href="#none">Q&A</a></li>
+										<li><a href="#none">사진첩</a></li>
+										<li><a href="#none">자료실</a></li>
+										<li><a href="#none">설문</a></li>
+										<li><a href="#none">멘토ONLY</a></li>
+									</ul>
+
+									<div class="aside_sub">
+										<div class="aside_sub_tit">경영 전략</div>
+										<ul>
+											<li><a href="#none" class="on">강철구님 그룹</a></li>
+											<li><a href="#none">양천규님 그룹</a></li>
+										</ul>
+									</div>
+
+									<div class="aside_sub">
+										<div class="aside_sub_tit">마케팅 전략</div>
+										<ul>
+											<li><a href="#none">이기밤님 그룹</a></li>
+											<li><a href="#none" class="on">김군수님 그룹</a></li>
+										</ul>
+									</div>
+
+									<div class="aside_sub">
+										<div class="aside_sub_tit">마케팅 전략</div>
+										<ul>
+											<li><a href="#none">이기밤님 그룹</a></li>
+											<li><a href="#none">김군수님 그룹</a></li>
+											<li><a href="#none">김군수님 그룹</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="learning_detail_con_inner">
+							<h3>공지사항</h3>
+							<table class="table table_board_view">
+								<tbody>
+									<tr>
+										<td class="bo_view_hd">
+											<h3>제목이 모두 노출됩니다.</h3>
+											<div class="bo_view_info">
+												<div class="bo_view_info_left"><span>공지사항</span><span class="division">|</span><span>등록일&nbsp;&nbsp;&nbsp;2020.10.11</span><span class="division">|</span><span><b>관리자</b> 박보검</span></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="bo_view_content">
+											<div class="bo_view_content_inner">
+												입력된 내용이 노출됩니다.
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="bo_view_file">
 											<ul>
-												<li>
-													<span class="i_keyword" style="border-color:#0396a6;color:#0396a6;">인문교양</span>
-													<button type="button" class="btn_close" style="border-color:#0396a6;color:#0396a6;">X</button>
-												</li>
-												<li>
-													<span class="i_keyword" style="border-color:#2c3759;color:#2c3759;">커뮤니케이션</span>
-													<button type="button" class="btn_close" style="border-color:#2c3759;color:#2c3759;">X</button>
-												</li>
+												<li><a href="#none"><img src="../../images/ico_board_view_file.png" alt="첨부파일" />&nbsp;&nbsp;파일명.확장자 (12.3MB)</a></li>
+												<li><a href="#none"><img src="../../images/ico_board_view_file.png" alt="첨부파일" />&nbsp;&nbsp;파일명.확장자 (12.3MB)</a></li>
 											</ul>
-											<input type="text" class="ip_keyword lf_org_ac" placeholder="키워드를 입력해 주세요.">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="board_reply">
+								<div class="board_reply_inner">
+									<div class="reply_info_box">
+										<div class="reply_count">댓글 <span class="theme_color">7</span></div>
+										<div class="reply_sort"><a href="#none" class="on">인기순</a> <span>|</span> <a href="#none">최신순</a></div><!-- 활성시 on class 추가 -->
+									</div>
+									<div class="reply_input">
+										<textarea placeholder="후기 내용을 입력해주세요."></textarea>
+										<button>등록</button>
+									</div>
+								</div>
+								<ul class="reply_list">
+									<li class="reply_list_li">
+										<div class="i_name">김하나</div>
+										<div class="i_content">
+											입력한 수강후기 내용이 노출됩니다.<br/>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 										</div>
-									</div>
-                                </div>
-                                <div class="right_form">
-                                    <div class="input_box ip_line">
-                                    	<input type="text" class="contents_subj ip_ast" placeholder="제목">
-                                    	<span class="ast">*</span>
-                                    	<span class="ip_bar theme_bg"></span>
-                                    </div>
-                                    <div class="contents_editor">
-										<img src="../../images/editor_dummy.png" alt="">
-									</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+										<div class="i_date">2020.05.15 <span>|</span> ♥ 210</div>
+										<div class="hidden_input">
+											<textarea name="" rows="" cols="">입력한 수강후기 내용이 노출됩니다.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+											<button type="button">등록</button>
+										</div>
+										<div class="more_option">
+											<div class="btn_option"><img src="../../images/ico_more.png" alt="more" /></div>
+											<ul class="more_box">
+												<li><a href="#none" class="more_edit more_reply_edit">수정</a></li>
+												<li><a href="#none" class="more_del">삭제</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="reply_list_li">
+										<div class="i_name">김하나</div>
+										<div class="i_content">
+											입력한 수강후기 내용이 노출됩니다.<br/>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+										<div class="i_date">2020.05.15 <span>|</span> ♥ 210</div>
+										<div class="hidden_input">
+											<textarea name="" rows="" cols="">입력한 수강후기 내용이 노출됩니다.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+											<button type="button">등록</button>
+										</div>
+										<div class="more_option">
+											<div class="btn_option"><img src="../../images/ico_more.png" alt="more" /></div>
+											<ul class="more_box">
+												<li><a href="#none" class="more_edit more_reply_edit">수정</a></li>
+												<li><a href="#none" class="more_del">삭제</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="btn_group btn_board_view">
+								<a href="#none" class="btn_basic btn_gray_white btn_round">목록</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
         <!-- // Container -->
         <!-- Footer -->
@@ -272,9 +311,5 @@
 		<!-- // ToTop -->
     </div>
     <!-- // Wrap -->
-<script>
-/* 자동완성 */
-lf_org_ac();
-</script>  
 </body>
 </html>
