@@ -1033,27 +1033,5 @@
 		<!-- // ToTop -->
     </div>
     <!-- // Wrap -->
-<script>
-$(document).ready(function() {
-    /* SME 채널 구독 버튼 텍스트 */
-    $(".btnSubs").is(function(){
-        if($(this).prop("checked")) {
-            $(this).next().children(".i_text").text("구독중")
-        } else {
-            $(this).next().children(".i_text").text("구독")
-        }
-    });
-    $(".btnSubs").click(function(){
-	console.log("click")
-        if($(this).prop("checked")) {
-		console.log("1")
-            $(this).next().children(".i_text").text("구독중")
-        } else {
-		console.log("2")
-            $(this).next().children(".i_text").text("구독")
-        }
-    });
-});
-</script>
 </body>
 </html>

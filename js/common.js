@@ -146,6 +146,37 @@ $(document).ready(function() {
         });
     };
 
+	/* Swiper - 내가 구독한 채널 */
+	if($('.my_channel_course_container').length > 0){
+		var learningMainCourse = new Swiper('.my_channel_course_container', {
+			loop: false,
+			slidesPerView: 8,
+			slidesPerGroup: 8,
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
+
+	/* Swiper - 인기채널 */
+	if($('.popular_channel_course_container').length > 0){
+		var learningMainCourse = new Swiper('.popular_channel_course_container', {
+			loop: false,
+			slidesPerView: 4,
+			spaceBetween: 36,
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
+
+
+	
+
     /* Main Course Mouseover Event */
     $(".main_course .swiper-slide").mouseover(function(){
         $(this).addClass("on");
@@ -467,6 +498,57 @@ $(document).ready(function() {
 			$(this).addClass('on');
 		}
 	});
+
+	// input 내용삭제 버튼생성
+	$('.auto_cancle input').keydown(function(){
+        $(this).parent().addClass('on');
+    });
+
+	$('.btn_input_cancle').on('click', function(){
+		$(this).parent().removeClass('on');
+		$(this).parent().find('input').val('');
+	});
+
+	// 인풋 +, - 카운트 변경
+	$('.btn_cnt').on('click', function(){
+		$cnt = $(this).parent().find('.cnt');
+		$cnt_val = $cnt.val();
+		if($(this).hasClass('btn_cnt_down')){
+			$cnt_val--;
+			if($cnt_val < 0){
+				$cnt_val = 0;
+			}
+		}else if($(this).hasClass('btn_cnt_up')){
+			$cnt_val++;
+		}
+		$cnt.val($cnt_val);
+	});
+
+	//일반 num_only : 무조건 숫자만입력되게
+    $(document).on('keypress', 'input.num_only', function(e){
+        if(e.which && (e.which < 48 || e.which > 57) ) e.preventDefault();
+    });
+
+    $(document).on('keyup', 'input.num_only', function(e){
+        if( $(this).val() != null && $(this).val() != '' ) {
+            var tmps = parseInt($(this).val().replace(/[^0-9]/g, '')) || 0;
+            $(this).val(tmps);
+        }
+    });
+
+    //금액입력자동콤마 num_only2 : 숫자입력시 3자리단위로 콤마입력
+    $(document).on('keypress', 'input.num_only2', function(e){
+        if(e.which && (e.which < 48 || e.which > 57) ) e.preventDefault();
+    });
+
+    $(document).on('keyup', 'input.num_only2', function(e){
+        if( $(this).val() != null && $(this).val() != '' ) {
+            //var tmps = $(this).val().replace(/[^0-9]/g, '');
+            var tmps = parseInt($(this).val().replace(/[^0-9]/g, '')) || 0;
+            var tmps2 = tmps.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            $(this).val(tmps2);
+        }
+    });
 });
 
 // Popular Course Tab

@@ -659,6 +659,168 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .layer_popup .learner_upload .err_msg,
 .layer_popup .learner_upload .right_msg {font-size:14px;}
 
+/* 구독 - 리스트 */
+.subscibe_list .sec {position:relative;margin-top:40px;}
+.subscibe_list .sec h3 {font-size:25px;}
+.subscibe_list .sec .course_slider > div {overflow:hidden;}
+.subscibe_list .sec .course_slider .my_channel_course_container .i_thumb {margin:0 auto;width:100px;height:100px;background-size:100% auto;background-repeat:no-repeat;}
+.subscibe_list .sec .course_slider .my_channel_course_container .i_thumb.on:after {position:absolute;display:block;width:15px;height:15px;right:40px;top:3px;border:5px solid #f5f5f5;border-radius:50%;content:'';}
+.subscibe_list .sec .course_slider .my_channel_course_container .i_name {margin-top:5px;font-size:20px;text-align:center;font-weight:500;}
+.subscibe_list .sec .course_slider .swiper-button-next, 
+.subscibe_list .sec .course_slider .swiper-button-prev {width:18px;height:35px;outline:0;}
+.subscibe_list .sec .course_slider .swiper-button-next:after, 
+.subscibe_list .sec .course_slider .swiper-button-prev:after {content:none;}
+.subscibe_list .sec .course_slider .swiper-button-next {right:-30px;background-image:url('../images/slider_next.png');}
+.subscibe_list .sec .course_slider .swiper-button-prev {left:-30px;background-image:url('../images/slider_prev.png');}
+.subscibe_list .sec .course_slider .swiper-button-disabled {display:none;}
+.subscibe_list .sec1 .btn_management {position:absolute;right:0;top:0;}
+.subscibe_list .sec1 .course_slider {position:relative;padding:25px 10px 45px;border-bottom:1px solid #ccc;}
+.subscibe_list .sec .course_list {margin-top:50px;}
+.subscibe_list .sec .course_list .favorite_box {display:none;opacity:0.9;}
+.subscibe_list .sec .course_list .sme_regi:hover .favorite_box {display:block !important;}
+.subscibe_list .sec2 .course_slider {position:relative;margin-top:20px;}
+.subscibe_list .sec2 .sme_channel {border:1px solid #ccc;border-radius:4px;cursor:pointer;}
+.subscibe_list .sec2 .sme_channel .popular_num {position:absolute;left:22px;top:10px;font-size:35px;color:#666;font-weight:500;}
+.subscibe_list .sec2 .sme_channel .thumb_box {margin:49px auto 1px;width:150px;height:150px;border-radius:50%;overflow:hidden;}
+.subscibe_list .sec2 .sme_channel .course_desc {padding:35px 19px 0;height:196px;}
+.subscibe_list .sec2 .sme_channel .course_desc .channel_name {display:block;font-size:20px;font-weight:500;color:#333333;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.subscibe_list .sec2 .sme_channel .course_desc .tag_wrap {display:block;margin-top:9px;font-size:0;}
+.subscibe_list .sec2 .sme_channel .course_desc .tag_wrap .i_tag {display:inline-block;margin-left:6px;font-size:13px;}
+.subscibe_list .sec2 .sme_channel .course_desc .tag_wrap .i_tag:first-child {margin-left:0;}
+.subscibe_list .sec2 .sme_channel .course_desc .subs_num {display:block;margin-top:11px;font-size:13px;color:#666666;}
+.subscibe_list .sec2 .sme_channel .course_desc .subs_num b {margin-right:5px;font-size:13px;font-weight:700;color:#666666;}
+.subscibe_list .srh_none {margin-top:50px;padding:85px 0 87px;text-align:center;background-color:#f5f5f5;}
+.subscibe_list .srh_none p {display:inline-block;padding-left:78px;font-size:20px;color:#999999;text-align:left;background:url('../images/ico_srh_none.png') no-repeat 0 50%;}
+
+/* 포인트몰 -목록 */
+.point_mall_list_wrap {position:relative;}
+.point_mall_list_wrap .input_wrap {position:relative;margin-top:25px;width:556px;}
+.point_mall_list_wrap .input_wrap .input_box .btn_input_cancle {display:none;position:absolute;top:4px;right:44px;width:17px;height:16px;cursor:pointer;}
+.point_mall_list_wrap .input_wrap .input_box.on .btn_input_cancle {display:block;}
+.point_mall_list_wrap .input_wrap .input_box button {position:absolute;top:4px;right:0;width:42px;height:29px;background:url('../images/ico_srh_b.png') no-repeat 50% 50%;}
+.point_mall_list_wrap .point_info_box {position:absolute;right:0;top:-48px;}
+.point_mall_list_wrap .point_info_box .point_gift {float:left;}
+.point_mall_list_wrap .point_info_box .point_gift a {display:block;padding-top:33px;width:85px;height:85px;font-size:13px;font-weight:500;text-align:center;line-height:17px;background:url('../images/ico_point_gift.png') no-repeat 50% 12px;background-color:#ffcc52;border-radius:50%;}
+.point_mall_list_wrap .point_info_box .point_info {float:left;}
+.point_mall_list_wrap .point_info_box .point_info a {display:block;margin-left:14px;padding-top:33px;width:85px;height:85px;font-size:13px;color:#fff;text-align:center;line-height:17px;background:url('../images/ico_point_info.png') no-repeat 50% 12px;background-color:#6b6b6b;border-radius:50%;}
+.point_mall_list_wrap .point_info_box .my_point_wrap {float:left;margin-left:15px;}
+.point_mall_list_wrap .point_info_box .my_point_wrap a {display:block;padding:10px 15px;width:230px;height:85px;border:1px solid #ccc;}
+.point_mall_list_wrap .point_info_box .my_point_wrap .my_point_tit {display:inline-block;padding-right:10px;color:#999;font-weight:700;background:url('../images/ico_my_point_arrow.png') no-repeat right 0 top 8px;}
+.point_mall_list_wrap .point_info_box .my_point_wrap .my_point {font-size:20px;color:#999;font-weight:700;text-align:right;}
+.point_mall_list_wrap .point_info_box .my_point_wrap .my_point b {font-size:30px;color:#333;}
+.point_mall_list_wrap #snb {margin-top:20px;}
+.point_mall_list_wrap .point_mall_list {margin-top:25px;overflow:hidden;}
+.point_mall_list_wrap .point_mall_list li {float:left;margin:20px;width:420px;height:170px;}
+.point_mall_list_wrap .point_mall_list .i_thumb {float:left;}
+.point_mall_list_wrap .point_mall_list .des {float:left;margin-left:18px;width:230px;}
+.point_mall_list_wrap .point_mall_list .des .i_brand {margin-top:10px;color:#999;font-weight:500;}
+.point_mall_list_wrap .point_mall_list .des .i_tit {margin-top:2px;font-size:17px;height:70px;font-weight:500;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+.point_mall_list_wrap .point_mall_list .des .i_point {color:#aaa;font-weight:500;}
+.point_mall_list_wrap .point_mall_list .des .i_point b {font-size:20px;color:#333;}
+.point_mall_list_wrap .point_mall_list .des .btn_buy {display:inline-block;float:right;padding-left:32px;width:100px;height:30px;font-size:15px;color:#666;line-height:28px;background:url('../images/ico_point_mall_cart.png') no-repeat 14px 7px;border:1px solid #ccc;border-radius:4px;}
+
+/* 포인트몰 - 상세 */
+.point_mall_view_wrap {position:relative;padding-top:50px;}
+.point_mall_view_wrap .point_info_box {position:absolute;right:0;top:-48px;}
+.point_mall_view_wrap .point_info_box .point_gift {float:left;}
+.point_mall_view_wrap .point_info_box .point_gift a {display:block;padding-top:33px;width:85px;height:85px;font-size:13px;font-weight:500;text-align:center;line-height:17px;background:url('../images/ico_point_gift.png') no-repeat 50% 12px;background-color:#ffcc52;border-radius:50%;}
+.point_mall_view_wrap .point_info_box .point_info {float:left;}
+.point_mall_view_wrap .point_info_box .point_info a {display:block;margin-left:14px;padding-top:33px;width:85px;height:85px;font-size:13px;color:#fff;text-align:center;line-height:17px;background:url('../images/ico_point_info.png') no-repeat 50% 12px;background-color:#6b6b6b;border-radius:50%;}
+.point_mall_view_wrap .point_info_box .my_point_wrap {float:left;margin-left:15px;padding:10px 15px;width:230px;height:85px;border:1px solid #ccc;}
+.point_mall_view_wrap .point_info_box .my_point_wrap .my_point_tit {display:inline-block;padding-right:10px;color:#999;font-weight:700;background:url('../images/ico_my_point_arrow.png') no-repeat right 0 top 8px;}
+.point_mall_view_wrap .point_info_box .my_point_wrap .my_point {font-size:20px;color:#999;font-weight:700;text-align:right;}
+.point_mall_view_wrap .point_info_box .my_point_wrap .my_point b {font-size:30px;color:#333;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_hd {overflow:hidden;}
+.point_mall_view_wrap .point_mall_view_con .i_thumb {float:left;width:500px;height:500px;}
+.point_mall_view_wrap .point_mall_view_con .des {float:left;margin-left:47px;width:800px;}
+.point_mall_view_wrap .point_mall_view_con .des .i_brand {margin-top:8px;font-size:17px;color:#999;font-weight:700;}
+.point_mall_view_wrap .point_mall_view_con .des .i_tit {margin-top:15px;font-size:25px;height:80px;font-weight:500;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+.point_mall_view_wrap .point_mall_view_con .des .i_point {margin-top:20px;font-size:20px;color:#aaa;font-weight:700;}
+.point_mall_view_wrap .point_mall_view_con .des .i_point b {font-size:30px;color:#333;}
+.point_mall_view_wrap .point_mall_view_con .des .i_validity {margin-top:125px;overflow:hidden;}
+.point_mall_view_wrap .point_mall_view_con .des .i_validity,
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt {height:40px;line-height:40px;}
+.point_mall_view_wrap .point_mall_view_con .des .i_validity .i_art_tit,
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .i_art_tit {display:inline-block;float:left;width:80px;font-size:17px;color:#888;font-weight:700;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt {margin-top:10px;overflow:hidden;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .i_cnt_btn {width:162px;border:1px solid #c2c2c2;border-radius:4px;overflow:hidden;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .btn_cnt_down,
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .btn_cnt_up {display:inline-block;float:left;width:40px;height:38px;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .btn_cnt_down {background:url('../images/btn_cnt_down.png') no-repeat 13px 11px #efefef;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .btn_cnt_up {background:url('../images/btn_cnt_up.png') no-repeat 13px 11px #efefef;}
+.point_mall_view_wrap .point_mall_view_con .des .i_cnt .cnt {display:inline-block;float:left;width:80px;height:38px;font-size:15px;color:#333;text-align:center;border:0;}
+.point_mall_view_wrap .point_mall_view_con .des .btn_buy {margin-top:20px;width:400px;padding-left:40px;height:50px;font-size:20px;color:#fff;font-weight:500;line-height:50px;background:url('../images/ico_point_mall_buy.png') no-repeat 155px 17px;border-radius:6px;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body {margin-top:50px;}
+.point_mall_view_wrap .point_mall_view_con .ex_detail_con_nav {width:1384px;}
+.point_mall_view_wrap .point_mall_view_con .ex_detail_con_nav a {color:#666;background-color:#eee;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec {margin-top:50px;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec h3 {margin-bottom:30px;font-size:20px;color:#4c4c4c;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec h4 {margin-top:30px;margin-bottom:3px;font-weight:500;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec h4:first-child {margin-top:0;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec p {font-weight:300;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec li {position:relative;padding-left:8px;font-weight:300;}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body .sec li:after {position:absolute;left:0;top:10px;width:4px;height:4px;background-color:#333;border-radius:50%;content:'';}
+.point_mall_view_wrap .point_mall_view_con .point_mall_view_con_body.fixed_top .ex_detail_con_nav {position:fixed !important;top:0;}
+
+/* 포인트몰 - 포인트 선물하기 */
+.pop_point_gift h3 {font-size:20px;}
+.pop_point_gift .point_input_box {margin-top:18px;padding:15px 20px;background-color:#f5f5f5;border-radius:4px;overflow:hidden;}
+.pop_point_gift .point_input_box h4 {font-size:17px;}
+.pop_point_gift .point_input_box .my_point {float:left;width:360px;background:url('../images/bg_point_input.png') no-repeat right 21px top 48px;}
+.pop_point_gift .point_input_box .gift_point {float:left;width:300px;}
+.pop_point_gift .point_input_box .my_point_input {position:relative;margin-top:7px;padding:0 20px;width:300px;height:50px;line-height:50px;background-color:#fff;}
+.pop_point_gift .point_input_box .my_point_input .tit {color:#aaa;font-weight:500;}
+.pop_point_gift .point_input_box .my_point_input label.tit {vertical-align:top;cursor:pointer;}
+.pop_point_gift .point_input_box .my_point_input .point_val {float:right;}
+.pop_point_gift .point_input_box .my_point_input input {float:right;width:200px;height:50px;font-size:15px;text-align:right;}
+.pop_point_gift .point_search {margin-top:40px;}
+.pop_point_gift .point_search .point_search_box input {margin-top:20px;padding:0 12px;width:288px;height:35px;font-size:15px;color:#999;border:1px solid #ccc;}
+.pop_point_gift .point_search .point_search_box .des {margin-top:10px;}
+.pop_point_gift .point_search .point_search_box strong {padding-left:20px;font-size:14px;color:#ea563a;background:url('../images/ico_em_point.png') no-repeat 0 3px;}
+.pop_point_gift .point_search .point_search_box p {padding-left:20px;font-size:14px;line-height:20px;}
+.pop_point_gift .btn_box {margin-top:30px;text-align:center;}
+.pop_point_gift .btn_box button {height:50px !important;color:#fff;}
+
+/* 포인트몰 - 포인트 적립, 사용안내 */
+.pop_point_info .pop_point_info_hd {overflow:hidden;}
+.pop_point_info .pop_point_info_hd .point_acc,
+.pop_point_info .pop_point_info_hd .point_use {float:left;padding:35px 20px 0;width:340px;height:342px;border:1px solid #ccc;}
+.pop_point_info .pop_point_info_hd .point_use {margin-left:30px;}
+.pop_point_info .pop_point_info_hd .tit {padding-top:75px;padding-bottom:20px;font-size:17px;font-weight:700;text-align:center;border-bottom:1px solid #ccc;}
+.pop_point_info .pop_point_info_hd .point_acc .tit {background:url('../images/bg_point_acc.png') no-repeat center 0;}
+.pop_point_info .pop_point_info_hd .point_use .tit {background:url('../images/bg_point_use.png') no-repeat center 0;}
+.pop_point_info .pop_point_info_hd strong {font-weight:400;}
+.pop_point_info .pop_point_info_hd ul {margin-top:20px;}
+.pop_point_info .pop_point_info_hd li {position:relative;margin-top:10px;padding-left:11px;line-height:24px;}
+.pop_point_info .pop_point_info_hd li:after {position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;content:'';}
+.pop_point_info .pop_point_info_hd li span {font-weight:500;}
+.pop_point_info .i_info {margin-top:12px;padding-left:19px;background:url('../images/ico_em.png') no-repeat 0 6px;}
+.pop_point_info .add_info {margin-top:30px;}
+.pop_point_info .add_info li {margin-top:10px;border:1px solid #ccc;overflow:hidden;}
+.pop_point_info .add_info li .tit {float:left;width:120px;height:60px;color:#fff;font-weight:700;text-align:center;line-height:60px;background-color:#999;}
+.pop_point_info .add_info li p {float:left;padding:10px 20px;width:586px;height:60px;font-size:14px;line-height:20px;}
+.pop_point_info .add_info li p span {font-weight:500;}
+.pop_point_info .add_info li p small {display:block;font-size:13px;color:#999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* table - xlsx style */
 .tbl_ex_xlsx {margin-top:18px;width:220px;border-collapse:collapse}
 .tbl_ex_xlsx thead th {height:31px;border-bottom:0;}
@@ -787,7 +949,8 @@ button.btn_devide {margin-left:4.761904%;width:47.619047%;}
 button.btn_devide:first-child {margin-left:0;}
 button.btn_style1 {padding:0 23px;height:35px;line-height:33px;font-size:14px;color:#666666;border-radius:4px;}
 button.btn_style2 {padding:0 15px;height:30px;line-height:28px;font-size:13px;font-weight:500;border-radius:4px;}
-button.btn_style3 {width:120px;;height:40px;line-height:38px;font-size:17px;font-weight:500;border-radius:4px;text-align:center;}
+button.btn_style3 {width:120px;height:40px;line-height:38px;font-size:17px;font-weight:500;border-radius:4px;text-align:center;}
+button.btn_style4 {padding:0 27px;height:40px;line-height:38px;font-size:17px;font-weight:500;border-radius:4px;text-align:center;}
 
 
 /* Btn style - Color */
@@ -1459,7 +1622,9 @@ b.pt_blue {font-weight:700;}
 #snb li:first-child a {border-left:1px solid #ddd;}
 #snb li a.on {color:#fff;font-weight:700;border:0;}
 #snb.snb2 li {width:50%;}
+#snb.snb3 li {width:33.33%;}
 #snb.snb4 li {width:25%;}
+#snb.snb5 li {width:20%;}
 #snb.snb6 li {width:16.66%;}
 
 /* FAQ */
@@ -1532,6 +1697,7 @@ b.pt_blue {font-weight:700;}
 .ex_detail_hd_inner .detail .detail_ft {margin-top:30px;}
 .ex_detail_hd_inner .detail .detail_ft .detail_tag span {margin-left:7px}
 .ex_detail_hd_inner .detail .detail_ft .detail_tag span:first-child {margin-left:0;}
+
 table.table_ex_detail {margin-top:20px;font-size:15px;color:#333;}
 table.table_ex_detail th {text-align:left;font-weight:400;}
 table.table_ex_detail th
@@ -2080,13 +2246,14 @@ table.table_learning_detail.aside td {font-size:14px;}
 .table_schedule tbody .blank {background-color:#f5f5f5;}
 .table_schedule tbody .time {color:#999;text-align:center;}
 
-
+/* help box */
 .hp_box1 {padding:14px 35px;font-size:17px;color:#333;border-width:1px;border-style:solid;border-radius:10px;}
 .hp_box1 b {font-size:22px;vertical-align:-2px;}
 
 .hp_box2 {padding:25px 35px;font-size:17px;color:#3d7ca4;background-color:#e7f6ff;border:1px solid #aed5ef;border-radius:10px;}
 .hp_box2 p img {margin-right:4px;vertical-align:-3px;}
 
+/* list style */
 .list_style1:after {display:block;visibility:hidden;clear:both;content:""}
 .list_style1 > ul {margin:0 -17px;}
 .list_style1 > ul > li {float:left;margin:17px;width:320px;height:300px;}
@@ -2117,6 +2284,18 @@ table.table_learning_detail.aside td {font-size:14px;}
 .list_style2 li .course_desc .i_date {margin-top:7px;font-size:14px;color:#666;font-weight:400;}
 .list_style2 li .course_desc .i_date span {font-weight:700;}
 
+.list_style3 {}
+.list_style3:after {display:block;visibility:hidden;clear:both;content:""}
+.list_style3 > ul {margin:-15px -15px 0;}
+.list_style3 > ul > li {float:left;margin:15px;width:240px;height:270px;}
+.list_style3 li .thumb_box {position: relative;height:170px;background-repeat: no-repeat;background-size:cover;}
+.list_style3 li .course_desc {position:relative;margin-top:10px;}
+.list_style3 li .course_desc .i_subject {margin-top:2px;height:27px;font-size:17px;color:#333;font-weight:700;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 1; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
+.list_style3 li .course_desc .i_name {margin-top:8px;}
+.list_style3 li .course_desc .i_date {margin-top:3px;font-size:14px;color:#666;}
+.list_style3 li .course_desc .i_date span {display:inline-block;margin-left:10px;font-weight:400;}
+.list_style3 li .course_desc .i_date span:first-child {margin-left:0;}
+
 /* Latest style */
 .latest_style1 li {position:relative;}
 .latest_style1 li a {display:block;padding:4px 0px 4px 10px;font-size:15px;}
@@ -2131,8 +2310,6 @@ table.table_learning_detail.aside td {font-size:14px;}
 .btn_t_w_w {color:#fff;background-color:transparent;border:1px solid #fff;border-radius:4px;}
 .btn_bo_complete {display:inline-block;margin-right:7px;width:70px;height:28px;color:#333;font-weight:500;text-align:center;line-height:28px;background-color:#dedede;border-radius:4px;}
 .btn_bo_waiting {display:inline-block;margin-right:7px;width:70px;height:28px;color:#333;font-weight:500;text-align:center;line-height:27px;border-width:1px;border-style:solid;border-radius:4px;}
-
-
 
 /* Backgound */
 .bg_gray {background-color:#f8f8f8 !important;}
@@ -2217,6 +2394,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .tool_tip.tool_tip_bottom .tool_top_box_arrow {top:0;right:0px;bottom:auto !important;border-bottom:9px solid #333;border-top:9px solid transparent;}
 
 
+/* 학습 - 소셜러닝 */
 .learning_detail_con.fixed_top .aside_inner {z-index:5;}
 .learning_social .learning_detail_hd {height:250px;padding:0;background:url('../images/learning_social_bg.jpg') no-repeat center center;}
 .learning_social .learning_detail_hd .learning_detail_hd_inner {padding:45px 20px;}
@@ -2231,7 +2409,6 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .learning_social .aside_sub li a {padding:0 !important;height:40px !important;font-size:15px !important;color:#333 !important;line-height:40px !important;border-top:1px solid #ccc;border-right:0 !important;border-bottom:0 !important;border-left:0 !important;background:url('../images/ico_aside_sub_nav.png') no-repeat right 10px top 14px !important;}
 .learning_social .aside_sub li a.on {font-weight:700;border-top:1px solid #ccc !important;background:url('../images/ico_aside_sub_nav_on.png') no-repeat right 10px top 14px !important;}
 .learning_social .aside_sub li:first-child a {border-top:0 !important;}
-
 .learning_social .learning_detail_con_inner h3 {font-size:25px;}
 .learning_social .learning_detail_con_inner .table_board_list {margin-top:25px;}
 .learning_social .learning_detail_con_inner .table_board_list .tr_notice {background-color:#f5f5f5;}
@@ -2242,10 +2419,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .learning_social .learning_detail_con_inner .learning_board_search .search {display:inline-block;float:none;width:auto !important;}
 .learning_social .learning_detail_con_inner .learning_board_search .my_question {display:inline-block;float:none;margin-left:5px;width:auto !important;vertical-align:top;}
 .learning_social .learning_detail_con_inner .learning_board_search .btn_search {display:inline-block;float:none;margin-left:5px;vertical-align:top;}
-
 .learning_social .learning_detail_con_inner .table_board_view {margin-top:25px;}
-
-
 .learning_social .learning_detail_con_inner .board_reply {margin-top:10px;background-color:#f5f5f5;}
 .learning_social .learning_detail_con_inner .board_reply .board_reply_inner {padding:20px;}
 .learning_social .learning_detail_con_inner .board_reply .board_reply_inner .reply_info_box {overflow:hidden;}
@@ -2269,25 +2443,11 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 
 .file_gallery_info {float:left;padding-left:18px;font-size:13px;background:url('../images/ico_info_gray.png') no-repeat 0 4px;}
 .file_info {display:block;margin-top:5px;font-size:13px;color:#333;font-weight:400;line-height:19px;}
-
 .learning_board_search .btn_search button {vertical-align:-4px;}
-
-.list_style3 {}
-.list_style3:after {display:block;visibility:hidden;clear:both;content:""}
-.list_style3 > ul {margin:-15px -15px 0;}
-.list_style3 > ul > li {float:left;margin:15px;width:240px;height:270px;}
-.list_style3 li .thumb_box {position: relative;height:170px;background-repeat: no-repeat;background-size:cover;}
-.list_style3 li .course_desc {position:relative;margin-top:10px;}
-.list_style3 li .course_desc .i_subject {margin-top:2px;height:27px;font-size:17px;color:#333;font-weight:700;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 1; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
-.list_style3 li .course_desc .i_name {margin-top:8px;}
-.list_style3 li .course_desc .i_date {margin-top:3px;font-size:14px;color:#666;}
-.list_style3 li .course_desc .i_date span {display:inline-block;margin-left:10px;font-weight:400;}
-.list_style3 li .course_desc .i_date span:first-child {margin-left:0;}
-
 .ico_new {margin-left:8px;vertical-align:2px;}
-
 .more_option {position:relative;display:inline-block;}
 
+/* 마이페이지 - 결재함 - 목록 */
 .payment_list .payment_srh_opt {padding:20px;background-color:#f5f5f5;}
 .payment_list .payment_srh_opt .tit {margin-bottom:6px;font-size:14px;font-weight:500;}
 .payment_list .payment_srh_opt .input_group {overflow:hidden;}
@@ -2307,6 +2467,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .payment_list .table_board_list {margin-top:12px;}
 .payment_list .table_board_list label {padding-left:0;width:19px;vertical-align:-3px;}
 
+/* 마이페이지 - 결재함 - 상세 */
 .payment_view .tool_tip .tool_top_box_inner {right:50px;left:auto;}
 .payment_view .tool_tip .tool_top_box_arrow {right:70px;left:auto;}
 .payment_view .table_style5 {border-color:#666;}
@@ -2327,6 +2488,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .payment_view .sec .table_question .table_tit {padding:15px 20px;font-size:17px;border-top:1px solid #666;text-align:left;}
 .payment_view .btn_group {margin-top:20px;}
 
+/* 마이페이지 - 좋아요/댓글 */
 .favorite_list .board_search {margin-top:20px;}
 .favorite_list .board_search:after {display:block;visibility:hidden;clear:both;content:""}
 .favorite_list .board_search .selectric-wrapper {float:left;}
@@ -2352,6 +2514,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .favorite_list .ul_favorite ul li .favorite_box button {width:100px;height:30px;color:#ccc;font-weight:700;border:1px solid #ccc;border-radius:4px;background-color:#fff;}
 .favorite_list .ul_favorite ul li .favorite_box .btn_delete {color:#333;border-color:#333;}
 
+/* 마이페이지 - 내 Q&A */
 .my_qa .table_board_list {margin-top:25px;}
 .my_qa .table_board_list tr:hover {background-color:#fff;}
 .my_qa .table_board_list tr:hover .bo_title {font-weight:400;}
@@ -2368,7 +2531,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .my_qa .table_board_list .tr_detail {display:none;}
 .my_qa .table_board_list .file_box {margin-top:25px;padding-left:40px;height:40px;font-size:14px;color:#444;text-align:left;line-height:39px;border:1px solid #ccc;background:url('../images/ico_board_view_file.png') no-repeat 22px 13px;}
 
-.my_channel h2 {}
+/* 마이페이지 - 구독중인 채널 */
 #container .my_channel .course_list {margin-top:30px;}
 #container .my_channel .course_list ul {margin:-10px;}
 #container .my_channel .course_list li {margin:10px;width:233px !important;height:289px !important;}
@@ -2382,6 +2545,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 #container .my_channel .btn_subs input[type="checkbox"] + label
 #container .my_channel .btn_subs input[type="checkbox"] + label .i_text {font-size:16px;}
 
+/* 마이페이지 - 관심설정 */
 .attention .sec_keyword {margin-top:35px;border-bottom:1px solid #cccccc;}
 .attention .sec h3 {font-size:20px;font-weight:500;}
 .attention .sec_keyword .keyword_list {margin-top:18px;}
@@ -2396,10 +2560,6 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .attention .sec_set table td {padding-bottom:50px;}
 
 .btn_style100 {width:100px;height:35px;font-size:15px;color:#fff;font-weight:500;line-height:35px;border-radius:4px;}
-
-#snb.snb3 li {width:33.33%;}
-
-
 
 /* 별점 드래그 입력 */
 .user_star {float:left;overflow:hidden;margin:0;}
