@@ -774,7 +774,10 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);}
 .pop_point_gift .point_input_box .my_point_input .point_val {float:right;}
 .pop_point_gift .point_input_box .my_point_input input {float:right;width:200px;height:50px;font-size:15px;text-align:right;}
 .pop_point_gift .point_search {margin-top:40px;}
+<<<<<<< HEAD
 .pop_point_gift .point_search .point_search_box .dropdown_rel {width:288px;}
+=======
+>>>>>>> 1a6937a4c078eb2f49e6e39341e14e63f6c06be1
 .pop_point_gift .point_search .point_search_box input {margin-top:20px;padding:0 12px;width:288px;height:35px;font-size:15px;color:#999;border:1px solid #ccc;}
 .pop_point_gift .point_search .point_search_box .des {margin-top:10px;}
 .pop_point_gift .point_search .point_search_box strong {padding-left:20px;font-size:14px;color:#ea563a;background:url('../images/ico_em_point.png') no-repeat 0 3px;}
@@ -1466,7 +1469,11 @@ b.pt_blue {font-weight:700;}
 .my_sme .top_btn button.btn_regi_act {margin-left:10px;padding-left:35px;width:100px;background:#666666 url('../images/ico_register.png') no-repeat 16px 50%;}
 .my_sme .sme_ch_set .ch_info_box {height:100px;overflow:hidden;background-color:#f5f5f5;}
 .my_sme .sme_ch_set .ch_info_box .ch_name_wrap {position:relative;float:left;padding:19px 0 0 25px;width:445px;height:100%;border-right:1px solid #cccccc;}
+<<<<<<< HEAD
 .my_sme .sme_ch_set .ch_info_box .ch_name_wrap .ch_name {display:block;padding-right:90px;height:auto;line-height:1.5;font-size:20px;font-weight:700;color:#333333;background-color:#f5f5f5;}
+=======
+.my_sme .sme_ch_set .ch_info_box .ch_name_wrap .ch_name {display:block;font-size:20px;font-weight:700;color:#333333;}
+>>>>>>> 1a6937a4c078eb2f49e6e39341e14e63f6c06be1
 .my_sme .sme_ch_set .ch_info_box .ch_name_wrap .act_date {display:block;font-size:13px;color:#999999;}
 .my_sme .sme_ch_set .ch_info_box .ch_name_wrap .btn_ch_modify {display:inline-block;position:absolute;top:30px;right:21px;padding-left:17px;font-size:12px;color:#aaaaaa;line-height:14px;background:url('../images/ico_ch_modify.png') no-repeat;}
 .my_sme .sme_ch_set .ch_info_box .sme_num_wrap {float:left;width:549px;padding:23px 0 0;height:100%;font-size:0;text-align:center;}
@@ -1495,6 +1502,7 @@ b.pt_blue {font-weight:700;}
 .my_sme .sec_keyword {margin-top:40px;}
 .sec_keyword {border-bottom:1px solid #cccccc;}
 .sec_keyword .keyword_list {margin-top:25px;}
+<<<<<<< HEAD
 .sec_keyword .keyword_list > ul {display:inline-block;font-size:0;vertical-align:top;}
 .sec_keyword .keyword_list > ul li {display:inline-block;position:relative;margin-bottom:10px;margin-right:10px;padding:0 39px 0 17px;height:30px;line-height:28px;font-size:17px;border-radius:15px;border-width:1px;border-style:solid;vertical-align:top;}
 .sec_keyword .keyword_list > ul li .btn_close {display:inline-block;position:absolute;top:0;right:0;width:29px;height:28px;line-height:28px;font-size:12px;border-radius:0 15px 15px 0;border:0;border-left-width:1px;border-style:solid;vertical-align:top;background-color:#ffffff;}
@@ -1512,6 +1520,14 @@ b.pt_blue {font-weight:700;}
 .key_color6 button.btn_close {color:#6a3fa6 !important;border-color:#6a3fa6 !important;}
 .sec_keyword .keyword_list .dropdown_rel {display:inline-block;margin-bottom:10px;}
 .sec_keyword .keyword_list .ip_keyword {display:inline-block;margin:0;padding:0 9px;width:196px;height:30px;line-height:28px;font-size:17px;color:#999999;vertical-align:top;}
+=======
+.sec_keyword .keyword_list ul {display:inline-block;font-size:0;vertical-align:top;}
+.sec_keyword .keyword_list ul li {display:inline-block;margin-bottom:10px;margin-right:10px;}
+.sec_keyword .keyword_list ul li:last-child {margin-right:0;}
+.sec_keyword .keyword_list ul li .i_keyword {display:inline-block;padding:0 10px 0 17px;height:30px;line-height:28px;font-size:17px;border-radius:15px 0 0 15px;border-width:1px;border-style:solid;border-right:0;vertical-align:top;}
+.sec_keyword .keyword_list ul li .btn_close {display:inline-block;width:29px;height:30px;line-height:28px;font-size:12px;border-radius:0 15px 15px 0;border-width:1px;border-style:solid;vertical-align:top;background-color:#ffffff;}
+.sec_keyword .keyword_list .ip_keyword {display:inline-block;margin-left:7px;padding:0 9px;width:196px;height:30px;line-height:28px;font-size:17px;color:#999999;vertical-align:top;}
+>>>>>>> 1a6937a4c078eb2f49e6e39341e14e63f6c06be1
 #container .my_sme .sec_my_contents {margin-top:43px;}
 #container .my_sme .sec_my_contents .course_multi_tab {margin:5px 0 0;min-height:100%;}
 #container .my_sme .sec_my_contents .course_multi_tab .multi_course_type {margin:0;width:100%;}
@@ -2561,6 +2577,14 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .attention .sec_keyword {margin-top:35px;border-bottom:1px solid #cccccc;}
 .attention .sec h3 {font-size:20px;font-weight:500;}
 .attention .sec_keyword .keyword_list {margin-top:18px;}
+<<<<<<< HEAD
+=======
+.attention .sec_keyword .keyword_list ul {display:inline-block;margin:-5px;font-size:0;vertical-align:top;}
+.attention .sec_keyword .keyword_list ul li {display:inline-block;margin:5px;}
+.attention .sec_keyword .keyword_list ul li .i_keyword {display:inline-block;padding:0 10px 0 17px;height:30px;line-height:28px;font-size:17px;border-radius:15px 0 0 15px;border-width:1px;border-style:solid;border-right:0;vertical-align:top;}
+.attention .sec_keyword .keyword_list ul li .btn_close {display:inline-block;width:29px;height:30px;line-height:28px;font-size:12px;border-radius:0 15px 15px 0;border-width:1px;border-style:solid;vertical-align:top;background-color:#ffffff;}
+.attention .sec_keyword .keyword_list .ip_keyword {display:inline-block;margin-top:25px;margin-left:0;padding:0;width:196px;height:30px;line-height:28px;font-size:17px;color:#999999;vertical-align:top;}
+>>>>>>> 1a6937a4c078eb2f49e6e39341e14e63f6c06be1
 .attention .sec_set {margin-top:40px;}
 .attention .sec_set table {margin-top:15px;}
 .attention .sec_set table th,

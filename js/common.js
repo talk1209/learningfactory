@@ -690,6 +690,24 @@ function onlyNum() {
     });
 }
 
+<<<<<<< HEAD
+=======
+// autocomplete
+function lf_org_ac() {
+    var name = ["김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","인문교양","커뮤니케이션","영어","손자","손자병법","손자병법이론"];
+
+    $(".lf_org_ac").autocomplete({
+        source: name,
+        select: function(event, ui) {
+            console.log(ui.item);
+        },
+        focus: function(event, ui) {
+            return false;
+        }
+    });
+}
+
+>>>>>>> 1a6937a4c078eb2f49e6e39341e14e63f6c06be1
 /* Calendar Start & End  */
 function startDate(){
     //var today = new Date();
