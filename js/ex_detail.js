@@ -27,25 +27,50 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(event) {
-		var scrolling = $(this).scrollTop();
-		if(scrolling > $('.ex_detail_con').offset().top){
-			$('.ex_detail_con').addClass('fixed_top');
+		if($('.ex_detail_con').length > 0){
+			var scrolling = $(this).scrollTop();
+			if(scrolling > $('.ex_detail_con').offset().top){
+				$('.ex_detail_con').addClass('fixed_top');
 
-			var scrolling_fix = $(this).scrollTop() + $(".ex_detail_con_nav").height();
-			var scroll_id;
-			for (var i in sections) {
-				var section = sections[i];
-				if (scrolling_fix >= section.offset().top) {
-					scroll_id = section.attr("id");
+				var scrolling_fix = $(this).scrollTop() + $(".ex_detail_con_nav").height();
+				var scroll_id;
+				for (var i in sections) {
+					var section = sections[i];
+					if (scrolling_fix >= section.offset().top) {
+						scroll_id = section.attr("id");
+					}
 				}
+				if (scroll_id !== id) {
+					id = scroll_id;
+					$menu_a.removeClass('on theme_color theme_bd');
+					$("a[href='#" + id + "']", $menu).addClass('on theme_color theme_bd');
+				}
+			}else{
+				$('.ex_detail_con').removeClass('fixed_top');
 			}
-			if (scroll_id !== id) {
-				id = scroll_id;
-				$menu_a.removeClass('on theme_color theme_bd');
-				$("a[href='#" + id + "']", $menu).addClass('on theme_color theme_bd');
+		}
+
+		if($('.point_mall_view_con_body').length > 0){
+			var scrolling = $(this).scrollTop();
+			if(scrolling > $('.point_mall_view_con_body').offset().top){
+				$('.point_mall_view_con_body').addClass('fixed_top');
+
+				var scrolling_fix = $(this).scrollTop() + $(".ex_detail_con_nav").height();
+				var scroll_id;
+				for (var i in sections) {
+					var section = sections[i];
+					if (scrolling_fix >= section.offset().top) {
+						scroll_id = section.attr("id");
+					}
+				}
+				if (scroll_id !== id) {
+					id = scroll_id;
+					$menu_a.removeClass('on theme_color theme_bd');
+					$("a[href='#" + id + "']", $menu).addClass('on theme_color theme_bd');
+				}
+			}else{
+				$('.point_mall_view_con_body').removeClass('fixed_top');
 			}
-		}else{
-			$('.ex_detail_con').removeClass('fixed_top');
 		}
     });
 });

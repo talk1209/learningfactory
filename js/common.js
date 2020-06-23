@@ -129,6 +129,54 @@ $(document).ready(function() {
 		});
 	};
     
+    if($('.card_learning_slider').length > 0){
+        var cardLearning = new Swiper('.card_learning_slider', {
+            //loop: true,
+			slidesPerView: 1,
+            grabCursor: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar : {
+                el : '.swiper-scrollbar',
+                snapOnRelease:true,
+                draggable : true
+            },
+        });
+    };
+
+	/* Swiper - 내가 구독한 채널 */
+	if($('.my_channel_course_container').length > 0){
+		var learningMainCourse = new Swiper('.my_channel_course_container', {
+			loop: false,
+			slidesPerView: 8,
+			slidesPerGroup: 8,
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
+
+	/* Swiper - 인기채널 */
+	if($('.popular_channel_course_container').length > 0){
+		var learningMainCourse = new Swiper('.popular_channel_course_container', {
+			loop: false,
+			slidesPerView: 4,
+			spaceBetween: 36,
+			speed: 500,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+	};
+
+
+	
+
     /* Main Course Mouseover Event */
     $(".main_course .swiper-slide").mouseover(function(){
         $(this).addClass("on");
@@ -137,14 +185,24 @@ $(document).ready(function() {
         $(this).removeClass("on");
     });
         
-    $(".swiper-slide").hover(
+    $(".swiper-container .swiper-slide").hover(
         function() {
             learningMainVisual.autoplay.stop();
-            learningMainCourse.autoplay.stop();
-            mainNewCourse.autoplay.stop();
         }, function() {
             learningMainVisual.autoplay.start();
+        }
+    );
+    $(".main_course_container .swiper-slide").hover(
+        function() {
+            learningMainCourse.autoplay.stop();
+        }, function() {
             learningMainCourse.autoplay.start();
+        }
+    );
+    $(".new_course_container .swiper-slide").hover(
+        function() {
+            mainNewCourse.autoplay.stop();
+        }, function() {
             mainNewCourse.autoplay.start();
         }
     );
@@ -188,12 +246,67 @@ $(document).ready(function() {
         $(this).removeClass("on");
     });
     
+	/* task ast - focus event */
+	$('div').on('focusin', '.input_box .ip_task_subj', function () {
+		$(this).next().hide();
+    });
+	$('div').on('focusout', '.input_box .ip_task_subj', function () {
+        $(this).next().show();
+    });
+	$('div').on('focusout', '.input_box .ip_task_subj', function () {
+        if ($(this).val().length > 0) { // check if value changed        
+            $(this).next().hide();
+        } else {
+           $(this).next().show();
+        }
+    });
+
+	/* task ast - focus event */
+	$('div').on('focusin', '.input_box .ip_ast', function () {
+		$(this).next().hide();
+    });
+	$('div').on('focusout', '.input_box .ip_ast', function () {
+        $(this).next().show();
+    });
+	$('div').on('focusout', '.input_box .ip_ast', function () {
+        if ($(this).val().length > 0) { // check if value changed        
+            $(this).next().hide();
+        } else {
+           $(this).next().show();
+        }
+    });
     
+    /* Change Pw */
+    $( '#btn_chg' ).on("click", function() {
+		$(this).hide();
+        $('.change_pw_box').show();
+	});
+    $('input.ip_active').on('keyup', function() {
+        $(this).addClass("theme_bd")
+    });
+    $('input.ip_active').on('focusout', function() {
+        $(this).removeClass("theme_bd")
+    });
+
+    /* select_box option 직접입력 */
+    $('.sel_direct_ip').on('change', function(){
+       var state = $(this).find('option:selected').val();
+       if ( state == 'directInput' ) {
+            $(this).parents(".selectric-select_box").next(".direct_ip_box").show();
+        } else {
+           $(this).parents(".selectric-select_box").next(".direct_ip_box").hide();
+           $(this).parents(".selectric-select_box").next(".direct_ip_box").children().val('');
+        }
+    });
     
-    
-    
-    
-    
+	/* Join_terms - Checkbox All Chk */   
+    $("#cardAllChk").click(function(){
+        if($("#cardAllChk").prop("checked")) {
+            $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",true);         
+        } else {
+            $(".regi_card .upload_list li input[name='uploadCardList']").prop("checked",false);       
+        } 
+    });    
     
     
     
@@ -210,6 +323,8 @@ $(document).ready(function() {
 			$td.addClass('on');
 		}
 	});
+
+
 
 	// Tool tip  - 20200609 수정
 	$('.tool_tip').find('img').on({
@@ -252,6 +367,188 @@ $(document).ready(function() {
 		copyToClipboard($str);
 		alert('복사되었습니다.');
 	});
+
+	$('.btn_copy2').on('click', function() {
+		$str = $(this).val();
+		copyToClipboard($str);
+		alert('복사되었습니다.');
+	});
+
+
+
+
+
+
+	// 20200615 추가
+	/* aside Tab */
+	asideTab();
+
+	// Review edit
+	$('.btn_option').on('click', function(){
+		$(this).parent().find('.more_box').toggle();
+	});
+
+	$('.more_comment_edit').on('click', function(){
+		$(this).closest('.more_box').toggle();
+		$(this).closest('.aside_review_list_li').find('.favorite').css('display','none');
+		$(this).closest('.aside_review_list_li').find('.con').css('display','none');
+		$(this).closest('.aside_review_list_li').find('.input').css('display','block');
+	});
+
+	$('.more_bookmark_edit').on('click', function(){
+		$(this).closest('.more_box').toggle();
+		$(this).closest('.box_cont_inner').addClass('on theme_bg_o10 theme_color theme_bd');
+		$(this).closest('.box_cont_inner').next('.bookmark_input').css('display','block');
+	});
+
+	$('.star_input').find('input').on('click', function(){
+		var $score = Number($(this).val());
+		$(this).closest('.review_star').find('.i_rating').html($score.toFixed(1));
+	})
+
+	/* 학습피스상세 사이드 접기 */
+	$('.learning_piece_aside_close').on('click', function(){
+		$wrap = $('.learning_piece');
+		if($wrap.hasClass('full_size')){
+			$wrap.removeClass('full_size');
+		}else{
+			$wrap.addClass('full_size');
+			$('.learning_piece').attr('height:auto;');
+		}
+
+        // swiper update
+		if($('.card_learning_slider').length > 0){
+			var cardLearning = document.querySelector('.card_learning_slider').swiper
+			if($wrap.hasClass('full_size')){
+				cardLearning.update();
+			}else{
+				cardLearning.update();
+			}
+		}
+	});
+
+	// aside Review edit
+	$('.more_review_edit').on('click', function(){
+		$(this).closest('.more_box').toggle();
+		$(this).closest('.list_con').find('.review_con_text').css('display','none');
+		$(this).closest('.list_con').find('.review_date').css('display','none');
+		$(this).closest('.list_con').find('.review_form').css('display','block');
+	});
+	
+	
+
+	// Tool tip2
+	$('.btn_tool_tip').on({
+		mouseenter: function(){
+			$(this).next().css('display','block');
+		},mouseleave: function(){
+			$(this).next().css('display','none');
+		}
+	});
+
+	$('.more_reply_edit').on('click', function(){
+		$(this).closest('.more_box').toggle();
+		$(this).closest('.reply_list_li').find('.i_content').css('display','none');
+		$(this).closest('.reply_list_li').find('.i_date').css('display','none');
+		$(this).closest('.reply_list_li').find('.hidden_input').css('display','block');
+	});
+
+	$("#checkall").next('label').click(function(){
+		
+        //클릭되었으면
+        if($("#checkall").prop("checked")){
+            //input태그의 name이 chk인 태그들을 찾아서 checked옵션을 true로 정의
+            $(".chk_id").prop("checked",false);
+            //클릭이 안되있으면
+        }else{
+            //input태그의 name이 chk인 태그들을 찾아서 checked옵션을 false로 정의
+            $(".chk_id").prop("checked",true);
+        }
+    })
+
+
+
+
+	$('.view_btn').on('click', function(){
+		if($(this).hasClass('view_down')){
+			$(this).parent().next('ul').slideDown(300);
+		}
+
+		if($(this).hasClass('view_up')){
+			$(this).parent().next('ul').slideUp(300);
+		}
+	});
+
+
+	// 좋아요
+	$('.btn_favorite').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on theme_color theme_bd theme_color theme_bd');
+		}else{
+			$(this).addClass('on theme_color theme_bd theme_color theme_bd');
+		}
+	});
+
+	$('.qa_slide').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).next('.tr_detail').css('display','none');
+			$(this).removeClass('on');
+		}else{
+			$(this).next('.tr_detail').css('display','table-row');
+			$(this).addClass('on');
+		}
+	});
+
+	// input 내용삭제 버튼생성
+	$('.auto_cancle input').keydown(function(){
+        $(this).parent().addClass('on');
+    });
+
+	$('.btn_input_cancle').on('click', function(){
+		$(this).parent().removeClass('on');
+		$(this).parent().find('input').val('');
+	});
+
+	// 인풋 +, - 카운트 변경
+	$('.btn_cnt').on('click', function(){
+		$cnt = $(this).parent().find('.cnt');
+		$cnt_val = $cnt.val();
+		if($(this).hasClass('btn_cnt_down')){
+			$cnt_val--;
+			if($cnt_val < 0){
+				$cnt_val = 0;
+			}
+		}else if($(this).hasClass('btn_cnt_up')){
+			$cnt_val++;
+		}
+		$cnt.val($cnt_val);
+	});
+
+	//일반 num_only : 무조건 숫자만입력되게
+    $(document).on('keypress', 'input.num_only', function(e){
+        if(e.which && (e.which < 48 || e.which > 57) ) e.preventDefault();
+    });
+
+    $(document).on('keyup', 'input.num_only', function(e){
+        if( $(this).val() != null && $(this).val() != '' ) {
+            var tmps = parseInt($(this).val().replace(/[^0-9]/g, '')) || 0;
+            $(this).val(tmps);
+        }
+    });
+
+    //금액입력자동콤마 num_only2 : 숫자입력시 3자리단위로 콤마입력
+    $(document).on('keypress', 'input.num_only2', function(e){
+        if(e.which && (e.which < 48 || e.which > 57) ) e.preventDefault();
+    });
+
+    $(document).on('keyup', 'input.num_only2', function(e){
+        if( $(this).val() != null && $(this).val() != '' ) {
+            //var tmps = $(this).val().replace(/[^0-9]/g, '');
+            var tmps = parseInt($(this).val().replace(/[^0-9]/g, '')) || 0;
+            var tmps2 = tmps.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            $(this).val(tmps2);
+        }
+    });
 });
 
 // Popular Course Tab
@@ -393,21 +690,6 @@ function onlyNum() {
     });
 }
 
-// autocomplete
-function lf_org_ac() {
-    var name = ["김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]","김사랑 [계열사명/아이디]"];
-
-    $(".lf_org_ac").autocomplete({
-        source: name,
-        select: function(event, ui) {
-            console.log(ui.item);
-        },
-        focus: function(event, ui) {
-            return false;
-        }
-    });
-}
-
 /* Calendar Start & End  */
 function startDate(){
     //var today = new Date();
@@ -492,4 +774,80 @@ function divAccodion2() {
         $(this).next('.box_cont').slideToggle(300);
         //$(this).next('.box_cont').parent().siblings().children('.box_cont').slideUp(300);//siblings('.faq_a').hide();
     });
+}
+
+
+
+
+
+
+
+
+
+
+
+// 20200615 추가
+// aside Tab
+function asideTab(){
+    var $tbtn = $(".tab_aside li");
+    var $tbtn_leng = $tbtn.length;
+    //$tbtn.width(100/$tbtn_leng+"%");
+    var $tab_contentsOb = $(".tab_contents");
+
+    $tab_contentsOb.hide();
+    $tab_contentsOb.eq(0).show();
+    $tbtn.eq(0).addClass("on").addClass("theme_bg");
+
+    $tbtn.click(function(e){
+    
+        e.preventDefault();
+
+        idx = $(this).index();
+
+        $tbtn.removeClass();
+        $tbtn.eq(idx).addClass("on").addClass("theme_bg");
+        $tab_contentsOb.hide();
+        $tab_contentsOb.eq(idx).show();
+    });
+}
+
+
+function divAccodion3() {
+    $('.box_cont').css('display','none');
+	$('.active .box_cont').css('display','block');
+    $(".box_title").on('click', function() {
+		if($(this).parent().hasClass('active')){
+			$(this).parent().removeClass('active');
+			$(this).next('.box_cont').slideUp(300);
+		}else{
+			$(this).parent().addClass('active');
+			$(this).next('.box_cont').slideDown(300);
+		}
+    });
+}
+
+// 러닝피스 사이즈 조정
+function learning_piece_size(){
+	/*
+	$('.learning_piece').attr('style','height:auto;');
+	$('.learning_piece_aside').attr('style','height:auto;');
+	$body_height = $('body').innerHeight();
+	$con_height = $('.learning_piece').outerHeight();
+	$aside_height = $('.learning_piece_aside').outerHeight();
+	if($con_height < $aside_height){
+		$height = $aside_height;
+	}else{
+		$height = $con_height;
+	}
+
+	if($height < $body_height){
+		$height = $body_height;
+	}
+
+	$('.learning_piece').attr('style','height:'+$height+'px;');
+	$('.learning_piece_aside').attr('style','height:'+$height+'px;');
+	*/
+
+	$body_height = $('body').innerHeight();
+	$('.learning_piece_aside').attr('style','min-height:'+$body_height+'px;');
 }

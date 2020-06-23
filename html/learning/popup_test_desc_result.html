@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1424">
+    <meta name="format-detection" content="telephone=no">    
+    <meta name="title" content="learning factory" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+	<meta property="og:url" content="">
+	<meta property="og:title" content="learning factory">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="" />
+   
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+	<link  rel="stylesheet" href="../../css/default.css">
+    
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+	<script src="../../js/common.js"></script>
+
+    <title>learning factory</title>
+</head>
+<body>
+<!-- Layer pop -->
+<div class="layer_popup visible"> <!-- visible class add or remove -->
+    <div class="popcontainer" style="width:1200px;">
+        <div class="pop_title theme_bg">
+            <span class="title">시험 응시</span>
+            <button type="button" class="pop_close blind">닫기</button>
+        </div>
+        <div class="pop_inner">
+            <div class="test_box_wrap">
+                <!-- 좌측 영역 -->
+                <div class="test_cont_wrap">
+                    <p class="test_name">[사전] 시험명이 노출됩니다.</p>
+                    <div class="test_cont">
+                        <div class="cont_inner">
+							<!-- 시험결과 (공통) -->
+							<table class="tbl_test_result">
+								<caption>시험결과</caption>
+								<colgroup>
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+									<col style="width:25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>문제수</th>
+										<th>정답수</th>
+										<th>득점</th>
+										<th>전체평균</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>13</td>
+										<td>10</td>
+										<td>70점</td>
+										<td>70.0점</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- // 시험결과 (공통) -->
+                            <div class="q_order">
+                                <span class="i_num">1번 문제</span>
+                                <span class="i_type">서술형</span>
+                                <!--
+                                <span class="i_type">객관식</span>
+                                <span class="i_type">OX</span>
+                                -->
+                            </div>
+                            <p class="i_question">
+                                문제내용이 노출됩니다.
+                            </p>
+                            <!-- 입력한 답안 -->
+                            <div class="entered_box">
+								<!-- 서술형 -->
+                                <div class="entered_desc pre_line">입력한 답안이 노출됩니다.
+                                입력한 답안이 노출됩니다.
+                                입력한 답안이 노출됩니다.
+                                </div>
+                                <!-- // 서술형 -->
+                            </div>
+                            <!-- // 입력한 답안 -->
+                            <!-- 해설 -->
+                            <div class="commentary_box">
+                            	<div class="title_wrap">
+                            		<p class="info_correct">정답입니다.</p>
+                            		<!--<p class="info_incorrect">틀렸습니다.</p>-->
+									<span class="i_score">득점 <b class="acq_score">15점</b> / 배점 <b class="total_score">20점</b></span>
+									<!-- 0점일 때
+									<span class="i_score">득점 <b class="zero_score">0점</b> / 배점 <b class="total_score">20점</b></span>
+									-->
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">첨삭의견</span>
+                            		<p class="desc">
+                            			첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.
+                            			첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.첨삭의견이 노출됩니다.
+                            		</p>
+                            	</div>
+                            	<div class="comment_box">
+                            		<span class="title">문제해설</span>
+                            		<p class="desc">
+                            			문제해설이 노출됩니다. 문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            			문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.문제해설이 노출됩니다.
+                            		</p>
+                            		<img src="../../images/test_img_dummy.jpg" alt="">
+                            	</div>
+                            </div>
+                            <!-- // 해설 -->
+                        </div>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button" class="btn_prev">이전 문제</button>
+                        <button type="button" class="btn_next theme_bg">다음 문제</button>
+                        <!--
+                        <button type="button" class="btn_submit theme_bg">제출</button>
+                        -->
+                    </div>
+                </div>
+                <!-- // 좌측 영역 -->
+                <!-- 답안 영역 -->
+                <div class="answer_box_wrap">
+                    <div class="remain_time">
+                        <span class="title">남은 시간</span>
+                        <span class="i_time theme_color">59:10</span>
+                    </div>
+                    <div class="answer_box">
+                        <div class="box_inner">
+                            <div class="title_wrap">
+                                <span class="title">채점 현황</span>
+                            </div>
+                            <ol>
+                                <li class="on">
+                                    <span class="answer_num">1</span>
+                                    <span class="answer_status">15점</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">2</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">3</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">4</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">5</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">6</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">7</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">8</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">9</span>
+                                    <span class="answer_status"><span class="i_incorrect">오답</span></span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">10</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">11</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">12</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">13</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                                <li>
+                                    <span class="answer_num">14</span>
+                                    <span class="answer_status">정답</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 답안 영역 -->
+            </div>
+        </div> <!-- // .pop_inner -->
+    </div>
+</div>
+</body>
+</html>
