@@ -345,6 +345,8 @@ $(document).ready(function() {
 		$(this).closest('.list_con').find('.review_con_text').css('display','none');
 		$(this).closest('.list_con').find('.review_date').css('display','none');
 		$(this).closest('.list_con').find('.review_form').css('display','block');
+		$(this).closest('.list_con').find('.reiview_star_view').css('display','none');
+		$(this).closest('.list_con').find('.review_star_write').css('display','inline-block');
 	});
 
 	$('.star_input').find('input').on('click', function(){
