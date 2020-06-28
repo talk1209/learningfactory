@@ -1799,10 +1799,6 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con_sec.sec2 .tab_contents li:before {display:block;position:absolute;left:0;top:20px;width:18px;height:18px;background:url('../images/curriculum_bg.png') no-repeat 0 0 #fff;content:'';}
 .ex_detail_con_sec.sec2 .tab_contents li.on:before {background-image:url('../images/curriculum_bg_on.png');}
 .ex_detail_con_sec.sec2 .tab_contents li:after {position:absolute;left:27px;bottom:0;width:100%;height:1px;background:url('../images/curriculum_bg_horizontal.png') repeat-x 0 0;content:'';}
-
-
-
-
 .ex_detail_con_sec.sec2 .tab_contents li strong {font-weight:500;}
 .ex_detail_con_sec.sec2 .tab_contents li .play_time {position:absolute;right:0;top:12px;display:inline-block;width:112px;height:30px;line-height:30px;font-size:17px;color:#999;text-align:center;background:#eee;border-radius:4px;}
 .ex_detail_con_sec.sec2 .tab_contents li .play_time img {margin-right:5px;vertical-align:1px;}
