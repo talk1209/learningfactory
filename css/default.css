@@ -1834,6 +1834,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con_sec.sec6 .review_list > li {position:relative;padding:20px 0;border-bottom:1px solid #ccc;overflow:hidden;}
 .ex_detail_con_sec.sec6 .review_list > li .list_head {float:left;width:80px;text-align:center;font-weight:500;}
 .ex_detail_con_sec.sec6 .review_list > li .list_con {float:left;margin-left:15px;width:912px;}
+.ex_detail_con_sec.sec6 .review_list > li .review_star_write {display:none;}
 .ex_detail_con_sec.sec6 .review_list > li .review_con {margin-top:15px;font-size:14px;}
 .ex_detail_con_sec.sec6 .review_list > li .review_con .review_list_form {display:none;}
 .ex_detail_con_sec.sec6 .review_list > li .review_con .review_list_form .textarea_box {float:left;width:732px;height:145px;}
