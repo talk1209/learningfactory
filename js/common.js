@@ -1,9 +1,11 @@
 $(document).ready(function() {
     //PC GNB
     var snb_bg = $('#snb_bg')
+    var snb_bg_cs = $('#snb_bg')
     var timeout = 0;
     var hovering = false;
     snb_bg.hide();
+    snb_bg_cs.hide();
     
     $('.gnb_ex')
         .on("mouseenter", function () {
@@ -32,7 +34,36 @@ $(document).ready(function() {
         // The timeout is needed incase you go back to the main menu
         resetHover();
     });
+
+	// 고객센터 2depth
+    $('.gnb_cs')
+        .on("mouseenter", function () {
+        hovering = true;
+        // Open the snb_bg
+        $('#snb_bg_cs')
+            .stop(true, true)
+            .slideDown('fast');
  
+        if (timeout > 0) {
+            clearTimeout(timeout);
+        }
+    })
+        .on("mouseleave", function () {
+        resetHover();
+    });
+ 
+    $("#snb_bg_cs")
+        .on("mouseenter", function () {
+        // reset flag
+        hovering = true;
+        // reset timeout
+        startTimeout();
+    })
+        .on("mouseleave", function () {
+        // The timeout is needed incase you go back to the main menu
+        resetHover();
+    });
+	
     function startTimeout() {
         // This method gives you 1 second to get your mouse to the sub-menu
         timeout = setTimeout(function () {
@@ -44,9 +75,10 @@ $(document).ready(function() {
         // Only close if not hovering
         if (!hovering) {
             $('#snb_bg').stop(true, true).slideUp('fast');
+            $('#snb_bg_cs').stop(true, true).slideUp('fast');
         }
     };
- 
+
     function resetHover() {
         // Allow the menu to close if the flag isn't set by another event
         hovering = false;
@@ -83,8 +115,12 @@ $(document).ready(function() {
 	if($('.swiper-container').length > 0){
 		var learningMainVisual = new Swiper('.swiper-container', {
 			autoplay: {
-				delay: 1500,
+				delay: 5000,
 				disableOnInteraction: false,
+			  },
+			  navigation: { //200706 추가
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			  },
 			pagination: {
 				el: '.swiper-pagination',
