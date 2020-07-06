@@ -105,6 +105,12 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 #container .learning_status .status_list li.my_qna {background-image:url('../images/ico_status_list4.png');background-position:179px 88px;}
 #container .learning_status .status_list li .title {display:block;font-size:20px;font-weight:700;color:#666666;}
 #container .learning_status .status_list li .i_num {display:block;margin-top:57px;font-family:'Gmarket Sans';font-weight:700;font-size:30px;color:#333333;}
+/* 노출할 컨텐츠 목록이 없는 경우 */
+#container .no_course_sec {padding:66px 0;height:310px;background-color:#f5f5f5;text-align:center;}
+#container .no_course_sec p {font-size:25px;font-weight:500;color:#666666;line-height:34px;}
+#container .no_course_sec .link_box {margin-top:45px;font-size:0;}
+#container .no_course_sec .link_box > a {display:inline-block;margin-left:30px;width:250px;height:60px;line-height:58px;font-size:20px;font-weight:500;vertical-align:top;border-width:1px;border-style:solid;border-radius:30px;text-align:center;}
+#container .no_course_sec .link_box > a:first-child {margin-left:0;}
 #container .main_course {margin:62px 0 0;}
 #container .main_course .course_slider {position:relative;}
 #container .main_course .course_slider .swiper-button-next, 
