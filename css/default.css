@@ -7,6 +7,7 @@
 /* Major Layout */
 #wrap {position:relative;margin:0 auto;padding:0;width:100%;height:100%;min-width:1424px;max-width:1920px;}
 .inner {margin:0 auto;padding:0 20px;max-width:1424px;} /* 1384 + padding 0 20 */
+.inner_s {padding:0 8px;}
 .inner:after {display:block;visibility:hidden;clear:both;content:""}
 
 /* Common */
@@ -392,6 +393,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 
 /* Sub Section tab style */
 .tab_sub_sec {margin-top:29px;overflow:hidden;border:1px solid #dddddd;}
+.tab_sub_sec.tab3 li {width:33.33% !important;}
 .tab_sub_sec.tab4 li {width:25% !important;}
 .tab_sub_sec li {float:left;height:50px;line-height:48px;font-size:17px;font-weight:400;color:#999999;text-align:center;border-left:1px solid #dddddd;background-color:#ffffff;cursor:pointer;}
 .tab_sub_sec li:first-child {border-left:0;}
@@ -2580,6 +2582,7 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .attention .sec_set table td {padding-bottom:50px;}
 
 /* 환급과정 안내 */
+.refund_process_wrap #snb {margin-top:40px}
 .refund_process_wrap .tab_contents {margin-top:40px;}
 .refund_process_wrap .con_hd {font-size:17px;font-weight:500;}
 .refund_process_wrap .table {margin-top:40px;}
@@ -2616,6 +2619,24 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .refund_process_wrap .tab_contents4 .table_style11 li strong {font-weight:700;}
 .refund_process_wrap .tab_contents4 .table_style11 li span {position:absolute;left:0;top:2px;}
 .refund_process_wrap .tab_contents4 .table_style11 td {background:url('../images/refund_process_sec4_bg.png') no-repeat 60px center;}
+
+/* 사이트 이용 안내 */
+.terms_wrap .con_hd {margin-top:50px;font-size:17px;font-weight:500;}
+.terms_wrap .con_body {margin-top:40px;padding:30px;height:735px;font-size:17px;border:1px solid #ccc;line-height:30px;overflow-y:scroll;overflow-x:hidden;}
+.privacy_wrap .con_hd {margin-top:50px;font-size:17px;font-weight:500;}
+.privacy_wrap .selectric-wrapper {margin-top:35px;width:462px;}
+.privacy_wrap .con_body {margin-top:20px;padding:30px;height:735px;font-size:17px;border:1px solid #ccc;line-height:30px;overflow-y:scroll;overflow-x:hidden;}
+.privacy_wrap .con_body .con {display:none;}
+.privacy_wrap .con_body .con.on {display:block;}
+.email_collection_wrap .con_hd {margin-top:50px;font-size:17px;font-weight:500;}
+.email_collection_wrap .con_email {margin-top:40px;padding:180px 30px 0;height:295px;font-size:17px;border:1px solid #ccc;line-height:30px;text-align:center;background:url('../images/email_collection_bg.png') no-repeat center 60px;}
+
+/* 앱 다운로드 */
+.app_download_wrap .lead {font-size:20px;font-weight:500;text-align:center;}
+.app_download_wrap p {margin-top:20px;font-size:15px;text-align:center;}
+.app_download_wrap .app_download_qr {margin-top:65px;text-align:center;}
+.app_download_wrap .btn_box {margin:70px -15px 0;text-align:center;}
+.app_download_wrap .btn_box button {width:160px;margin:0 15px;}
 
 .btn_style100 {width:100px;height:35px;font-size:15px;color:#fff;font-weight:500;line-height:35px;border-radius:4px;}
 
