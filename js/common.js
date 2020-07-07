@@ -889,3 +889,10 @@ function learning_piece_size(){
 	$body_height = $('body').innerHeight();
 	$('.learning_piece_aside').attr('style','min-height:'+$body_height+'px;');
 }
+
+
+// 셀렉트박스 선택 시 내용변경 - 개인정보취급방침
+function con_change(num){
+	$('.con').removeClass('on');
+	$('.con').eq(num).addClass('on');
+}
