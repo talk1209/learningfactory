@@ -1689,6 +1689,13 @@ b.pt_blue {font-weight:700;}
 #snb.snb5 li {width:20%;}
 #snb.snb6 li {width:16.66%;}
 
+#snb.snb_responsive {font-size:0;overflow:visible;}
+#snb.snb_responsive:after {display:block;visibility:hidden;clear:both;content:""}
+#snb.snb_responsive li {display:inline-block;padding:0 45px;height:50px;border:1px solid #ddd;margin-right:-1px;margin-bottom:-1px;}
+#snb.snb_responsive li:first-child a {border-left:0;}
+#snb.snb_responsive a {width:100%;height:100%;border:0;}
+#snb.snb_responsive li.on a {color:#fff;font-weight:700;border:0;}
+
 /* FAQ */
 .table_faq_list {margin-top:50px;border-top:3px solid #333;}
 .table_faq_list tr {border-bottom:1px solid #ccc;}
