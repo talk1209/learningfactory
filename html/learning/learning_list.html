@@ -36,18 +36,18 @@
             <div class="hd theme_bd">
                 <div class="inner">
                     <!-- Logo -->
-                    <h1 class="logo">
-                        <a href="#none" class="blind">learning factory</a>
+                    <h1 class="logo" style="background-image:url('../../images/logo.png');">
+                        <a href="../main/main.html" class="blind">learning factory</a>
                     </h1>
                     <!-- // Logo -->
                     <!-- Gnb -->
                     <nav id="gnb">
                         <ul>
-                            <li class="gnb_ex"><a href="#none">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
-                            <li><a href="#none">구독</a></li>
-                            <li><a href="#none" class="on theme_color">학습</a></li>
-                            <li><a href="#none">고객센터</a></li>
-                            <li><a href="#none">포인트몰</a></li>
+                            <li class="gnb_ex"><a href="../Explore/explore_list.html">탐색</a></li> <!-- 해당 카테고리에서 클래스 on, theme_color 추가 -->
+                            <li><a href="../subscribe/subscribe_list.html">구독</a></li>
+                            <li><a href="../learning/learning_list.html" class="on theme_color">학습</a></li>
+                            <li class="gnb_cs"><a href="#none">고객센터</a></li>
+                            <li><a href="../point_mall/point_mall_list.html">포인트몰</a></li>
                         </ul>
                     </nav>
                     <!-- // Gnb -->
@@ -113,21 +113,39 @@
                         </div>
                     </div>
                     <!-- // 탐색 2Depth -->
-                    <!-- srh -->
-                    <div class="tnb_srh">
-                        <input type="text" class="theme_bd">
-                        <button type="button" class="blind">검색</button>
-                    </div>
-                    <!-- mypage -->
-                    <div class="my_page">
-                        <a href="#none" class="theme_color_hover">마이페이지</a>
-                        <div class="my_2dul_wrap">
-                        	<i></i>
-                            <ul class="my_2dul">
-                                <li><a href="#none">마이페이지</a></li>
-                                <li><a href="#none">로그아웃</a></li>
+                    <!-- 고객센터 2Depth -->
+                    <div id="snb_bg_cs">
+                    	<div class="gnb_2d">
+                    		<ul class="gnb_1dul gnb_1dul_4">
+                                <li><a href="../customer_center/notice_list.html">공지사항</a></li> <!-- 해당페이지에서 on클래스 추가 -->
+                                <li><a href="../customer_center/faq_list.html">FAQ</a></li>
+                                <li><a href="../customer_center/qa_write.html">Q&amp;A</a></li>
+                                <li><a href="../customer_center/service.html">원격지원안내</a></li>
                             </ul>
-                        </div>
+						</div>
+                    </div>
+                    <!-- // 고객센터 2Depth -->
+                    <div class="hd_right_opt add"> <!-- 200706 adm메뉴 노출 시 add 클래스 추가 -->
+                    	<!-- srh -->
+						<div class="tnb_srh">
+							<input type="text" class="theme_bd">
+							<button type="button" class="blind">검색</button>
+						</div>
+						<!-- mypage -->
+						<div class="my_page">
+							<a href="#none" class="theme_color_hover">마이페이지</a>
+							<div class="my_2dul_wrap">
+								<i></i>
+								<ul class="my_2dul">
+									<li><a href="../my_page/my_page_main.html">마이페이지</a></li>
+									<li><a href="#none">로그아웃</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- adm -->
+						<div class="hd_adm">
+							<a href="#none" class="theme_color_hover">ADM</a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -160,7 +178,7 @@
                             <div class="list_style1">
                                 <ul>
                                     <li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box thumb_bg thumb_bg1"><!-- 외부교육일때 thumb_bg 추가, thumb_bg1~thumb_bg5 랜덤 추가 -->
 												<!-- 외부교육 썸네일 내용 -->
 												<div class="display_table">
@@ -197,7 +215,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<!--<div class="thumb_alert theme_bg">3일 후 종료</div>-->
 											</div>
@@ -223,7 +241,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -251,7 +269,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -276,7 +294,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -301,7 +319,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -326,7 +344,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -351,7 +369,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -376,7 +394,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -401,7 +419,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -426,7 +444,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -451,7 +469,7 @@
                                         </div>
                                     </li>
 									<li>
-										<a href="#none">
+										<a href="./learning_home_online.html">
 											<div class="thumb_box" style="background-image:url('../../images/sample_img1.jpg')">
 												<div class="thumb_alert theme_bg">3일 후 종료</div>
 											</div>
@@ -953,7 +971,7 @@
 						 <div class="tab_contents">
 							<div class="list_style2">
                                 <ul>
-                                    <li class="theme_bd_hover">
+                                    <li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate theme_color theme_bd ">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.</a></div>
@@ -963,7 +981,7 @@
 											</ul>
                                         </div>
                                     </li>
-									<li class="theme_bd_hover">
+									<li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate i_cate_blue">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.</a></div>
@@ -973,7 +991,7 @@
 											</ul>
                                         </div>
                                     </li>
-									<li class="theme_bd_hover">
+									<li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate theme_color theme_bd ">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.</a></div>
@@ -983,7 +1001,7 @@
 											</ul>
                                         </div>
                                     </li>
-									<li class="theme_bd_hover">
+									<li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate i_cate_blue">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.</a></div>
@@ -993,7 +1011,7 @@
 											</ul>
                                         </div>
                                     </li>
-									<li class="theme_bd_hover">
+									<li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate theme_color theme_bd ">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.</a></div>
@@ -1003,7 +1021,7 @@
 											</ul>
                                         </div>
                                     </li>
-									<li class="theme_bd_hover">
+									<li class="theme_bd_hover" onclick="location.href='./learning_social_main.html';">
                                         <div class="course_desc">
                                             <div class="i_cate i_cate_blue">소셜러닝</div>
                                             <div class="i_subject"><a href="#none">소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.소셜러닝명이 노출됩니다.</a></div>
