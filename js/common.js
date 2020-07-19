@@ -587,6 +587,27 @@ $(document).ready(function() {
             $(this).val(tmps2);
         }
     });
+    
+    /* Main bn 갯수에 따라 클래스 제어 */
+    $(".main_bn_wrap").is(function(){
+        var chkBnLength = $('.main_bn_wrap div').length;
+        
+        if(chkBnLength == 1) {
+            $(".main_bn_wrap").addClass("bn1");
+        } else if (chkBnLength == 2) {
+            $(".main_bn_wrap").removeClass("bn1");
+            $(".main_bn_wrap").addClass("bn2");
+        } else if (chkBnLength == 3) {
+            $(".main_bn_wrap").removeClass("bn1");
+            $(".main_bn_wrap").removeClass("bn2");
+            $(".main_bn_wrap").addClass("bn3");
+        } else if (chkBnLength == 4) {
+            $(".main_bn_wrap").removeClass("bn1");
+            $(".main_bn_wrap").removeClass("bn2");
+            $(".main_bn_wrap").removeClass("bn3");
+            $(".main_bn_wrap").addClass("bn4");
+        } 
+    });
 });
 
 // Popular Course Tab

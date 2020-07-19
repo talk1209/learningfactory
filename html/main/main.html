@@ -181,11 +181,14 @@
             <div class="main_visual">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="../../images/main_visual.jpg" alt=""></div>
+                        <!-- 200719 수정 -->
+                        <!-- img 경로 background 수정 -->
+                        <div class="swiper-slide" style="background-image:url('../../images/main_visual.jpg');"></div>
+                        <div class="swiper-slide" style="background-image:url('../../images/product_dummy.png');"></div>
+                        <div class="swiper-slide" style="background-image:url('../../images/main_visual.jpg');"></div>
+                        <div class="swiper-slide" style="background-image:url('../../images/main_visual.jpg');"></div>
+                        <div class="swiper-slide" style="background-image:url('../../images/main_visual.jpg');"></div>
+                        <!-- // 200719 수정 -->
                     </div>
                     <!-- Add Arrows -->
 					<div class="swiper-button-next"></div>
@@ -263,7 +266,8 @@
                     <div class="course_slider">
                         <div class="main_course_container">
                             <div class="swiper-wrapper">
-                                <!-- 20200716 과정, 학습피스의 경우 -->
+                                <!-- 200719 수정 -->
+                                <!-- 과정, 학습피스의 경우 좋아요만 표시 -->
                                 <div class="swiper-slide theme_bd_hover theme_bg_hover">
                                     <div class="course_img" style="background-image:url('../../images/visual_sme.jpg')">
                                         <div class="course_opt type2">
@@ -275,9 +279,9 @@
                                         <span class="i_name">하루 한 문장! 미드로 배우는 영어회화</span>
                                     </div>
                                 </div>
-                                <!-- // 20200716 과정, 학습피스의 경우 -->
+                                <!--//  200719 수정 -->
                                 <div class="swiper-slide theme_bd_hover theme_bg_hover">
-                                    <div class="course_img" style="background-image:url('../../images/course_dummy1.png')">
+                                    <div class="course_img" style="background-image:url('../../images/product_dummy.png')">
                                         <div class="course_opt">
                                             <i class="i_bar"></i>
                                             <button type="button" class="btn_view">맛보기</button>
@@ -419,7 +423,7 @@
                             </div>
                         </div>
                         <div class="tab_course_desc tab_course_desc2">
-                            <div class="course_thumb" style="background-image:url('../../images/course_dummy2.jpg')"> <!-- 강좌 썸네일 -->
+                            <div class="course_thumb" style="background-image:url('../../images/product_dummy.png')"> <!-- 강좌 썸네일 -->
                                 <div class="favorite_box"><span class="favor_num">147</span></div> <!-- 좋아요 -->
                             </div>
                             <div class="course_desc">
@@ -681,16 +685,40 @@
             </div>
             <!-- // 수강신청 마감일 -->
             <div class="inner">
+                <!-- 200719 수정 -->
+                <!-- div 갯수에 따라 bn1,bn2,bn3,bn4 적용되도록 스크립트 넣어놓음 -->
+                <!-- 개발용도
                 <div class="main_bn_wrap">
-                    <div class="bn_left"><a href="#none" target="_blank"><img src="../../images/main_bn1.png" alt=""></a></div>
-                    <div class="bn_right"><a href="#none" target="_blank"><img src="../../images/main_bn2.png" alt=""></a></div>
-                    <div class="bn_left"><a href="#none" target="_blank"><img src="../../images/main_bn1.png" alt=""></a></div>
-                    <div class="bn_right"><a href="#none" target="_blank"><img src="../../images/main_bn2.png" alt=""></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
                 </div>
+                -->
+                
+                <!-- 프론트 확인용도 -->
+                <div class="main_bn_wrap bn1">
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                </div>
+                <div class="main_bn_wrap bn2">
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn2.png');"></a></div>
+                </div>
+                <div class="main_bn_wrap bn3">
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn2.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                </div>
+                <div class="main_bn_wrap bn4">
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn2.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn1.png');"></a></div>
+                    <div><a href="#none" target="_blank" style="background-image:url('../../images/main_bn2.png');"></a></div>
+                </div>
+                <!-- // 프론트 확인용도 -->      
             </div>
-            <div class="cs_center"> <!-- 20200706 -->
+            <div class="cs_center">
                 <div class="inner">
-                    <img src="../../images/cs_center.png" alt="">
+                    <!-- 200719 수정 -->
+                    <!-- div 추가, img 경로 background -->
+                    <div class="cs_img" style="background-image:url('../../images/cs_center.png');"></div>
                 </div>
             </div>
             <div class="main_bbs_wrap">
