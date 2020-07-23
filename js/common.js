@@ -118,7 +118,6 @@ $(document).ready(function() {
 				delay: 5000,
 				disableOnInteraction: false,
 			  },
-			  slidesPerView: 1,
 			  navigation: { //200706 추가
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
