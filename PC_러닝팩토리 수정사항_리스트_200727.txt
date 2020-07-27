@@ -1,0 +1,17 @@
+﻿* 학습자 마이페이지 > 관심설정 > 관심분야 설정 체크박스로 변경
+* 학습피스상세 각 콘텐츠 유형별 아이콘
+* 학습피스상세 댓글 하트
+
+* html 수정 시 주석 <!-- 200727 수정 --> 검색
+* common.js, default.css 업데이트
+
+
+my_page_attention.html
+- 관심분야 설정 체크박스 디자인으로 변경
+- 전체버튼 클릭시 체크 스트립트 삽입
+
+learning_piece.html
+- 댓글 하트를 버튼으로 변경
+- <div class="favorite"><button type="button" class="btn_like">50</button> <!-- on 클래스 추가로 제어 --></div><!-- 200727 수정 -->
+- <div class="favorite"><button type="button" class="btn_like on">50</button> <!-- on 클래스 추가로 제어 --></div><!-- 200727 수정 -->
+- 클릭 이벤트는 현재 작업하신 내용과 중복될 우려가 있어 넣지 않았습니다. 필요하시면 요청해주세요.

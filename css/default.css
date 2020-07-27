@@ -2255,8 +2255,13 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .name {font-size:15px;font-weight:700;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .name span {display:inline-block;margin-left:5px;font-size:14px;color:#999;font-weight:400;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .con {margin-top:5px;}
-.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .favorite {margin-top:8px;font-size:14px;color:#999;}
-.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .favorite img {margin-right:5px;vertical-align:0;}
+
+
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .favorite {margin-top:8px;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .favorite button.btn_like {padding-left:17px;font-size:14px;color:#999;background-color:transparent;background-image:url('../images/ico_favorite.png');background-repeat:no-repeat;background-position:0;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .favorite button.btn_like.on {background-image:url('../images/ico_favorite_on.png');}
+
+
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .more_option {position:absolute;width:20px;right:10px;top:15px;text-align:center;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .input {display:none;margin-top:10px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_review_list .input textarea {height:100px;color:#333;}
