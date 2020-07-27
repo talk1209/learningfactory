@@ -1,4 +1,0 @@
-@charset "utf-8";
-.ex_detail_con .aside .aside_inner .aside_img {width:344px;} /* 사이즈수정 */
-.chk_keyword + label {margin:0 5px;padding:0 20px !important;height:30px !important;font-size:17px !important;line-height:28px !important;color:#999 !important;font-weight:500;border:1px solid #ccc;border-radius:15px;background-color:#fff;}
-.chk_keyword:checked + label {color:#fff !important;}

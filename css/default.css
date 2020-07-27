@@ -1812,7 +1812,7 @@ table.table_ex_detail.aside td {font-size:14px;}
 .ex_detail_con .aside_wrap {float:right;width:346px;}
 .ex_detail_con .aside {position:relative;}
 .ex_detail_con .aside .aside_inner {position:static;width:346px;border:1px solid #ccc;background-color:#fff;z-index:999;}
-.ex_detail_con .aside .aside_inner .aside_img {width:346px;height:212px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.ex_detail_con .aside .aside_inner .aside_img {width:344px;height:212px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 .ex_detail_con .aside .aside_inner .aside_con {padding:20px 20px 30px;}
 .ex_detail_con .aside .aside_inner .aside_con h3 {margin-top:16px;font-size:25px;color:#333;font-weight:500;line-height:32px;}
 .ex_detail_con .aside .aside_inner .aside_con .aside_price {position:relative;margin-top:12px;font-size:25px;font-weight:700;}
@@ -2602,6 +2602,8 @@ input[type="radio"]:checked + label span.ico_fake2 {background:url('../images/ra
 .attention .sec_set table {margin-top:15px;}
 .attention .sec_set table th,
 .attention .sec_set table td {padding-bottom:50px;}
+.chk_keyword + label {margin:0 5px;padding:0 20px !important;height:30px !important;font-size:17px !important;line-height:28px !important;color:#999 !important;font-weight:500;border:1px solid #ccc;border-radius:15px;background-color:#fff;}
+.chk_keyword:checked + label {color:#fff !important;}
 
 /* 환급과정 안내 */
 .refund_process_wrap #snb {margin-top:40px}
