@@ -6,12 +6,26 @@
 * common.js, default.css 업데이트
 
 
-my_page_attention.html
+/my_page/my_page_attention.html
 - 관심분야 설정 체크박스 디자인으로 변경
 - 전체버튼 클릭시 체크 스트립트 삽입
 
-learning_piece.html
+/learning/learning_piece.html
 - 댓글 하트를 버튼으로 변경
 - <div class="favorite"><button type="button" class="btn_like">50</button> <!-- on 클래스 추가로 제어 --></div><!-- 200727 수정 -->
 - <div class="favorite"><button type="button" class="btn_like on">50</button> <!-- on 클래스 추가로 제어 --></div><!-- 200727 수정 -->
 - 클릭 이벤트는 현재 작업하신 내용과 중복될 우려가 있어 넣지 않았습니다. 필요하시면 요청해주세요.
+
+- 학습피스상세 각 콘텐츠 유형별 아이콘 추가
+<div class="box_title ico_audio">오디오</div>
+<div class="box_title ico_card">카드러닝</div>
+<div class="box_title ico_exam">시험</div>
+<div class="box_title ico_links">웹링크</div>
+<div class="box_title ico_pdf">PDF</div>
+<div class="box_title ico_report">과제</div>
+<div class="box_title ico_seminar">세미나</div>
+<div class="box_title ico_survey">설문</div>
+<div class="box_title ico_txt">텍스트</div>
+<div class="box_title ico_video">동영상</div>
+<div class="box_title ico_youtube">웹영상</div>
+<div class="box_title ico_complete">학습완료</div>

@@ -2223,8 +2223,21 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .count span {font-weight:700;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list {margin-top:18px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li {}
-.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title {padding:15px 40px 15px 30px;color:#333;border-top:1px solid #eee;background-repeat:no-repeat;background-position:5px 21px;cursor:pointer;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title {padding:15px 45px 15px 35px;color:#333;border-top:1px solid #eee;background-repeat:no-repeat;background-position:5px 50%;cursor:pointer;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_audio {background-image:url('../images/ico_aside_audio.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_card {background-image:url('../images/ico_aside_card.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_exam {background-image:url('../images/ico_aside_exam.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_links {background-image:url('../images/ico_aside_links.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_pdf {background-image:url('../images/ico_aside_pdf.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_report {background-image:url('../images/ico_aside_report.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_seminar {background-image:url('../images/ico_aside_seminar.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_survey {background-image:url('../images/ico_aside_survey.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_txt {background-image:url('../images/ico_aside_txt.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_video {background-image:url('../images/ico_aside_video.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_youtube {background-image:url('../images/ico_aside_youtube.png');}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li .box_title.ico_complete {background-image:url('../images/ico_aside_complete.png');}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list.bold li .box_title {font-weight:700;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li.chk:after {position:absolute;margin-top:-10px;right:15px;top:50%;width:20px;height:20px;background-image:url('../images/survey_chk_on_white.png');background-size:12px auto;background-repeat:no-repeat;background-position:center center;border-radius:10px;content:'';}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li span {font-size:14px;color:#999;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .aside_learning_list li.on {font-weight:700;background-color:#f5f5f5;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .bookmark_input {clear:both;margin-top:12px;overflow:hidden;}
