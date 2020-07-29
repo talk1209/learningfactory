@@ -28,27 +28,28 @@
 
     <title>learning factory</title>
 </head>
-<body style="background-color:#333;">
+<body class="learning_piece_body"><!-- 200729 수정 --><!-- 인라인스타일 삭제 , learning_piece_body class 추가 -->
     <!-- Wrap -->    
     <div id="wrap">
 		<div class="learning_piece">
 			<div class="learning_piece_con">
-					<div class="learning_piece_con_hd">
-						<h2><a href="#none"><img src="../../images/ico_go_back.png" alt="뒤로가기" /></a> 하루 한 문장! 미드로 배우는 영어회화</h2>
-						<div class="progress">
-							<div class="li_status_tit">진도율<span>65%</span></div>
-							<div class="progress_box">
-								<div class="progress_bar"></div>
-								<div class="progress_bar theme_bg on" style="width:75%"></div><!-- width:% 값 변경 -->
-							</div>
+				<div class="learning_piece_con_hd">
+					<h2><a href="#none"><img src="../../images/ico_go_back.png" alt="뒤로가기" /></a> 하루 한 문장! 미드로 배우는 영어회화</h2>
+					<div class="progress">
+						<div class="li_status_tit">진도율<span>65%</span></div>
+						<div class="progress_box">
+							<div class="progress_bar"></div>
+							<div class="progress_bar theme_bg on" style="width:75%"></div><!-- width:% 값 변경 -->
 						</div>
 					</div>
+				</div>
 				<div class="learning_piece_con_inner">
 					<!-- 동영상
 					<img src="../../images/sample_img2.jpg" style="width:100%" alt='' />
 					// 동영상 -->
 
-					<!-- 카드러닝
+					<!-- 200729 수정 -->
+					<!-- 카드러닝 -->
 					<div class="card_learning">
                         <div class="card_learning_slider">
                             <div class="swiper-wrapper">
@@ -65,28 +66,33 @@
                             
              
                             <div class="swiper-scrollbar"></div>
+
+							 <div class="card_slider_paging">
+								<input type="text" value="10">
+								<span>/ 50</span>
+								<button type="button">이동</button>
+							</div>
                         </div>
-                        <div class="card_slider_paging">
-                            <input type="text" value="10">
-                            <span>/ 50</span>
-                            <button type="button">이동</button>
-                        </div>
+                       
                     </div>
-					// 카드러닝 -->
+					<!-- // 카드러닝 -->
+					<!-- //200729 수정 -->
 
 					<!-- pdf
 					<div class="inner_pdf">
 						<iframe src="../../data/sample.pdf"></iframe>
 					</div>
 					// pdf -->
-					
+
 					<!-- Link
 					<div class="inner_link">
 						<iframe src="http://www.firstbrain.co.kr/solution.html"></iframe>
 					</div>
 					// Link -->
 					
-					<!-- 세미나 -->
+					<!-- 200729 수정 -->
+					<!-- 세미나 유형 테이블 넓이 조정, 첨부파일 추가 -->
+					<!-- 세미나
 					<div class="inner_seminar">
 						<h3>하루 한 문장! 미드로 배우는 영어회화</h3>
 						<table>
@@ -106,24 +112,10 @@
 								<tr>
 									<th>세미나 내용</th>
 									<td>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+										Lorem ipsum do
 									</td>
 								</tr>
-								<tr>
-									<th>세미나 내용</th>
-									<td>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-									</td>
-								</tr>
-								<tr>
-									<th>세미나 내용</th>
-									<td>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-									</td>
-								</tr>
+								
 								<tr>
 									<th>첨부파일</th>
 									<td>
@@ -136,8 +128,11 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- // 세미나 --->
+					// 세미나 --->
+					<!-- //200729 수정 -->
 
+					<!-- 200729 수정 -->
+					<!-- 텍스트 유형 첨부파일 추가 -->
 					<!-- 텍스트
 					<div class="inner_text">
 						<h3>하루 한 문장! 미드로 배우는 영어회화</h3>
@@ -167,12 +162,13 @@
 						</p>
 					</div>
 					// 텍스트 -->
+					<!-- //200729 수정 -->
 			
 				</div>
 			</div>
 			<div class="learning_piece_aside">
-				<div class="learning_piece_aside_inner">
-					<button class="learning_piece_aside_close blind">닫기</button>
+				<div class="learning_piece_aside_inner"><!-- 200729 수정 --><!-- <div class="learning_piece_aside_inner"> 추가 -->
+					<button class="learning_piece_aside_close blind">닫기</button><!-- 200729 수정 --><!-- 닫기 a태그를 button태그로 변경 -->
 					<div class="learning_piece_aside_hd">
 						<div class="depth_nav">
 							<span>동영상</span> &middot;
@@ -601,14 +597,14 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div><!-- 200729 수정 --><!-- </div> 추가 -->
 			</div>
 		</div>
 	</div>
     <!-- // Wrap -->
 <script>
-learning_piece_size();
 divAccodion3();
+//learning_piece_size(); <!-- 200729 수정 --><!-- 스크립트 삭제 -->
 </script>
 </body>
 </html>

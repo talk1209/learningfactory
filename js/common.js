@@ -896,33 +896,6 @@ function divAccodion3() {
     });
 }
 
-// 러닝피스 사이즈 조정
-function learning_piece_size(){
-	/*
-	$('.learning_piece').attr('style','height:auto;');
-	$('.learning_piece_aside').attr('style','height:auto;');
-	$body_height = $('body').innerHeight();
-	$con_height = $('.learning_piece').outerHeight();
-	$aside_height = $('.learning_piece_aside').outerHeight();
-	if($con_height < $aside_height){
-		$height = $aside_height;
-	}else{
-		$height = $con_height;
-	}
-
-	if($height < $body_height){
-		$height = $body_height;
-	}
-
-	$('.learning_piece').attr('style','height:'+$height+'px;');
-	$('.learning_piece_aside').attr('style','height:'+$height+'px;');
-	*/
-
-	$body_height = $('body').innerHeight();
-	$('.learning_piece_aside').attr('style','min-height:'+$body_height+'px;');
-}
-
-
 // 셀렉트박스 선택 시 내용변경 - 개인정보취급방침
 function con_change(num){
 	$('.con').removeClass('on');

@@ -1293,28 +1293,6 @@ b.pt_blue {font-weight:700;}
 .layer_popup .pop_survey_wrap .content_wrap .survey_paging b {font-size:15px;font-weight:700;color:#000000;}
 .layer_popup .pop_survey_wrap .content_wrap .survey_paging .btn_box {position:absolute;top:0;right:0;margin-top:0;}
 
-/* 학습 - 학습피스 상세 - 카드러닝 */
-.card_learning {position:relative;margin-top:42px;}
-.card_learning_slider {position:relative;padding-bottom:26px;}
-.card_learning .swiper-button-next, 
-.card_learning .swiper-button-prev {width:71px;height:137px;outline:0;margin-top:-69px;}
-.card_learning .swiper-button-next:after, 
-.card_learning .swiper-button-prev:after {content:none;}
-.card_learning .swiper-button-next {right:60px !important;background-image:url('../images/card_slide_next_on.png');}
-.card_learning .swiper-button-next.swiper-button-disabled {background-image:url('../images/card_slide_next.png');}
-.card_learning .swiper-button-prev {left:60px !important;background-image:url('../images/card_slide_prev_on.png');}
-.card_learning .swiper-button-prev.swiper-button-disabled {background-image:url('../images/card_slide_prev.png');}
-.card_learning .swiper-scrollbar {max-width:1000px;bottom:5px;left:50%;margin-left:-500px;background-color:#555555;}
-.card_learning .swiper-scrollbar-drag {position:relative;background-color:#ea563a;}
-/*
-.card_learning .swiper-scrollbar-drag:after {z-index:1;content:'';position:absolute;top:-7px;right:0;display:block;width:17px;height:17px;border-radius:50%;background-color:#ffffff;}
-*/
-.card_learning .card_slider_paging {margin-top:26px;font-size:0;text-align:center;}
-.card_learning .card_slider_paging * {display:inline-block;vertical-align:top;}
-.card_learning .card_slider_paging input {width:40px;height:30px;font-size:15px;color:#262626;text-align:center;border-radius:4px;background-color:#ffffff;border:1px solid #b5b5b5;}
-.card_learning .card_slider_paging span {margin:0 10px;font-size:15px;color:#999999;line-height:28px;}
-.card_learning .card_slider_paging button {width:70px;height:30px;font-size:15px;color:#ffffff;border-radius:4px;background-color:#333333;border:1px solid #b5b5b5;}
-
 /* Layer popup - 결재자 지정 */
 .layer_popup .pop_approver .form_box.tbl_style {margin-top:0;}
 
@@ -2154,9 +2132,11 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_con_online .learning_con_online_html_list li .li_con .table_cell {height:124px;}
 .learning_con_online .learning_con_online_html_list li .li_status .table_cell {padding:0 30px;width:314px;height:124px;}
 
-/* 학습 - 학습중인과정 - 학습홈 - 학습피스상세(유튜브) */
+/* 학습 - 학습중인과정 - 학습홈 - 학습피스상세 */
+.learning_piece_body {background-color:#333;}
+.learning_piece_body #wrap {max-width:100%;}
 .learning_piece {position:relative;height:100%;}
-.learning_piece .learning_piece_con {padding-right:520px;width:100%;height:100%;overflow:hidden;}
+.learning_piece .learning_piece_con {padding-top:108px;padding-right:520px;width:100%;height:100%;overflow:hidden;}
 .learning_piece.full_size .learning_piece_con {padding-right:0;}
 .learning_piece .learning_piece_con .learning_piece_con_hd {position:absolute;top:0;left:0;padding:0 560px 0 40px;width:100%;height:108px;top:0;left:0;color:#fff;background-color:#333;overflow:hidden;-webkit-box-shadow: 1px 0px 8px 2px rgba(0,0,0,1)}
 .learning_piece.full_size .learning_piece_con .learning_piece_con_hd {padding-right:40px;}
@@ -2168,9 +2148,10 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_box {position:relative;margin-top:7px;width:300px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_bar {width:300px;height:10px;background-color:#f5f5f5;border:1px solid #ccc;border-radius:7px;}
 .learning_piece .learning_piece_con .learning_piece_con_hd .progress .progress_bar.on {position:absolute;top:0;left:0;border:0;background-image:url('../images/progress_bar_bg.png');}
-.learning_piece .learning_piece_con .learning_piece_con_inner {padding-top:108px;height:100%;overflow-y:auto;}
-.learning_piece .learning_piece_con .learning_piece_con_inner iframe {display:block;width:100%;min-height:700px;}
-.learning_piece .learning_piece_con .learning_piece_con_inner .inner_link {margin:55px auto;max-width:1200px;min-height:700px;-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,1)}
+.learning_piece .learning_piece_con .learning_piece_con_inner {height:100%;overflow-y:auto;}
+.learning_piece .learning_piece_con .learning_piece_con_inner iframe {display:block;width:100%;height:100%;overflow-y:hidden;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .inner_pdf {height:100%;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .inner_link {height:100%;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_seminar {margin:55px auto;padding:40px;max-width:1100px;min-height:700px;background-color:#fff;border-radius:4px;-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,1)}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_seminar h3 {font-size:25px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_seminar table {margin-top:20px;width:100%;border-top:1px solid #ccc;}
@@ -2178,10 +2159,27 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_seminar td {padding:30px 25px;border-bottom:1px solid #ccc;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .file_box li {margin-top:10px;padding-left:40px;height:40px;font-size:14px;color:#444;text-align:left;line-height:39px;border:1px solid #ccc;background:url('../images/ico_board_view_file.png') no-repeat 22px 13px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .file_box li:first-child {margin-top:0;}
-.learning_piece .learning_piece_con .learning_piece_con_inner .inner_text {padding:70px 50px;height:100%;background-color:#fff;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .inner_text {padding:70px 50px;min-height:100%;background-color:#fff;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text .file_box {margin-top:30px;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text h3 {font-size:25px;font-weight:700;}
 .learning_piece .learning_piece_con .learning_piece_con_inner .inner_text p {margin-top:15px;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning {position:relative;height:100%;overflow-x:hidden;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning_slider {position:relative;padding-top:32px;padding-bottom:20px;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-next, 
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-prev {width:71px;height:137px;outline:0;margin-top:-69px;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-next:after, 
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-prev:after {content:none;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-next {right:60px !important;background-image:url('../images/card_slide_next_on.png');}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-next.swiper-button-disabled {background-image:url('../images/card_slide_next.png');}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-prev {left:60px !important;background-image:url('../images/card_slide_prev_on.png');}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-button-prev.swiper-button-disabled {background-image:url('../images/card_slide_prev.png');}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-scrollbar {max-width:1000px;bottom:70px;left:50%;margin-left:-500px;background-color:#555555;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .swiper-scrollbar-drag {position:relative;background-color:#ea563a;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .card_slider_paging {margin-top:40px;font-size:0;text-align:center;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .card_slider_paging * {display:inline-block;vertical-align:top;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .card_slider_paging input {width:40px;height:30px;font-size:15px;color:#262626;text-align:center;border-radius:4px;background-color:#ffffff;border:1px solid #b5b5b5;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .card_slider_paging span {margin:0 10px;font-size:15px;color:#999999;line-height:28px;}
+.learning_piece .learning_piece_con .learning_piece_con_inner .card_learning .card_slider_paging button {width:70px;height:30px;font-size:15px;color:#ffffff;border-radius:4px;background-color:#333333;border:1px solid #b5b5b5;}
 .learning_piece .learning_piece_aside {position:fixed;width:520px;height:100%;right:0;top:0;background-color:#fff;-webkit-box-shadow: -6px 0 8px -2px rgba(0,0,0,0.5);z-index:90;}
 .learning_piece .learning_piece_aside .learning_piece_aside_inner {height:100%;overflow-y:auto;}
 .learning_piece.full_size .learning_piece_aside {margin-right:-520px;}
@@ -2217,8 +2215,8 @@ table.table_learning_detail.aside td {font-size:14px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list {margin-top:10px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li {margin-top:10px;overflow:hidden;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li:first-child {margin-top:0;}
-.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li .img {float:left;width:160px;height:100px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
-.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li .des {float:left;margin-left:20px;width:280px;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li .img {float:left;width:35%;height:100px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
+.learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li .des {float:left;margin-left:5%;width:60%;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .learning_list li .des .cate {margin-top:20px;font-size:13px;color:#999;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .count {margin-bottom:5px;}
 .learning_piece .learning_piece_aside .learning_piece_aside_con .sec .count span {font-weight:700;}
