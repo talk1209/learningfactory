@@ -156,6 +156,7 @@ box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);}
 #container .popular_course .tab_course_desc .course_thumb {position:relative;float:left;width:320px;height:200px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;}
 #container .popular_course .tab_course_desc .course_thumb .favorite_box {display:none;position:absolute;bottom:0;left:0;width:100%;height:35px;background-color:rgba(255,255,255,.95);text-align:center;}
 #container .popular_course .tab_course_desc .course_thumb .favor_num {display:inline-block;padding-left:19px;font-size:14px;color:#666666;background:url('../images/ico_favorite_trans.png') no-repeat 0 50%;line-height:35px;}
+#container .popular_course .tab_course_desc .course_thumb .favor_num.on {background-image:url('../images/ico_favorite_trans_on.png');} /* 200820 하트 활성 추가 */
 #container .popular_course .tab_course_desc .course_desc {float:left;margin-left:46px;width:550px;}
 #container .popular_course .tab_course_desc .course_desc .i_cate {display:inline-block;padding:0 22px;height:25px;line-height:25px;font-size:15px;color:#fff;border-radius:13px;}
 #container .popular_course .tab_course_desc .course_desc .i_name {display:block;margin-top:10px;font-size:25px;font-weight:700;color:#333333;line-height:30px;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* 라인수 */-webkit-box-orient: vertical;overflow:hidden;}
