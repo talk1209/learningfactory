@@ -8,7 +8,7 @@ $(document).ready(function() {
     snb_bg_cs.hide();
     
     $('.gnb_ex')
-        .on("mouseenter", function () {
+        .on("mouseenter", function () {        
         hovering = true;
         // Open the snb_bg
         $('#snb_bg')
@@ -18,9 +18,17 @@ $(document).ready(function() {
         if (timeout > 0) {
             clearTimeout(timeout);
         }
+        
+        // 20200824 추가 swiper update
+        var exContainer = document.querySelector('.ex_2d_container').swiper
+        exContainer.update();
     })
         .on("mouseleave", function () {
         resetHover();
+        
+        // 20200824 추가 swiper update
+        var exContainer = document.querySelector('.ex_2d_container').swiper
+        exContainer.update();
     });
  
     $("#snb_bg")
@@ -28,8 +36,9 @@ $(document).ready(function() {
         // reset flag
         hovering = true;
         // reset timeout
-        startTimeout();
+        startTimeout();       
     })
+
         .on("mouseleave", function () {
         // The timeout is needed incase you go back to the main menu
         resetHover();
@@ -110,6 +119,32 @@ $(document).ready(function() {
 			}
 		}
     });
+    
+    /* 20200824 추가 Swiper - Explore 2depth */
+	if($('.ex_2d_container').length > 0){
+		var exContainer = new Swiper('.ex_2d_container', {
+            effect: 'fade',
+            slidesPerView: 1,
+            navigation: { //200706 추가
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+            },
+		    pagination: {
+				el: '.swiper-pagination',
+                type: 'fraction',
+				clickable: true
+			}
+		});
+	};
+    
+    /* 20200824 추가 Slide 갯수가 2이상일때만 네비게이션 노출 */
+    var ex2dSlideLength = $('.ex_2d_container .swiper-slide').length;
+
+    if( ex2dSlideLength < 2 ) {
+        $('.gnb_2d_inner').hide();
+    } else {
+        $('.gnb_2d_inner').show();
+    }
     
     /* Swiper - Main visual */
 	if($('.swiper-container').length > 0){
